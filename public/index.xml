@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Martín Macías</title>
-    <link>/</link>
+    <link>http://www.example.com/</link>
     <description>Recent content in Home on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 28 Sep 2017 08:00:00 +0600</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Typography</title>
-      <link>/typography/</link>
+      <link>http://www.example.com/typography/</link>
       <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>/typography/</guid>
+      <guid>http://www.example.com/typography/</guid>
       <description>Here is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Heading 2 Another one. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
@@ -23,10 +23,10 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>http://www.example.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://www.example.com/about/</guid>
       <description>Mínimo is a Spanish word that roughly translate to Minimal.
 Minimo is a minimalist theme for Hugo.
 Minimo keeps the focus on your content and lets it shine!</description>
@@ -34,20 +34,20 @@ Minimo keeps the focus on your content and lets it shine!</description>
     
     <item>
       <title>Sidebar</title>
-      <link>/docs/sidebar/</link>
+      <link>http://www.example.com/docs/sidebar/</link>
       <pubDate>Wed, 07 Feb 2018 19:15:00 +0600</pubDate>
       
-      <guid>/docs/sidebar/</guid>
+      <guid>http://www.example.com/docs/sidebar/</guid>
       <description>Enabling Sidebar For enabling Sidebar, use the following configuration options in your config.toml file:
 [params.sidebar] enable = true sticky = true  params.sidebar [Map]:  enable [Boolean]: Switch for enabling sidebar sticky [Boolean]: If false, sidebar scrolls with page   Adding Widgets to Sidebar For adding Widgets to the Sidebar, check the Widgets documentation.</description>
     </item>
     
     <item>
       <title>Widgets</title>
-      <link>/docs/widgets/</link>
+      <link>http://www.example.com/docs/widgets/</link>
       <pubDate>Wed, 07 Feb 2018 18:30:00 +0600</pubDate>
       
-      <guid>/docs/widgets/</guid>
+      <guid>http://www.example.com/docs/widgets/</guid>
       <description>Minimo supports Widgets that you can place on specific Widget Areas.
 Available Widgets Minimo has the following built-in Widgets:
    Name Slug     1. About about   2. Recent Posts recent_posts   3. Social Menu social_menu   4. Taxonomy Cloud taxonomy_cloud    Widget Configuration Options Here are the configuration options available for the Widgets:
@@ -56,10 +56,10 @@ Widget: About  about [Map]:  title [String]: Title</description>
     
     <item>
       <title>Shortcodes</title>
-      <link>/docs/shortcodes/</link>
+      <link>http://www.example.com/docs/shortcodes/</link>
       <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
       
-      <guid>/docs/shortcodes/</guid>
+      <guid>http://www.example.com/docs/shortcodes/</guid>
       <description>Minimo comes with several shortcodes built-in.
 Shortcode: center Center align you content.
 center: Parameters  Markdown content between opening and closing tags.  center: Usage Example {{% center %}} _Center Aligned Text_ {{% /center %}} Output
@@ -70,10 +70,10 @@ convo: Parameters  sep [String] (optional): seperator between person and text (d
     
     <item>
       <title>Cover Image</title>
-      <link>/docs/cover-image/</link>
+      <link>http://www.example.com/docs/cover-image/</link>
       <pubDate>Sat, 30 Sep 2017 14:00:00 +0600</pubDate>
       
-      <guid>/docs/cover-image/</guid>
+      <guid>http://www.example.com/docs/cover-image/</guid>
       <description>You can add cover image to your contents with the cover paramameter in the content&amp;rsquo;s front-matter.
 You can directly provide the image url:
 --- cover: /images/eden-farm-children-s-village.jpg ---  cover [String]: path/url of the cover image  Or you can provide additional information:
@@ -82,10 +82,10 @@ You can directly provide the image url:
     
     <item>
       <title>Translation Support</title>
-      <link>/docs/translation/</link>
+      <link>http://www.example.com/docs/translation/</link>
       <pubDate>Wed, 27 Sep 2017 14:00:00 +0600</pubDate>
       
-      <guid>/docs/translation/</guid>
+      <guid>http://www.example.com/docs/translation/</guid>
       <description>You can translate Minimo in your own language!
 For example, if you want to translate Minimo in Spanish, you will have to add this to your site&amp;rsquo;s config file:
 [languages.es] lang = &amp;#34;es&amp;#34; languageName = &amp;#34;Spanish&amp;#34; weight = 1 Then create a folder named /i18n/ in your site&amp;rsquo;s root. And create a file /i18n/es.toml with the translated strings.
@@ -95,20 +95,20 @@ If you want your translation file to be included in Minimo repository, feel free
     
     <item>
       <title>Syntax Highlighting</title>
-      <link>/docs/syntax-highlighting/</link>
+      <link>http://www.example.com/docs/syntax-highlighting/</link>
       <pubDate>Wed, 27 Sep 2017 12:00:00 +0600</pubDate>
       
-      <guid>/docs/syntax-highlighting/</guid>
+      <guid>http://www.example.com/docs/syntax-highlighting/</guid>
       <description>Hugo uses Chroma as it&amp;rsquo;s built-in syntax-highlighter.
 For detailed information about Syntax Highlighting in Hugo, check the Hugo&amp;rsquo;s Syntax Highlighting Documentation.</description>
     </item>
     
     <item>
       <title>Menus Setup Guide</title>
-      <link>/docs/menus/</link>
+      <link>http://www.example.com/docs/menus/</link>
       <pubDate>Wed, 27 Sep 2017 10:00:00 +0600</pubDate>
       
-      <guid>/docs/menus/</guid>
+      <guid>http://www.example.com/docs/menus/</guid>
       <description>Minimo has two menus.
  Main Menu Social Menu  Minimo Main Menu Main menu is located at the top of the site.
 Check Hugo&amp;rsquo;s Menus Documentation for information about managing this menu.
@@ -119,10 +119,10 @@ You only have to add your usernames. Minimo will take care of the rest.</descrip
     
     <item>
       <title>Opengraph Support</title>
-      <link>/docs/opengraph/</link>
+      <link>http://www.example.com/docs/opengraph/</link>
       <pubDate>Tue, 26 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>/docs/opengraph/</guid>
+      <guid>http://www.example.com/docs/opengraph/</guid>
       <description>Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&amp;rsquo; front-matters &amp;amp; Hugo configuration.
 You can use these options in you content&amp;rsquo;s front-matter:
 --- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---  audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.</description>
@@ -130,10 +130,10 @@ You can use these options in you content&amp;rsquo;s front-matter:
     
     <item>
       <title>Authors Setup Guide</title>
-      <link>/docs/authors/</link>
+      <link>http://www.example.com/docs/authors/</link>
       <pubDate>Tue, 26 Sep 2017 06:00:00 +0600</pubDate>
       
-      <guid>/docs/authors/</guid>
+      <guid>http://www.example.com/docs/authors/</guid>
       <description>Minimo supports multiple authors for your site. Just make sure you have the following configuration in your site&amp;rsquo;s config.toml:
 [taxonomies] author = &amp;#34;authors&amp;#34; Minimo treats Authors as a Hugo Taxonomy.
 Author&amp;rsquo;s Profile For adding an author to your site:
@@ -144,20 +144,20 @@ id = &amp;#34;muniftanjim&amp;#34; [email] username = &amp;#34;muniftanjim&amp;#
     
     <item>
       <title>Configuration File: config.toml</title>
-      <link>/docs/config-file/</link>
+      <link>http://www.example.com/docs/config-file/</link>
       <pubDate>Mon, 25 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>/docs/config-file/</guid>
+      <guid>http://www.example.com/docs/config-file/</guid>
       <description>This is the Minimo&amp;rsquo;s configuraion file ( config.toml ) file of this site:
 baseURL = &amp;#34;http://www.example.com&amp;#34; title = &amp;#34;Martín Macías&amp;#34; # for smart copyright line, leave this blank and check [params.copyright] copyright = &amp;#34;&amp;#34; theme = &amp;#34;minimo&amp;#34; disqusShortname = &amp;#34;&amp;#34; googleAnalytics = &amp;#34;&amp;#34; Paginate = 5 preserveTaxonomyNames = true enableRobotsTXT = true # generate robots.txt # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ ) pygmentsCodefences = true # Missing translations will default to this content language defaultContentLanguage = &amp;#34;en&amp;#34; [params.</description>
     </item>
     
     <item>
       <title>Updating Guide</title>
-      <link>/docs/updating/</link>
+      <link>http://www.example.com/docs/updating/</link>
       <pubDate>Mon, 25 Sep 2017 06:00:00 +0600</pubDate>
       
-      <guid>/docs/updating/</guid>
+      <guid>http://www.example.com/docs/updating/</guid>
       <description>Updating Minimo Update Minimo clone Just replace the themes/minimo folder with the latest version of Minimo clone, i.e. delete the old folder and clone again:
 rm -rf themes/minimo git clone --depth 1 https://github.com/MunifTanjim/minimo themes/minimo Then, commit the changes:
 git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; Update Minimo submodule cd themes/minimo git checkout master git fetch &amp;amp;&amp;amp; git pull cd ../.. git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; To Do After Updating Minimo After updating Minimo, always check that your site&amp;rsquo;s config.</description>
@@ -165,10 +165,10 @@ git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; Upd
     
     <item>
       <title>Installation Guide</title>
-      <link>/docs/installation/</link>
+      <link>http://www.example.com/docs/installation/</link>
       <pubDate>Mon, 25 Sep 2017 02:00:00 +0600</pubDate>
       
-      <guid>/docs/installation/</guid>
+      <guid>http://www.example.com/docs/installation/</guid>
       <description>First of all you will need to setup a Hugo site. You can follow the Hugo&amp;rsquo;s Quick Start Guide for that.
 After you&amp;rsquo;re done with that, it&amp;rsquo;s time for installing Minimo!
 Installing Minimo There are two different ways you can install Minimo:
@@ -178,10 +178,10 @@ Install Minimo as clone With this method, you will simply clone it. And a copy o
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>http://www.example.com/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>http://www.example.com/post/2015-07-23-r-rmarkdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>

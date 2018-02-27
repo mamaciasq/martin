@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Martín Macías</title>
-    <link>/authors/</link>
+    <link>http://www.example.com/authors/</link>
     <description>Recent content in Authors on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.example.com/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Muniftanjim</title>
-      <link>/authors/muniftanjim/</link>
+      <link>http://www.example.com/authors/muniftanjim/</link>
       <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>/authors/muniftanjim/</guid>
+      <guid>http://www.example.com/authors/muniftanjim/</guid>
       <description></description>
     </item>
     

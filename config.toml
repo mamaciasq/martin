@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Minimalist theme for Hugo"
+description = "Personal website under construction"
 title404 = "Nothing's here!"
 
 [params.assets]

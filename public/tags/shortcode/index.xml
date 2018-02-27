@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shortcode on Martín Macías</title>
-    <link>/tags/shortcode/</link>
+    <link>http://www.example.com/tags/shortcode/</link>
     <description>Recent content in Shortcode on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Oct 2017 20:00:00 +0600</lastBuildDate>
     
-	<atom:link href="/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.example.com/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Shortcodes</title>
-      <link>/docs/shortcodes/</link>
+      <link>http://www.example.com/docs/shortcodes/</link>
       <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
       
-      <guid>/docs/shortcodes/</guid>
+      <guid>http://www.example.com/docs/shortcodes/</guid>
       <description>Minimo comes with several shortcodes built-in.
 Shortcode: center Center align you content.
 center: Parameters  Markdown content between opening and closing tags.  center: Usage Example {{% center %}} _Center Aligned Text_ {{% /center %}} Output
