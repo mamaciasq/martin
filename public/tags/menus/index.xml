@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Menus on Martín Macías</title>
-    <link>http://martin.rbind.io/tags/menus/</link>
+    <link>/tags/menus/</link>
     <description>Recent content in Menus on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 27 Sep 2017 10:00:00 +0600</lastBuildDate>
     
-	<atom:link href="http://martin.rbind.io/tags/menus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/menus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Menus Setup Guide</title>
-      <link>http://martin.rbind.io/docs/menus/</link>
+      <link>/docs/menus/</link>
       <pubDate>Wed, 27 Sep 2017 10:00:00 +0600</pubDate>
       
-      <guid>http://martin.rbind.io/docs/menus/</guid>
+      <guid>/docs/menus/</guid>
       <description>Minimo has two menus.
  Main Menu Social Menu  Minimo Main Menu Main menu is located at the top of the site.
 Check Hugo&amp;rsquo;s Menus Documentation for information about managing this menu.
