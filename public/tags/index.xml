@@ -2,128 +2,128 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Martín Macías</title>
-    <link>http://www.example.com/tags/</link>
+    <link>http://martin.rbind.io/tags/</link>
     <description>Recent content in Tags on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 26 Sep 2017 06:00:00 +0600</lastBuildDate>
     
-	<atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://martin.rbind.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Authors</title>
-      <link>http://www.example.com/tags/authors/</link>
+      <link>http://martin.rbind.io/tags/authors/</link>
       <pubDate>Tue, 26 Sep 2017 06:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/authors/</guid>
+      <guid>http://martin.rbind.io/tags/authors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chroma</title>
-      <link>http://www.example.com/tags/chroma/</link>
+      <link>http://martin.rbind.io/tags/chroma/</link>
       <pubDate>Wed, 27 Sep 2017 12:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/chroma/</guid>
+      <guid>http://martin.rbind.io/tags/chroma/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>http://www.example.com/tags/config/</link>
+      <link>http://martin.rbind.io/tags/config/</link>
       <pubDate>Wed, 07 Feb 2018 19:15:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/config/</guid>
+      <guid>http://martin.rbind.io/tags/config/</guid>
       <description></description>
     </item>
     
     <item>
       <title>I18n</title>
-      <link>http://www.example.com/tags/i18n/</link>
+      <link>http://martin.rbind.io/tags/i18n/</link>
       <pubDate>Wed, 27 Sep 2017 14:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/i18n/</guid>
+      <guid>http://martin.rbind.io/tags/i18n/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Menus</title>
-      <link>http://www.example.com/tags/menus/</link>
+      <link>http://martin.rbind.io/tags/menus/</link>
       <pubDate>Wed, 27 Sep 2017 10:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/menus/</guid>
+      <guid>http://martin.rbind.io/tags/menus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Opengraph</title>
-      <link>http://www.example.com/tags/og/</link>
+      <link>http://martin.rbind.io/tags/og/</link>
       <pubDate>Tue, 26 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/og/</guid>
+      <guid>http://martin.rbind.io/tags/og/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plot</title>
-      <link>http://www.example.com/tags/plot/</link>
+      <link>http://martin.rbind.io/tags/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://www.example.com/tags/plot/</guid>
+      <guid>http://martin.rbind.io/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pygments</title>
-      <link>http://www.example.com/tags/pygments/</link>
+      <link>http://martin.rbind.io/tags/pygments/</link>
       <pubDate>Wed, 27 Sep 2017 12:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/pygments/</guid>
+      <guid>http://martin.rbind.io/tags/pygments/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>http://www.example.com/tags/r-markdown/</link>
+      <link>http://martin.rbind.io/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://www.example.com/tags/r-markdown/</guid>
+      <guid>http://martin.rbind.io/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression</title>
-      <link>http://www.example.com/tags/regression/</link>
+      <link>http://martin.rbind.io/tags/regression/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://www.example.com/tags/regression/</guid>
+      <guid>http://martin.rbind.io/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shortcode</title>
-      <link>http://www.example.com/tags/shortcode/</link>
+      <link>http://martin.rbind.io/tags/shortcode/</link>
       <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/shortcode/</guid>
+      <guid>http://martin.rbind.io/tags/shortcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Translation</title>
-      <link>http://www.example.com/tags/translation/</link>
+      <link>http://martin.rbind.io/tags/translation/</link>
       <pubDate>Wed, 27 Sep 2017 14:00:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/translation/</guid>
+      <guid>http://martin.rbind.io/tags/translation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Widgets</title>
-      <link>http://www.example.com/tags/widgets/</link>
+      <link>http://martin.rbind.io/tags/widgets/</link>
       <pubDate>Wed, 07 Feb 2018 18:30:00 +0600</pubDate>
       
-      <guid>http://www.example.com/tags/widgets/</guid>
+      <guid>http://martin.rbind.io/tags/widgets/</guid>
       <description></description>
     </item>
     
