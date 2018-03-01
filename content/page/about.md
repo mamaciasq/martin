@@ -1,8 +1,8 @@
 ---
-title: About
+title: Acerca
 description: Statistics
 menu: main
 weight: -210
 ---
 
-I'm under construction
+En construcción

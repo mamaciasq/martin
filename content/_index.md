@@ -3,5 +3,5 @@ title: Home
 menu: main
 weight: -270
 ---
-> _Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write_ 
-> — Samuel S. Wilks paraphrasing Herbert G. Wells
+> _Algún día, para ser un ciudadano eficiente, el pensamiento estadístico será tan necesario  como la habilidad de leer y escribir_ 
+> — Samuel S. Wilks parafraseando a Herbert G. Wells
