@@ -1,8 +1,8 @@
 ---
 date: 2017-09-28T08:00:00+06:00
-title: Typography
-authors: ["muniftanjim"]
-slug: typography
+title: Tesis
+authors: ["mamaciasq"]
+slug: tesis
 menu: main
 weight: -230
 ---
