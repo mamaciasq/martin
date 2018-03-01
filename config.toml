@@ -68,9 +68,9 @@ titleSeparator = "•"
 [params.social]
 email = "martinandresmacias@gmail.com"
 github = "mamaciasq"
-linkedin = "www.linkedin.com/in/martín-andrés-macías-quintero-30111b159"
+linkedin = "bit.ly/2F3EhEM"
 twitter = "MartinMacias"
-google_scholar = "bit.ly/2F1FwEx"
+google_scholar = "bit.ly/2t617Gp"
 
 [params.social.config]
 platforms = ["github","twitter","email","linkedin","google_scholar"]
