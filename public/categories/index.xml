@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Martín Macías</title>
-    <link>http://martin.rbind.io/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://martin.rbind.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Features</title>
-      <link>http://martin.rbind.io/categories/features/</link>
+      <link>/categories/features/</link>
       <pubDate>Wed, 07 Feb 2018 19:15:00 +0600</pubDate>
       
-      <guid>http://martin.rbind.io/categories/features/</guid>
+      <guid>/categories/features/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Others</title>
-      <link>http://martin.rbind.io/categories/others/</link>
+      <link>/categories/others/</link>
       <pubDate>Mon, 25 Sep 2017 08:00:00 +0600</pubDate>
       
-      <guid>http://martin.rbind.io/categories/others/</guid>
+      <guid>/categories/others/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://martin.rbind.io/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>http://martin.rbind.io/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>http://martin.rbind.io/categories/tutorial/</link>
+      <link>/categories/tutorial/</link>
       <pubDate>Mon, 25 Sep 2017 06:00:00 +0600</pubDate>
       
-      <guid>http://martin.rbind.io/categories/tutorial/</guid>
+      <guid>/categories/tutorial/</guid>
       <description></description>
     </item>
     

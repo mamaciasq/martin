@@ -3,218 +3,218 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://martin.rbind.io/</loc>
+    <loc>/</loc>
     <lastmod>2017-09-28T08:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/</loc>
+    <loc>/docs/</loc>
     <lastmod>2018-02-09T16:15:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/typography/</loc>
+    <loc>/typography/</loc>
     <lastmod>2017-09-28T08:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/sidebar/</loc>
+    <loc>/docs/sidebar/</loc>
     <lastmod>2018-02-09T16:15:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/widgets/</loc>
+    <loc>/docs/widgets/</loc>
     <lastmod>2018-02-12T23:40:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/shortcodes/</loc>
+    <loc>/docs/shortcodes/</loc>
     <lastmod>2017-10-05T20:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/cover-image/</loc>
+    <loc>/docs/cover-image/</loc>
     <lastmod>2017-09-30T14:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/translation/</loc>
+    <loc>/docs/translation/</loc>
     <lastmod>2017-09-27T14:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/syntax-highlighting/</loc>
+    <loc>/docs/syntax-highlighting/</loc>
     <lastmod>2017-09-27T12:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/menus/</loc>
+    <loc>/docs/menus/</loc>
     <lastmod>2017-10-05T16:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/opengraph/</loc>
+    <loc>/docs/opengraph/</loc>
     <lastmod>2017-10-11T18:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/authors/</loc>
+    <loc>/docs/authors/</loc>
     <lastmod>2017-10-11T17:30:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/config-file/</loc>
+    <loc>/docs/config-file/</loc>
     <lastmod>2018-02-08T15:15:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/updating/</loc>
+    <loc>/docs/updating/</loc>
     <lastmod>2018-02-08T14:45:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/docs/installation/</loc>
+    <loc>/docs/installation/</loc>
     <lastmod>2018-02-08T15:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/authors/</loc>
+    <loc>/tags/authors/</loc>
     <lastmod>2017-10-11T17:30:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/authors/</loc>
+    <loc>/authors/</loc>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/chroma/</loc>
+    <loc>/tags/chroma/</loc>
     <lastmod>2017-09-27T12:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/config/</loc>
+    <loc>/tags/config/</loc>
     <lastmod>2018-02-09T16:15:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/categories/features/</loc>
+    <loc>/categories/features/</loc>
     <lastmod>2018-02-09T16:15:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/i18n/</loc>
+    <loc>/tags/i18n/</loc>
     <lastmod>2017-09-27T14:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/menus/</loc>
+    <loc>/tags/menus/</loc>
     <lastmod>2017-10-05T16:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/authors/muniftanjim/</loc>
+    <loc>/authors/muniftanjim/</loc>
     <lastmod>2017-09-28T08:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/og/</loc>
+    <loc>/tags/og/</loc>
     <lastmod>2017-10-11T18:00:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/categories/others/</loc>
+    <loc>/categories/others/</loc>
     <lastmod>2018-02-08T15:15:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/page/</loc>
+    <loc>/page/</loc>
     <lastmod>2017-09-28T08:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/plot/</loc>
+    <loc>/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/pygments/</loc>
+    <loc>/tags/pygments/</loc>
     <lastmod>2017-09-27T12:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/categories/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/r-markdown/</loc>
+    <loc>/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/regression/</loc>
+    <loc>/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/shortcode/</loc>
+    <loc>/tags/shortcode/</loc>
     <lastmod>2017-10-05T20:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2017-10-11T17:30:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/translation/</loc>
+    <loc>/tags/translation/</loc>
     <lastmod>2017-09-27T14:00:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/categories/tutorial/</loc>
+    <loc>/categories/tutorial/</loc>
     <lastmod>2018-02-08T14:45:00+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://martin.rbind.io/tags/widgets/</loc>
+    <loc>/tags/widgets/</loc>
     <lastmod>2018-02-12T23:40:00+06:00</lastmod>
     <priority>0</priority>
   </url>
