@@ -248,30 +248,27 @@ Línea de fondo:
 
 Use el addin **New Post**. Pero necesita la consola para hacer esto, por lo que debe detener `blogdown :: serve_site` haciendo clic en el botón rojo **Stop** primero. El addin es una interfaz brillante que ejecuta este código en la consola: `blogdown ::: new_post_addin ()`. Entonces, su consola necesita estar desbloqueada para que se ejecute. También necesita estar "dentro" de su proyecto de RStudio o no funcionará.
 
-### Draft posts
+### Borrador de posts
 
-Relevant reading:
+Lecturas relevantes:
 
-* [`blogdown` book chapter on building a website for local preview](https://bookdown.org/yihui/blogdown/local-preview.html)
+* [Capítulo del libro `blogdown` sobre construcción de un sitio web para visualización local](https://bookdown.org/yihui/blogdown/local-preview.html)
 
-Whether you do a markdown or R Markdown post (see below), you should know that in the YAML front matter of your new file, you can add `draft: TRUE` and you will be able to preview your post using `blogdown::serve_site()`, but conveniently your post will not show up on your deployed site until you set it to false. Because this is a function built into Hugo, all posts (draft or not) will still end up in your GitHub repo though.
+Ya sea que haga un markdown o un R Markdown (ver más abajo), debe saber que al principio del YAML de su nuevo archivo, puede agregar `draft: TRUE` y podrá obtener una vista previa de su publicación usando `blogdown::serve_site()`, pero convenientemente su publicación no aparecerá en su sitio desplegado hasta que configure esta opción en falso. Como esto es una función integrada en Hugo, todas las publicaciones (borrador o no) terminarán en su repositorio de GitHub.
 
+### Nuevos posts en markdown
 
+Escoja uno de los dos métodos:
 
-
-### New markdown posts
-
-Pick one of 2 methods:
-
-1. Use the **New Post** addin and with the radio button at the bottom select **Format: Markdown** (recommended)
-2. Use the console to author a new `.md` post:
+1. Use el addin **New Post** y con el botón redondo escoja  **Format: Markdown** (recomendado)
+2. Use la consola para crear un nuevo post `.md`:
 
 ```
 blogdown::new_post()
-blogdown::new_post(rmd = FALSE) # false is the default!
+blogdown::new_post(rmd = FALSE) # false está por defecto!
 ```
 
-Here are the `?new_post` arguments:
+Aquí están los argumentos de `?new_post`:
 
 ```
 new_post(title, kind = "default", open = interactive(), 
@@ -282,28 +279,28 @@ new_post(title, kind = "default", open = interactive(),
 ```
 
 {{% alert note %}}
-Remember to use the **Serve Site** addin again so that you can immediately view your changes with every save using *LiveReload*.
+Recuerde usar el addin **Serve Site** para que pueda ver sus cambios inmediatamente con cada guardado usando *LiveReload*.
 {{% /alert %}}
 
-### New RMarkdown posts
+### Nuevos posts RMarkdown
 
-Again, you have your choice of one of 2 methods:
+Una vez más, puede escoger mediante dos formas distintas:
 
-1. Use the **New Post** addin and with the radio button at the bottom select **Format: RMarkdown** (recommended)
-2. Use the console to author a new `.Rmd` post:
+1. Use el addin **New Post** y con el botón redondo escoja  **Format: R Markdown** (recomendado)
+2. Use la consola para crear un nuevo post `.Rmd`:
 
 ```
 blogdown::new_post(rmd = TRUE) # false is the default!
 ```
 
 
-After you edit your `.Rmd` post, in addition to saving the changes in your `.Rmd` file, you *must* use `blogdown::serve_site`- this is how the output `html` file needs to be generated.   
+Después de editar su post `.Rmd`, además de guardar los cambios en su archivo `.Rmd`, debe *must* usar `blogdown::serve_site`- esta es la forma en que el archivo de salida  `html` necesita ser generado.   
 
 {{% alert warning %}}
-Do *not* knit your `.Rmd` posts- use `blogdown::serve_site` instead. If you happen to hit the knit button, just **Serve Site** again to rewrite the `.html` file.
+*No* le haga knit a sus post`.Rmd`- en lugar de eso, use `blogdown::serve_site`. Si le hace click al botón knit, haga **Serve Site** de nuevo para reescribir el archivo `.html`.
 {{% /alert %}}
 
-Ultimately, your [YAML front matter looks something like this](https://bookdown.org/yihui/blogdown/output-format.html#output-format); note that some but not all features of `rmarkdown::html_document` [are supported in `blogdown`](https://bookdown.org/yihui/blogdown/output-format.html#fn15):
+Por último, su [encabezado de YAMLdebe lucir similar a esto](https://bookdown.org/yihui/blogdown/output-format.html#output-format); note que algunos mas no todas las prestaciones de `rmarkdown::html_document` [son soportadas en `blogdown`](https://bookdown.org/yihui/blogdown/output-format.html#fn15):
 
 ```
 ---
@@ -322,37 +319,38 @@ output:
 
 
 {{% alert note %}}
-Remember to use the **Serve Site** addin again so that you can immediately view your changes with every save using *LiveReload* and your `.html` file is properly output.
+Recuerde utilizar el complemento **Serve Site** de nuevo para que pueda ver inmediatamente sus cambios con cada operación de guardado utilizando *LiveReload* y su archivo `.html` se imprimirá correctamente.
 {{% /alert %}}
 
 
 
-### Adding images to a post
+### Agregando imágenes a un post
 
-If you want to include an image that is not a figure created from an R chunk, the [recommended method](https://github.com/rstudio/blogdown/issues/45) is to: 
+Si desea incluir una imagen que no sea una figura creada a partir de un chunk de R, el [método recomendado](https://github.com/rstudio/blogdown/issues/45) es: 
 
-1. Add the image to your `/static/img/` folder, then 
-2. Reference the image using the relative file path as follows:
+1. Agregar la imagen a su carpeta `/static/img/`, luego 
+2. Hacer referencia a la imagen usando la ruta relativa del archivo de la siguiente manera:
 
 ```
 ![my-image](/img/my-image.png)
 ```
 
 
-# Deploy in Netlify
+# Publicación en Netlify
 
 ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-5.png)
 
-Deploying in Netlify through GitHub is smooth. Yihui and Amber give some [beginner instructions](https://bookdown.org/yihui/blogdown/deployment.html), but Netlify is so easy, I recommend that you skip dragging your `public` folder in and instead [automate the process through GitHub](https://bookdown.org/yihui/blogdown/netlify.html#netlify).
+La publicación en Netlify a través de GitHub es sencilla. Yihui y Amber dan algunas [instrucciones para principiantes](https://bookdown.org/yihui/blogdown/deployment.html), pero Netlify es muy fácil, le recomiendo que omita arrastrar su carpeta `public` y en su lugar [automatice el proceso a través de GitHub](https://bookdown.org/yihui/blogdown/netlify.html#netlify).
 
-1. When you are ready to deploy, commit your changes and push to GitHub, then go online to [Netlify](https://www.netlify.com). 
-2. Click on the **Sign Up** button and sign up using your existing GitHub account (no need to create another account)
-3. Log in, and select: `New site from Git -> Continuous Deployment: GitHub`.
-4. From there, Netlify will allow you to select from your existing GitHub repositories. You'll pick the repo you've been working from with `blogdown`, then you'll configure your build. This involves specifying two important things: the build command and the publish directory (this should be `public`).
+1. Cuando esté listo para publicar, haga commit a sus cambios y súbalos a GitHub, luego vaya en línea a [Netlify](https://www.netlify.com).
+2. Haga clic en el botón **Sign up** e inscríbase usando su cuenta existente de GitHub (no es necesario crear otra cuenta)
+3. Inicie sesión y seleccione: `New site from Git -> Continuous Deployment: GitHub`.
+4. Desde allí, Netlify le permitirá seleccionar de sus repositorios GitHub existentes. Escogerá el repositorio con el que ha estado trabajando con `blogdown`, luego configurará su compilación. Esto implica especificar dos cosas importantes: el comando de compilación y el directorio de publicación (que debe ser `public`).
 
-    * More about the build command from [Netlify](https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives): *"For Hugo hosting, `hugo` will build and deploy with the version 0.17 of `hugo`. You can specify a specific `hugo` release like this: `hugo_0.15`. Currently `0.13`, `0.14`, `0.15`, `0.16`, `0.17`, `0.18` and `0.19` are supported. For version `0.20` and above, you’ll need to create a Build environment variable called `HUGO_VERSION` and set it to the version of your choice."* I opted for the former, and specified `hugo_0.19`. 
+
+    * Más acerca del comando de compilación de [Netlify](https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives): *"Para hosting de Hugo, `hugo` construirá y publicará con la versión 0.17 de `hugo`. Puede especificar una versión de `hugo` como esta: `hugo_0.15`. Actualmente las versiones `0.13`, `0.14`, `0.15`, `0.16`, `0.17`, `0.18` y `0.19` están soportadas. Para la version `0.20` y superiores, necesitará crear un ambiente de construcción llamado `HUGO_VERSION` y configurarlo a la versión de su elección."* Yo opté por la primera opción, y especifiqué `hugo_0.19`. 
     
-You can check your `hugo` version in terminal using the command [`hugo version`](https://gohugo.io/overview/quickstart/). This is what my output looked like, so I could run version `0.20` if I wanted to through Netlify, but I went with `0.19` and it works just fine.
+Puede verificar su versión de `hugo` en el terminal usando el comando [`hugo version`](https://gohugo.io/overview/quickstart/). Así es como se veía mi salida, así que podría ejecutar la versión `0.20` si quisiera a través de Netlify, pero opté por `0.19` y funciona muy bien.
 
 ```
 $ hugo version
@@ -363,33 +361,32 @@ Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-0
 
 
 
-![Screenshot above: Basic build settings in Netlify](/img/posts/2017-06-12-up-and-running-with-blogdown/netlify-build-settings.png)
+![Screenshot above: Configuración básica en Netlify](/img/posts/2017-06-12-up-and-running-with-blogdown/netlify-build-settings.png)
 
-Netlify will deploy your site and assign you a random subdomain name of the form `random-word-12345.netlify.com`. Mine was particularly unfortunate, with the random word `garbage-collector-janice`. You should know that you can change this; I changed mine to `apreshill.netlify.com`. 
-
+Netlify publicará su sitio y le asignará un nombre de subdominio aleatorio del formulario `random-word-12345.netlify.com`. El mío fue particularmente desafortunado, con la palabra al azar `garbage-collector-janice`. Debe saber que puede cambiar esto; Cambié el mío a `martin.netlify.com`.
 
 {{% alert note %}}
-Anytime you change your subdomain name, you need to update the `baseurl` in your `config.toml` file (so I changed mine to baseurl = "https://apreshill.netlify.com/").
+Cada vez que cambie el nombre de su subdominio, debe actualizar `baseurl` en su archivo `config.toml` (así que cambié el mío a baseurl = "https://martin.netlify.com/").
 {{% /alert %}}
 
 
-At this point, you should be up and running with `blogdown`, GitHub, and Netlify, but here are some ideas if you want to go further...
+En este punto, debería estar en funcionamiento con `blogdown`, GitHub y Netlify, pero aquí hay algunas ideas si quiere ir más lejos...
 
-# Going further
+# Yendo más lejos
 
-## Custom CSS
+## CSS personalizado
 
-I like to tinker with default theme settings like colors and fonts. Every Hugo theme is structured a little differently, but if you are interested, you can check out [my custom css](https://github.com/apreshill/apreshill/blob/master/static/css/blue.css) to see how I customized the academic theme, which provides a way to link to a custom CSS file in the `config.toml` file:
+Me gusta jugar con la configuración predeterminada del tema, como colores y fuentes. Cada tema de Hugo está estructurado de forma un poco diferente, pero si está interesado, puede consultar [mi css personalizado](https://github.com/apreshill/apreshill/blob/master/static/css/blue.css) para ver cómo he personalizado el tema académico, que proporciona una forma de vincular a un archivo CSS personalizado en el archivo `config.toml`:
 
 ```
-  # Link custom CSS and JS assets
+  # Enlaza CSS y JS personalizados
   #   (relative to /static/css and /static/js respectively)
   custom_css = ["blue.css"]
 ```
 
 ## Formspree
 
-I used [Formspree](https://formspree.io) to make a contact form, which is an online service (managed on [GitHub](https://github.com/formspree/formspree)) that allows you to add an HTML form to your static site. No registration, just use the form and confirm your email address once. I added the following code into [my contact widget](https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html):
+Usé [Formspree](https://formspree.io) para hacer un formulario de contacto, que es un servicio en línea (manejado en [GitHub](https://github.com/formspree/formspree)) que le permite agregar un formulario HTML a su sitio estático. Sin registro, solo use el formulario y confirme su dirección de correo electrónico una vez. Agregué el siguiente código en [mi widget de contacto](https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html):
 
 ```
 <form action="https://formspree.io/your@email.com" method="POST">
@@ -408,12 +405,12 @@ I used [Formspree](https://formspree.io) to make a contact form, which is an onl
 
 
 
-## `*.rbind.io` domain names
+## Nombres de domimio`*.rbind.io`
 
-You may want a different [domain name](https://bookdown.org/yihui/blogdown/domain-name.html) than the one provided by Netlify. I opted for a free subdomain `*.rbind.io` offered by RStudio. To do the same, head over to the [rbind/support GitHub page](https://github.com/rbind/support/issues) and open a new issue. All you need to do is let them know what your Netlify subdomain name is (`*.netlify.com`), and what you want your subdomain name to be (`*.rbind.io`). The [awesome `rbind` support team](https://support.rbind.io) will help you take it from there! 
+Quizás quiera un [nombre de dominio diferente](https://bookdown.org/yihui/blogdown/domain-name.html) que el proveído por Netlify. Yo opté por un subdominio gratuito `*.rbind.io` ofrecido por RStudio. Para hacer lo mismo, diríjase a la [página de GitHub de soporte rbind](https://github.com/rbind/support/issues) y abra un nuevo issue. Todo lo que debe hacer es decirles cuál es su nombre de subdominio de Netlify (`*.netlify.com`), y qué nombre de subdominio quiere (`*.rbind.io`). El [impresionante soporte del equipo de `rbind`](https://support.rbind.io) le ayudará! 
 
 {{% alert note %}}
-Again, you will need to update the `baseurl` in your `config.toml` file to reflect your new rbind subdomain name (so mine is baseurl = "https://alison.rbind.io/").
+De nuevo, necesitará actualizar el `baseurl` en su archivo `config.toml` para que refleje su nuevo nombre de subdominio (el mío es baseurl = "https://martin.rbind.io/").
 {{% /alert %}}
 
 
@@ -421,6 +418,6 @@ Again, you will need to update the `baseurl` in your `config.toml` file to refle
 
 ## Have fun!
 
-Lastly, don't forget to just have fun with it. Happy `blogdown`ing!
+Por último, no se olvide de pasarla bien. Feliz `blogdown`ing!
 
 <iframe src="https://giphy.com/embed/13Y6LAZJqRspI4" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-seinfeld-elaine-benes-13Y6LAZJqRspI4">via GIPHY</a></p>

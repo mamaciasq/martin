@@ -20,12 +20,12 @@ output:
 <ul>
 <li><a href="#lea-sobre-blogdown"><span class="toc-section-number">1</span> Lea sobre blogdown</a></li>
 <li><a href="#advertencias-descargos-de-responsabilidad-etc."><span class="toc-section-number">2</span> Advertencias, descargos de responsabilidad, etc.</a></li>
-<li><a href="#in-github"><span class="toc-section-number">3</span> In GitHub</a></li>
-<li><a href="#in-terminal"><span class="toc-section-number">4</span> In terminal</a></li>
-<li><a href="#in-rstudio"><span class="toc-section-number">5</span> In RStudio</a></li>
-<li><a href="#build-your-site-in-rstudio"><span class="toc-section-number">6</span> Build your site in RStudio</a></li>
-<li><a href="#deploy-in-netlify"><span class="toc-section-number">7</span> Deploy in Netlify</a></li>
-<li><a href="#going-further"><span class="toc-section-number">8</span> Going further</a></li>
+<li><a href="#en-github"><span class="toc-section-number">3</span> En GitHub</a></li>
+<li><a href="#en-el-terminal"><span class="toc-section-number">4</span> En el terminal</a></li>
+<li><a href="#en-rstudio"><span class="toc-section-number">5</span> En RStudio</a></li>
+<li><a href="#construya-su-sitio-en-rstudio"><span class="toc-section-number">6</span> Construya su sitio en RStudio</a></li>
+<li><a href="#publicacion-en-netlify"><span class="toc-section-number">7</span> Publicación en Netlify</a></li>
+<li><a href="#yendo-mas-lejos"><span class="toc-section-number">8</span> Yendo más lejos</a></li>
 </ul>
 </div>
 
@@ -52,210 +52,211 @@ output:
 </ul>
 <p>También tengo <a href="https://developer.apple.com/xcode/">Xcode</a> y <a href="https://brew.sh">Homebrew</a> installed- <a href="https://bookdown.org/yihui/blogdown/installation.html">probablemente necesitará esto para descargar Hugo</a>. Si no tiene ninguno pero está en un mac, este enlace puede ayudar:</p>
 <ul>
-<li><a href="https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">How to install Xcode, Homebrew, Git, RVM, Ruby &amp; Rails on Mac OS X</a></li>
+<li><a href="https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">¿Cómo instalar Xcode, Homebrew, Git, RVM, Ruby &amp; Rails en Mac OS X</a></li>
 </ul>
-<p>Finally, I did not want to learn more about a lot of things! For instance, the nitty gritty of static site generators and how domain names work. I am a new mom, and just in the process of writing all this up, I filled up my tea mug twice with ice cold water, and filled my water bottle with scalding hot water. So, where offered, I followed the advice of Yihui and Amber. For example:</p>
+<p>Para más información sobre cosas de interés que se usan, podría consultar:</p>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/deployment.html">“Considering the cost and friendliness to beginners, we currently recommend Netlify.”</a> Sold.</li>
-<li><a href="https://bookdown.org/yihui/blogdown/netlify.html">“If you are not familiar with domain names or do not want to learn more about them, an option for your consideration is a free subdomain <code>*.rbind.io</code> offered by RStudio, Inc.”</a>. Done.</li>
+<li><a href="https://bookdown.org/yihui/blogdown/deployment.html">“Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify.”</a>.</li>
+<li><a href="https://bookdown.org/yihui/blogdown/netlify.html">“Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito <code>*.rbind.io</code> ofrecido por RStudio, Inc.”</a>.</li>
 </ul>
 </div>
-<div id="in-github" class="section level1">
-<h1><span class="header-section-number">3</span> In GitHub</h1>
+<div id="en-github" class="section level1">
+<h1><span class="header-section-number">3</span> En GitHub</h1>
 <div class="figure">
 <img src="/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-1.png" />
 
 </div>
 <ol style="list-style-type: decimal">
-<li><p>Go online to your <a href="https://github.com">GitHub</a> account, and create a new repository (check to initialize with a <code>README</code> but don’t add <code>.gitignore</code>- this will be taken care of later). For naming your repo, consider your future deployment plan:</p>
+<li><p>Vaya en línea a su cuenta de <a href="https://github.com">GitHub</a>, y cree un nuevo repositorio (Dele check a inicializarlo con un <code>README</code> pero no agregue <code>.gitignore</code>- de esto se encargará más adelante). Para nombrar su repositorio, considere su futuro plan de publicación:</p>
 <ul>
-<li>If you are going to use <a href="https://www.netlify.com">Netlify</a> to host the site, you can name this repository anything you want! {{% alert note %}} You can see some of the repo names used by members of the <code>rbind</code> organization <a href="https://github.com/rbind/repositories">here</a>. {{% /alert %}}</li>
-<li>If you want to host your site as a <a href="https://pages.github.com">GitHub Page</a>, you should name your repository <code>yourgithubusername.github.io</code> (so mine would have been <code>apreshill.github.io</code>). If you are going this route, I suggest you follow <a href="https://proquestionasker.github.io/blog/Making_Site/">Amber’s instructions</a> instead of mine!</li>
+<li>Si va a utilizar <a href="https://www.netlify.com">Netlify</a> para alojar la página, ¡puede nombrar el repositorio como quiera! {{% alert note %}} Puede ver algunos de los nombres de los repositorios usados por miembros de la organización <code>rbind</code> <a href="https://github.com/rbind/repositories">aquí</a>. {{% /alert %}}</li>
+<li>Si quiere alojar su sitio como una <a href="https://pages.github.com">GitHub Page</a>, debería nombrar su repositorio como <code>yourgithubusername.github.io</code> (así que el mío hubiera sido <code>martin.github.io</code>). Si va por esta ruta, le sugiero que siga las <a href="https://proquestionasker.github.io/blog/Making_Site/">instrucciones de Amber</a> en vez de este!</li>
 </ul></li>
 </ol>
 <div class="figure">
-<img src="/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png" alt="Screenshot above: Creating a new repository in GitHub" />
-<p class="caption">Screenshot above: Creating a new repository in GitHub</p>
+<img src="/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png" alt="Screenshot de arriba: Crear un nuevo repositorio en GitHub" />
+<p class="caption">Screenshot de arriba: Crear un nuevo repositorio en GitHub</p>
 </div>
 <ol start="2" style="list-style-type: decimal">
-<li><p>Go to the main page of your new repository, and under the repository name, click the green <strong>Clone or download</strong> button.</p></li>
-<li><p>In the <strong>Clone with HTTPs</strong> section, click on the clipboard icon to copy the clone URL for your new repository. You’ll paste this text into terminal in the next section.</p></li>
+<li><p>Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde <strong>Clone or download</strong>.</p></li>
+<li><p>En la sección <strong>Clone with HTTPs</strong>, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección</p></li>
 </ol>
 </div>
-<div id="in-terminal" class="section level1">
-<h1><span class="header-section-number">4</span> In terminal</h1>
+<div id="en-el-terminal" class="section level1">
+<h1><span class="header-section-number">4</span> En el terminal</h1>
 <div class="figure">
 <img src="/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-2.png" />
 
 </div>
-<p>Now you will <a href="https://help.github.com/articles/cloning-a-repository/">clone your remote repository</a> and create a local copy on your computer so you can sync between the two locations (using terminal or your alternative command line tool for a Windows machine).</p>
+<p>Ahora <a href="https://help.github.com/articles/cloning-a-repository/">clone su repositorio remoto</a> y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)</p>
 <ol style="list-style-type: decimal">
-<li><p>Use <code>cd</code> to navigate into the directory where you want your repo to be</p></li>
-<li><p>Once there, type: <code>git clone [paste]</code>. So my command looked like this:</p></li>
+<li><p>Use <code>cd</code> para navegar dentro del directorio donde usted quiere que su repositorio esté</p></li>
+<li><p>Una vez esté ahí, digite: <code>git clone [paste]</code>. Entones mi comando sería así:</p></li>
 </ol>
-<pre><code>git clone https://github.com/apreshill/apreshill.git</code></pre>
-<p>And this is what printed to my terminal window:</p>
-<pre><code>Cloning into &#39;apreshill&#39;...
+<pre><code>git clone https://github.com/mamaciasq/martin.git</code></pre>
+<p>Y esto es lo que imprimió en mi ventana de terminal:</p>
+<pre><code>Cloning into &#39;martin&#39;...
 remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 Checking connectivity... done.</code></pre>
 <ol start="3" style="list-style-type: decimal">
-<li>Close terminal, you are done in there.</li>
+<li>Cierre el terminal, ya terminó ahí.</li>
 </ol>
 </div>
-<div id="in-rstudio" class="section level1">
-<h1><span class="header-section-number">5</span> In RStudio</h1>
+<div id="en-rstudio" class="section level1">
+<h1><span class="header-section-number">5</span> En RStudio</h1>
 <div class="figure">
 <img src="/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-3.png" />
 
 </div>
 <ol style="list-style-type: decimal">
-<li>Install <code>blogdown</code> from your RStudio console. If you already have <code>devtools</code> installed like I did, you can just use the second line below:</li>
+<li>Instale <code>blogdown</code> desde su consola de RStudio. Si usted ya ha instalado <code>devtools</code> como yo lo hice, solo necesita la segunda línea de las que se listan a continuación:</li>
 </ol>
 <pre><code>if (!requireNamespace(&quot;devtools&quot;)) install.packages(&quot;devtools&quot;)
 devtools::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>Install Hugo using the <code>blogdown</code> package helper function:</li>
+<li>Instale Hugo usando la función de ayuda el paquete <code>blogdown</code>:</li>
 </ol>
 <pre><code>blogdown::install_hugo()
-# or
+# o
 library(blogdown)
 install_hugo()</code></pre>
-<p>{{% alert note %}} This is where my instructions diverge from Ed’s- he states that <code>blogdown</code> won’t create a website in your root folder because the <code>README.md</code> file is already there. I didn’t find that to be the case- I tested this with a new site as well. If one way doesn’t work for you, try the other! {{% /alert %}}</p>
+<p>{{% alert note %}} Aquí es donde mis instrucciones divergen de las de Ed: afirma que <code>blogdown</code> no creará un sitio web en su carpeta raíz porque el archivo <code>README.md</code> ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra. {{% /alert %}}</p>
 <ol start="3" style="list-style-type: decimal">
-<li>Use the top menu buttons in RStudio to select <code>File -&gt; New Project -&gt; Existing Directory</code>, then browse to the directory on your computer where your GitHub repo is and click on the <strong>Create Project</strong> button.</li>
+<li>Use los botones del menú de arriba en RStudio para seleccionar <code>File -&gt; New Project -&gt; Existing Directory</code>, luego vaya al directorio en su computadora donde esté su repositorio de GitHub y haga click en el botón <strong>Create Project</strong>.</li>
 </ol>
 <div class="figure">
-<img src="/img/posts/2017-06-12-up-and-running-with-blogdown/r-project-existing-directory.png" alt="Screenshot above: Creating a new project in an existing directory in RStudio" />
-<p class="caption">Screenshot above: Creating a new project in an existing directory in RStudio</p>
+<img src="/img/posts/2017-06-12-up-and-running-with-blogdown/r-project-existing-directory.png" alt="Screenshot de arriba: Crear un nuevo proyecto en un directorio existente en RStudio" />
+<p class="caption">Screenshot de arriba: Crear un nuevo proyecto en un directorio existente en RStudio</p>
 </div>
 <ol start="4" style="list-style-type: decimal">
-<li>Now you should be “in” your project in RStudio. If you are using git for version control, edit your <code>*gitignore</code> file. This file should be viewable in your file viewer pane in RStudio. Below is what it should look like: the first four lines will automatically be in this file if you have set up your RStudio Project, but if you plan to use Netlify to deploy, you need to add the <code>public/</code> line (<a href="https://bookdown.org/yihui/blogdown/version-control.html">read about here</a>.)</li>
+<li>Ahora debería estar “dentro” de su proyecto en RStudio. Si está usando git para control de versiones, edite su archivo <code>*gitignore</code>. Este archivo debería estar visible en su panel visor de archivos en RStudio.</li>
 </ol>
+<p>This file should be viewable in your file viewer pane in RStudio. A continuación se muestra cómo debería ser: las primeras cuatro líneas estarán automáticamente en este archivo si ha configurado su proyecto de RStudio, pero si planea usar Netlify para implementarlo, debe agregar la línea <code>public/</code> (<a href="https://bookdown.org/yihui/blogdown/version-control.html">lea al repescto aquí</a>.)</p>
 <pre><code>.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 blogdown
-.DS_Store # if a windows user, Thumbs.db instead
-public/ # if using Netlify</code></pre>
+.DS_Store # si es un usuario de windows, use Thumbs.db
+public/ # si está usando Netlify</code></pre>
 </div>
-<div id="build-your-site-in-rstudio" class="section level1">
-<h1><span class="header-section-number">6</span> Build your site in RStudio</h1>
+<div id="construya-su-sitio-en-rstudio" class="section level1">
+<h1><span class="header-section-number">6</span> Construya su sitio en RStudio</h1>
 <div class="figure">
 <img src="/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-4.png" />
 
 </div>
-<p>Now you can finally build your site using the <code>blogdown::new_site()</code> function. But <strong>first</strong> you should at least think about themes…</p>
-<div id="picking-a-theme" class="section level2">
-<h2><span class="header-section-number">6.1</span> Picking a theme</h2>
-<p>There are over 90 <a href="https://themes.gohugo.io">Hugo themes</a>. So I went back to the <code>blogdown</code> book. Thankfully, Yihui and Amber offer <a href="https://bookdown.org/yihui/blogdown/other-themes.html">“to save you some time, we list a few themes below that match our taste…”</a>. Huzzah- I went with <a href="https://github.com/gcushen/hugo-academic">hugo-academic</a>! Whatever theme you choose, you’ll need to pick one of 3 ways to make your new site:</p>
+<p>Ahora puede finalmente coonstruir su sitio usando la función <code>blogdown::new_site()</code>. Pero <strong>primero</strong> debería al menos pensar en los temas…</p>
+<div id="escogiendo-un-tema" class="section level2">
+<h2><span class="header-section-number">6.1</span> Escogiendo un tema</h2>
+<p>Hay acerca de 90 <a href="https://themes.gohugo.io">temas de Hugo</a>. Así que volví al libro <code>blogdown</code>. Afortunadamente, Yihui y Amber se ofrecieron <a href="https://bookdown.org/yihui/blogdown/other-themes.html">“a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto…”</a>. Fui a <a href="https://github.com/gcushen/hugo-academic">hugo-academic</a>! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:</p>
 <ol style="list-style-type: decimal">
-<li>If you are happy with the default theme, which is the lithium theme, you can use:</li>
+<li>Si está feliz con el tema ofrecido por defecto, que es el lithium theme, puede usar:</li>
 </ol>
-<pre><code>blogdown::new_site() # default theme is lithium</code></pre>
+<pre><code>blogdown::new_site() # el tema por defecto es lithium</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>If you want a theme other than the default, you can specify the theme at the same time as you call the <code>new_site</code> function:</li>
+<li>Si desea un tema distinto al predeterminado, puede especificar el tema al mismo tiempo que llama a la función <code>new_site</code>:</li>
 </ol>
-<pre><code># for example, create a new site with the academic theme
+<pre><code># por ejemplo, cree un sitio nuevo con el tema academic-theme
 blogdown::new_site(theme = &quot;gcushen/hugo-academic&quot;, theme_example = TRUE)</code></pre>
 <ol start="3" style="list-style-type: decimal">
-<li>If instead you want to add the theme later (like I did, because I didn’t see the above example until it was too late!), you can do this:</li>
+<li>Si, por el contrario, desea agregar el tema más tarde (como hice, porque no vi el ejemplo anterior hasta que fue demasiado tarde), puede hacer esto:</li>
 </ol>
 <pre><code>library(blogdown)
-new_site() # default theme is lithium
-# need to stop serving so can use the console again
+new_site() # el tema por defecto es lithium
+# debe dejar de servir para poder usar la consola nuevamente
 install_theme(&quot;gcushen/hugo-academic&quot;, theme_example = TRUE, update_config = TRUE)</code></pre>
-<p>{{% alert note %}} Now is a good time to re-read about <code>blogdown::serve_site()</code> and <a href="https://bookdown.org/yihui/blogdown/a-quick-example.html">how <em>LiveReload</em> works</a> (and how it blocks your R console by default) {{% /alert %}}</p>
-<p>I recommend setting <code>theme_example = TRUE</code>- some themes won’t provide an example site, but the academic theme did and I found it helpful to see. You can always delete the example content.</p>
+<p>{{% alert note %}} Ahora es un buen momento para re-leer sobre <code>blogdown::serve_site()</code> y <a href="https://bookdown.org/yihui/blogdown/a-quick-example.html">cómo trabaja <em>LiveReload</em></a> (y cómo esto bloquea su consola de R por defecto) {{% /alert %}}</p>
+<p>Recomiendo configurar <code>theme_example = TRUE</code>- algunos temas no proporcionarán un sitio de ejemplo, pero el tema académico sí y me pareció útil verlo. Siempre puede eliminar el contenido del ejemplo.</p>
 </div>
-<div id="update-project-options" class="section level2">
-<h2><span class="header-section-number">6.2</span> Update project options</h2>
-<p>In your project in RStudio, go to the top menu bar of RStudio and select <code>Tools -&gt; Project Options</code> and update following <a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html#fig:project-options">Yihui and Amber’s instructions</a>.</p>
+<div id="actualizar-opciones-de-proyecto" class="section level2">
+<h2><span class="header-section-number">6.2</span> Actualizar opciones de proyecto</h2>
+<p>En su proyecto en RStudio, vaya a la barra de menús superior de RStudio y seleccione <code>Tools -&gt; Project Options</code> y actualice siguiendo las <a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html#fig:project-options">instrucciones de Yihui y Amber</a>.</p>
 </div>
-<div id="edit-your-configurations" class="section level2">
-<h2><span class="header-section-number">6.3</span> Edit your configurations</h2>
-<p>Relevant reading:</p>
+<div id="edite-sus-configuraciones" class="section level2">
+<h2><span class="header-section-number">6.3</span> Edite sus configuraciones</h2>
+<p>Lecturas relevantes:</p>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/configuration.html"><code>blogdown</code> book chapter on configuration</a></li>
-<li><a href="https://proquestionasker.github.io/blog/Making_Site/#site-configuration">Additional detail from Amber</a></li>
-<li>You can also view <a href="https://github.com/apreshill/apreshill/blob/master/config.toml">my <code>config.toml</code> file</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/configuration.html">capítulo del libro<code>blogdown</code> sobre configuración</a></li>
+<li><a href="https://proquestionasker.github.io/blog/Making_Site/#site-configuration">Detalles adicionales de Amber</a></li>
+<li>También puede ver <a href="https://github.com/apreshill/apreshill/blob/master/config.toml">mi archivo de configuración <code>config.toml</code></a></li>
 </ul>
-<p>Now, edit the <code>baseurl</code> in your <code>config.toml</code> file. The URL <em>should always</em> end with a <code>/</code> trailing slash. At this point, you probably haven’t deployed your site yet, so to view it locally you can use the <strong>Serve Site</strong> add-in, or run the <code>blogdown::serve_site</code> function. Both of these baseurls worked for me when viewing locally:</p>
+<p>Ahora, edite el <code>baseurl</code> en su archivo <code>config.toml</code>. El URL <em>siempre debería</em> terminar con un slash <code>/</code> . En este punto, probablemente aún no ha publicado su sitio, sin embargo puede verlo son el add-in <strong>Serve Site</strong>, o corriendo la función <code>blogdown::serve_site</code>. Para mí funcionarons ambos baseurl que presento a continuación:</p>
 <pre><code>baseurl = &quot;https://example.com/&quot;
 baseurl = &quot;/&quot;</code></pre>
-<p>{{% alert warning %}} Make sure that the <code>baseurl =</code> listed ends with a trailing slash <code>/</code>! {{% /alert %}}</p>
-<p>Go ahead and edit all the other elements in the <code>config.toml</code> file now as you please- this is how you personalize your site!</p>
+<p>{{% alert warning %}} Asegúrese de que el <code>baseurl =</code> que puso, termine con un slash <code>/</code>! {{% /alert %}}</p>
+<p>Continúe y edita todos los demás elementos en el archivo <code>config.toml</code> ahora como quiera; ¡así es como personaliza su sitio!</p>
 </div>
-<div id="addins-workflow" class="section level2">
-<h2><span class="header-section-number">6.4</span> Addins &amp; workflow</h2>
-<p>Relevant reading:</p>
+<div id="addins-flujo-de-trabajo" class="section level2">
+<h2><span class="header-section-number">6.4</span> Addins &amp; flujo de trabajo</h2>
+<p>Lecturas relevantes:</p>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html"><code>blogdown</code> book chapter on the RStudio IDE</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html">Capítulo del libro<code>blogdown</code> sobre RStudio IDE</a></li>
 </ul>
-<p>Addins: use them- you won’t need the <code>blogdown</code> library loaded in the console if you use the Addins. My workflow in RStudio at this point (again, just viewing locally because we haven’t deployed yet) works best like this:</p>
+<p>Addins: utilícelos- no necesitará el paquete <code>blogdown</code> cargada en la consola si utiliza los Addins. Mi flujo de trabajo en RStudio en este momento (una vez más, solo lo visualizo localmente porque aún no lo hemos publicado) funciona mejor así:</p>
 <ol style="list-style-type: decimal">
-<li>Open the RStudio project for the site</li>
-<li>Use the <strong>Serve Site</strong> add-in (only once due to the magic of <em>LiveReload</em>)</li>
-<li>View site in the RStudio viewer pane, and open in a new browser window while I work</li>
-<li>Select existing files to edit using the file pane in RStudio</li>
-<li>After making changes, click the save button (don’t <code>knit</code>!)- the console will reload, the viewer pane will update, and if you hit refresh in the browser your local view will also be updated</li>
-<li>When happy with changes, add/commit/push changes to GitHub</li>
+<li>Abra el proyecto de RStudio para el sitio</li>
+<li>Use el complemento <strong>Serve Site</strong> (solo una vez debido a la magia de <em>LiveReload</em>)</li>
+<li>Vea el sitio en el panel del visor de RStudio y ábralo en una nueva ventana del navegador mientras trabaja</li>
+<li>Seleccione los archivos existentes para editar usando el panel de archivos en RStudio</li>
+<li>Después de hacer cambios, haga clic en el botón guardar (¡no <code>knit</code>!) - la consola se volverá a cargar, el panel del visor se actualizará, y si presiona actualizar en el navegador, su vista local también se actualizará</li>
+<li>Cuando esté satisfecho con los cambios, agregue / haga commit / haga push de los cambios a GitHub</li>
 </ol>
-<p>Having <code>blogdown::serve_site</code> running locally with <em>LiveReload</em> is especially useful as you can immediately see if you have totally screwed up. For example, in editing my <code>about.md</code> file, this error popped up in my console after making a change and I was able to fix the error right away:</p>
+<p>Tener <code>blogdown :: serve_site</code> ejecutando localmente con <em>LiveReload</em> es especialmente útil ya que puede ver de inmediato si se equivocó por completo. Por ejemplo, al editar mi archivo <code>about.md</code>, este error apareció en mi consola después de hacer un cambio y pude corregir el error de inmediato:</p>
 <pre><code>Started building sites ...
 ERROR 2017/06/08 16:22:34 failed to parse page metadata for home/about.md: (18, 6): missing comma
 Error: Error building site: Errors reading pages: Error: failed to parse page metadata for home/about.md: (18, 6): missing comma for about.md</code></pre>
-<p>The above workflow is only for editing existing files or posts, but not for <strong>creating new posts</strong>. For that, read on…</p>
+<p>El flujo de trabajo anterior solo sirve para editar archivos o publicaciones existentes, pero no para <strong>crear publicaciones nuevas</strong>. Para eso, siga leyendo…</p>
 </div>
-<div id="posting" class="section level2">
-<h2><span class="header-section-number">6.5</span> Posting</h2>
-<p>Relevant reading:</p>
+<div id="publicacion" class="section level2">
+<h2><span class="header-section-number">6.5</span> Publicación</h2>
+<p>Lecturas relevantes:</p>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html"><code>blogdown</code> book chapter on RStudio IDE</a></li>
-<li><a href="https://bookdown.org/yihui/blogdown/output-format.html"><code>blogdown</code> book chapter on output formats</a>: on .md versus .Rmd posts</li>
-<li><a href="https://proquestionasker.github.io/blog/Making_Site/#adding-a-blog-post-or-portfolio-piece">Additional detail from Amber</a> on adding a blog post</li>
+<li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html">Capítulo del libro <code>blogdown</code> sobre RStudio IDE</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/output-format.html">Capítulo del libro <code>blogdown</code> sobre formatos de salida</a>: sobre posts .md versus .Rmd</li>
+<li><a href="https://proquestionasker.github.io/blog/Making_Site/#adding-a-blog-post-or-portfolio-piece">Detalles adicionales de Amber</a> sobre adición de blog post</li>
 </ul>
-<p>Bottom line:</p>
-<p>Use the <strong>New Post</strong> addin. But, you need the console to do this, so you have to stop <code>blogdown::serve_site</code> by clicking on the red <strong>Stop</strong> button first. The Addin is a Shiny interface that runs this code in your console: <code>blogdown:::new_post_addin()</code>. So, your console needs to be unblocked for it to run. You also need to be “in” your RStudio project or it won’t work.</p>
-<div id="draft-posts" class="section level3">
-<h3><span class="header-section-number">6.5.1</span> Draft posts</h3>
-<p>Relevant reading:</p>
+<p>Línea de fondo:</p>
+<p>Use el addin <strong>New Post</strong>. Pero necesita la consola para hacer esto, por lo que debe detener <code>blogdown :: serve_site</code> haciendo clic en el botón rojo <strong>Stop</strong> primero. El addin es una interfaz brillante que ejecuta este código en la consola: <code>blogdown ::: new_post_addin ()</code>. Entonces, su consola necesita estar desbloqueada para que se ejecute. También necesita estar “dentro” de su proyecto de RStudio o no funcionará.</p>
+<div id="borrador-de-posts" class="section level3">
+<h3><span class="header-section-number">6.5.1</span> Borrador de posts</h3>
+<p>Lecturas relevantes:</p>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/local-preview.html"><code>blogdown</code> book chapter on building a website for local preview</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/local-preview.html">Capítulo del libro <code>blogdown</code> sobre construcción de un sitio web para visualización local</a></li>
 </ul>
-<p>Whether you do a markdown or R Markdown post (see below), you should know that in the YAML front matter of your new file, you can add <code>draft: TRUE</code> and you will be able to preview your post using <code>blogdown::serve_site()</code>, but conveniently your post will not show up on your deployed site until you set it to false. Because this is a function built into Hugo, all posts (draft or not) will still end up in your GitHub repo though.</p>
+<p>Ya sea que haga un markdown o un R Markdown (ver más abajo), debe saber que al principio del YAML de su nuevo archivo, puede agregar <code>draft: TRUE</code> y podrá obtener una vista previa de su publicación usando <code>blogdown::serve_site()</code>, pero convenientemente su publicación no aparecerá en su sitio desplegado hasta que configure esta opción en falso. Como esto es una función integrada en Hugo, todas las publicaciones (borrador o no) terminarán en su repositorio de GitHub.</p>
 </div>
-<div id="new-markdown-posts" class="section level3">
-<h3><span class="header-section-number">6.5.2</span> New markdown posts</h3>
-<p>Pick one of 2 methods:</p>
+<div id="nuevos-posts-en-markdown" class="section level3">
+<h3><span class="header-section-number">6.5.2</span> Nuevos posts en markdown</h3>
+<p>Escoja uno de los dos métodos:</p>
 <ol style="list-style-type: decimal">
-<li>Use the <strong>New Post</strong> addin and with the radio button at the bottom select <strong>Format: Markdown</strong> (recommended)</li>
-<li>Use the console to author a new <code>.md</code> post:</li>
+<li>Use el addin <strong>New Post</strong> y con el botón redondo escoja <strong>Format: Markdown</strong> (recomendado)</li>
+<li>Use la consola para crear un nuevo post <code>.md</code>:</li>
 </ol>
 <pre><code>blogdown::new_post()
-blogdown::new_post(rmd = FALSE) # false is the default!</code></pre>
-<p>Here are the <code>?new_post</code> arguments:</p>
+blogdown::new_post(rmd = FALSE) # false está por defecto!</code></pre>
+<p>Aquí están los argumentos de <code>?new_post</code>:</p>
 <pre><code>new_post(title, kind = &quot;default&quot;, open = interactive(), 
     author = getOption(&quot;blogdown.author&quot;), categories = NULL, 
     tags = NULL, date = Sys.Date(), file = NULL, slug = NULL, 
     subdir = getOption(&quot;blogdown.subdir&quot;, &quot;post&quot;), 
     rmd = getOption(&quot;blogdown.rmd&quot;, FALSE))</code></pre>
-<p>{{% alert note %}} Remember to use the <strong>Serve Site</strong> addin again so that you can immediately view your changes with every save using <em>LiveReload</em>. {{% /alert %}}</p>
+<p>{{% alert note %}} Recuerde usar el addin <strong>Serve Site</strong> para que pueda ver sus cambios inmediatamente con cada guardado usando <em>LiveReload</em>. {{% /alert %}}</p>
 </div>
-<div id="new-rmarkdown-posts" class="section level3">
-<h3><span class="header-section-number">6.5.3</span> New RMarkdown posts</h3>
-<p>Again, you have your choice of one of 2 methods:</p>
+<div id="nuevos-posts-rmarkdown" class="section level3">
+<h3><span class="header-section-number">6.5.3</span> Nuevos posts RMarkdown</h3>
+<p>Una vez más, puede escoger mediante dos formas distintas:</p>
 <ol style="list-style-type: decimal">
-<li>Use the <strong>New Post</strong> addin and with the radio button at the bottom select <strong>Format: RMarkdown</strong> (recommended)</li>
-<li>Use the console to author a new <code>.Rmd</code> post:</li>
+<li>Use el addin <strong>New Post</strong> y con el botón redondo escoja <strong>Format: R Markdown</strong> (recomendado)</li>
+<li>Use la consola para crear un nuevo post <code>.Rmd</code>:</li>
 </ol>
 <pre><code>blogdown::new_post(rmd = TRUE) # false is the default!</code></pre>
-<p>After you edit your <code>.Rmd</code> post, in addition to saving the changes in your <code>.Rmd</code> file, you <em>must</em> use <code>blogdown::serve_site</code>- this is how the output <code>html</code> file needs to be generated.</p>
-<p>{{% alert warning %}} Do <em>not</em> knit your <code>.Rmd</code> posts- use <code>blogdown::serve_site</code> instead. If you happen to hit the knit button, just <strong>Serve Site</strong> again to rewrite the <code>.html</code> file. {{% /alert %}}</p>
-<p>Ultimately, your <a href="https://bookdown.org/yihui/blogdown/output-format.html#output-format">YAML front matter looks something like this</a>; note that some but not all features of <code>rmarkdown::html_document</code> <a href="https://bookdown.org/yihui/blogdown/output-format.html#fn15">are supported in <code>blogdown</code></a>:</p>
+<p>Después de editar su post <code>.Rmd</code>, además de guardar los cambios en su archivo <code>.Rmd</code>, debe <em>must</em> usar <code>blogdown::serve_site</code>- esta es la forma en que el archivo de salida <code>html</code> necesita ser generado.</p>
+<p>{{% alert warning %}} <em>No</em> le haga knit a sus post<code>.Rmd</code>- en lugar de eso, use <code>blogdown::serve_site</code>. Si le hace click al botón knit, haga <strong>Serve Site</strong> de nuevo para reescribir el archivo <code>.html</code>. {{% /alert %}}</p>
+<p>Por último, su <a href="https://bookdown.org/yihui/blogdown/output-format.html#output-format">encabezado de YAMLdebe lucir similar a esto</a>; note que algunos mas no todas las prestaciones de <code>rmarkdown::html_document</code> <a href="https://bookdown.org/yihui/blogdown/output-format.html#fn15">son soportadas en <code>blogdown</code></a>:</p>
 <pre><code>---
 title: &quot;My Awesome Post&quot;
 author: &quot;John Doe&quot;
@@ -267,58 +268,58 @@ output:
     number_sections: true
     fig_width: 6
 ---</code></pre>
-<p>{{% alert note %}} Remember to use the <strong>Serve Site</strong> addin again so that you can immediately view your changes with every save using <em>LiveReload</em> and your <code>.html</code> file is properly output. {{% /alert %}}</p>
+<p>{{% alert note %}} Recuerde utilizar el complemento <strong>Serve Site</strong> de nuevo para que pueda ver inmediatamente sus cambios con cada operación de guardado utilizando <em>LiveReload</em> y su archivo <code>.html</code> se imprimirá correctamente. {{% /alert %}}</p>
 </div>
-<div id="adding-images-to-a-post" class="section level3">
-<h3><span class="header-section-number">6.5.4</span> Adding images to a post</h3>
-<p>If you want to include an image that is not a figure created from an R chunk, the <a href="https://github.com/rstudio/blogdown/issues/45">recommended method</a> is to:</p>
+<div id="agregando-imagenes-a-un-post" class="section level3">
+<h3><span class="header-section-number">6.5.4</span> Agregando imágenes a un post</h3>
+<p>Si desea incluir una imagen que no sea una figura creada a partir de un chunk de R, el <a href="https://github.com/rstudio/blogdown/issues/45">método recomendado</a> es:</p>
 <ol style="list-style-type: decimal">
-<li>Add the image to your <code>/static/img/</code> folder, then</li>
-<li>Reference the image using the relative file path as follows:</li>
+<li>Agregar la imagen a su carpeta <code>/static/img/</code>, luego</li>
+<li>Hacer referencia a la imagen usando la ruta relativa del archivo de la siguiente manera:</li>
 </ol>
 <pre><code>![my-image](/img/my-image.png)</code></pre>
 </div>
 </div>
 </div>
-<div id="deploy-in-netlify" class="section level1">
-<h1><span class="header-section-number">7</span> Deploy in Netlify</h1>
+<div id="publicacion-en-netlify" class="section level1">
+<h1><span class="header-section-number">7</span> Publicación en Netlify</h1>
 <div class="figure">
 <img src="/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-5.png" />
 
 </div>
-<p>Deploying in Netlify through GitHub is smooth. Yihui and Amber give some <a href="https://bookdown.org/yihui/blogdown/deployment.html">beginner instructions</a>, but Netlify is so easy, I recommend that you skip dragging your <code>public</code> folder in and instead <a href="https://bookdown.org/yihui/blogdown/netlify.html#netlify">automate the process through GitHub</a>.</p>
+<p>La publicación en Netlify a través de GitHub es sencilla. Yihui y Amber dan algunas <a href="https://bookdown.org/yihui/blogdown/deployment.html">instrucciones para principiantes</a>, pero Netlify es muy fácil, le recomiendo que omita arrastrar su carpeta <code>public</code> y en su lugar <a href="https://bookdown.org/yihui/blogdown/netlify.html#netlify">automatice el proceso a través de GitHub</a>.</p>
 <ol style="list-style-type: decimal">
-<li>When you are ready to deploy, commit your changes and push to GitHub, then go online to <a href="https://www.netlify.com">Netlify</a>.</li>
-<li>Click on the <strong>Sign Up</strong> button and sign up using your existing GitHub account (no need to create another account)</li>
-<li>Log in, and select: <code>New site from Git -&gt; Continuous Deployment: GitHub</code>.</li>
-<li><p>From there, Netlify will allow you to select from your existing GitHub repositories. You’ll pick the repo you’ve been working from with <code>blogdown</code>, then you’ll configure your build. This involves specifying two important things: the build command and the publish directory (this should be <code>public</code>).</p>
+<li>Cuando esté listo para publicar, haga commit a sus cambios y súbalos a GitHub, luego vaya en línea a <a href="https://www.netlify.com">Netlify</a>.</li>
+<li>Haga clic en el botón <strong>Sign up</strong> e inscríbase usando su cuenta existente de GitHub (no es necesario crear otra cuenta)</li>
+<li>Inicie sesión y seleccione: <code>New site from Git -&gt; Continuous Deployment: GitHub</code>.</li>
+<li><p>Desde allí, Netlify le permitirá seleccionar de sus repositorios GitHub existentes. Escogerá el repositorio con el que ha estado trabajando con <code>blogdown</code>, luego configurará su compilación. Esto implica especificar dos cosas importantes: el comando de compilación y el directorio de publicación (que debe ser <code>public</code>).</p>
 <ul>
-<li>More about the build command from <a href="https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives">Netlify</a>: <em>“For Hugo hosting, <code>hugo</code> will build and deploy with the version 0.17 of <code>hugo</code>. You can specify a specific <code>hugo</code> release like this: <code>hugo_0.15</code>. Currently <code>0.13</code>, <code>0.14</code>, <code>0.15</code>, <code>0.16</code>, <code>0.17</code>, <code>0.18</code> and <code>0.19</code> are supported. For version <code>0.20</code> and above, you’ll need to create a Build environment variable called <code>HUGO_VERSION</code> and set it to the version of your choice.”</em> I opted for the former, and specified <code>hugo_0.19</code>.</li>
+<li>Más acerca del comando de compilación de <a href="https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives">Netlify</a>: <em>“Para hosting de Hugo, <code>hugo</code> construirá y publicará con la versión 0.17 de <code>hugo</code>. Puede especificar una versión de <code>hugo</code> como esta: <code>hugo_0.15</code>. Actualmente las versiones <code>0.13</code>, <code>0.14</code>, <code>0.15</code>, <code>0.16</code>, <code>0.17</code>, <code>0.18</code> y <code>0.19</code> están soportadas. Para la version <code>0.20</code> y superiores, necesitará crear un ambiente de construcción llamado <code>HUGO_VERSION</code> y configurarlo a la versión de su elección.”</em> Yo opté por la primera opción, y especifiqué <code>hugo_0.19</code>.</li>
 </ul></li>
 </ol>
-<p>You can check your <code>hugo</code> version in terminal using the command <a href="https://gohugo.io/overview/quickstart/"><code>hugo version</code></a>. This is what my output looked like, so I could run version <code>0.20</code> if I wanted to through Netlify, but I went with <code>0.19</code> and it works just fine.</p>
+<p>Puede verificar su versión de <code>hugo</code> en el terminal usando el comando <a href="https://gohugo.io/overview/quickstart/"><code>hugo version</code></a>. Así es como se veía mi salida, así que podría ejecutar la versión <code>0.20</code> si quisiera a través de Netlify, pero opté por <code>0.19</code> y funciona muy bien.</p>
 <pre><code>$ hugo version
 Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-07:00</code></pre>
 <div class="figure">
-<img src="/img/posts/2017-06-12-up-and-running-with-blogdown/netlify-build-settings.png" alt="Screenshot above: Basic build settings in Netlify" />
-<p class="caption">Screenshot above: Basic build settings in Netlify</p>
+<img src="/img/posts/2017-06-12-up-and-running-with-blogdown/netlify-build-settings.png" alt="Screenshot above: Configuración básica en Netlify" />
+<p class="caption">Screenshot above: Configuración básica en Netlify</p>
 </div>
-<p>Netlify will deploy your site and assign you a random subdomain name of the form <code>random-word-12345.netlify.com</code>. Mine was particularly unfortunate, with the random word <code>garbage-collector-janice</code>. You should know that you can change this; I changed mine to <code>apreshill.netlify.com</code>.</p>
-<p>{{% alert note %}} Anytime you change your subdomain name, you need to update the <code>baseurl</code> in your <code>config.toml</code> file (so I changed mine to baseurl = “<a href="https://apreshill.netlify.com/" class="uri">https://apreshill.netlify.com/</a>”). {{% /alert %}}</p>
-<p>At this point, you should be up and running with <code>blogdown</code>, GitHub, and Netlify, but here are some ideas if you want to go further…</p>
+<p>Netlify publicará su sitio y le asignará un nombre de subdominio aleatorio del formulario <code>random-word-12345.netlify.com</code>. El mío fue particularmente desafortunado, con la palabra al azar <code>garbage-collector-janice</code>. Debe saber que puede cambiar esto; Cambié el mío a <code>martin.netlify.com</code>.</p>
+<p>{{% alert note %}} Cada vez que cambie el nombre de su subdominio, debe actualizar <code>baseurl</code> en su archivo <code>config.toml</code> (así que cambié el mío a baseurl = “<a href="https://martin.netlify.com/" class="uri">https://martin.netlify.com/</a>”). {{% /alert %}}</p>
+<p>En este punto, debería estar en funcionamiento con <code>blogdown</code>, GitHub y Netlify, pero aquí hay algunas ideas si quiere ir más lejos…</p>
 </div>
-<div id="going-further" class="section level1">
-<h1><span class="header-section-number">8</span> Going further</h1>
-<div id="custom-css" class="section level2">
-<h2><span class="header-section-number">8.1</span> Custom CSS</h2>
-<p>I like to tinker with default theme settings like colors and fonts. Every Hugo theme is structured a little differently, but if you are interested, you can check out <a href="https://github.com/apreshill/apreshill/blob/master/static/css/blue.css">my custom css</a> to see how I customized the academic theme, which provides a way to link to a custom CSS file in the <code>config.toml</code> file:</p>
-<pre><code>  # Link custom CSS and JS assets
+<div id="yendo-mas-lejos" class="section level1">
+<h1><span class="header-section-number">8</span> Yendo más lejos</h1>
+<div id="css-personalizado" class="section level2">
+<h2><span class="header-section-number">8.1</span> CSS personalizado</h2>
+<p>Me gusta jugar con la configuración predeterminada del tema, como colores y fuentes. Cada tema de Hugo está estructurado de forma un poco diferente, pero si está interesado, puede consultar <a href="https://github.com/apreshill/apreshill/blob/master/static/css/blue.css">mi css personalizado</a> para ver cómo he personalizado el tema académico, que proporciona una forma de vincular a un archivo CSS personalizado en el archivo <code>config.toml</code>:</p>
+<pre><code>  # Enlaza CSS y JS personalizados
   #   (relative to /static/css and /static/js respectively)
   custom_css = [&quot;blue.css&quot;]</code></pre>
 </div>
 <div id="formspree" class="section level2">
 <h2><span class="header-section-number">8.2</span> Formspree</h2>
-<p>I used <a href="https://formspree.io">Formspree</a> to make a contact form, which is an online service (managed on <a href="https://github.com/formspree/formspree">GitHub</a>) that allows you to add an HTML form to your static site. No registration, just use the form and confirm your email address once. I added the following code into <a href="https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html">my contact widget</a>:</p>
+<p>Usé <a href="https://formspree.io">Formspree</a> para hacer un formulario de contacto, que es un servicio en línea (manejado en <a href="https://github.com/formspree/formspree">GitHub</a>) que le permite agregar un formulario HTML a su sitio estático. Sin registro, solo use el formulario y confirme su dirección de correo electrónico una vez. Agregué el siguiente código en <a href="https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html">mi widget de contacto</a>:</p>
 <pre><code>&lt;form action=&quot;https://formspree.io/your@email.com&quot; method=&quot;POST&quot;&gt;
   &lt;label for=&quot;name&quot;&gt;Your name: &lt;/label&gt;
   &lt;input type=&quot;text&quot; name=&quot;name&quot; required=&quot;required&quot; placeholder=&quot;here&quot;&gt;&lt;br&gt;
@@ -332,10 +333,10 @@ Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-0
   &lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
 &lt;/form&gt;</code></pre>
 </div>
-<div id="rbind.io-domain-names" class="section level2">
-<h2><span class="header-section-number">8.3</span> <code>*.rbind.io</code> domain names</h2>
-<p>You may want a different <a href="https://bookdown.org/yihui/blogdown/domain-name.html">domain name</a> than the one provided by Netlify. I opted for a free subdomain <code>*.rbind.io</code> offered by RStudio. To do the same, head over to the <a href="https://github.com/rbind/support/issues">rbind/support GitHub page</a> and open a new issue. All you need to do is let them know what your Netlify subdomain name is (<code>*.netlify.com</code>), and what you want your subdomain name to be (<code>*.rbind.io</code>). The <a href="https://support.rbind.io">awesome <code>rbind</code> support team</a> will help you take it from there!</p>
-<p>{{% alert note %}} Again, you will need to update the <code>baseurl</code> in your <code>config.toml</code> file to reflect your new rbind subdomain name (so mine is baseurl = “<a href="https://alison.rbind.io/" class="uri">https://alison.rbind.io/</a>”). {{% /alert %}}</p>
+<div id="nombres-de-domimio.rbind.io" class="section level2">
+<h2><span class="header-section-number">8.3</span> Nombres de domimio<code>*.rbind.io</code></h2>
+<p>Quizás quiera un <a href="https://bookdown.org/yihui/blogdown/domain-name.html">nombre de dominio diferente</a> que el proveído por Netlify. Yo opté por un subdominio gratuito <code>*.rbind.io</code> ofrecido por RStudio. Para hacer lo mismo, diríjase a la <a href="https://github.com/rbind/support/issues">página de GitHub de soporte rbind</a> y abra un nuevo issue. Todo lo que debe hacer es decirles cuál es su nombre de subdominio de Netlify (<code>*.netlify.com</code>), y qué nombre de subdominio quiere (<code>*.rbind.io</code>). El <a href="https://support.rbind.io">impresionante soporte del equipo de <code>rbind</code></a> le ayudará!</p>
+<p>{{% alert note %}} De nuevo, necesitará actualizar el <code>baseurl</code> en su archivo <code>config.toml</code> para que refleje su nuevo nombre de subdominio (el mío es baseurl = “<a href="https://martin.rbind.io/" class="uri">https://martin.rbind.io/</a>”). {{% /alert %}}</p>
 <div class="figure">
 <img src="/img/posts/2017-06-12-up-and-running-with-blogdown/rbind.png" />
 
@@ -343,7 +344,7 @@ Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-0
 </div>
 <div id="have-fun" class="section level2">
 <h2><span class="header-section-number">8.4</span> Have fun!</h2>
-<p>Lastly, don’t forget to just have fun with it. Happy <code>blogdown</code>ing!</p>
+<p>Por último, no se olvide de pasarla bien. Feliz <code>blogdown</code>ing!</p>
 <iframe src="https://giphy.com/embed/13Y6LAZJqRspI4" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen>
 </iframe>
 <p>
