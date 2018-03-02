@@ -94,7 +94,7 @@ hrefTargetBlank = true
 
 [languages]
 # edit this block for your own language
-[languages.sp]
-lang = "sp"
+[languages.es]
+lang = "es"
 languageName = "Spanish"
 weight = 1

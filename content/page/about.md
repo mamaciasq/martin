@@ -1,6 +1,6 @@
 ---
 title: Acerca
-description: Statistics
+description: Sobre este blog
 menu: main
 weight: -210
 ---
