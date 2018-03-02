@@ -1,13 +1,13 @@
 ---
-title: Up and running with blogdown
-author: Alison Presmanes Hill
-date: '2017-06-12'
+title: En funcionamiento con blogdown
+author: Martín ANdrés Macías
+date: '2018-03-01'
 slug: up-and-running-with-blogdown
 categories:
   - R
 tags:
   - blogdown
-summary: A guide to getting up and running with blogdown, GitHub, and Netlify
+summary: Una guía para comenzar a usar blogdown, GitHub y Netlify
 output:
   blogdown::html_page:
     toc: true
@@ -20,28 +20,28 @@ knitr::opts_chunk$set(eval = FALSE, collapse = TRUE, comment = NA, tidy = FALSE)
 ```
 
 
-# Read up on blogdown
+# Lea sobre blogdown
 
-Before you start, I recommend reading the following:
+Antes de comenzar, le recomiendo leer lo siguiente:
 
-* [`blogdown`: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie and Amber Thomas
-* [Making a Website Using `blogdown`, Hugo, and GitHub pages](https://proquestionasker.github.io/blog/Making_Site/) also by Amber Thomas
-* [Getting Started with `blogdown`](https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/) by M. Edward (Ed) Borasky
+* [`blogdown`: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) de Yihui Xie y Amber Thomas
+* [Making a Website Using `blogdown`, Hugo, and GitHub pages](https://proquestionasker.github.io/blog/Making_Site/) también de Amber Thomas
+* [Getting Started with `blogdown`](https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/) de M. Edward (Ed) Borasky
 
-I also found this comment by Eric Nantz, the creator of [the R-Podcast](http://r-podcast.org), in the [`rbind/support` issues section on GitHub](https://github.com/rbind/support) to be helpful:
+También existe este artículo de Eric Nantz, el creador de [R-Podcast](http://r-podcast.org), en la [sección de issues de Github `rbind/support`](https://github.com/rbind/support) que puede ser de ayuda:
 
 * [https://github.com/rbind/support/issues/12](https://github.com/rbind/support/issues/12)
 
 
-# Caveats, disclaimers, etc.
+# Advertencias, descargos de responsabilidad, etc.
 
-Even with all the great resources I listed above, getting myself up and running took a few tries, so in this post I'm passing along what ended up working for me. Everyone's mileage may vary, though, depending on your operating system and your approach. About me: I am a macOS user, and I use R, RStudio, Git (usually via [GitLab](https://about.gitlab.com), sometimes via [GitHub](https://github.com)), and terminal regularly, so I'm assuming familiarity here with all of these. If that is not you, here are some places to get started:
+Incluso con todos los grandiosos recursos que enumeré arriba, ponerme en marcha me llevó algunos intentos, así que este post transmite lo que terminó funcionando para mí. Sin embargo, la distancia andada puede variar, dependiendo del sistema operativo y su enfoque. El mío: soy usuario de macOS, uso R, RStudio y Git (a través de Github)(https://github.com), y la terminal regularmente, por lo que me estoy familizarizando con todo esto. Si no es así para usted, aquí hay unos lugares para comenzar:
 
-* For Git: [Happy Git with R](http://happygitwithr.com) by Jenny Bryan et al.
-* For RStudio: [DataCamp's Working with the RStudio IDE (free)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1) by Garrett Grolemund
-* For Terminal: [The Command Line Murder Mystery](https://github.com/veltman/clmystery) by Noah Veltman, and [The UNIX Workbench](http://seankross.com/the-unix-workbench/) by Sean Kross
+* Git: [Happy Git with R](http://happygitwithr.com) de Jenny Bryan et al.
+* RStudio: [DataCamp's Working with the RStudio IDE (free)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1) de Garrett Grolemund
+* Terminal: [The Command Line Murder Mystery](https://github.com/veltman/clmystery) de Noah Veltman, y [The UNIX Workbench](http://seankross.com/the-unix-workbench/) de Sean Kross
 
-I also have [Xcode](https://developer.apple.com/xcode/) and [Homebrew](https://brew.sh) installed- [you will probably need these to download Hugo](https://bookdown.org/yihui/blogdown/installation.html). If you don't have either but are on a mac, this link may help:
+También tengo [Xcode](https://developer.apple.com/xcode/) y [Homebrew](https://brew.sh) installed- [probablemente necesitará esto para descargar Hugo](https://bookdown.org/yihui/blogdown/installation.html). Si no tiene ninguno pero está en un mac, este enlace puede ayudar:
 
 * [How to install Xcode, Homebrew, Git, RVM, Ruby & Rails on Mac OS X ](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
 

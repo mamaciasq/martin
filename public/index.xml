@@ -11,190 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Subtyping cognitive profiles in Autism Spectrum Disorder using a random forest algorithm</title>
-      <link>/publication/2017-subtyping/</link>
-      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/2017-subtyping/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R-Ladies presentation ninja</title>
-      <link>/post/r-ladies-slides/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/r-ladies-slides/</guid>
-      <description>&lt;p&gt;So, you are doing an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation…that’s awesome! &lt;img src=&#34;https://media.giphy.com/media/r9WS57qOqU1KU/giphy.gif&#34; /&gt;&lt;/p&gt;
-&lt;div id=&#34;the-short-version&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;The short version&lt;/h1&gt;
-&lt;p&gt;I made an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; theme for &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; slides&lt;/a&gt;. My original tweet about it:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;if you want to use &lt;a href=&#34;https://twitter.com/xieyihui?ref_src=twsrc%5Etfw&#34;&gt;@xieyihui&lt;/a&gt;&amp;#39;s awesome &lt;a href=&#34;https://twitter.com/hashtag/xaringan?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#xaringan&lt;/a&gt; package for &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; slides but want more &lt;a href=&#34;https://twitter.com/hashtag/Rladies?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Rladies&lt;/a&gt; flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome &lt;a href=&#34;https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw&#34;&gt;@RLadiesGlobal&lt;/a&gt; starter kit. Update the CSS in your YAML to use  🧙🏽‍♀️🧞‍♀️ &lt;a href=&#34;https://t.co/YnlGSVAMsl&#34;&gt;pic.twitter.com/YnlGSVAMsl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/935973869554487296?ref_src=twsrc%5Etfw&#34;&gt;November 29, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;The way to use the theme is to update the YAML like so:&lt;/p&gt;
-&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
-  xaringan::moon_reader:
-    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Make sure your version of &lt;strong&gt;xaringan&lt;/strong&gt; is up-to-date.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/posts/rladies-slides/rladies-demo-slides.png&#34; /&gt; Below is a &lt;a href=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34;&gt;demo slide deck&lt;/a&gt; using the theme.&lt;/p&gt;
-&lt;iframe src=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;(view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/rladies-demo-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-longer-story&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;The longer story&lt;/h1&gt;
-&lt;p&gt;I recommend &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui’s&lt;/a&gt; &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; package&lt;/a&gt; for slides. This is an R package, available through GitHub, for creating slideshows with &lt;a href=&#34;https://remarkjs.com/&#34;&gt;remark.js&lt;/a&gt; through R Markdown. This means that you can:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;write all your slides in Markdown text&lt;/li&gt;
-&lt;li&gt;include chunks of R code and rendered output like plots, results, tables, etc. in your slides&lt;/li&gt;
-&lt;li&gt;use git for version control and share your GitHub repository&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This makes &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; ideal for an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation!&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To use the package, you’ll need the &lt;a href=&#34;https://cran.r-project.org/web/packages/devtools/index.html&#34;&gt;&lt;strong&gt;devtools&lt;/strong&gt; package&lt;/a&gt; installed so that you can use the &lt;code&gt;install_github&lt;/code&gt; function. Then do:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#39;yihui/xaringan&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As Yihui points out in the documentation, if you use RStudio, you can use the menu to navigate to &lt;code&gt;File -&amp;gt; New File -&amp;gt; R Markdown -&amp;gt; From Template -&amp;gt; Ninja Presentation&lt;/code&gt;, and you will see an R Markdown example.&lt;/p&gt;
-&lt;p&gt;I first used &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; a few months ago. I was working with &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; on the &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown book&lt;/a&gt;, and had signed up to lead a &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/portland-r-user-group/&#34;&gt;Portland R User group&lt;/a&gt;. Obviously, such a workshop could not have powerpoint slides, so it seemed like the perfect time to learn &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For my &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt;, I made a simple website for the newly founded &lt;a href=&#34;https://rladies-pdx.rbind.io&#34;&gt;R-Ladies PDX&lt;/a&gt; using blogdown (Thanks to &lt;a href=&#34;https://twitter.com/mmmpork&#34;&gt;Augustina&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/deekshathati&#34;&gt;Deeksha&lt;/a&gt;, our fearless organizers). So naturally, my slides needed more purple.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://media.giphy.com/media/c4PW8gc5ee9NK/giphy.gif&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt;Luckily, the R-Ladies run a tight ship- they have a &lt;a href=&#34;https://github.com/rladies/starter-kit&#34;&gt;starter kit on GitHub&lt;/a&gt; that details all the pretty purples they like.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/posts/rladies-slides/rladies-palette.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt;About a month after I did the &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;R-Ladies blogdown workshop&lt;/a&gt;, I saw this &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;blog post&lt;/a&gt; by &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/posts/rladies-slides/yihui-xaringan-themes.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt;First, I thought this was such a cool idea and I hope more people make and submit themes. Then I realized, I had already made a theme! I submitted a pull request&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, Yihui helped me make some edits to the CSS files to make them more parsimonious with the default theme, I electronically signed a contributor agreement, and now the theme is there for you all to enjoy and use! You use the theme by editing the YAML:&lt;/p&gt;
-&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
-  xaringan::moon_reader:
-    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you use the theme and you are on twitter, I’d love to see it- &lt;a href=&#34;https://twitter.com/intent/tweet?user_id=3199856542&#34;&gt;please mention me on twitter!&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Examples!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;My blogdown workshop slides: &lt;a href=&#34;http://127.0.0.1:4321/talk/blogdown-meetup/&#34;&gt;“Up and running with blogdown”&lt;/a&gt; (view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/blogdown-workshop-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe src=&#34;https://alison.rbind.io/slides/blogdown-workshop-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
-&lt;/iframe&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jessicaminnier.com&#34;&gt;Jessica Minnier’s&lt;/a&gt; slides for &lt;a href=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34;&gt;“Building Shiny Apps: With Great Power Comes Great Responsibility”&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe src=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If you are new to &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;, don’t miss the &lt;a href=&#34;https://github.com/yihui/xaringan/wiki&#34;&gt;wiki!&lt;/a&gt;&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Yihui’s &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;technical instructions&lt;/a&gt; for contributors section of that blog post has been revised and is very detailed&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>blogdown: Creating Websites with R Markdown</title>
-      <link>/publication/2017-blogdown/</link>
-      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/2017-blogdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Labhub Workshop</title>
-      <link>/talk/labhub/</link>
-      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/labhub/</guid>
-      <description>
-&lt;figure &gt;
-    
-        &lt;img src=&#34;/img/ohsu-os-panel.png&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;The landscape of scientific communication is changing dramatically.  Diverse stakeholders, including major funders and universities are demonstrating a growing interest and investment in open scientific principles and practices.  Researchers, students, and the institutions that support them are needing to navigate new expectations, workflows, and policies against a backdrop of relatively unchanged means and measures of scientific success.&lt;/p&gt;
-
-&lt;p&gt;Sound complicated?  Join us on December 8th from 3:00 to 4:00 PM for a panel discussion with OHSU leaders and early career researchers on the evolving landscape of scientific communication.  We’ll explore the drivers behind the calls for “openness”, what this means in practice, and the real world compatibility and tensions between open science and student, researcher, and institutional success.&lt;/p&gt;
-
-&lt;p&gt;Confirmed panelists include:&lt;/p&gt;
-
-&lt;p&gt;Dr. Gary Westbrook, Vollum Institute Senior Scientist and Director of the Neuroscience Graduate Program&lt;/p&gt;
-
-&lt;p&gt;Dr. Bita Moghaddam, Chair of the Department of Behavioral Neuroscience&lt;/p&gt;
-
-&lt;p&gt;Dr. Abhinav Nellore, Assistant Professor, Biomedical Engineering and the Department of Surgery&lt;/p&gt;
-
-&lt;p&gt;Dr. Alison Hill, Associate Professor, Center for Spoken Language Understanding&lt;/p&gt;
-
-&lt;p&gt;The panel will be followed by food, drinks, and two hands on workshops from 4:00 - 5:30:&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;/img/ohsu-os-labhub-workshop.png&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;In this workshop, Dr. Alison Hill and Robin Champieux demonstrated tools and methods for building transparency within a lab, and onboarding new graduate students and postdocs. We provided a &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;template GitHub repository&lt;/a&gt; and code of conduct designed to facilitate a healthy and productive learning and research environment. You are encouraged to use these tools to communicate expectations, document protocols, receive feedback, and facilitate the long-term value of students’ and trainees’ contributions.&lt;/p&gt;
-
-&lt;p&gt;Labhub is a &lt;em&gt;work in progress&lt;/em&gt;. We created &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;this repository&lt;/a&gt; as an education and demonstration tool for faculty, postdocs, and students curious about how documentation, open science workflows, and tools like Github can contribute to a healthy and productive research environment. Your ideas and contributions are welcome!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Up &amp; Running with blogdown</title>
-      <link>/talk/blogdown-meetup/</link>
-      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/blogdown-meetup/</guid>
-      <description>&lt;p&gt;We will cover:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The &lt;strong&gt;blogdown&lt;/strong&gt; R package&lt;/li&gt;
-&lt;li&gt;Hugo themes&lt;/li&gt;
-&lt;li&gt;Adding content to personalize your site&lt;/li&gt;
-&lt;li&gt;Posting&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t want to blog? / just want to knit?&lt;/li&gt;
-&lt;li&gt;Customizing themes&lt;/li&gt;
-&lt;li&gt;Troubleshooting common problems&lt;/li&gt;
-&lt;li&gt;Deployment options and recommendations&lt;/li&gt;
-&lt;li&gt;Domain options available through RStudio/rbind&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you are planning on attending this workshop, please click on the HTML link above for how to prepare before the workshop.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;/img/blogdown-meetup.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Up and running with blogdown</title>
+      <title>En funcionamiento con blogdown</title>
       <link>/post/up-and-running-with-blogdown/</link>
-      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/up-and-running-with-blogdown/</guid>
       <description>&lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#read-up-on-blogdown&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Read up on blogdown&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#caveats-disclaimers-etc.&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Caveats, disclaimers, etc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#lea-sobre-blogdown&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Lea sobre blogdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#advertencias-descargos-de-responsabilidad-etc.&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Advertencias, descargos de responsabilidad, etc.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#in-github&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; In GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#in-terminal&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; In terminal&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#in-rstudio&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; In RStudio&lt;/a&gt;&lt;/li&gt;
@@ -204,28 +29,28 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div id=&#34;read-up-on-blogdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Read up on blogdown&lt;/h1&gt;
-&lt;p&gt;Before you start, I recommend reading the following:&lt;/p&gt;
+&lt;div id=&#34;lea-sobre-blogdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Lea sobre blogdown&lt;/h1&gt;
+&lt;p&gt;Antes de comenzar, le recomiendo leer lo siguiente:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;: Creating Websites with R Markdown&lt;/a&gt; by Yihui Xie and Amber Thomas&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Making a Website Using &lt;code&gt;blogdown&lt;/code&gt;, Hugo, and GitHub pages&lt;/a&gt; also by Amber Thomas&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/&#34;&gt;Getting Started with &lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt; by M. Edward (Ed) Borasky&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;: Creating Websites with R Markdown&lt;/a&gt; de Yihui Xie y Amber Thomas&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Making a Website Using &lt;code&gt;blogdown&lt;/code&gt;, Hugo, and GitHub pages&lt;/a&gt; también de Amber Thomas&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/&#34;&gt;Getting Started with &lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt; de M. Edward (Ed) Borasky&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I also found this comment by Eric Nantz, the creator of &lt;a href=&#34;http://r-podcast.org&#34;&gt;the R-Podcast&lt;/a&gt;, in the &lt;a href=&#34;https://github.com/rbind/support&#34;&gt;&lt;code&gt;rbind/support&lt;/code&gt; issues section on GitHub&lt;/a&gt; to be helpful:&lt;/p&gt;
+&lt;p&gt;También existe este artículo de Eric Nantz, el creador de &lt;a href=&#34;http://r-podcast.org&#34;&gt;R-Podcast&lt;/a&gt;, en la &lt;a href=&#34;https://github.com/rbind/support&#34;&gt;sección de issues de Github &lt;code&gt;rbind/support&lt;/code&gt;&lt;/a&gt; que puede ser de ayuda:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/rbind/support/issues/12&#34; class=&#34;uri&#34;&gt;https://github.com/rbind/support/issues/12&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id=&#34;caveats-disclaimers-etc.&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Caveats, disclaimers, etc.&lt;/h1&gt;
-&lt;p&gt;Even with all the great resources I listed above, getting myself up and running took a few tries, so in this post I’m passing along what ended up working for me. Everyone’s mileage may vary, though, depending on your operating system and your approach. About me: I am a macOS user, and I use R, RStudio, Git (usually via &lt;a href=&#34;https://about.gitlab.com&#34;&gt;GitLab&lt;/a&gt;, sometimes via &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;), and terminal regularly, so I’m assuming familiarity here with all of these. If that is not you, here are some places to get started:&lt;/p&gt;
+&lt;div id=&#34;advertencias-descargos-de-responsabilidad-etc.&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Advertencias, descargos de responsabilidad, etc.&lt;/h1&gt;
+&lt;p&gt;Incluso con todos los grandiosos recursos que enumeré arriba, ponerme en marcha me llevó algunos intentos, así que este post transmite lo que terminó funcionando para mí. Sin embargo, la distancia andada puede variar, dependiendo del sistema operativo y su enfoque. El mío: soy usuario de macOS, uso R, RStudio y Git (a través de Github)(&lt;a href=&#34;https://github.com&#34; class=&#34;uri&#34;&gt;https://github.com&lt;/a&gt;), y la terminal regularmente, por lo que me estoy familizarizando con todo esto. Si no es así para usted, aquí hay unos lugares para comenzar:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;For Git: &lt;a href=&#34;http://happygitwithr.com&#34;&gt;Happy Git with R&lt;/a&gt; by Jenny Bryan et al.&lt;/li&gt;
-&lt;li&gt;For RStudio: &lt;a href=&#34;https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1&#34;&gt;DataCamp’s Working with the RStudio IDE (free)&lt;/a&gt; by Garrett Grolemund&lt;/li&gt;
-&lt;li&gt;For Terminal: &lt;a href=&#34;https://github.com/veltman/clmystery&#34;&gt;The Command Line Murder Mystery&lt;/a&gt; by Noah Veltman, and &lt;a href=&#34;http://seankross.com/the-unix-workbench/&#34;&gt;The UNIX Workbench&lt;/a&gt; by Sean Kross&lt;/li&gt;
+&lt;li&gt;Git: &lt;a href=&#34;http://happygitwithr.com&#34;&gt;Happy Git with R&lt;/a&gt; de Jenny Bryan et al.&lt;/li&gt;
+&lt;li&gt;RStudio: &lt;a href=&#34;https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1&#34;&gt;DataCamp’s Working with the RStudio IDE (free)&lt;/a&gt; de Garrett Grolemund&lt;/li&gt;
+&lt;li&gt;Terminal: &lt;a href=&#34;https://github.com/veltman/clmystery&#34;&gt;The Command Line Murder Mystery&lt;/a&gt; de Noah Veltman, y &lt;a href=&#34;http://seankross.com/the-unix-workbench/&#34;&gt;The UNIX Workbench&lt;/a&gt; de Sean Kross&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I also have &lt;a href=&#34;https://developer.apple.com/xcode/&#34;&gt;Xcode&lt;/a&gt; and &lt;a href=&#34;https://brew.sh&#34;&gt;Homebrew&lt;/a&gt; installed- &lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34;&gt;you will probably need these to download Hugo&lt;/a&gt;. If you don’t have either but are on a mac, this link may help:&lt;/p&gt;
+&lt;p&gt;También tengo &lt;a href=&#34;https://developer.apple.com/xcode/&#34;&gt;Xcode&lt;/a&gt; y &lt;a href=&#34;https://brew.sh&#34;&gt;Homebrew&lt;/a&gt; installed- &lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34;&gt;probablemente necesitará esto para descargar Hugo&lt;/a&gt;. Si no tiene ninguno pero está en un mac, este enlace puede ayudar:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/&#34;&gt;How to install Xcode, Homebrew, Git, RVM, Ruby &amp;amp; Rails on Mac OS X&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -566,6 +391,276 @@ Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-0
     </item>
     
     <item>
+      <title>Merging vs. Rebasing</title>
+      <link>/post/merging-vs-rebasing/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/merging-vs-rebasing/</guid>
+      <description>&lt;div id=&#34;vision-conceptual&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1&lt;/span&gt; Visión conceptual&lt;/h2&gt;
+&lt;p&gt;Lo primero que debe entenderse sobre &lt;code&gt;git rebase&lt;/code&gt; es que resuelve el mismo problema que &lt;code&gt;git merge&lt;/code&gt;. Ambos comandos están diseñados para integrar cambios de un branch a otro branch; solo lo hacen de maneras muy diferentes.&lt;/p&gt;
+&lt;p&gt;Considere lo que sucede cuando comienza a trabajar en una nueva característica en un branch dedicado para tal fin, luego otro miembro del equipo actualiza el branch &lt;code&gt;master&lt;/code&gt; con nuevos commits. Esto da como resultado una historia bifurcada, que debería ser familiar para cualquiera que haya usado Git como herramienta de colaboración.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/01.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Ahora, digamos que los nuevos commits en el branch &lt;code&gt;master&lt;/code&gt; son relevantes para la función en la que se está trabajando en el otro branch. Para incorporar los nuevos commits en su branch de &lt;code&gt;características&lt;/code&gt;, tiene dos opciones: &lt;code&gt;merge&lt;/code&gt; o &lt;code&gt;rebase&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;opcion-merge&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1.1&lt;/span&gt; Opción &lt;code&gt;merge&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;La opción más fácil es fusionar el branch &lt;code&gt;master&lt;/code&gt; en el branch &lt;code&gt;características&lt;/code&gt; usando:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git checkout feature
+git merge master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O condensarlo en una línea:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git merge master feature&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto crea un nueva “merge commit” en el branch &lt;code&gt;características&lt;/code&gt; que vincula las historias de ambos branches, dándole una estructura de bifurcación que se ve así:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/02.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;La fusión es agradable porque es una operación no destructiva. Las ramas existentes no se modifican de ninguna manera. Esto evita todas las trampas potenciales del rebasamiento (discutidas a continuación).&lt;/p&gt;
+&lt;p&gt;Por otro lado, esto también significa que la rama &lt;code&gt;características&lt;/code&gt; tendrá un commit de fusión extraño cada vez que necesite incorporar cambios ascendentes. Si el &lt;code&gt;master&lt;/code&gt; es muy activo, esto puede contaminar un poco la historia de su rama &lt;code&gt;características&lt;/code&gt;. Si bien es posible mitigar este problema con las opciones avanzadas de &lt;code&gt;git log&lt;/code&gt;, puede dificultar que otros desarrolladores comprendan el historial del proyecto.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;opcion-rebase&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1.2&lt;/span&gt; Opción &lt;code&gt;rebase&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Como alternativa a la fusión, puede volver a establecer la base de la rama &lt;code&gt;características&lt;/code&gt; en la rama &lt;code&gt;master&lt;/code&gt; mediante los siguientes comandos:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git checkout feature
+git rebase master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto mueve toda la rama &lt;code&gt;características&lt;/code&gt; para que comience al inicio de la rama &lt;code&gt;master&lt;/code&gt;, incorporando efectivamente todos los nuevos commits en el &lt;code&gt;master&lt;/code&gt;. Pero, en lugar de usar un merge commit, rebasing vuelve a escribir el historial del proyecto creando commits nuevos para cada commit en la rama &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/03.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;El mayor beneficio de rebase es que obtiene un historial de proyectos mucho más limpio. Primero, elimina los innecesarios merge commits requeridos por &lt;code&gt;git merge&lt;/code&gt;. En segundo lugar, como puede ver en el diagrama anterior, rebase también da como resultado un historial de proyecto perfectamente lineal: puede seguir la punta de &lt;code&gt;característica&lt;/code&gt; hasta el comienzo del proyecto sin ninguna bifurcación. Esto facilita navegar por su proyecto con comandos como &lt;code&gt;git log&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt; y `gitk.&lt;/p&gt;
+&lt;p&gt;Pero, hay dos compensaciones para este prístino historial de commits: seguridad y trazabilidad. Si no sigue &lt;a href=&#34;https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing&#34;&gt;la regla de oro de rebase&lt;/a&gt;, volver a escribir el historial del proyecto puede ser potencialmente catastrófico para su flujo de trabajo de colaboración. Y, lo que es menos importante, el rebasamiento pierde el contexto proporcionado por una merge commit –no se puede ver cuando se incorporaron los cambios de flujo ascendente en `característica.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rebase-interactivo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1.3&lt;/span&gt; Rebase interactivo&lt;/h3&gt;
+&lt;p&gt;El rebasamiento interactivo le da la oportunidad de alterar los commits a medida que se mueven al nuevo branch. Esto es incluso más poderoso que un rebase automático, ya que ofrece un control completo sobre el historial de commits del branch. Normalmente, esto se usa para limpiar un historial desordenado antes de fusionar el branch &lt;code&gt;características&lt;/code&gt; en &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para comenzar una sesión de rebase interactiva, adhiera la opción &lt;code&gt;i&lt;/code&gt; al comando &lt;code&gt;git rebase&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git checkout feature
+git rebase -i master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto abrirá un editor de texto que enumera todos los commits que están a punto de ser movidas:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;pick 33d5b7a Message for commit #1
+pick 9480b3d Message for commit #2
+pick 5c67e61 Message for commit #3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esta lista define exactamente cómo se verá el branch después de que se realice el rebase. Al cambiar el comando de selección y/o reordenar las entradas, puede hacer que el historial del branch tenga el aspecto que desee. Por ejemplo, si el segundo commit corrige un pequeño problema en el primer commit, puede condensarlos en un solo commit con el comando &lt;code&gt;fixup&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;pick 33d5b7a Message for commit #1
+fixup 9480b3d Message for commit #2
+pick 5c67e61 Message for commit #3`&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cuando guarda y cierra el archivo, Git realizará el rebase de acuerdo con sus instrucciones, lo que da como resultado el historial del proyecto que se ve así:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/04.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;La eliminación de commits insignificantes como este hace que la historia de &lt;code&gt;característica&lt;/code&gt; sea mucho más fácil de entender. Esto es algo que &lt;code&gt;git merge&lt;/code&gt; simplemente no puede hacer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Presentaciones puestas en blogdown</title>
+      <link>/post/presentaciones-puestas-en-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/presentaciones-puestas-en-blogdown/</guid>
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#blogdown-rmarkdown-impresionante&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; blogdown + rmarkdown = ¡impresionante!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;blogdown-rmarkdown-impresionante&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; blogdown + rmarkdown = ¡impresionante!&lt;/h1&gt;
+&lt;div id=&#34;reproducir-archivos-rmd-en-un-sitio-web-construido-con-blogdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;1.1&lt;/span&gt; &lt;em&gt;Reproducir archivos Rmd en un sitio web construido con blogdown&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Este es un pequeño ejemplo que muestra cómo puede reproducirse cualquier archivo Rmd en una página web construida con &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;. La clave es agregar un script de R, llamado &lt;code&gt;build.R&lt;/code&gt; dentro de una carpeta llamada &lt;code&gt;R/&lt;/code&gt; (este archivo únicamente tiene una línea de código: &lt;code&gt;blogdown::build_dir(&#39;static&#39;)&lt;/code&gt;), y poner los archivos Rmd dentro de la carpeta &lt;code&gt;static/&lt;/code&gt;. Vea la breve documentación al respecto en el &lt;a href=&#34;https://bookdown.org/yihui/blogdown/static-files.html&#34;&gt;libro de &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No importa qué formatos de salida generen sus Rmd; &lt;code&gt;build_dir()&lt;/code&gt; llamará la función &lt;code&gt;rmarkdown::render()&lt;/code&gt; para reproducirlos. En este blog, hay dos ejemplos (Se requieren los paquetes de R &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/rstudio/bookdown&#34;&gt;&lt;strong&gt;bookdown&lt;/strong&gt;&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Generación de presentación HTML5 basada en &lt;strong&gt;xaringan&lt;/strong&gt;: &lt;a href=&#34;/slides/xaringan.html&#34;&gt;slides/xaringan.html&lt;/a&gt; (Rmd de origen: &lt;a href=&#34;https://github.com/yihui/blogdown-static/blame/master/static/slides/xaringan.Rmd&#34;&gt;static/slides/xaringan.Rmd&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Generación de un documento PDF usando el formato &lt;code&gt;bookdown::pdf_document2&lt;/code&gt;: &lt;a href=&#34;/pdf/example.pdf&#34;&gt;pdf/example.pdf&lt;/a&gt; (Rmd de origen: &lt;a href=&#34;https://github.com/yihui/blogdown-static/blame/master/static/pdf/example.Rmd&#34;&gt;static/pdf/example.Rmd&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Subtyping cognitive profiles in Autism Spectrum Disorder using a random forest algorithm</title>
+      <link>/publication/2017-subtyping/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-subtyping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R-Ladies presentation ninja</title>
+      <link>/post/r-ladies-slides/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/r-ladies-slides/</guid>
+      <description>&lt;p&gt;So, you are doing an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation…that’s awesome! &lt;img src=&#34;https://media.giphy.com/media/r9WS57qOqU1KU/giphy.gif&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;the-short-version&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The short version&lt;/h1&gt;
+&lt;p&gt;I made an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; theme for &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; slides&lt;/a&gt;. My original tweet about it:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;if you want to use &lt;a href=&#34;https://twitter.com/xieyihui?ref_src=twsrc%5Etfw&#34;&gt;@xieyihui&lt;/a&gt;&amp;#39;s awesome &lt;a href=&#34;https://twitter.com/hashtag/xaringan?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#xaringan&lt;/a&gt; package for &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; slides but want more &lt;a href=&#34;https://twitter.com/hashtag/Rladies?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Rladies&lt;/a&gt; flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome &lt;a href=&#34;https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw&#34;&gt;@RLadiesGlobal&lt;/a&gt; starter kit. Update the CSS in your YAML to use  🧙🏽‍♀️🧞‍♀️ &lt;a href=&#34;https://t.co/YnlGSVAMsl&#34;&gt;pic.twitter.com/YnlGSVAMsl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/935973869554487296?ref_src=twsrc%5Etfw&#34;&gt;November 29, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The way to use the theme is to update the YAML like so:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
+  xaringan::moon_reader:
+    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sure your version of &lt;strong&gt;xaringan&lt;/strong&gt; is up-to-date.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/posts/rladies-slides/rladies-demo-slides.png&#34; /&gt; Below is a &lt;a href=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34;&gt;demo slide deck&lt;/a&gt; using the theme.&lt;/p&gt;
+&lt;iframe src=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;(view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/rladies-demo-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-longer-story&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The longer story&lt;/h1&gt;
+&lt;p&gt;I recommend &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui’s&lt;/a&gt; &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; package&lt;/a&gt; for slides. This is an R package, available through GitHub, for creating slideshows with &lt;a href=&#34;https://remarkjs.com/&#34;&gt;remark.js&lt;/a&gt; through R Markdown. This means that you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;write all your slides in Markdown text&lt;/li&gt;
+&lt;li&gt;include chunks of R code and rendered output like plots, results, tables, etc. in your slides&lt;/li&gt;
+&lt;li&gt;use git for version control and share your GitHub repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This makes &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; ideal for an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation!&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To use the package, you’ll need the &lt;a href=&#34;https://cran.r-project.org/web/packages/devtools/index.html&#34;&gt;&lt;strong&gt;devtools&lt;/strong&gt; package&lt;/a&gt; installed so that you can use the &lt;code&gt;install_github&lt;/code&gt; function. Then do:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#39;yihui/xaringan&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As Yihui points out in the documentation, if you use RStudio, you can use the menu to navigate to &lt;code&gt;File -&amp;gt; New File -&amp;gt; R Markdown -&amp;gt; From Template -&amp;gt; Ninja Presentation&lt;/code&gt;, and you will see an R Markdown example.&lt;/p&gt;
+&lt;p&gt;I first used &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; a few months ago. I was working with &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; on the &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown book&lt;/a&gt;, and had signed up to lead a &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/portland-r-user-group/&#34;&gt;Portland R User group&lt;/a&gt;. Obviously, such a workshop could not have powerpoint slides, so it seemed like the perfect time to learn &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For my &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt;, I made a simple website for the newly founded &lt;a href=&#34;https://rladies-pdx.rbind.io&#34;&gt;R-Ladies PDX&lt;/a&gt; using blogdown (Thanks to &lt;a href=&#34;https://twitter.com/mmmpork&#34;&gt;Augustina&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/deekshathati&#34;&gt;Deeksha&lt;/a&gt;, our fearless organizers). So naturally, my slides needed more purple.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://media.giphy.com/media/c4PW8gc5ee9NK/giphy.gif&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Luckily, the R-Ladies run a tight ship- they have a &lt;a href=&#34;https://github.com/rladies/starter-kit&#34;&gt;starter kit on GitHub&lt;/a&gt; that details all the pretty purples they like.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/rladies-slides/rladies-palette.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;About a month after I did the &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;R-Ladies blogdown workshop&lt;/a&gt;, I saw this &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;blog post&lt;/a&gt; by &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/rladies-slides/yihui-xaringan-themes.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;First, I thought this was such a cool idea and I hope more people make and submit themes. Then I realized, I had already made a theme! I submitted a pull request&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, Yihui helped me make some edits to the CSS files to make them more parsimonious with the default theme, I electronically signed a contributor agreement, and now the theme is there for you all to enjoy and use! You use the theme by editing the YAML:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
+  xaringan::moon_reader:
+    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you use the theme and you are on twitter, I’d love to see it- &lt;a href=&#34;https://twitter.com/intent/tweet?user_id=3199856542&#34;&gt;please mention me on twitter!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Examples!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My blogdown workshop slides: &lt;a href=&#34;http://127.0.0.1:4321/talk/blogdown-meetup/&#34;&gt;“Up and running with blogdown”&lt;/a&gt; (view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/blogdown-workshop-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;https://alison.rbind.io/slides/blogdown-workshop-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jessicaminnier.com&#34;&gt;Jessica Minnier’s&lt;/a&gt; slides for &lt;a href=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34;&gt;“Building Shiny Apps: With Great Power Comes Great Responsibility”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If you are new to &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;, don’t miss the &lt;a href=&#34;https://github.com/yihui/xaringan/wiki&#34;&gt;wiki!&lt;/a&gt;&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Yihui’s &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;technical instructions&lt;/a&gt; for contributors section of that blog post has been revised and is very detailed&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>blogdown: Creating Websites with R Markdown</title>
+      <link>/publication/2017-blogdown/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Labhub Workshop</title>
+      <link>/talk/labhub/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/labhub/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/ohsu-os-panel.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The landscape of scientific communication is changing dramatically.  Diverse stakeholders, including major funders and universities are demonstrating a growing interest and investment in open scientific principles and practices.  Researchers, students, and the institutions that support them are needing to navigate new expectations, workflows, and policies against a backdrop of relatively unchanged means and measures of scientific success.&lt;/p&gt;
+
+&lt;p&gt;Sound complicated?  Join us on December 8th from 3:00 to 4:00 PM for a panel discussion with OHSU leaders and early career researchers on the evolving landscape of scientific communication.  We’ll explore the drivers behind the calls for “openness”, what this means in practice, and the real world compatibility and tensions between open science and student, researcher, and institutional success.&lt;/p&gt;
+
+&lt;p&gt;Confirmed panelists include:&lt;/p&gt;
+
+&lt;p&gt;Dr. Gary Westbrook, Vollum Institute Senior Scientist and Director of the Neuroscience Graduate Program&lt;/p&gt;
+
+&lt;p&gt;Dr. Bita Moghaddam, Chair of the Department of Behavioral Neuroscience&lt;/p&gt;
+
+&lt;p&gt;Dr. Abhinav Nellore, Assistant Professor, Biomedical Engineering and the Department of Surgery&lt;/p&gt;
+
+&lt;p&gt;Dr. Alison Hill, Associate Professor, Center for Spoken Language Understanding&lt;/p&gt;
+
+&lt;p&gt;The panel will be followed by food, drinks, and two hands on workshops from 4:00 - 5:30:&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/ohsu-os-labhub-workshop.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In this workshop, Dr. Alison Hill and Robin Champieux demonstrated tools and methods for building transparency within a lab, and onboarding new graduate students and postdocs. We provided a &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;template GitHub repository&lt;/a&gt; and code of conduct designed to facilitate a healthy and productive learning and research environment. You are encouraged to use these tools to communicate expectations, document protocols, receive feedback, and facilitate the long-term value of students’ and trainees’ contributions.&lt;/p&gt;
+
+&lt;p&gt;Labhub is a &lt;em&gt;work in progress&lt;/em&gt;. We created &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;this repository&lt;/a&gt; as an education and demonstration tool for faculty, postdocs, and students curious about how documentation, open science workflows, and tools like Github can contribute to a healthy and productive research environment. Your ideas and contributions are welcome!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Up &amp; Running with blogdown</title>
+      <link>/talk/blogdown-meetup/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/blogdown-meetup/</guid>
+      <description>&lt;p&gt;We will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;blogdown&lt;/strong&gt; R package&lt;/li&gt;
+&lt;li&gt;Hugo themes&lt;/li&gt;
+&lt;li&gt;Adding content to personalize your site&lt;/li&gt;
+&lt;li&gt;Posting&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t want to blog? / just want to knit?&lt;/li&gt;
+&lt;li&gt;Customizing themes&lt;/li&gt;
+&lt;li&gt;Troubleshooting common problems&lt;/li&gt;
+&lt;li&gt;Deployment options and recommendations&lt;/li&gt;
+&lt;li&gt;Domain options available through RStudio/rbind&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are planning on attending this workshop, please click on the HTML link above for how to prepare before the workshop.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/blogdown-meetup.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Automated Measurement of Language Outcomes for Neurodevelopmental Disorders - NIDCD R01</title>
       <link>/project/language-outcomes/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
@@ -653,29 +748,6 @@ Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-0
       <pubDate>Fri, 22 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>/publication/2016-uh-and-um-asd-sli/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Obesity and Autism</title>
-      <link>/publication/2015-obesity-in-asd-multisite/</link>
-      <pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/2015-obesity-in-asd-multisite/</guid>
-      <description>&lt;p&gt;METHODS: Participants were 5053 children with confirmed diagnosis of ASD in the Autism Speaks Autism Treatment Network. Measured values for weight and height were used to calculate BMI percentiles; Centers for Disease Control and Prevention criteria for BMI for gender and age were used to define overweight and obesity (85th and 95th percentiles, respectively).&lt;/p&gt;
-
-&lt;p&gt;RESULTS: In children age 2 to 17 years, 33.6% were overweight and 18% were obese. Compared with a general US population sample, rates of unhealthy weight were significantly higher among children with ASDs ages 2 to 5 years and among those of non-Hispanic white origin. Multivariate analyses revealed that older age, Hispanic or Latino ethnicity, lower parent education levels, and sleep and affective problems were all significant predictors of obesity.&lt;/p&gt;
-
-&lt;p&gt;CONCLUSIONS: Our results indicate that the prevalence of unhealthy weight is significantly greater among children with ASD compared with the general population, with differences present as early as ages 2 to 5 years. Because obesity is more prevalent among older children in the general population, these findings raise the question of whether there are different trajectories of weight gain among children with ASDs, possibly beginning in early childhood.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Memory in language-impaired children with and without autism</title>
-      <link>/publication/2015-memory-in-li-asd/</link>
-      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/2015-memory-in-li-asd/</guid>
       <description></description>
     </item>
     

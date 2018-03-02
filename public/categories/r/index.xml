@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
-    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>En funcionamiento con blogdown</title>
+      <link>/post/up-and-running-with-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/up-and-running-with-blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Merging vs. Rebasing</title>
+      <link>/post/merging-vs-rebasing/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/merging-vs-rebasing/</guid>
+      <description>0.1 Visión conceptual Lo primero que debe entenderse sobre git rebase es que resuelve el mismo problema que git merge. Ambos comandos están diseñados para integrar cambios de un branch a otro branch; solo lo hacen de maneras muy diferentes.
+Considere lo que sucede cuando comienza a trabajar en una nueva característica en un branch dedicado para tal fin, luego otro miembro del equipo actualiza el branch master con nuevos commits.</description>
+    </item>
     
     <item>
       <title>R-Ladies presentation ninja</title>
@@ -21,15 +40,6 @@
       <description>So, you are doing an R-Ladies presentation…that’s awesome! The short version I made an R-Ladies theme for xaringan slides. My original tweet about it:
 if you want to use @xieyihui&amp;#39;s awesome #xaringan package for #rstats slides but want more #Rladies flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome @RLadiesGlobal starter kit. Update the CSS in your YAML to use 🧙🏽‍♀️🧞‍♀️ pic.twitter.com/YnlGSVAMsl
 &amp;mdash; Alison Hill (@apreshill) November 29, 2017  The way to use the theme is to update the YAML like so:</description>
-    </item>
-    
-    <item>
-      <title>Up and running with blogdown</title>
-      <link>/post/up-and-running-with-blogdown/</link>
-      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/up-and-running-with-blogdown/</guid>
-      <description></description>
     </item>
     
   </channel>
