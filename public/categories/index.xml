@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Martín Macías</title>
+    <title>Categories on Martín Andrés Macías</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Martín Macías</description>
+    <description>Recent content in Categories on Martín Andrés Macías</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Features</title>
-      <link>/categories/features/</link>
-      <pubDate>Wed, 07 Feb 2018 19:15:00 +0600</pubDate>
+      <title>Presentations</title>
+      <link>/categories/presentations/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/features/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Others</title>
-      <link>/categories/others/</link>
-      <pubDate>Mon, 25 Sep 2017 08:00:00 +0600</pubDate>
-      
-      <guid>/categories/others/</guid>
+      <guid>/categories/presentations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>/categories/tutorial/</link>
-      <pubDate>Mon, 25 Sep 2017 06:00:00 +0600</pubDate>
-      
-      <guid>/categories/tutorial/</guid>
       <description></description>
     </item>
     

@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Martín Macías</title>
+    <title>R on Martín Andrés Macías</title>
     <link>/categories/r/</link>
-    <description>Recent content in R on Martín Macías</description>
+    <description>Recent content in R on Martín Andrés Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>R-Ladies presentation ninja</title>
+      <link>/post/r-ladies-slides/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/post/r-ladies-slides/</guid>
+      <description>So, you are doing an R-Ladies presentation…that’s awesome! The short version I made an R-Ladies theme for xaringan slides. My original tweet about it:
+if you want to use @xieyihui&amp;#39;s awesome #xaringan package for #rstats slides but want more #Rladies flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome @RLadiesGlobal starter kit. Update the CSS in your YAML to use 🧙🏽‍♀️🧞‍♀️ pic.twitter.com/YnlGSVAMsl
+&amp;mdash; Alison Hill (@apreshill) November 29, 2017  The way to use the theme is to update the YAML like so:</description>
+    </item>
+    
+    <item>
+      <title>Up and running with blogdown</title>
+      <link>/post/up-and-running-with-blogdown/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/up-and-running-with-blogdown/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,190 +1,682 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Martín Macías</title>
+    <title>Martín Andrés Macías on Martín Andrés Macías</title>
     <link>/</link>
-    <description>Recent content in Home on Martín Macías</description>
+    <description>Recent content in Martín Andrés Macías on Martín Andrés Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Sep 2017 08:00:00 +0600</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Typography</title>
-      <link>/typography/</link>
-      <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
+      <title>Subtyping cognitive profiles in Autism Spectrum Disorder using a random forest algorithm</title>
+      <link>/publication/2017-subtyping/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/typography/</guid>
-      <description>Here is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Heading 2 Another one. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/publication/2017-subtyping/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>R-Ladies presentation ninja</title>
+      <link>/post/r-ladies-slides/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
-      <description>Mínimo is a Spanish word that roughly translate to Minimal.
-Minimo is a minimalist theme for Hugo.
-Minimo keeps the focus on your content and lets it shine!</description>
+      <guid>/post/r-ladies-slides/</guid>
+      <description>&lt;p&gt;So, you are doing an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation…that’s awesome! &lt;img src=&#34;https://media.giphy.com/media/r9WS57qOqU1KU/giphy.gif&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;the-short-version&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The short version&lt;/h1&gt;
+&lt;p&gt;I made an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; theme for &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; slides&lt;/a&gt;. My original tweet about it:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;if you want to use &lt;a href=&#34;https://twitter.com/xieyihui?ref_src=twsrc%5Etfw&#34;&gt;@xieyihui&lt;/a&gt;&amp;#39;s awesome &lt;a href=&#34;https://twitter.com/hashtag/xaringan?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#xaringan&lt;/a&gt; package for &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; slides but want more &lt;a href=&#34;https://twitter.com/hashtag/Rladies?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Rladies&lt;/a&gt; flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome &lt;a href=&#34;https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw&#34;&gt;@RLadiesGlobal&lt;/a&gt; starter kit. Update the CSS in your YAML to use  🧙🏽‍♀️🧞‍♀️ &lt;a href=&#34;https://t.co/YnlGSVAMsl&#34;&gt;pic.twitter.com/YnlGSVAMsl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/935973869554487296?ref_src=twsrc%5Etfw&#34;&gt;November 29, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The way to use the theme is to update the YAML like so:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
+  xaringan::moon_reader:
+    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sure your version of &lt;strong&gt;xaringan&lt;/strong&gt; is up-to-date.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/posts/rladies-slides/rladies-demo-slides.png&#34; /&gt; Below is a &lt;a href=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34;&gt;demo slide deck&lt;/a&gt; using the theme.&lt;/p&gt;
+&lt;iframe src=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;(view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/rladies-demo-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-longer-story&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The longer story&lt;/h1&gt;
+&lt;p&gt;I recommend &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui’s&lt;/a&gt; &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; package&lt;/a&gt; for slides. This is an R package, available through GitHub, for creating slideshows with &lt;a href=&#34;https://remarkjs.com/&#34;&gt;remark.js&lt;/a&gt; through R Markdown. This means that you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;write all your slides in Markdown text&lt;/li&gt;
+&lt;li&gt;include chunks of R code and rendered output like plots, results, tables, etc. in your slides&lt;/li&gt;
+&lt;li&gt;use git for version control and share your GitHub repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This makes &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; ideal for an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation!&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To use the package, you’ll need the &lt;a href=&#34;https://cran.r-project.org/web/packages/devtools/index.html&#34;&gt;&lt;strong&gt;devtools&lt;/strong&gt; package&lt;/a&gt; installed so that you can use the &lt;code&gt;install_github&lt;/code&gt; function. Then do:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#39;yihui/xaringan&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As Yihui points out in the documentation, if you use RStudio, you can use the menu to navigate to &lt;code&gt;File -&amp;gt; New File -&amp;gt; R Markdown -&amp;gt; From Template -&amp;gt; Ninja Presentation&lt;/code&gt;, and you will see an R Markdown example.&lt;/p&gt;
+&lt;p&gt;I first used &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; a few months ago. I was working with &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; on the &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown book&lt;/a&gt;, and had signed up to lead a &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/portland-r-user-group/&#34;&gt;Portland R User group&lt;/a&gt;. Obviously, such a workshop could not have powerpoint slides, so it seemed like the perfect time to learn &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For my &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt;, I made a simple website for the newly founded &lt;a href=&#34;https://rladies-pdx.rbind.io&#34;&gt;R-Ladies PDX&lt;/a&gt; using blogdown (Thanks to &lt;a href=&#34;https://twitter.com/mmmpork&#34;&gt;Augustina&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/deekshathati&#34;&gt;Deeksha&lt;/a&gt;, our fearless organizers). So naturally, my slides needed more purple.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://media.giphy.com/media/c4PW8gc5ee9NK/giphy.gif&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Luckily, the R-Ladies run a tight ship- they have a &lt;a href=&#34;https://github.com/rladies/starter-kit&#34;&gt;starter kit on GitHub&lt;/a&gt; that details all the pretty purples they like.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/rladies-slides/rladies-palette.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;About a month after I did the &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;R-Ladies blogdown workshop&lt;/a&gt;, I saw this &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;blog post&lt;/a&gt; by &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/rladies-slides/yihui-xaringan-themes.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;First, I thought this was such a cool idea and I hope more people make and submit themes. Then I realized, I had already made a theme! I submitted a pull request&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, Yihui helped me make some edits to the CSS files to make them more parsimonious with the default theme, I electronically signed a contributor agreement, and now the theme is there for you all to enjoy and use! You use the theme by editing the YAML:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
+  xaringan::moon_reader:
+    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you use the theme and you are on twitter, I’d love to see it- &lt;a href=&#34;https://twitter.com/intent/tweet?user_id=3199856542&#34;&gt;please mention me on twitter!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Examples!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My blogdown workshop slides: &lt;a href=&#34;http://127.0.0.1:4321/talk/blogdown-meetup/&#34;&gt;“Up and running with blogdown”&lt;/a&gt; (view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/blogdown-workshop-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;https://alison.rbind.io/slides/blogdown-workshop-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jessicaminnier.com&#34;&gt;Jessica Minnier’s&lt;/a&gt; slides for &lt;a href=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34;&gt;“Building Shiny Apps: With Great Power Comes Great Responsibility”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If you are new to &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;, don’t miss the &lt;a href=&#34;https://github.com/yihui/xaringan/wiki&#34;&gt;wiki!&lt;/a&gt;&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Yihui’s &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;technical instructions&lt;/a&gt; for contributors section of that blog post has been revised and is very detailed&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>Sidebar</title>
-      <link>/docs/sidebar/</link>
-      <pubDate>Wed, 07 Feb 2018 19:15:00 +0600</pubDate>
+      <title>blogdown: Creating Websites with R Markdown</title>
+      <link>/publication/2017-blogdown/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/sidebar/</guid>
-      <description>Enabling Sidebar For enabling Sidebar, use the following configuration options in your config.toml file:
-[params.sidebar] enable = true sticky = true  params.sidebar [Map]:  enable [Boolean]: Switch for enabling sidebar sticky [Boolean]: If false, sidebar scrolls with page   Adding Widgets to Sidebar For adding Widgets to the Sidebar, check the Widgets documentation.</description>
+      <guid>/publication/2017-blogdown/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Widgets</title>
-      <link>/docs/widgets/</link>
-      <pubDate>Wed, 07 Feb 2018 18:30:00 +0600</pubDate>
+      <title>Labhub Workshop</title>
+      <link>/talk/labhub/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/widgets/</guid>
-      <description>Minimo supports Widgets that you can place on specific Widget Areas.
-Available Widgets Minimo has the following built-in Widgets:
-   Name Slug     1. About about   2. Recent Posts recent_posts   3. Social Menu social_menu   4. Taxonomy Cloud taxonomy_cloud    Widget Configuration Options Here are the configuration options available for the Widgets:
-Widget: About  about [Map]:  title [String]: Title</description>
+      <guid>/talk/labhub/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/ohsu-os-panel.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The landscape of scientific communication is changing dramatically.  Diverse stakeholders, including major funders and universities are demonstrating a growing interest and investment in open scientific principles and practices.  Researchers, students, and the institutions that support them are needing to navigate new expectations, workflows, and policies against a backdrop of relatively unchanged means and measures of scientific success.&lt;/p&gt;
+
+&lt;p&gt;Sound complicated?  Join us on December 8th from 3:00 to 4:00 PM for a panel discussion with OHSU leaders and early career researchers on the evolving landscape of scientific communication.  We’ll explore the drivers behind the calls for “openness”, what this means in practice, and the real world compatibility and tensions between open science and student, researcher, and institutional success.&lt;/p&gt;
+
+&lt;p&gt;Confirmed panelists include:&lt;/p&gt;
+
+&lt;p&gt;Dr. Gary Westbrook, Vollum Institute Senior Scientist and Director of the Neuroscience Graduate Program&lt;/p&gt;
+
+&lt;p&gt;Dr. Bita Moghaddam, Chair of the Department of Behavioral Neuroscience&lt;/p&gt;
+
+&lt;p&gt;Dr. Abhinav Nellore, Assistant Professor, Biomedical Engineering and the Department of Surgery&lt;/p&gt;
+
+&lt;p&gt;Dr. Alison Hill, Associate Professor, Center for Spoken Language Understanding&lt;/p&gt;
+
+&lt;p&gt;The panel will be followed by food, drinks, and two hands on workshops from 4:00 - 5:30:&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/ohsu-os-labhub-workshop.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In this workshop, Dr. Alison Hill and Robin Champieux demonstrated tools and methods for building transparency within a lab, and onboarding new graduate students and postdocs. We provided a &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;template GitHub repository&lt;/a&gt; and code of conduct designed to facilitate a healthy and productive learning and research environment. You are encouraged to use these tools to communicate expectations, document protocols, receive feedback, and facilitate the long-term value of students’ and trainees’ contributions.&lt;/p&gt;
+
+&lt;p&gt;Labhub is a &lt;em&gt;work in progress&lt;/em&gt;. We created &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;this repository&lt;/a&gt; as an education and demonstration tool for faculty, postdocs, and students curious about how documentation, open science workflows, and tools like Github can contribute to a healthy and productive research environment. Your ideas and contributions are welcome!&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Shortcodes</title>
-      <link>/docs/shortcodes/</link>
-      <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
+      <title>Up &amp; Running with blogdown</title>
+      <link>/talk/blogdown-meetup/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/shortcodes/</guid>
-      <description>Minimo comes with several shortcodes built-in.
-Shortcode: center Center align you content.
-center: Parameters  Markdown content between opening and closing tags.  center: Usage Example {{% center %}} _Center Aligned Text_ {{% /center %}} Output
-Center Aligned Text
- Shortcode: convo Renders conversation blocks.
-convo: Parameters  sep [String] (optional): seperator between person and text (default: &amp;ldquo;:&amp;rdquo;)  convo: Inner Syntax person :: text You can remove the person part, if you want.</description>
+      <guid>/talk/blogdown-meetup/</guid>
+      <description>&lt;p&gt;We will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;blogdown&lt;/strong&gt; R package&lt;/li&gt;
+&lt;li&gt;Hugo themes&lt;/li&gt;
+&lt;li&gt;Adding content to personalize your site&lt;/li&gt;
+&lt;li&gt;Posting&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t want to blog? / just want to knit?&lt;/li&gt;
+&lt;li&gt;Customizing themes&lt;/li&gt;
+&lt;li&gt;Troubleshooting common problems&lt;/li&gt;
+&lt;li&gt;Deployment options and recommendations&lt;/li&gt;
+&lt;li&gt;Domain options available through RStudio/rbind&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are planning on attending this workshop, please click on the HTML link above for how to prepare before the workshop.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/blogdown-meetup.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+</description>
     </item>
     
     <item>
-      <title>Cover Image</title>
-      <link>/docs/cover-image/</link>
-      <pubDate>Sat, 30 Sep 2017 14:00:00 +0600</pubDate>
+      <title>Up and running with blogdown</title>
+      <link>/post/up-and-running-with-blogdown/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cover-image/</guid>
-      <description>You can add cover image to your contents with the cover paramameter in the content&amp;rsquo;s front-matter.
-You can directly provide the image url:
---- cover: /images/eden-farm-children-s-village.jpg ---  cover [String]: path/url of the cover image  Or you can provide additional information:
---- cover: image: /images/eden-farm-children-s-village.jpg caption: Eden Farm Children&amp;#39;s Village by Gareth Harper on Unsplash style: full ---  cover [Map]:  image [String]: path/url of the cover image caption [String]: caption for the cover image style [String]: full / wide / normal   </description>
+      <guid>/post/up-and-running-with-blogdown/</guid>
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#read-up-on-blogdown&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Read up on blogdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#caveats-disclaimers-etc.&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Caveats, disclaimers, etc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#in-github&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; In GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#in-terminal&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; In terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#in-rstudio&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; In RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#build-your-site-in-rstudio&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;6&lt;/span&gt; Build your site in RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#deploy-in-netlify&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;7&lt;/span&gt; Deploy in Netlify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#going-further&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;8&lt;/span&gt; Going further&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;read-up-on-blogdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Read up on blogdown&lt;/h1&gt;
+&lt;p&gt;Before you start, I recommend reading the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;: Creating Websites with R Markdown&lt;/a&gt; by Yihui Xie and Amber Thomas&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Making a Website Using &lt;code&gt;blogdown&lt;/code&gt;, Hugo, and GitHub pages&lt;/a&gt; also by Amber Thomas&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/&#34;&gt;Getting Started with &lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt; by M. Edward (Ed) Borasky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also found this comment by Eric Nantz, the creator of &lt;a href=&#34;http://r-podcast.org&#34;&gt;the R-Podcast&lt;/a&gt;, in the &lt;a href=&#34;https://github.com/rbind/support&#34;&gt;&lt;code&gt;rbind/support&lt;/code&gt; issues section on GitHub&lt;/a&gt; to be helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rbind/support/issues/12&#34; class=&#34;uri&#34;&gt;https://github.com/rbind/support/issues/12&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;caveats-disclaimers-etc.&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Caveats, disclaimers, etc.&lt;/h1&gt;
+&lt;p&gt;Even with all the great resources I listed above, getting myself up and running took a few tries, so in this post I’m passing along what ended up working for me. Everyone’s mileage may vary, though, depending on your operating system and your approach. About me: I am a macOS user, and I use R, RStudio, Git (usually via &lt;a href=&#34;https://about.gitlab.com&#34;&gt;GitLab&lt;/a&gt;, sometimes via &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;), and terminal regularly, so I’m assuming familiarity here with all of these. If that is not you, here are some places to get started:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For Git: &lt;a href=&#34;http://happygitwithr.com&#34;&gt;Happy Git with R&lt;/a&gt; by Jenny Bryan et al.&lt;/li&gt;
+&lt;li&gt;For RStudio: &lt;a href=&#34;https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1&#34;&gt;DataCamp’s Working with the RStudio IDE (free)&lt;/a&gt; by Garrett Grolemund&lt;/li&gt;
+&lt;li&gt;For Terminal: &lt;a href=&#34;https://github.com/veltman/clmystery&#34;&gt;The Command Line Murder Mystery&lt;/a&gt; by Noah Veltman, and &lt;a href=&#34;http://seankross.com/the-unix-workbench/&#34;&gt;The UNIX Workbench&lt;/a&gt; by Sean Kross&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also have &lt;a href=&#34;https://developer.apple.com/xcode/&#34;&gt;Xcode&lt;/a&gt; and &lt;a href=&#34;https://brew.sh&#34;&gt;Homebrew&lt;/a&gt; installed- &lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34;&gt;you will probably need these to download Hugo&lt;/a&gt;. If you don’t have either but are on a mac, this link may help:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/&#34;&gt;How to install Xcode, Homebrew, Git, RVM, Ruby &amp;amp; Rails on Mac OS X&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, I did not want to learn more about a lot of things! For instance, the nitty gritty of static site generators and how domain names work. I am a new mom, and just in the process of writing all this up, I filled up my tea mug twice with ice cold water, and filled my water bottle with scalding hot water. So, where offered, I followed the advice of Yihui and Amber. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/deployment.html&#34;&gt;“Considering the cost and friendliness to beginners, we currently recommend Netlify.”&lt;/a&gt; Sold.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34;&gt;“If you are not familiar with domain names or do not want to learn more about them, an option for your consideration is a free subdomain &lt;code&gt;*.rbind.io&lt;/code&gt; offered by RStudio, Inc.”&lt;/a&gt;. Done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-github&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; In GitHub&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-1.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go online to your &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt; account, and create a new repository (check to initialize with a &lt;code&gt;README&lt;/code&gt; but don’t add &lt;code&gt;.gitignore&lt;/code&gt;- this will be taken care of later). For naming your repo, consider your future deployment plan:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are going to use &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; to host the site, you can name this repository anything you want! &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;You can see some of the repo names used by members of the &lt;code&gt;rbind&lt;/code&gt; organization &lt;a href=&#34;https://github.com/rbind/repositories&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;If you want to host your site as a &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Page&lt;/a&gt;, you should name your repository &lt;code&gt;yourgithubusername.github.io&lt;/code&gt; (so mine would have been &lt;code&gt;apreshill.github.io&lt;/code&gt;). If you are going this route, I suggest you follow &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber’s instructions&lt;/a&gt; instead of mine!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png&#34; alt=&#34;Screenshot above: Creating a new repository in GitHub&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot above: Creating a new repository in GitHub&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the main page of your new repository, and under the repository name, click the green &lt;strong&gt;Clone or download&lt;/strong&gt; button.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Clone with HTTPs&lt;/strong&gt; section, click on the clipboard icon to copy the clone URL for your new repository. You’ll paste this text into terminal in the next section.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-terminal&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; In terminal&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-2.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Now you will &lt;a href=&#34;https://help.github.com/articles/cloning-a-repository/&#34;&gt;clone your remote repository&lt;/a&gt; and create a local copy on your computer so you can sync between the two locations (using terminal or your alternative command line tool for a Windows machine).&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;cd&lt;/code&gt; to navigate into the directory where you want your repo to be&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Once there, type: &lt;code&gt;git clone [paste]&lt;/code&gt;. So my command looked like this:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/apreshill/apreshill.git&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And this is what printed to my terminal window:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Cloning into &amp;#39;apreshill&amp;#39;...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Close terminal, you are done in there.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-rstudio&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; In RStudio&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-3.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Install &lt;code&gt;blogdown&lt;/code&gt; from your RStudio console. If you already have &lt;code&gt;devtools&lt;/code&gt; installed like I did, you can just use the second line below:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;if (!requireNamespace(&amp;quot;devtools&amp;quot;)) install.packages(&amp;quot;devtools&amp;quot;)
+devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Install Hugo using the &lt;code&gt;blogdown&lt;/code&gt; package helper function:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::install_hugo()
+# or
+library(blogdown)
+install_hugo()&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;This is where my instructions diverge from Ed’s- he states that &lt;code&gt;blogdown&lt;/code&gt; won’t create a website in your root folder because the &lt;code&gt;README.md&lt;/code&gt; file is already there. I didn’t find that to be the case- I tested this with a new site as well. If one way doesn’t work for you, try the other!&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use the top menu buttons in RStudio to select &lt;code&gt;File -&amp;gt; New Project -&amp;gt; Existing Directory&lt;/code&gt;, then browse to the directory on your computer where your GitHub repo is and click on the &lt;strong&gt;Create Project&lt;/strong&gt; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/r-project-existing-directory.png&#34; alt=&#34;Screenshot above: Creating a new project in an existing directory in RStudio&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot above: Creating a new project in an existing directory in RStudio&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Now you should be “in” your project in RStudio. If you are using git for version control, edit your &lt;code&gt;*gitignore&lt;/code&gt; file. This file should be viewable in your file viewer pane in RStudio. Below is what it should look like: the first four lines will automatically be in this file if you have set up your RStudio Project, but if you plan to use Netlify to deploy, you need to add the &lt;code&gt;public/&lt;/code&gt; line (&lt;a href=&#34;https://bookdown.org/yihui/blogdown/version-control.html&#34;&gt;read about here&lt;/a&gt;.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+blogdown
+.DS_Store # if a windows user, Thumbs.db instead
+public/ # if using Netlify&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;build-your-site-in-rstudio&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;6&lt;/span&gt; Build your site in RStudio&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-4.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Now you can finally build your site using the &lt;code&gt;blogdown::new_site()&lt;/code&gt; function. But &lt;strong&gt;first&lt;/strong&gt; you should at least think about themes…&lt;/p&gt;
+&lt;div id=&#34;picking-a-theme&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.1&lt;/span&gt; Picking a theme&lt;/h2&gt;
+&lt;p&gt;There are over 90 &lt;a href=&#34;https://themes.gohugo.io&#34;&gt;Hugo themes&lt;/a&gt;. So I went back to the &lt;code&gt;blogdown&lt;/code&gt; book. Thankfully, Yihui and Amber offer &lt;a href=&#34;https://bookdown.org/yihui/blogdown/other-themes.html&#34;&gt;“to save you some time, we list a few themes below that match our taste…”&lt;/a&gt;. Huzzah- I went with &lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34;&gt;hugo-academic&lt;/a&gt;! Whatever theme you choose, you’ll need to pick one of 3 ways to make your new site:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If you are happy with the default theme, which is the lithium theme, you can use:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::new_site() # default theme is lithium&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If you want a theme other than the default, you can specify the theme at the same time as you call the &lt;code&gt;new_site&lt;/code&gt; function:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# for example, create a new site with the academic theme
+blogdown::new_site(theme = &amp;quot;gcushen/hugo-academic&amp;quot;, theme_example = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If instead you want to add the theme later (like I did, because I didn’t see the above example until it was too late!), you can do this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;library(blogdown)
+new_site() # default theme is lithium
+# need to stop serving so can use the console again
+install_theme(&amp;quot;gcushen/hugo-academic&amp;quot;, theme_example = TRUE, update_config = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Now is a good time to re-read about &lt;code&gt;blogdown::serve_site()&lt;/code&gt; and &lt;a href=&#34;https://bookdown.org/yihui/blogdown/a-quick-example.html&#34;&gt;how &lt;em&gt;LiveReload&lt;/em&gt; works&lt;/a&gt; (and how it blocks your R console by default)&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;I recommend setting &lt;code&gt;theme_example = TRUE&lt;/code&gt;- some themes won’t provide an example site, but the academic theme did and I found it helpful to see. You can always delete the example content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;update-project-options&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.2&lt;/span&gt; Update project options&lt;/h2&gt;
+&lt;p&gt;In your project in RStudio, go to the top menu bar of RStudio and select &lt;code&gt;Tools -&amp;gt; Project Options&lt;/code&gt; and update following &lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html#fig:project-options&#34;&gt;Yihui and Amber’s instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;edit-your-configurations&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.3&lt;/span&gt; Edit your configurations&lt;/h2&gt;
+&lt;p&gt;Relevant reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt; book chapter on configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/#site-configuration&#34;&gt;Additional detail from Amber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can also view &lt;a href=&#34;https://github.com/apreshill/apreshill/blob/master/config.toml&#34;&gt;my &lt;code&gt;config.toml&lt;/code&gt; file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, edit the &lt;code&gt;baseurl&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; file. The URL &lt;em&gt;should always&lt;/em&gt; end with a &lt;code&gt;/&lt;/code&gt; trailing slash. At this point, you probably haven’t deployed your site yet, so to view it locally you can use the &lt;strong&gt;Serve Site&lt;/strong&gt; add-in, or run the &lt;code&gt;blogdown::serve_site&lt;/code&gt; function. Both of these baseurls worked for me when viewing locally:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;https://example.com/&amp;quot;
+baseurl = &amp;quot;/&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;p&gt;Make sure that the &lt;code&gt;baseurl =&lt;/code&gt; listed ends with a trailing slash &lt;code&gt;/&lt;/code&gt;!&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Go ahead and edit all the other elements in the &lt;code&gt;config.toml&lt;/code&gt; file now as you please- this is how you personalize your site!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;addins-workflow&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.4&lt;/span&gt; Addins &amp;amp; workflow&lt;/h2&gt;
+&lt;p&gt;Relevant reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt; book chapter on the RStudio IDE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Addins: use them- you won’t need the &lt;code&gt;blogdown&lt;/code&gt; library loaded in the console if you use the Addins. My workflow in RStudio at this point (again, just viewing locally because we haven’t deployed yet) works best like this:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Open the RStudio project for the site&lt;/li&gt;
+&lt;li&gt;Use the &lt;strong&gt;Serve Site&lt;/strong&gt; add-in (only once due to the magic of &lt;em&gt;LiveReload&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;View site in the RStudio viewer pane, and open in a new browser window while I work&lt;/li&gt;
+&lt;li&gt;Select existing files to edit using the file pane in RStudio&lt;/li&gt;
+&lt;li&gt;After making changes, click the save button (don’t &lt;code&gt;knit&lt;/code&gt;!)- the console will reload, the viewer pane will update, and if you hit refresh in the browser your local view will also be updated&lt;/li&gt;
+&lt;li&gt;When happy with changes, add/commit/push changes to GitHub&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Having &lt;code&gt;blogdown::serve_site&lt;/code&gt; running locally with &lt;em&gt;LiveReload&lt;/em&gt; is especially useful as you can immediately see if you have totally screwed up. For example, in editing my &lt;code&gt;about.md&lt;/code&gt; file, this error popped up in my console after making a change and I was able to fix the error right away:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Started building sites ...
+ERROR 2017/06/08 16:22:34 failed to parse page metadata for home/about.md: (18, 6): missing comma
+Error: Error building site: Errors reading pages: Error: failed to parse page metadata for home/about.md: (18, 6): missing comma for about.md&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above workflow is only for editing existing files or posts, but not for &lt;strong&gt;creating new posts&lt;/strong&gt;. For that, read on…&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;posting&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5&lt;/span&gt; Posting&lt;/h2&gt;
+&lt;p&gt;Relevant reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt; book chapter on RStudio IDE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/output-format.html&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt; book chapter on output formats&lt;/a&gt;: on .md versus .Rmd posts&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/#adding-a-blog-post-or-portfolio-piece&#34;&gt;Additional detail from Amber&lt;/a&gt; on adding a blog post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bottom line:&lt;/p&gt;
+&lt;p&gt;Use the &lt;strong&gt;New Post&lt;/strong&gt; addin. But, you need the console to do this, so you have to stop &lt;code&gt;blogdown::serve_site&lt;/code&gt; by clicking on the red &lt;strong&gt;Stop&lt;/strong&gt; button first. The Addin is a Shiny interface that runs this code in your console: &lt;code&gt;blogdown:::new_post_addin()&lt;/code&gt;. So, your console needs to be unblocked for it to run. You also need to be “in” your RStudio project or it won’t work.&lt;/p&gt;
+&lt;div id=&#34;draft-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.1&lt;/span&gt; Draft posts&lt;/h3&gt;
+&lt;p&gt;Relevant reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/local-preview.html&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt; book chapter on building a website for local preview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Whether you do a markdown or R Markdown post (see below), you should know that in the YAML front matter of your new file, you can add &lt;code&gt;draft: TRUE&lt;/code&gt; and you will be able to preview your post using &lt;code&gt;blogdown::serve_site()&lt;/code&gt;, but conveniently your post will not show up on your deployed site until you set it to false. Because this is a function built into Hugo, all posts (draft or not) will still end up in your GitHub repo though.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;new-markdown-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.2&lt;/span&gt; New markdown posts&lt;/h3&gt;
+&lt;p&gt;Pick one of 2 methods:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use the &lt;strong&gt;New Post&lt;/strong&gt; addin and with the radio button at the bottom select &lt;strong&gt;Format: Markdown&lt;/strong&gt; (recommended)&lt;/li&gt;
+&lt;li&gt;Use the console to author a new &lt;code&gt;.md&lt;/code&gt; post:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::new_post()
+blogdown::new_post(rmd = FALSE) # false is the default!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here are the &lt;code&gt;?new_post&lt;/code&gt; arguments:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;new_post(title, kind = &amp;quot;default&amp;quot;, open = interactive(), 
+    author = getOption(&amp;quot;blogdown.author&amp;quot;), categories = NULL, 
+    tags = NULL, date = Sys.Date(), file = NULL, slug = NULL, 
+    subdir = getOption(&amp;quot;blogdown.subdir&amp;quot;, &amp;quot;post&amp;quot;), 
+    rmd = getOption(&amp;quot;blogdown.rmd&amp;quot;, FALSE))&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Remember to use the &lt;strong&gt;Serve Site&lt;/strong&gt; addin again so that you can immediately view your changes with every save using &lt;em&gt;LiveReload&lt;/em&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div id=&#34;new-rmarkdown-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.3&lt;/span&gt; New RMarkdown posts&lt;/h3&gt;
+&lt;p&gt;Again, you have your choice of one of 2 methods:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use the &lt;strong&gt;New Post&lt;/strong&gt; addin and with the radio button at the bottom select &lt;strong&gt;Format: RMarkdown&lt;/strong&gt; (recommended)&lt;/li&gt;
+&lt;li&gt;Use the console to author a new &lt;code&gt;.Rmd&lt;/code&gt; post:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::new_post(rmd = TRUE) # false is the default!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After you edit your &lt;code&gt;.Rmd&lt;/code&gt; post, in addition to saving the changes in your &lt;code&gt;.Rmd&lt;/code&gt; file, you &lt;em&gt;must&lt;/em&gt; use &lt;code&gt;blogdown::serve_site&lt;/code&gt;- this is how the output &lt;code&gt;html&lt;/code&gt; file needs to be generated.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;p&gt;Do &lt;em&gt;not&lt;/em&gt; knit your &lt;code&gt;.Rmd&lt;/code&gt; posts- use &lt;code&gt;blogdown::serve_site&lt;/code&gt; instead. If you happen to hit the knit button, just &lt;strong&gt;Serve Site&lt;/strong&gt; again to rewrite the &lt;code&gt;.html&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Ultimately, your &lt;a href=&#34;https://bookdown.org/yihui/blogdown/output-format.html#output-format&#34;&gt;YAML front matter looks something like this&lt;/a&gt;; note that some but not all features of &lt;code&gt;rmarkdown::html_document&lt;/code&gt; &lt;a href=&#34;https://bookdown.org/yihui/blogdown/output-format.html#fn15&#34;&gt;are supported in &lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;My Awesome Post&amp;quot;
+author: &amp;quot;John Doe&amp;quot;
+date: &amp;quot;2017-02-14&amp;quot;
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+    number_sections: true
+    fig_width: 6
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Remember to use the &lt;strong&gt;Serve Site&lt;/strong&gt; addin again so that you can immediately view your changes with every save using &lt;em&gt;LiveReload&lt;/em&gt; and your &lt;code&gt;.html&lt;/code&gt; file is properly output.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div id=&#34;adding-images-to-a-post&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.4&lt;/span&gt; Adding images to a post&lt;/h3&gt;
+&lt;p&gt;If you want to include an image that is not a figure created from an R chunk, the &lt;a href=&#34;https://github.com/rstudio/blogdown/issues/45&#34;&gt;recommended method&lt;/a&gt; is to:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Add the image to your &lt;code&gt;/static/img/&lt;/code&gt; folder, then&lt;/li&gt;
+&lt;li&gt;Reference the image using the relative file path as follows:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;![my-image](/img/my-image.png)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;deploy-in-netlify&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;7&lt;/span&gt; Deploy in Netlify&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-5.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Deploying in Netlify through GitHub is smooth. Yihui and Amber give some &lt;a href=&#34;https://bookdown.org/yihui/blogdown/deployment.html&#34;&gt;beginner instructions&lt;/a&gt;, but Netlify is so easy, I recommend that you skip dragging your &lt;code&gt;public&lt;/code&gt; folder in and instead &lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html#netlify&#34;&gt;automate the process through GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;When you are ready to deploy, commit your changes and push to GitHub, then go online to &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Click on the &lt;strong&gt;Sign Up&lt;/strong&gt; button and sign up using your existing GitHub account (no need to create another account)&lt;/li&gt;
+&lt;li&gt;Log in, and select: &lt;code&gt;New site from Git -&amp;gt; Continuous Deployment: GitHub&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;From there, Netlify will allow you to select from your existing GitHub repositories. You’ll pick the repo you’ve been working from with &lt;code&gt;blogdown&lt;/code&gt;, then you’ll configure your build. This involves specifying two important things: the build command and the publish directory (this should be &lt;code&gt;public&lt;/code&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More about the build command from &lt;a href=&#34;https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives&#34;&gt;Netlify&lt;/a&gt;: &lt;em&gt;“For Hugo hosting, &lt;code&gt;hugo&lt;/code&gt; will build and deploy with the version 0.17 of &lt;code&gt;hugo&lt;/code&gt;. You can specify a specific &lt;code&gt;hugo&lt;/code&gt; release like this: &lt;code&gt;hugo_0.15&lt;/code&gt;. Currently &lt;code&gt;0.13&lt;/code&gt;, &lt;code&gt;0.14&lt;/code&gt;, &lt;code&gt;0.15&lt;/code&gt;, &lt;code&gt;0.16&lt;/code&gt;, &lt;code&gt;0.17&lt;/code&gt;, &lt;code&gt;0.18&lt;/code&gt; and &lt;code&gt;0.19&lt;/code&gt; are supported. For version &lt;code&gt;0.20&lt;/code&gt; and above, you’ll need to create a Build environment variable called &lt;code&gt;HUGO_VERSION&lt;/code&gt; and set it to the version of your choice.”&lt;/em&gt; I opted for the former, and specified &lt;code&gt;hugo_0.19&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can check your &lt;code&gt;hugo&lt;/code&gt; version in terminal using the command &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;&lt;code&gt;hugo version&lt;/code&gt;&lt;/a&gt;. This is what my output looked like, so I could run version &lt;code&gt;0.20&lt;/code&gt; if I wanted to through Netlify, but I went with &lt;code&gt;0.19&lt;/code&gt; and it works just fine.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo version
+Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-07:00&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/netlify-build-settings.png&#34; alt=&#34;Screenshot above: Basic build settings in Netlify&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot above: Basic build settings in Netlify&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Netlify will deploy your site and assign you a random subdomain name of the form &lt;code&gt;random-word-12345.netlify.com&lt;/code&gt;. Mine was particularly unfortunate, with the random word &lt;code&gt;garbage-collector-janice&lt;/code&gt;. You should know that you can change this; I changed mine to &lt;code&gt;apreshill.netlify.com&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Anytime you change your subdomain name, you need to update the &lt;code&gt;baseurl&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; file (so I changed mine to baseurl = “&lt;a href=&#34;https://apreshill.netlify.com/&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://apreshill.netlify.com/&#34; target=&#34;_blank&#34;&gt;https://apreshill.netlify.com/&lt;/a&gt;&lt;/a&gt;”).&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;At this point, you should be up and running with &lt;code&gt;blogdown&lt;/code&gt;, GitHub, and Netlify, but here are some ideas if you want to go further…&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;going-further&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;8&lt;/span&gt; Going further&lt;/h1&gt;
+&lt;div id=&#34;custom-css&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.1&lt;/span&gt; Custom CSS&lt;/h2&gt;
+&lt;p&gt;I like to tinker with default theme settings like colors and fonts. Every Hugo theme is structured a little differently, but if you are interested, you can check out &lt;a href=&#34;https://github.com/apreshill/apreshill/blob/master/static/css/blue.css&#34;&gt;my custom css&lt;/a&gt; to see how I customized the academic theme, which provides a way to link to a custom CSS file in the &lt;code&gt;config.toml&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = [&amp;quot;blue.css&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;formspree&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.2&lt;/span&gt; Formspree&lt;/h2&gt;
+&lt;p&gt;I used &lt;a href=&#34;https://formspree.io&#34;&gt;Formspree&lt;/a&gt; to make a contact form, which is an online service (managed on &lt;a href=&#34;https://github.com/formspree/formspree&#34;&gt;GitHub&lt;/a&gt;) that allows you to add an HTML form to your static site. No registration, just use the form and confirm your email address once. I added the following code into &lt;a href=&#34;https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html&#34;&gt;my contact widget&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form action=&amp;quot;https://formspree.io/your@email.com&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
+  &amp;lt;label for=&amp;quot;name&amp;quot;&amp;gt;Your name: &amp;lt;/label&amp;gt;
+  &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot; required=&amp;quot;required&amp;quot; placeholder=&amp;quot;here&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+  &amp;lt;label for=&amp;quot;email&amp;quot;&amp;gt;Your email: &amp;lt;/label&amp;gt;
+  &amp;lt;input type=&amp;quot;email&amp;quot; name=&amp;quot;_replyto&amp;quot; required=&amp;quot;required&amp;quot; placeholder=&amp;quot;here&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+  &amp;lt;label for=&amp;quot;message&amp;quot;&amp;gt;Your message:&amp;lt;/label&amp;gt;&amp;lt;br&amp;gt;
+  &amp;lt;textarea rows=&amp;quot;4&amp;quot; name=&amp;quot;message&amp;quot; id=&amp;quot;message&amp;quot; required=&amp;quot;required&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;I can&amp;#39;t wait to read this!&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;
+  &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_next&amp;quot; value=&amp;quot;/html/thanks.html&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Send&amp;quot; name=&amp;quot;submit&amp;quot; class=&amp;quot;btn btn-primary btn-outline&amp;quot;&amp;gt;
+  &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_subject&amp;quot; value=&amp;quot;Website message&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;_gotcha&amp;quot; style=&amp;quot;display:none&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rbind.io-domain-names&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.3&lt;/span&gt; &lt;code&gt;*.rbind.io&lt;/code&gt; domain names&lt;/h2&gt;
+&lt;p&gt;You may want a different &lt;a href=&#34;https://bookdown.org/yihui/blogdown/domain-name.html&#34;&gt;domain name&lt;/a&gt; than the one provided by Netlify. I opted for a free subdomain &lt;code&gt;*.rbind.io&lt;/code&gt; offered by RStudio. To do the same, head over to the &lt;a href=&#34;https://github.com/rbind/support/issues&#34;&gt;rbind/support GitHub page&lt;/a&gt; and open a new issue. All you need to do is let them know what your Netlify subdomain name is (&lt;code&gt;*.netlify.com&lt;/code&gt;), and what you want your subdomain name to be (&lt;code&gt;*.rbind.io&lt;/code&gt;). The &lt;a href=&#34;https://support.rbind.io&#34;&gt;awesome &lt;code&gt;rbind&lt;/code&gt; support team&lt;/a&gt; will help you take it from there!&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Again, you will need to update the &lt;code&gt;baseurl&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; file to reflect your new rbind subdomain name (so mine is baseurl = “&lt;a href=&#34;https://alison.rbind.io/&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://alison.rbind.io/&#34; target=&#34;_blank&#34;&gt;https://alison.rbind.io/&lt;/a&gt;&lt;/a&gt;”).&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/rbind.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;have-fun&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.4&lt;/span&gt; Have fun!&lt;/h2&gt;
+&lt;p&gt;Lastly, don’t forget to just have fun with it. Happy &lt;code&gt;blogdown&lt;/code&gt;ing!&lt;/p&gt;
+&lt;iframe src=&#34;https://giphy.com/embed/13Y6LAZJqRspI4&#34; width=&#34;480&#34; height=&#34;357&#34; frameBorder=&#34;0&#34; class=&#34;giphy-embed&#34; allowFullScreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://giphy.com/gifs/dancing-seinfeld-elaine-benes-13Y6LAZJqRspI4&#34;&gt;via GIPHY&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>Translation Support</title>
-      <link>/docs/translation/</link>
-      <pubDate>Wed, 27 Sep 2017 14:00:00 +0600</pubDate>
+      <title>Automated Measurement of Language Outcomes for Neurodevelopmental Disorders - NIDCD R01</title>
+      <link>/project/language-outcomes/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/translation/</guid>
-      <description>You can translate Minimo in your own language!
-For example, if you want to translate Minimo in Spanish, you will have to add this to your site&amp;rsquo;s config file:
-[languages.es] lang = &amp;#34;es&amp;#34; languageName = &amp;#34;Spanish&amp;#34; weight = 1 Then create a folder named /i18n/ in your site&amp;rsquo;s root. And create a file /i18n/es.toml with the translated strings.
-For reference template you can see the en.toml file.
-If you want your translation file to be included in Minimo repository, feel free to create a pull request.</description>
+      <guid>/project/language-outcomes/</guid>
+      <description>&lt;p&gt;Improving spoken language use (i.e., discourse skills) is a common treatment goal for children with neurodevelopmental disorders, particularly for those with difficulties in conversational reciprocity, perseverative speech, or idiosyncratic/stereotyped word use. These features are clinically meaningful, and in previous projects, we have successfully applied Natural Language Processing (NLP) methods to measure these discourse skills using natural language samples from children with Autism Spectrum Disorder (ASD). However, while NLP methods yield diagnostically relevant measures, it is not known if they can be translated into meaningful outcome measures. To take this next step, important questions must be addressed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How stable and responsive are NLP discourse measures over time?&lt;/li&gt;
+&lt;li&gt;How consistent are the measures across different measurement contexts and lengths?&lt;/li&gt;
+&lt;li&gt;What is their validity?&lt;/li&gt;
+&lt;li&gt;To what degree are measures impacted by general language or intellectual abilities?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lack of knowledge about these psychometric properties of NLP discourse measures is a problem because, without it, the likelihood that children’s use of spoken language can be targeted and impacted in large-scale clinical trials is remote.&lt;/p&gt;
+
+&lt;p&gt;The long-term goal of this project is to harness the benefits of NLP to impact functional spoken language outcomes for children with neurodevelopmental disorders. The parent project (R01DC012033: “Computational Characterization of Language Use in Autism Spectrum Disorder”) took the first steps towards this goal by developing NLP algorithms to measure discourse skills based on raw (i.e., not coded or annotated) transcripts. Our strong results indicate difficulties in conversational reciprocity as well as elevated repetitive language behaviors among children with ASD compared to children without ASD, and were not due to differences in age, IQ, or language abilities. Our objective in this project is to take the next step to evaluate the suitability of these NLP automated discourse measures (ADMs) as outcomes for individuals with a range of intellectual abilities and diagnoses. Our approach will focus on optimizing stability of such measures, and assessing responsiveness to change over time, consistency across sampling contexts and sample lengths, and validity.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Syntax Highlighting</title>
-      <link>/docs/syntax-highlighting/</link>
-      <pubDate>Wed, 27 Sep 2017 12:00:00 +0600</pubDate>
+      <title>Multi-modal Autism Phenotype Snapshot (MAPS): Automated measurement of outcomes for children with autism</title>
+      <link>/project/maps/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/syntax-highlighting/</guid>
-      <description>Hugo uses Chroma as it&amp;rsquo;s built-in syntax-highlighter.
-For detailed information about Syntax Highlighting in Hugo, check the Hugo&amp;rsquo;s Syntax Highlighting Documentation.</description>
+      <guid>/project/maps/</guid>
+      <description>&lt;p&gt;Targeting core symptoms of Autism Spectrum Disorders (ASD) is a key treatment goal for parents of children with ASD. While many efficacious treatments for ASD have been developed, a major obstacle in evaluating these treatments among children with ASD has been the lack of adequate outcome measures (Anagnostou et al., 2014; Bolte &amp;amp; Diehl, 2013; Kanne et al., 2014). Most treatment studies have relied on informant-based measures (i.e., parent or clinician report) that either place a high burden on families, or require significant training and time to administer. Moreover, measures are often re-purposed from existing measures intended for screening or diagnosis, and do not provide continuous measures of symptoms that are responsive to change. Thus, there is a clear need to develop ASD outcome measures that are reliable, valid, and sensitive to change. In the absence of such outcome measures, our understanding of the efficacy of treatments for ASD will continue to be limited.&lt;/p&gt;
+
+&lt;p&gt;At the same time, automated methods for quantifying behavior have become more advanced, less intrusive, and more cost-effective, and could provide reliable and sensitive measures of behavioral change. However, these methods have yet to be translated into a viable outcome measure for use in treatment studies. For example, recent research has shown that autism symptoms can be objectively measured with automated methods such as eye-tracking (Rice, Moriuchi, Jones, &amp;amp; Klin, 2012), natural language processing (Gorman et al., 2016; Rouhizadeh et al., 2014; van Santen, Sproat, &amp;amp; Hill, 2013), and quantitative facial emotion analysis (Metallinou, Grossman, &amp;amp; Narayanan, 2013), and that such measures are interpretable and meaningful for the everyday lives of children and their families.&lt;/p&gt;
+
+&lt;p&gt;The goal of this project is to develop and validate a novel objective measurement tool, the Multi-modal Autism Phenotype Snapshot (MAPS), for use in clinical trials targeting core symptoms of autism. MAPS uses automated methods to measure autism-relevant behaviors across multiple modalities (gaze-tracking, natural language processing, facial expression analysis) while children watch and respond to audiovisual stimuli presented on a laptop. This project was funded by a Catalyst Award from the Oregon Clinical &amp;amp; Translational Research Institute.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Menus Setup Guide</title>
-      <link>/docs/menus/</link>
-      <pubDate>Wed, 27 Sep 2017 10:00:00 +0600</pubDate>
+      <title>Quantitative Analysis of Disfluency in Children with Autism Spectrum Disorder or Language Impairment</title>
+      <link>/publication/2017-mazes-asd-sli/</link>
+      <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/menus/</guid>
-      <description>Minimo has two menus.
- Main Menu Social Menu  Minimo Main Menu Main menu is located at the top of the site.
-Check Hugo&amp;rsquo;s Menus Documentation for information about managing this menu.
-Minimo Social Menu Social menu is located at the footer of the site.
-Use the [params.social] variables in the site&amp;rsquo;s configuration for adding your social profiles.
-You only have to add your usernames. Minimo will take care of the rest.</description>
+      <guid>/publication/2017-mazes-asd-sli/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Opengraph Support</title>
-      <link>/docs/opengraph/</link>
-      <pubDate>Tue, 26 Sep 2017 08:00:00 +0600</pubDate>
+      <title>Code Your Graph Workshop</title>
+      <link>/talk/code-your-graph/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/docs/opengraph/</guid>
-      <description>Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&amp;rsquo; front-matters &amp;amp; Hugo configuration.
-You can use these options in you content&amp;rsquo;s front-matter:
---- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---  audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.</description>
+      <guid>/talk/code-your-graph/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/code-your-graph.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+</description>
     </item>
     
     <item>
-      <title>Authors Setup Guide</title>
-      <link>/docs/authors/</link>
-      <pubDate>Tue, 26 Sep 2017 06:00:00 +0600</pubDate>
+      <title>Computational Characterization of Language Use in Females and Males with Autism Spectrum Disorder</title>
+      <link>/project/sex-diffs-language/</link>
+      <pubDate>Wed, 11 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>/docs/authors/</guid>
-      <description>Minimo supports multiple authors for your site. Just make sure you have the following configuration in your site&amp;rsquo;s config.toml:
-[taxonomies] author = &amp;#34;authors&amp;#34; Minimo treats Authors as a Hugo Taxonomy.
-Author&amp;rsquo;s Profile For adding an author to your site:
- Create data/authors folder in your site&amp;rsquo;s root directory Create a file with the filename format: &amp;lt;username&amp;gt;.toml  Now, add information about the author using the structure below:
-/data/authors/muniftanjim.toml
-id = &amp;#34;martinandresmacias&amp;#34; [email] username = &amp;#34;martinandresmacias&amp;#34; host = &amp;#34;gmail.</description>
+      <guid>/project/sex-diffs-language/</guid>
+      <description>&lt;p&gt;The female clinical presentation of Autism Spectrum Disorder (ASD) is not well understood, and is a contributing factor to underidentification and delays in the diagnosis of ASDs among females, particularly for those who are verbal and without cognitive impairments. Sex differences in clinical presentation may make it more difficult to recognize ASD symptoms in females, yet evidence for differences between females and males in the two core symptom domains—social communication/interaction and repetitive behaviors and restricted interests—has been inconsistent. Although some studies have found stronger social communication/interaction skills in affected females than in males, researchers and clinicians have cautioned that these strengths may be superficial and allow females to “mask” their ASD symptoms, further contributing to underidentification among females. Similarly, restricted and repetitive behaviors may be less common among females with ASD, or they may simply look different from clinical expectations based on male presentations, again allowing females to “fly under the radar.” Thus, there is a critical need to further understanding of sex differences in the fundamental patterns of behavioral and social functioning relevant to the clinical presentation of ASD. In the absence of such knowledge, females with ASD will continue to be underidentified; affected females will be identified at older ages and thus will fail to benefit from access to early intervention services.&lt;/p&gt;
+
+&lt;p&gt;The long-term goal of this project is to further understanding of the female clinical presentation of ASD, so that improved methods for identification, assessment, and treatment of females with communication difficulties such as ASD can be developed. Our objective is to identify features that characterize atypical language use—a core symptom of ASD—among females with ASD. In the parent R01, we have developed and validated new Natural Language Processing based methods that automatically measure features of atypical language use based on raw (i.e., not coded) transcripts of natural language samples. Our strong preliminary data indicate significant impairments in conversational reciprocity and repetitive speech behaviors among children with ASD. For this administrative supplement, we propose to increase sample size of females with ASD in order to increase statistical power to analyze sex differences among children with ASD in atypical language use. Our rationale for this project is that successful identification of observable and objective differences (and similarities) between females and males in atypical language use would allow clinicians to better recognize, assess, and potentially treat symptoms of ASD in females.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Configuration File: config.toml</title>
-      <link>/docs/config-file/</link>
-      <pubDate>Mon, 25 Sep 2017 08:00:00 +0600</pubDate>
+      <title>Epidemiology of autism spectrum disorders</title>
+      <link>/publication/2016-primer-on-asd/</link>
+      <pubDate>Fri, 19 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/docs/config-file/</guid>
-      <description>This is the Minimo&amp;rsquo;s configuraion file ( config.toml ) file of this site:
-baseURL = &amp;#34;http://martin.rbind.io&amp;#34; title = &amp;#34;Martín Macías&amp;#34; # for smart copyright line, leave this blank and check [params.copyright] copyright = &amp;#34;&amp;#34; theme = &amp;#34;minimo&amp;#34; disqusShortname = &amp;#34;&amp;#34; googleAnalytics = &amp;#34;&amp;#34; Paginate = 5 preserveTaxonomyNames = true enableRobotsTXT = true # generate robots.txt # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ ) pygmentsCodefences = true # Missing translations will default to this content language defaultContentLanguage = &amp;#34;en&amp;#34; [params.</description>
+      <guid>/publication/2016-primer-on-asd/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Updating Guide</title>
-      <link>/docs/updating/</link>
-      <pubDate>Mon, 25 Sep 2017 06:00:00 +0600</pubDate>
+      <title>Uh and Um in Children With Autism Spectrum Disorders or Language Impairment</title>
+      <link>/publication/2016-uh-and-um-asd-sli/</link>
+      <pubDate>Fri, 22 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/docs/updating/</guid>
-      <description>Updating Minimo Update Minimo clone Just replace the themes/minimo folder with the latest version of Minimo clone, i.e. delete the old folder and clone again:
-rm -rf themes/minimo git clone --depth 1 https://github.com/MunifTanjim/minimo themes/minimo Then, commit the changes:
-git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; Update Minimo submodule cd themes/minimo git checkout master git fetch &amp;amp;&amp;amp; git pull cd ../.. git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; To Do After Updating Minimo After updating Minimo, always check that your site&amp;rsquo;s config.</description>
+      <guid>/publication/2016-uh-and-um-asd-sli/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Installation Guide</title>
-      <link>/docs/installation/</link>
-      <pubDate>Mon, 25 Sep 2017 02:00:00 +0600</pubDate>
+      <title>Obesity and Autism</title>
+      <link>/publication/2015-obesity-in-asd-multisite/</link>
+      <pubDate>Thu, 03 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/docs/installation/</guid>
-      <description>First of all you will need to setup a Hugo site. You can follow the Hugo&amp;rsquo;s Quick Start Guide for that.
-After you&amp;rsquo;re done with that, it&amp;rsquo;s time for installing Minimo!
-Installing Minimo There are two different ways you can install Minimo:
- As clone As submodule  The second method is recommended.
-Install Minimo as clone With this method, you will simply clone it. And a copy of Minimo&amp;rsquo;s repository will be stored with the rest of you site.</description>
+      <guid>/publication/2015-obesity-in-asd-multisite/</guid>
+      <description>&lt;p&gt;METHODS: Participants were 5053 children with confirmed diagnosis of ASD in the Autism Speaks Autism Treatment Network. Measured values for weight and height were used to calculate BMI percentiles; Centers for Disease Control and Prevention criteria for BMI for gender and age were used to define overweight and obesity (85th and 95th percentiles, respectively).&lt;/p&gt;
+
+&lt;p&gt;RESULTS: In children age 2 to 17 years, 33.6% were overweight and 18% were obese. Compared with a general US population sample, rates of unhealthy weight were significantly higher among children with ASDs ages 2 to 5 years and among those of non-Hispanic white origin. Multivariate analyses revealed that older age, Hispanic or Latino ethnicity, lower parent education levels, and sleep and affective problems were all significant predictors of obesity.&lt;/p&gt;
+
+&lt;p&gt;CONCLUSIONS: Our results indicate that the prevalence of unhealthy weight is significantly greater among children with ASD compared with the general population, with differences present as early as ages 2 to 5 years. Because obesity is more prevalent among older children in the general population, these findings raise the question of whether there are different trajectories of weight gain among children with ASDs, possibly beginning in early childhood.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Memory in language-impaired children with and without autism</title>
+      <link>/publication/2015-memory-in-li-asd/</link>
+      <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/publication/2015-memory-in-li-asd/</guid>
+      <description></description>
     </item>
     
   </channel>

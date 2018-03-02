@@ -1,129 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Martín Macías</title>
+    <title>Tags on Martín Andrés Macías</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Martín Macías</description>
+    <description>Recent content in Tags on Martín Andrés Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 Sep 2017 06:00:00 +0600</lastBuildDate>
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Authors</title>
-      <link>/tags/authors/</link>
-      <pubDate>Tue, 26 Sep 2017 06:00:00 +0600</pubDate>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>/tags/academic/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/authors/</guid>
+      <guid>/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
+    </item>
+    
+    <item>
+      <title>Autism</title>
+      <link>/tags/autism/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/autism/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Chroma</title>
-      <link>/tags/chroma/</link>
-      <pubDate>Wed, 27 Sep 2017 12:00:00 +0600</pubDate>
+      <title>Blogdown</title>
+      <link>/tags/blogdown/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/chroma/</guid>
+      <guid>/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>/tags/config/</link>
-      <pubDate>Wed, 07 Feb 2018 19:15:00 +0600</pubDate>
+      <title>Eye Tracking</title>
+      <link>/tags/eye-tracking/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/config/</guid>
+      <guid>/tags/eye-tracking/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>I18n</title>
-      <link>/tags/i18n/</link>
-      <pubDate>Wed, 27 Sep 2017 14:00:00 +0600</pubDate>
+      <title>Natural Language Processing</title>
+      <link>/tags/natural-language-processing/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/i18n/</guid>
+      <guid>/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Menus</title>
-      <link>/tags/menus/</link>
-      <pubDate>Wed, 27 Sep 2017 10:00:00 +0600</pubDate>
+      <title>Outcomes</title>
+      <link>/tags/outcomes/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/menus/</guid>
+      <guid>/tags/outcomes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Opengraph</title>
-      <link>/tags/og/</link>
-      <pubDate>Tue, 26 Sep 2017 08:00:00 +0600</pubDate>
+      <title>R Ladies</title>
+      <link>/tags/r-ladies/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/og/</guid>
+      <guid>/tags/r-ladies/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Xaringan</title>
+      <link>/tags/xaringan/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pygments</title>
-      <link>/tags/pygments/</link>
-      <pubDate>Wed, 27 Sep 2017 12:00:00 +0600</pubDate>
-      
-      <guid>/tags/pygments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shortcode</title>
-      <link>/tags/shortcode/</link>
-      <pubDate>Thu, 05 Oct 2017 20:00:00 +0600</pubDate>
-      
-      <guid>/tags/shortcode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Translation</title>
-      <link>/tags/translation/</link>
-      <pubDate>Wed, 27 Sep 2017 14:00:00 +0600</pubDate>
-      
-      <guid>/tags/translation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Widgets</title>
-      <link>/tags/widgets/</link>
-      <pubDate>Wed, 07 Feb 2018 18:30:00 +0600</pubDate>
-      
-      <guid>/tags/widgets/</guid>
+      <guid>/tags/xaringan/</guid>
       <description></description>
     </item>
     
