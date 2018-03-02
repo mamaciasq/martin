@@ -17,7 +17,7 @@ enableRobotsTXT = true # generate robots.txt
 pygmentsCodefences = true
 
 # Missing translations will default to this content language
-defaultContentLanguage = "en"
+defaultContentLanguage = "es"
 
 [params.info]
 description = "Estadístico"

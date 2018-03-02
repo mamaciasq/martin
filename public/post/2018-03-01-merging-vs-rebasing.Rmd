@@ -1,0 +1,13 @@
+---
+title: Merging vs. Rebasing
+author: Martín Macías
+date: '2018-03-01'
+slug: merging-vs-rebasing
+categories:
+  - git
+  - Github
+tags:
+  - git
+  - Github
+---
+
