@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Martín Andrés Macías</title>
+    <title>R on Hugo Ivy</title>
     <link>/categories/r/</link>
-    <description>Recent content in R on Martín Andrés Macías</description>
+    <description>Recent content in R on Hugo Ivy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
-    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
-    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>En funcionamiento con blogdown</title>
-      <link>/post/up-and-running-with-blogdown/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <title>Hello R Markdown</title>
+      <link>/post/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/post/up-and-running-with-blogdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Merging vs. Rebasing</title>
-      <link>/post/merging-vs-rebasing/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/merging-vs-rebasing/</guid>
-      <description>0.1 Visión conceptual Lo primero que debe entenderse sobre git rebase es que resuelve el mismo problema que git merge. Ambos comandos están diseñados para integrar cambios de un branch a otro branch; solo lo hacen de maneras muy diferentes.
-Considere lo que sucede cuando comienza a trabajar en una nueva característica en un branch dedicado para tal fin, luego otro miembro del equipo actualiza el branch master con nuevos commits.</description>
-    </item>
-    
-    <item>
-      <title>R-Ladies presentation ninja</title>
-      <link>/post/r-ladies-slides/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/r-ladies-slides/</guid>
-      <description>So, you are doing an R-Ladies presentation…that’s awesome! The short version I made an R-Ladies theme for xaringan slides. My original tweet about it:
-if you want to use @xieyihui&amp;#39;s awesome #xaringan package for #rstats slides but want more #Rladies flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome @RLadiesGlobal starter kit. Update the CSS in your YAML to use 🧙🏽‍♀️🧞‍♀️ pic.twitter.com/YnlGSVAMsl
-&amp;mdash; Alison Hill (@apreshill) November 29, 2017  The way to use the theme is to update the YAML like so:</description>
+      <guid>/post/2015/07/23/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>
