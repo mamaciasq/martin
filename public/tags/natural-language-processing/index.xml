@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural Language Processing on Martín Andrés Macías</title>
+    <link>/tags/natural-language-processing/</link>
+    <description>Recent content in Natural Language Processing on Martín Andrés Macías</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Tue, 11 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated Measurement of Language Outcomes for Neurodevelopmental Disorders - NIDCD R01</title>
+      <link>/project/language-outcomes/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/language-outcomes/</guid>
+      <description>Improving spoken language use (i.e., discourse skills) is a common treatment goal for children with neurodevelopmental disorders, particularly for those with difficulties in conversational reciprocity, perseverative speech, or idiosyncratic/stereotyped word use. These features are clinically meaningful, and in previous projects, we have successfully applied Natural Language Processing (NLP) methods to measure these discourse skills using natural language samples from children with Autism Spectrum Disorder (ASD). However, while NLP methods yield diagnostically relevant measures, it is not known if they can be translated into meaningful outcome measures.</description>
+    </item>
+    
+    <item>
+      <title>Computational Characterization of Language Use in Females and Males with Autism Spectrum Disorder</title>
+      <link>/project/sex-diffs-language/</link>
+      <pubDate>Wed, 11 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sex-diffs-language/</guid>
+      <description>The female clinical presentation of Autism Spectrum Disorder (ASD) is not well understood, and is a contributing factor to underidentification and delays in the diagnosis of ASDs among females, particularly for those who are verbal and without cognitive impairments. Sex differences in clinical presentation may make it more difficult to recognize ASD symptoms in females, yet evidence for differences between females and males in the two core symptom domains—social communication/interaction and repetitive behaviors and restricted interests—has been inconsistent.</description>
+    </item>
+    
+  </channel>
+</rss>

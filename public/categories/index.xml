@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on M</title>
-    <link>/martin.rbind.io/categories/</link>
-    <description>Recent content in Categories on M</description>
+    <title>Categories on Martín Andrés Macías</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Martín Andrés Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/martin.rbind.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Example</title>
-      <link>/martin.rbind.io/categories/example/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Blogdown</title>
+      <link>/categories/blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/categories/example/</guid>
+      <guid>/categories/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>/martin.rbind.io/categories/hugo/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <title>Presentations</title>
+      <link>/categories/presentations/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/categories/hugo/</guid>
+      <guid>/categories/presentations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/martin.rbind.io/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <link>/categories/r/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     

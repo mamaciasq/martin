@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Martín Andrés Macías</title>
+    <link>/tags/github/</link>
+    <description>Recent content in Github on Martín Andrés Macías</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Merging vs. Rebasing</title>
+      <link>/post/merging-vs-rebasing/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/merging-vs-rebasing/</guid>
+      <description>Visión conceptual Lo primero que debe entenderse sobre git rebase es que resuelve el mismo problema que git merge. Ambos comandos están diseñados para integrar cambios de un branch a otro branch; solo lo hacen de maneras muy diferentes.
+Considere lo que sucede cuando comienza a trabajar en una nueva característica en un branch dedicado para tal fin, luego otro miembro del equipo actualiza el branch master con nuevos commits. Esto da como resultado una historia bifurcada, que debería ser familiar para cualquiera que haya usado Git como herramienta de colaboración.</description>
+    </item>
+    
+  </channel>
+</rss>

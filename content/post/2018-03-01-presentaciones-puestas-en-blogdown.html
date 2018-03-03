@@ -1,0 +1,36 @@
+---
+title: Presentaciones puestas en blogdown
+author: Martín Macías
+date: '2018-03-01'
+slug: presentaciones-puestas-en-blogdown
+summary: Diferencia entre Merging y Rebasing
+categories:
+  - blogdown
+tags:
+  - presentations
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+    toc_depth: 1
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#blogdown-rmarkdown-impresionante"><span class="toc-section-number">1</span> blogdown + rmarkdown = ¡impresionante!</a></li>
+</ul>
+</div>
+
+<div id="blogdown-rmarkdown-impresionante" class="section level1">
+<h1><span class="header-section-number">1</span> blogdown + rmarkdown = ¡impresionante!</h1>
+<div id="reproducir-archivos-rmd-en-un-sitio-web-construido-con-blogdown" class="section level2">
+<h2><span class="header-section-number">1.1</span> <em>Reproducir archivos Rmd en un sitio web construido con blogdown</em></h2>
+<p>Este es un pequeño ejemplo que muestra cómo puede reproducirse cualquier archivo Rmd en una página web construida con <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a>. La clave es agregar un script de R, llamado <code>build.R</code> dentro de una carpeta llamada <code>R/</code> (este archivo únicamente tiene una línea de código: <code>blogdown::build_dir('static')</code>), y poner los archivos Rmd dentro de la carpeta <code>static/</code>. Vea la breve documentación al respecto en el <a href="https://bookdown.org/yihui/blogdown/static-files.html">libro de <strong>blogdown</strong></a>.</p>
+<p>No importa qué formatos de salida generen sus Rmd; <code>build_dir()</code> llamará la función <code>rmarkdown::render()</code> para reproducirlos. En este blog, hay dos ejemplos (Se requieren los paquetes de R <a href="https://github.com/yihui/xaringan"><strong>xaringan</strong></a> and <a href="https://github.com/rstudio/bookdown"><strong>bookdown</strong></a>):</p>
+<ul>
+<li><p>Generación de presentación HTML5 basada en <strong>xaringan</strong>: <a href="/slides/xaringan.html">slides/xaringan.html</a> (Rmd de origen: <a href="https://github.com/yihui/blogdown-static/blame/master/static/slides/xaringan.Rmd">static/slides/xaringan.Rmd</a>).</p></li>
+<li><p>Generación de un documento PDF usando el formato <code>bookdown::pdf_document2</code>: <a href="/pdf/example.pdf">pdf/example.pdf</a> (Rmd de origen: <a href="https://github.com/yihui/blogdown-static/blame/master/static/pdf/example.Rmd">static/pdf/example.Rmd</a>).</p></li>
+</ul>
+</div>
+</div>

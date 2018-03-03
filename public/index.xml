@@ -1,75 +1,755 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Martín Macías on M</title>
-    <link>/martin.rbind.io/</link>
-    <description>Recent content in Martín Macías on M</description>
+    <title>Martín Andrés Macías on Martín Andrés Macías</title>
+    <link>/</link>
+    <description>Recent content in Martín Andrés Macías on Martín Andrés Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/martin.rbind.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>es</language>
+    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Sobre mí</title>
-      <link>/martin.rbind.io/about/</link>
-      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <title>En funcionamiento con blogdown</title>
+      <link>/post/up-and-running-with-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/about/</guid>
-      <description>Soy el papá de Isaac. Estudié Estadística en la Universidad Nacional de Colombia. Estoy haciendo la maestría en Estadística en mi misma alma mater.
-Me gusta la visualización de información, el modelamiento de datos y el análisis estadístico. Me encanta el trabajo de la gente de RStudio, en especial de Hadley Wickham y de Yihui Xie, así que para honrar mi gusto, juego con tidyverse, bookdown y con algunos htmlwidgets.</description>
+      <guid>/post/up-and-running-with-blogdown/</guid>
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#lea-sobre-blogdown&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Lea sobre blogdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#advertencias-descargos-de-responsabilidad-etc.&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Advertencias, descargos de responsabilidad, etc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#en-github&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; En GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#en-el-terminal&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; En el terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#en-rstudio&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; En RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#construya-su-sitio-en-rstudio&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;6&lt;/span&gt; Construya su sitio en RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#publicacion-en-netlify&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;7&lt;/span&gt; Publicación en Netlify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#yendo-mas-lejos&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;8&lt;/span&gt; Yendo más lejos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;lea-sobre-blogdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Lea sobre blogdown&lt;/h1&gt;
+&lt;p&gt;Antes de comenzar, le recomiendo leer lo siguiente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;: Creating Websites with R Markdown&lt;/a&gt; de Yihui Xie y Amber Thomas&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Making a Website Using &lt;code&gt;blogdown&lt;/code&gt;, Hugo, and GitHub pages&lt;/a&gt; también de Amber Thomas&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/&#34;&gt;Getting Started with &lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt; de M. Edward (Ed) Borasky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;También existe este artículo de Eric Nantz, el creador de &lt;a href=&#34;http://r-podcast.org&#34;&gt;R-Podcast&lt;/a&gt;, en la &lt;a href=&#34;https://github.com/rbind/support&#34;&gt;sección de issues de Github &lt;code&gt;rbind/support&lt;/code&gt;&lt;/a&gt; que puede ser de ayuda:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rbind/support/issues/12&#34; class=&#34;uri&#34;&gt;https://github.com/rbind/support/issues/12&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;advertencias-descargos-de-responsabilidad-etc.&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Advertencias, descargos de responsabilidad, etc.&lt;/h1&gt;
+&lt;p&gt;Incluso con todos los grandiosos recursos que enumeré arriba, ponerme en marcha me llevó algunos intentos, así que este post transmite lo que terminó funcionando para mí. Sin embargo, la distancia andada puede variar, dependiendo del sistema operativo y su enfoque. El mío: soy usuario de macOS, uso R, RStudio y Git (a través de Github)(&lt;a href=&#34;https://github.com&#34; class=&#34;uri&#34;&gt;https://github.com&lt;/a&gt;), y la terminal regularmente, por lo que me estoy familizarizando con todo esto. Si no es así para usted, aquí hay unos lugares para comenzar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Git: &lt;a href=&#34;http://happygitwithr.com&#34;&gt;Happy Git with R&lt;/a&gt; de Jenny Bryan et al.&lt;/li&gt;
+&lt;li&gt;RStudio: &lt;a href=&#34;https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1&#34;&gt;DataCamp’s Working with the RStudio IDE (free)&lt;/a&gt; de Garrett Grolemund&lt;/li&gt;
+&lt;li&gt;Terminal: &lt;a href=&#34;https://github.com/veltman/clmystery&#34;&gt;The Command Line Murder Mystery&lt;/a&gt; de Noah Veltman, y &lt;a href=&#34;http://seankross.com/the-unix-workbench/&#34;&gt;The UNIX Workbench&lt;/a&gt; de Sean Kross&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;También tengo &lt;a href=&#34;https://developer.apple.com/xcode/&#34;&gt;Xcode&lt;/a&gt; y &lt;a href=&#34;https://brew.sh&#34;&gt;Homebrew&lt;/a&gt; installed- &lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34;&gt;probablemente necesitará esto para descargar Hugo&lt;/a&gt;. Si no tiene ninguno pero está en un mac, este enlace puede ayudar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/&#34;&gt;¿Cómo instalar Xcode, Homebrew, Git, RVM, Ruby &amp;amp; Rails en Mac OS X&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para más información sobre cosas de interés que se usan, podría consultar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/deployment.html&#34;&gt;“Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify.”&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34;&gt;“Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito &lt;code&gt;*.rbind.io&lt;/code&gt; ofrecido por RStudio, Inc.”&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;en-github&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; En GitHub&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-1.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Vaya en línea a su cuenta de &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, y cree un nuevo repositorio (Dele check a inicializarlo con un &lt;code&gt;README&lt;/code&gt; pero no agregue &lt;code&gt;.gitignore&lt;/code&gt;- de esto se encargará más adelante). Para nombrar su repositorio, considere su futuro plan de publicación:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Si va a utilizar &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt; para alojar la página, ¡puede nombrar el repositorio como quiera! &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Puede ver algunos de los nombres de los repositorios usados por miembros de la organización &lt;code&gt;rbind&lt;/code&gt; &lt;a href=&#34;https://github.com/rbind/repositories&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Si quiere alojar su sitio como una &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Page&lt;/a&gt;, debería nombrar su repositorio como &lt;code&gt;yourgithubusername.github.io&lt;/code&gt; (así que el mío hubiera sido &lt;code&gt;martin.github.io&lt;/code&gt;). Si va por esta ruta, le sugiero que siga las &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;instrucciones de Amber&lt;/a&gt; en vez de este!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png&#34; alt=&#34;Screenshot de arriba: Crear un nuevo repositorio en GitHub&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot de arriba: Crear un nuevo repositorio en GitHub&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde &lt;strong&gt;Clone or download&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;En la sección &lt;strong&gt;Clone with HTTPs&lt;/strong&gt;, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;en-el-terminal&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; En el terminal&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-2.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Ahora &lt;a href=&#34;https://help.github.com/articles/cloning-a-repository/&#34;&gt;clone su repositorio remoto&lt;/a&gt; y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;cd&lt;/code&gt; para navegar dentro del directorio donde usted quiere que su repositorio esté&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Una vez esté ahí, digite: &lt;code&gt;git clone [paste]&lt;/code&gt;. Entones mi comando sería así:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/mamaciasq/martin.git&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y esto es lo que imprimió en mi ventana de terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Cloning into &amp;#39;martin&amp;#39;...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Cierre el terminal, ya terminó ahí.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;en-rstudio&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; En RStudio&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-3.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Instale &lt;code&gt;blogdown&lt;/code&gt; desde su consola de RStudio. Si usted ya ha instalado &lt;code&gt;devtools&lt;/code&gt; como yo lo hice, solo necesita la segunda línea de las que se listan a continuación:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;if (!requireNamespace(&amp;quot;devtools&amp;quot;)) install.packages(&amp;quot;devtools&amp;quot;)
+devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Instale Hugo usando la función de ayuda el paquete &lt;code&gt;blogdown&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::install_hugo()
+# o
+library(blogdown)
+install_hugo()&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Aquí es donde mis instrucciones divergen de las de Ed: afirma que &lt;code&gt;blogdown&lt;/code&gt; no creará un sitio web en su carpeta raíz porque el archivo &lt;code&gt;README.md&lt;/code&gt; ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use los botones del menú de arriba en RStudio para seleccionar &lt;code&gt;File -&amp;gt; New Project -&amp;gt; Existing Directory&lt;/code&gt;, luego vaya al directorio en su computadora donde esté su repositorio de GitHub y haga click en el botón &lt;strong&gt;Create Project&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/r-project-existing-directory.png&#34; alt=&#34;Screenshot de arriba: Crear un nuevo proyecto en un directorio existente en RStudio&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot de arriba: Crear un nuevo proyecto en un directorio existente en RStudio&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Ahora debería estar “dentro” de su proyecto en RStudio. Si está usando git para control de versiones, edite su archivo &lt;code&gt;*gitignore&lt;/code&gt;. Este archivo debería estar visible en su panel visor de archivos en RStudio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This file should be viewable in your file viewer pane in RStudio. A continuación se muestra cómo debería ser: las primeras cuatro líneas estarán automáticamente en este archivo si ha configurado su proyecto de RStudio, pero si planea usar Netlify para implementarlo, debe agregar la línea &lt;code&gt;public/&lt;/code&gt; (&lt;a href=&#34;https://bookdown.org/yihui/blogdown/version-control.html&#34;&gt;lea al repescto aquí&lt;/a&gt;.)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+blogdown
+.DS_Store # si es un usuario de windows, use Thumbs.db
+public/ # si está usando Netlify&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;construya-su-sitio-en-rstudio&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;6&lt;/span&gt; Construya su sitio en RStudio&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-4.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Ahora puede finalmente coonstruir su sitio usando la función &lt;code&gt;blogdown::new_site()&lt;/code&gt;. Pero &lt;strong&gt;primero&lt;/strong&gt; debería al menos pensar en los temas…&lt;/p&gt;
+&lt;div id=&#34;escogiendo-un-tema&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.1&lt;/span&gt; Escogiendo un tema&lt;/h2&gt;
+&lt;p&gt;Hay acerca de 90 &lt;a href=&#34;https://themes.gohugo.io&#34;&gt;temas de Hugo&lt;/a&gt;. Así que volví al libro &lt;code&gt;blogdown&lt;/code&gt;. Afortunadamente, Yihui y Amber se ofrecieron &lt;a href=&#34;https://bookdown.org/yihui/blogdown/other-themes.html&#34;&gt;“a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto…”&lt;/a&gt;. Fui a &lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34;&gt;hugo-academic&lt;/a&gt;! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Si está feliz con el tema ofrecido por defecto, que es el lithium theme, puede usar:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::new_site() # el tema por defecto es lithium&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Si desea un tema distinto al predeterminado, puede especificar el tema al mismo tiempo que llama a la función &lt;code&gt;new_site&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# por ejemplo, cree un sitio nuevo con el tema academic-theme
+blogdown::new_site(theme = &amp;quot;gcushen/hugo-academic&amp;quot;, theme_example = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Si, por el contrario, desea agregar el tema más tarde (como hice, porque no vi el ejemplo anterior hasta que fue demasiado tarde), puede hacer esto:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;library(blogdown)
+new_site() # el tema por defecto es lithium
+# debe dejar de servir para poder usar la consola nuevamente
+install_theme(&amp;quot;gcushen/hugo-academic&amp;quot;, theme_example = TRUE, update_config = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Ahora es un buen momento para re-leer sobre &lt;code&gt;blogdown::serve_site()&lt;/code&gt; y &lt;a href=&#34;https://bookdown.org/yihui/blogdown/a-quick-example.html&#34;&gt;cómo trabaja &lt;em&gt;LiveReload&lt;/em&gt;&lt;/a&gt; (y cómo esto bloquea su consola de R por defecto)&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Recomiendo configurar &lt;code&gt;theme_example = TRUE&lt;/code&gt;- algunos temas no proporcionarán un sitio de ejemplo, pero el tema académico sí y me pareció útil verlo. Siempre puede eliminar el contenido del ejemplo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;actualizar-opciones-de-proyecto&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.2&lt;/span&gt; Actualizar opciones de proyecto&lt;/h2&gt;
+&lt;p&gt;En su proyecto en RStudio, vaya a la barra de menús superior de RStudio y seleccione &lt;code&gt;Tools -&amp;gt; Project Options&lt;/code&gt; y actualice siguiendo las &lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html#fig:project-options&#34;&gt;instrucciones de Yihui y Amber&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;edite-sus-configuraciones&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.3&lt;/span&gt; Edite sus configuraciones&lt;/h2&gt;
+&lt;p&gt;Lecturas relevantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34;&gt;capítulo del libro&lt;code&gt;blogdown&lt;/code&gt; sobre configuración&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/#site-configuration&#34;&gt;Detalles adicionales de Amber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;También puede ver &lt;a href=&#34;https://github.com/apreshill/apreshill/blob/master/config.toml&#34;&gt;mi archivo de configuración &lt;code&gt;config.toml&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora, edite el &lt;code&gt;baseurl&lt;/code&gt; en su archivo &lt;code&gt;config.toml&lt;/code&gt;. El URL &lt;em&gt;siempre debería&lt;/em&gt; terminar con un slash &lt;code&gt;/&lt;/code&gt; . En este punto, probablemente aún no ha publicado su sitio, sin embargo puede verlo son el add-in &lt;strong&gt;Serve Site&lt;/strong&gt;, o corriendo la función &lt;code&gt;blogdown::serve_site&lt;/code&gt;. Para mí funcionarons ambos baseurl que presento a continuación:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;https://example.com/&amp;quot;
+baseurl = &amp;quot;/&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;p&gt;Asegúrese de que el &lt;code&gt;baseurl =&lt;/code&gt; que puso, termine con un slash &lt;code&gt;/&lt;/code&gt;!&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Continúe y edita todos los demás elementos en el archivo &lt;code&gt;config.toml&lt;/code&gt; ahora como quiera; ¡así es como personaliza su sitio!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;addins-flujo-de-trabajo&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.4&lt;/span&gt; Addins &amp;amp; flujo de trabajo&lt;/h2&gt;
+&lt;p&gt;Lecturas relevantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html&#34;&gt;Capítulo del libro&lt;code&gt;blogdown&lt;/code&gt; sobre RStudio IDE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Addins: utilícelos- no necesitará el paquete &lt;code&gt;blogdown&lt;/code&gt; cargada en la consola si utiliza los Addins. Mi flujo de trabajo en RStudio en este momento (una vez más, solo lo visualizo localmente porque aún no lo hemos publicado) funciona mejor así:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Abra el proyecto de RStudio para el sitio&lt;/li&gt;
+&lt;li&gt;Use el complemento &lt;strong&gt;Serve Site&lt;/strong&gt; (solo una vez debido a la magia de &lt;em&gt;LiveReload&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Vea el sitio en el panel del visor de RStudio y ábralo en una nueva ventana del navegador mientras trabaja&lt;/li&gt;
+&lt;li&gt;Seleccione los archivos existentes para editar usando el panel de archivos en RStudio&lt;/li&gt;
+&lt;li&gt;Después de hacer cambios, haga clic en el botón guardar (¡no &lt;code&gt;knit&lt;/code&gt;!) - la consola se volverá a cargar, el panel del visor se actualizará, y si presiona actualizar en el navegador, su vista local también se actualizará&lt;/li&gt;
+&lt;li&gt;Cuando esté satisfecho con los cambios, agregue / haga commit / haga push de los cambios a GitHub&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tener &lt;code&gt;blogdown :: serve_site&lt;/code&gt; ejecutando localmente con &lt;em&gt;LiveReload&lt;/em&gt; es especialmente útil ya que puede ver de inmediato si se equivocó por completo. Por ejemplo, al editar mi archivo &lt;code&gt;about.md&lt;/code&gt;, este error apareció en mi consola después de hacer un cambio y pude corregir el error de inmediato:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Started building sites ...
+ERROR 2017/06/08 16:22:34 failed to parse page metadata for home/about.md: (18, 6): missing comma
+Error: Error building site: Errors reading pages: Error: failed to parse page metadata for home/about.md: (18, 6): missing comma for about.md&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El flujo de trabajo anterior solo sirve para editar archivos o publicaciones existentes, pero no para &lt;strong&gt;crear publicaciones nuevas&lt;/strong&gt;. Para eso, siga leyendo…&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;publicacion&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5&lt;/span&gt; Publicación&lt;/h2&gt;
+&lt;p&gt;Lecturas relevantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html&#34;&gt;Capítulo del libro &lt;code&gt;blogdown&lt;/code&gt; sobre RStudio IDE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/output-format.html&#34;&gt;Capítulo del libro &lt;code&gt;blogdown&lt;/code&gt; sobre formatos de salida&lt;/a&gt;: sobre posts .md versus .Rmd&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/#adding-a-blog-post-or-portfolio-piece&#34;&gt;Detalles adicionales de Amber&lt;/a&gt; sobre adición de blog post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Línea de fondo:&lt;/p&gt;
+&lt;p&gt;Use el addin &lt;strong&gt;New Post&lt;/strong&gt;. Pero necesita la consola para hacer esto, por lo que debe detener &lt;code&gt;blogdown :: serve_site&lt;/code&gt; haciendo clic en el botón rojo &lt;strong&gt;Stop&lt;/strong&gt; primero. El addin es una interfaz brillante que ejecuta este código en la consola: &lt;code&gt;blogdown ::: new_post_addin ()&lt;/code&gt;. Entonces, su consola necesita estar desbloqueada para que se ejecute. También necesita estar “dentro” de su proyecto de RStudio o no funcionará.&lt;/p&gt;
+&lt;div id=&#34;borrador-de-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.1&lt;/span&gt; Borrador de posts&lt;/h3&gt;
+&lt;p&gt;Lecturas relevantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/blogdown/local-preview.html&#34;&gt;Capítulo del libro &lt;code&gt;blogdown&lt;/code&gt; sobre construcción de un sitio web para visualización local&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ya sea que haga un markdown o un R Markdown (ver más abajo), debe saber que al principio del YAML de su nuevo archivo, puede agregar &lt;code&gt;draft: TRUE&lt;/code&gt; y podrá obtener una vista previa de su publicación usando &lt;code&gt;blogdown::serve_site()&lt;/code&gt;, pero convenientemente su publicación no aparecerá en su sitio desplegado hasta que configure esta opción en falso. Como esto es una función integrada en Hugo, todas las publicaciones (borrador o no) terminarán en su repositorio de GitHub.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nuevos-posts-en-markdown&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.2&lt;/span&gt; Nuevos posts en markdown&lt;/h3&gt;
+&lt;p&gt;Escoja uno de los dos métodos:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use el addin &lt;strong&gt;New Post&lt;/strong&gt; y con el botón redondo escoja &lt;strong&gt;Format: Markdown&lt;/strong&gt; (recomendado)&lt;/li&gt;
+&lt;li&gt;Use la consola para crear un nuevo post &lt;code&gt;.md&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::new_post()
+blogdown::new_post(rmd = FALSE) # false está por defecto!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aquí están los argumentos de &lt;code&gt;?new_post&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;new_post(title, kind = &amp;quot;default&amp;quot;, open = interactive(), 
+    author = getOption(&amp;quot;blogdown.author&amp;quot;), categories = NULL, 
+    tags = NULL, date = Sys.Date(), file = NULL, slug = NULL, 
+    subdir = getOption(&amp;quot;blogdown.subdir&amp;quot;, &amp;quot;post&amp;quot;), 
+    rmd = getOption(&amp;quot;blogdown.rmd&amp;quot;, FALSE))&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Recuerde usar el addin &lt;strong&gt;Serve Site&lt;/strong&gt; para que pueda ver sus cambios inmediatamente con cada guardado usando &lt;em&gt;LiveReload&lt;/em&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div id=&#34;nuevos-posts-rmarkdown&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.3&lt;/span&gt; Nuevos posts RMarkdown&lt;/h3&gt;
+&lt;p&gt;Una vez más, puede escoger mediante dos formas distintas:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use el addin &lt;strong&gt;New Post&lt;/strong&gt; y con el botón redondo escoja &lt;strong&gt;Format: R Markdown&lt;/strong&gt; (recomendado)&lt;/li&gt;
+&lt;li&gt;Use la consola para crear un nuevo post &lt;code&gt;.Rmd&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;blogdown::new_post(rmd = TRUE) # false is the default!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Después de editar su post &lt;code&gt;.Rmd&lt;/code&gt;, además de guardar los cambios en su archivo &lt;code&gt;.Rmd&lt;/code&gt;, debe &lt;em&gt;must&lt;/em&gt; usar &lt;code&gt;blogdown::serve_site&lt;/code&gt;- esta es la forma en que el archivo de salida &lt;code&gt;html&lt;/code&gt; necesita ser generado.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;p&gt;&lt;em&gt;No&lt;/em&gt; le haga knit a sus post&lt;code&gt;.Rmd&lt;/code&gt;- en lugar de eso, use &lt;code&gt;blogdown::serve_site&lt;/code&gt;. Si le hace click al botón knit, haga &lt;strong&gt;Serve Site&lt;/strong&gt; de nuevo para reescribir el archivo &lt;code&gt;.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Por último, su &lt;a href=&#34;https://bookdown.org/yihui/blogdown/output-format.html#output-format&#34;&gt;encabezado de YAMLdebe lucir similar a esto&lt;/a&gt;; note que algunos mas no todas las prestaciones de &lt;code&gt;rmarkdown::html_document&lt;/code&gt; &lt;a href=&#34;https://bookdown.org/yihui/blogdown/output-format.html#fn15&#34;&gt;son soportadas en &lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;My Awesome Post&amp;quot;
+author: &amp;quot;John Doe&amp;quot;
+date: &amp;quot;2017-02-14&amp;quot;
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+    number_sections: true
+    fig_width: 6
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Recuerde utilizar el complemento &lt;strong&gt;Serve Site&lt;/strong&gt; de nuevo para que pueda ver inmediatamente sus cambios con cada operación de guardado utilizando &lt;em&gt;LiveReload&lt;/em&gt; y su archivo &lt;code&gt;.html&lt;/code&gt; se imprimirá correctamente.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div id=&#34;agregando-imagenes-a-un-post&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;6.5.4&lt;/span&gt; Agregando imágenes a un post&lt;/h3&gt;
+&lt;p&gt;Si desea incluir una imagen que no sea una figura creada a partir de un chunk de R, el &lt;a href=&#34;https://github.com/rstudio/blogdown/issues/45&#34;&gt;método recomendado&lt;/a&gt; es:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Agregar la imagen a su carpeta &lt;code&gt;/static/img/&lt;/code&gt;, luego&lt;/li&gt;
+&lt;li&gt;Hacer referencia a la imagen usando la ruta relativa del archivo de la siguiente manera:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;![my-image](/img/my-image.png)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;publicacion-en-netlify&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;7&lt;/span&gt; Publicación en Netlify&lt;/h1&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-5.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;La publicación en Netlify a través de GitHub es sencilla. Yihui y Amber dan algunas &lt;a href=&#34;https://bookdown.org/yihui/blogdown/deployment.html&#34;&gt;instrucciones para principiantes&lt;/a&gt;, pero Netlify es muy fácil, le recomiendo que omita arrastrar su carpeta &lt;code&gt;public&lt;/code&gt; y en su lugar &lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html#netlify&#34;&gt;automatice el proceso a través de GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Cuando esté listo para publicar, haga commit a sus cambios y súbalos a GitHub, luego vaya en línea a &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Haga clic en el botón &lt;strong&gt;Sign up&lt;/strong&gt; e inscríbase usando su cuenta existente de GitHub (no es necesario crear otra cuenta)&lt;/li&gt;
+&lt;li&gt;Inicie sesión y seleccione: &lt;code&gt;New site from Git -&amp;gt; Continuous Deployment: GitHub&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Desde allí, Netlify le permitirá seleccionar de sus repositorios GitHub existentes. Escogerá el repositorio con el que ha estado trabajando con &lt;code&gt;blogdown&lt;/code&gt;, luego configurará su compilación. Esto implica especificar dos cosas importantes: el comando de compilación y el directorio de publicación (que debe ser &lt;code&gt;public&lt;/code&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Más acerca del comando de compilación de &lt;a href=&#34;https://www.netlify.com/docs/continuous-deployment/#common-configuration-directives&#34;&gt;Netlify&lt;/a&gt;: &lt;em&gt;“Para hosting de Hugo, &lt;code&gt;hugo&lt;/code&gt; construirá y publicará con la versión 0.17 de &lt;code&gt;hugo&lt;/code&gt;. Puede especificar una versión de &lt;code&gt;hugo&lt;/code&gt; como esta: &lt;code&gt;hugo_0.15&lt;/code&gt;. Actualmente las versiones &lt;code&gt;0.13&lt;/code&gt;, &lt;code&gt;0.14&lt;/code&gt;, &lt;code&gt;0.15&lt;/code&gt;, &lt;code&gt;0.16&lt;/code&gt;, &lt;code&gt;0.17&lt;/code&gt;, &lt;code&gt;0.18&lt;/code&gt; y &lt;code&gt;0.19&lt;/code&gt; están soportadas. Para la version &lt;code&gt;0.20&lt;/code&gt; y superiores, necesitará crear un ambiente de construcción llamado &lt;code&gt;HUGO_VERSION&lt;/code&gt; y configurarlo a la versión de su elección.”&lt;/em&gt; Yo opté por la primera opción, y especifiqué &lt;code&gt;hugo_0.19&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Puede verificar su versión de &lt;code&gt;hugo&lt;/code&gt; en el terminal usando el comando &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;&lt;code&gt;hugo version&lt;/code&gt;&lt;/a&gt;. Así es como se veía mi salida, así que podría ejecutar la versión &lt;code&gt;0.20&lt;/code&gt; si quisiera a través de Netlify, pero opté por &lt;code&gt;0.19&lt;/code&gt; y funciona muy bien.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo version
+Hugo Static Site Generator v0.20.7 darwin/amd64 BuildDate: 2017-05-08T18:37:40-07:00&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/netlify-build-settings.png&#34; alt=&#34;Screenshot above: Configuración básica en Netlify&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot above: Configuración básica en Netlify&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Netlify publicará su sitio y le asignará un nombre de subdominio aleatorio del formulario &lt;code&gt;random-word-12345.netlify.com&lt;/code&gt;. El mío fue particularmente desafortunado, con la palabra al azar &lt;code&gt;garbage-collector-janice&lt;/code&gt;. Debe saber que puede cambiar esto; Cambié el mío a &lt;code&gt;martin.netlify.com&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Cada vez que cambie el nombre de su subdominio, debe actualizar &lt;code&gt;baseurl&lt;/code&gt; en su archivo &lt;code&gt;config.toml&lt;/code&gt; (así que cambié el mío a baseurl = “&lt;a href=&#34;https://martin.netlify.com/&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://martin.netlify.com/&#34; target=&#34;_blank&#34;&gt;https://martin.netlify.com/&lt;/a&gt;&lt;/a&gt;”).&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;En este punto, debería estar en funcionamiento con &lt;code&gt;blogdown&lt;/code&gt;, GitHub y Netlify, pero aquí hay algunas ideas si quiere ir más lejos…&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;yendo-mas-lejos&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;8&lt;/span&gt; Yendo más lejos&lt;/h1&gt;
+&lt;div id=&#34;css-personalizado&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.1&lt;/span&gt; CSS personalizado&lt;/h2&gt;
+&lt;p&gt;Me gusta jugar con la configuración predeterminada del tema, como colores y fuentes. Cada tema de Hugo está estructurado de forma un poco diferente, pero si está interesado, puede consultar &lt;a href=&#34;https://github.com/apreshill/apreshill/blob/master/static/css/blue.css&#34;&gt;mi css personalizado&lt;/a&gt; para ver cómo he personalizado el tema académico, que proporciona una forma de vincular a un archivo CSS personalizado en el archivo &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  # Enlaza CSS y JS personalizados
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = [&amp;quot;blue.css&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;formspree&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.2&lt;/span&gt; Formspree&lt;/h2&gt;
+&lt;p&gt;Usé &lt;a href=&#34;https://formspree.io&#34;&gt;Formspree&lt;/a&gt; para hacer un formulario de contacto, que es un servicio en línea (manejado en &lt;a href=&#34;https://github.com/formspree/formspree&#34;&gt;GitHub&lt;/a&gt;) que le permite agregar un formulario HTML a su sitio estático. Sin registro, solo use el formulario y confirme su dirección de correo electrónico una vez. Agregué el siguiente código en &lt;a href=&#34;https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html&#34;&gt;mi widget de contacto&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form action=&amp;quot;https://formspree.io/your@email.com&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
+  &amp;lt;label for=&amp;quot;name&amp;quot;&amp;gt;Your name: &amp;lt;/label&amp;gt;
+  &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot; required=&amp;quot;required&amp;quot; placeholder=&amp;quot;here&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+  &amp;lt;label for=&amp;quot;email&amp;quot;&amp;gt;Your email: &amp;lt;/label&amp;gt;
+  &amp;lt;input type=&amp;quot;email&amp;quot; name=&amp;quot;_replyto&amp;quot; required=&amp;quot;required&amp;quot; placeholder=&amp;quot;here&amp;quot;&amp;gt;&amp;lt;br&amp;gt;
+  &amp;lt;label for=&amp;quot;message&amp;quot;&amp;gt;Your message:&amp;lt;/label&amp;gt;&amp;lt;br&amp;gt;
+  &amp;lt;textarea rows=&amp;quot;4&amp;quot; name=&amp;quot;message&amp;quot; id=&amp;quot;message&amp;quot; required=&amp;quot;required&amp;quot; class=&amp;quot;form-control&amp;quot; placeholder=&amp;quot;I can&amp;#39;t wait to read this!&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;
+  &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_next&amp;quot; value=&amp;quot;/html/thanks.html&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Send&amp;quot; name=&amp;quot;submit&amp;quot; class=&amp;quot;btn btn-primary btn-outline&amp;quot;&amp;gt;
+  &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;_subject&amp;quot; value=&amp;quot;Website message&amp;quot; /&amp;gt;
+  &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;_gotcha&amp;quot; style=&amp;quot;display:none&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nombres-de-domimio.rbind.io&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.3&lt;/span&gt; Nombres de domimio&lt;code&gt;*.rbind.io&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Quizás quiera un &lt;a href=&#34;https://bookdown.org/yihui/blogdown/domain-name.html&#34;&gt;nombre de dominio diferente&lt;/a&gt; que el proveído por Netlify. Yo opté por un subdominio gratuito &lt;code&gt;*.rbind.io&lt;/code&gt; ofrecido por RStudio. Para hacer lo mismo, diríjase a la &lt;a href=&#34;https://github.com/rbind/support/issues&#34;&gt;página de GitHub de soporte rbind&lt;/a&gt; y abra un nuevo issue. Todo lo que debe hacer es decirles cuál es su nombre de subdominio de Netlify (&lt;code&gt;*.netlify.com&lt;/code&gt;), y qué nombre de subdominio quiere (&lt;code&gt;*.rbind.io&lt;/code&gt;). El &lt;a href=&#34;https://support.rbind.io&#34;&gt;impresionante soporte del equipo de &lt;code&gt;rbind&lt;/code&gt;&lt;/a&gt; le ayudará!&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;De nuevo, necesitará actualizar el &lt;code&gt;baseurl&lt;/code&gt; en su archivo &lt;code&gt;config.toml&lt;/code&gt; para que refleje su nuevo nombre de subdominio (el mío es baseurl = “&lt;a href=&#34;https://martin.rbind.io/&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://martin.rbind.io/&#34; target=&#34;_blank&#34;&gt;https://martin.rbind.io/&lt;/a&gt;&lt;/a&gt;”).&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2017-06-12-up-and-running-with-blogdown/rbind.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;have-fun&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;8.4&lt;/span&gt; Have fun!&lt;/h2&gt;
+&lt;p&gt;Por último, no se olvide de pasarla bien. Feliz &lt;code&gt;blogdown&lt;/code&gt;ing!&lt;/p&gt;
+&lt;iframe src=&#34;https://giphy.com/embed/13Y6LAZJqRspI4&#34; width=&#34;480&#34; height=&#34;357&#34; frameBorder=&#34;0&#34; class=&#34;giphy-embed&#34; allowFullScreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://giphy.com/gifs/dancing-seinfeld-elaine-benes-13Y6LAZJqRspI4&#34;&gt;via GIPHY&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>Another Note on A blogdown Tutorial</title>
-      <link>/martin.rbind.io/note/2017/06/14/another-note/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Merging vs. Rebasing</title>
+      <link>/post/merging-vs-rebasing/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/note/2017/06/14/another-note/</guid>
-      <description>I just discovered an awesome tutorial on blogdown written by Alison. I have to admit this is the best blogdown tutorial I have seen so far.</description>
+      <guid>/post/merging-vs-rebasing/</guid>
+      <description>&lt;div id=&#34;vision-conceptual&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1&lt;/span&gt; Visión conceptual&lt;/h2&gt;
+&lt;p&gt;Lo primero que debe entenderse sobre &lt;code&gt;git rebase&lt;/code&gt; es que resuelve el mismo problema que &lt;code&gt;git merge&lt;/code&gt;. Ambos comandos están diseñados para integrar cambios de un branch a otro branch; solo lo hacen de maneras muy diferentes.&lt;/p&gt;
+&lt;p&gt;Considere lo que sucede cuando comienza a trabajar en una nueva característica en un branch dedicado para tal fin, luego otro miembro del equipo actualiza el branch &lt;code&gt;master&lt;/code&gt; con nuevos commits. Esto da como resultado una historia bifurcada, que debería ser familiar para cualquiera que haya usado Git como herramienta de colaboración.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/01.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Ahora, digamos que los nuevos commits en el branch &lt;code&gt;master&lt;/code&gt; son relevantes para la función en la que se está trabajando en el otro branch. Para incorporar los nuevos commits en su branch de &lt;code&gt;características&lt;/code&gt;, tiene dos opciones: &lt;code&gt;merge&lt;/code&gt; o &lt;code&gt;rebase&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;opcion-merge&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1.1&lt;/span&gt; Opción &lt;code&gt;merge&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;La opción más fácil es fusionar el branch &lt;code&gt;master&lt;/code&gt; en el branch &lt;code&gt;características&lt;/code&gt; usando:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git checkout feature
+git merge master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O condensarlo en una línea:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git merge master feature&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto crea un nueva “merge commit” en el branch &lt;code&gt;características&lt;/code&gt; que vincula las historias de ambos branches, dándole una estructura de bifurcación que se ve así:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/02.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;La fusión es agradable porque es una operación no destructiva. Las ramas existentes no se modifican de ninguna manera. Esto evita todas las trampas potenciales del rebasamiento (discutidas a continuación).&lt;/p&gt;
+&lt;p&gt;Por otro lado, esto también significa que la rama &lt;code&gt;características&lt;/code&gt; tendrá un commit de fusión extraño cada vez que necesite incorporar cambios ascendentes. Si el &lt;code&gt;master&lt;/code&gt; es muy activo, esto puede contaminar un poco la historia de su rama &lt;code&gt;características&lt;/code&gt;. Si bien es posible mitigar este problema con las opciones avanzadas de &lt;code&gt;git log&lt;/code&gt;, puede dificultar que otros desarrolladores comprendan el historial del proyecto.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;opcion-rebase&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1.2&lt;/span&gt; Opción &lt;code&gt;rebase&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Como alternativa a la fusión, puede volver a establecer la base de la rama &lt;code&gt;características&lt;/code&gt; en la rama &lt;code&gt;master&lt;/code&gt; mediante los siguientes comandos:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git checkout feature
+git rebase master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto mueve toda la rama &lt;code&gt;características&lt;/code&gt; para que comience al inicio de la rama &lt;code&gt;master&lt;/code&gt;, incorporando efectivamente todos los nuevos commits en el &lt;code&gt;master&lt;/code&gt;. Pero, en lugar de usar un merge commit, rebasing vuelve a escribir el historial del proyecto creando commits nuevos para cada commit en la rama &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/03.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;El mayor beneficio de rebase es que obtiene un historial de proyectos mucho más limpio. Primero, elimina los innecesarios merge commits requeridos por &lt;code&gt;git merge&lt;/code&gt;. En segundo lugar, como puede ver en el diagrama anterior, rebase también da como resultado un historial de proyecto perfectamente lineal: puede seguir la punta de &lt;code&gt;característica&lt;/code&gt; hasta el comienzo del proyecto sin ninguna bifurcación. Esto facilita navegar por su proyecto con comandos como &lt;code&gt;git log&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt; y `gitk.&lt;/p&gt;
+&lt;p&gt;Pero, hay dos compensaciones para este prístino historial de commits: seguridad y trazabilidad. Si no sigue &lt;a href=&#34;https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing&#34;&gt;la regla de oro de rebase&lt;/a&gt;, volver a escribir el historial del proyecto puede ser potencialmente catastrófico para su flujo de trabajo de colaboración. Y, lo que es menos importante, el rebasamiento pierde el contexto proporcionado por una merge commit –no se puede ver cuando se incorporaron los cambios de flujo ascendente en `característica.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rebase-interactivo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;span class=&#34;header-section-number&#34;&gt;0.1.3&lt;/span&gt; Rebase interactivo&lt;/h3&gt;
+&lt;p&gt;El rebasamiento interactivo le da la oportunidad de alterar los commits a medida que se mueven al nuevo branch. Esto es incluso más poderoso que un rebase automático, ya que ofrece un control completo sobre el historial de commits del branch. Normalmente, esto se usa para limpiar un historial desordenado antes de fusionar el branch &lt;code&gt;características&lt;/code&gt; en &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para comenzar una sesión de rebase interactiva, adhiera la opción &lt;code&gt;i&lt;/code&gt; al comando &lt;code&gt;git rebase&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;git checkout feature
+git rebase -i master&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto abrirá un editor de texto que enumera todos los commits que están a punto de ser movidas:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;pick 33d5b7a Message for commit #1
+pick 9480b3d Message for commit #2
+pick 5c67e61 Message for commit #3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esta lista define exactamente cómo se verá el branch después de que se realice el rebase. Al cambiar el comando de selección y/o reordenar las entradas, puede hacer que el historial del branch tenga el aspecto que desee. Por ejemplo, si el segundo commit corrige un pequeño problema en el primer commit, puede condensarlos en un solo commit con el comando &lt;code&gt;fixup&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;bash&#34;&gt;&lt;code&gt;pick 33d5b7a Message for commit #1
+fixup 9480b3d Message for commit #2
+pick 5c67e61 Message for commit #3`&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cuando guarda y cierra el archivo, Git realizará el rebase de acuerdo con sus instrucciones, lo que da como resultado el historial del proyecto que se ve así:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/2018-03-01-merging-vs-rebasing/04.svg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;La eliminación de commits insignificantes como este hace que la historia de &lt;code&gt;característica&lt;/code&gt; sea mucho más fácil de entender. Esto es algo que &lt;code&gt;git merge&lt;/code&gt; simplemente no puede hacer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>A Quick Note on Two Beautiful Websites</title>
-      <link>/martin.rbind.io/note/2017/06/13/a-quick-note/</link>
-      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Presentaciones puestas en blogdown</title>
+      <link>/post/presentaciones-puestas-en-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/note/2017/06/13/a-quick-note/</guid>
-      <description>To me, the two most impressive websites based on blogdown are:
- Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>
+      <guid>/post/presentaciones-puestas-en-blogdown/</guid>
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#blogdown-rmarkdown-impresionante&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; blogdown + rmarkdown = ¡impresionante!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;blogdown-rmarkdown-impresionante&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; blogdown + rmarkdown = ¡impresionante!&lt;/h1&gt;
+&lt;div id=&#34;reproducir-archivos-rmd-en-un-sitio-web-construido-con-blogdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;1.1&lt;/span&gt; &lt;em&gt;Reproducir archivos Rmd en un sitio web construido con blogdown&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Este es un pequeño ejemplo que muestra cómo puede reproducirse cualquier archivo Rmd en una página web construida con &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;. La clave es agregar un script de R, llamado &lt;code&gt;build.R&lt;/code&gt; dentro de una carpeta llamada &lt;code&gt;R/&lt;/code&gt; (este archivo únicamente tiene una línea de código: &lt;code&gt;blogdown::build_dir(&#39;static&#39;)&lt;/code&gt;), y poner los archivos Rmd dentro de la carpeta &lt;code&gt;static/&lt;/code&gt;. Vea la breve documentación al respecto en el &lt;a href=&#34;https://bookdown.org/yihui/blogdown/static-files.html&#34;&gt;libro de &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No importa qué formatos de salida generen sus Rmd; &lt;code&gt;build_dir()&lt;/code&gt; llamará la función &lt;code&gt;rmarkdown::render()&lt;/code&gt; para reproducirlos. En este blog, hay dos ejemplos (Se requieren los paquetes de R &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/rstudio/bookdown&#34;&gt;&lt;strong&gt;bookdown&lt;/strong&gt;&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Generación de presentación HTML5 basada en &lt;strong&gt;xaringan&lt;/strong&gt;: &lt;a href=&#34;/slides/xaringan.html&#34;&gt;slides/xaringan.html&lt;/a&gt; (Rmd de origen: &lt;a href=&#34;https://github.com/yihui/blogdown-static/blame/master/static/slides/xaringan.Rmd&#34;&gt;static/slides/xaringan.Rmd&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Generación de un documento PDF usando el formato &lt;code&gt;bookdown::pdf_document2&lt;/code&gt;: &lt;a href=&#34;/pdf/example.pdf&#34;&gt;pdf/example.pdf&lt;/a&gt; (Rmd de origen: &lt;a href=&#34;https://github.com/yihui/blogdown-static/blame/master/static/pdf/example.Rmd&#34;&gt;static/pdf/example.Rmd&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/martin.rbind.io/post/2016/02/14/a-plain-markdown-post/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <title>Subtyping cognitive profiles in Autism Spectrum Disorder using a random forest algorithm</title>
+      <link>/publication/2017-subtyping/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/post/2016/02/14/a-plain-markdown-post/</guid>
-      <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.
-1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.</description>
+      <guid>/publication/2017-subtyping/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/martin.rbind.io/post/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>R-Ladies presentation ninja</title>
+      <link>/post/r-ladies-slides/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/post/2015/07/23/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/post/r-ladies-slides/</guid>
+      <description>&lt;p&gt;So, you are doing an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation…that’s awesome! &lt;img src=&#34;https://media.giphy.com/media/r9WS57qOqU1KU/giphy.gif&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;the-short-version&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The short version&lt;/h1&gt;
+&lt;p&gt;I made an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; theme for &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; slides&lt;/a&gt;. My original tweet about it:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;if you want to use &lt;a href=&#34;https://twitter.com/xieyihui?ref_src=twsrc%5Etfw&#34;&gt;@xieyihui&lt;/a&gt;&amp;#39;s awesome &lt;a href=&#34;https://twitter.com/hashtag/xaringan?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#xaringan&lt;/a&gt; package for &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; slides but want more &lt;a href=&#34;https://twitter.com/hashtag/Rladies?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Rladies&lt;/a&gt; flavor, there is now a built-in theme for that (with code highlighting)! Thanks to the awesome &lt;a href=&#34;https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw&#34;&gt;@RLadiesGlobal&lt;/a&gt; starter kit. Update the CSS in your YAML to use  🧙🏽‍♀️🧞‍♀️ &lt;a href=&#34;https://t.co/YnlGSVAMsl&#34;&gt;pic.twitter.com/YnlGSVAMsl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/935973869554487296?ref_src=twsrc%5Etfw&#34;&gt;November 29, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The way to use the theme is to update the YAML like so:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
+  xaringan::moon_reader:
+    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sure your version of &lt;strong&gt;xaringan&lt;/strong&gt; is up-to-date.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/posts/rladies-slides/rladies-demo-slides.png&#34; /&gt; Below is a &lt;a href=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34;&gt;demo slide deck&lt;/a&gt; using the theme.&lt;/p&gt;
+&lt;iframe src=&#34;https://alison.rbind.io/slides/rladies-demo-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;(view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/rladies-demo-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-longer-story&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The longer story&lt;/h1&gt;
+&lt;p&gt;I recommend &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui’s&lt;/a&gt; &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt; package&lt;/a&gt; for slides. This is an R package, available through GitHub, for creating slideshows with &lt;a href=&#34;https://remarkjs.com/&#34;&gt;remark.js&lt;/a&gt; through R Markdown. This means that you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;write all your slides in Markdown text&lt;/li&gt;
+&lt;li&gt;include chunks of R code and rendered output like plots, results, tables, etc. in your slides&lt;/li&gt;
+&lt;li&gt;use git for version control and share your GitHub repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This makes &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; ideal for an &lt;a href=&#34;https://rladies.org&#34;&gt;R-Ladies&lt;/a&gt; presentation!&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To use the package, you’ll need the &lt;a href=&#34;https://cran.r-project.org/web/packages/devtools/index.html&#34;&gt;&lt;strong&gt;devtools&lt;/strong&gt; package&lt;/a&gt; installed so that you can use the &lt;code&gt;install_github&lt;/code&gt; function. Then do:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#39;yihui/xaringan&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As Yihui points out in the documentation, if you use RStudio, you can use the menu to navigate to &lt;code&gt;File -&amp;gt; New File -&amp;gt; R Markdown -&amp;gt; From Template -&amp;gt; Ninja Presentation&lt;/code&gt;, and you will see an R Markdown example.&lt;/p&gt;
+&lt;p&gt;I first used &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt; a few months ago. I was working with &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; on the &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown book&lt;/a&gt;, and had signed up to lead a &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/portland-r-user-group/&#34;&gt;Portland R User group&lt;/a&gt;. Obviously, such a workshop could not have powerpoint slides, so it seemed like the perfect time to learn &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For my &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;workshop&lt;/a&gt;, I made a simple website for the newly founded &lt;a href=&#34;https://rladies-pdx.rbind.io&#34;&gt;R-Ladies PDX&lt;/a&gt; using blogdown (Thanks to &lt;a href=&#34;https://twitter.com/mmmpork&#34;&gt;Augustina&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/deekshathati&#34;&gt;Deeksha&lt;/a&gt;, our fearless organizers). So naturally, my slides needed more purple.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://media.giphy.com/media/c4PW8gc5ee9NK/giphy.gif&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Luckily, the R-Ladies run a tight ship- they have a &lt;a href=&#34;https://github.com/rladies/starter-kit&#34;&gt;starter kit on GitHub&lt;/a&gt; that details all the pretty purples they like.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/rladies-slides/rladies-palette.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;About a month after I did the &lt;a href=&#34;https://alison.rbind.io/talk/blogdown-meetup/&#34;&gt;R-Ladies blogdown workshop&lt;/a&gt;, I saw this &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;blog post&lt;/a&gt; by &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/posts/rladies-slides/yihui-xaringan-themes.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;First, I thought this was such a cool idea and I hope more people make and submit themes. Then I realized, I had already made a theme! I submitted a pull request&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, Yihui helped me make some edits to the CSS files to make them more parsimonious with the default theme, I electronically signed a contributor agreement, and now the theme is there for you all to enjoy and use! You use the theme by editing the YAML:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;output:
+  xaringan::moon_reader:
+    css: [&amp;quot;default&amp;quot;, &amp;quot;rladies&amp;quot;, &amp;quot;rladies-fonts&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you use the theme and you are on twitter, I’d love to see it- &lt;a href=&#34;https://twitter.com/intent/tweet?user_id=3199856542&#34;&gt;please mention me on twitter!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Examples!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My blogdown workshop slides: &lt;a href=&#34;http://127.0.0.1:4321/talk/blogdown-meetup/&#34;&gt;“Up and running with blogdown”&lt;/a&gt; (view the &lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/static/slides/blogdown-workshop-slides.Rmd&#34;&gt;source .Rmd on GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;https://alison.rbind.io/slides/blogdown-workshop-slides.html#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jessicaminnier.com&#34;&gt;Jessica Minnier’s&lt;/a&gt; slides for &lt;a href=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34;&gt;“Building Shiny Apps: With Great Power Comes Great Responsibility”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://jminnier-talks.netlify.com/2018_02_shiny_csp/minnier_csp2018#1&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If you are new to &lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;, don’t miss the &lt;a href=&#34;https://github.com/yihui/xaringan/wiki&#34;&gt;wiki!&lt;/a&gt;&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Yihui’s &lt;a href=&#34;https://yihui.name/en/2017/10/xaringan-themes/&#34;&gt;technical instructions&lt;/a&gt; for contributors section of that blog post has been revised and is very detailed&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/martin.rbind.io/post/2015/07/23/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      <title>blogdown: Creating Websites with R Markdown</title>
+      <link>/publication/2017-blogdown/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/post/2015/07/23/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Quisque mattis volutpat lorem vitae feugiat.</description>
+      <guid>/publication/2017-blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Labhub Workshop</title>
+      <link>/talk/labhub/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/labhub/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/ohsu-os-panel.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The landscape of scientific communication is changing dramatically.  Diverse stakeholders, including major funders and universities are demonstrating a growing interest and investment in open scientific principles and practices.  Researchers, students, and the institutions that support them are needing to navigate new expectations, workflows, and policies against a backdrop of relatively unchanged means and measures of scientific success.&lt;/p&gt;
+
+&lt;p&gt;Sound complicated?  Join us on December 8th from 3:00 to 4:00 PM for a panel discussion with OHSU leaders and early career researchers on the evolving landscape of scientific communication.  We’ll explore the drivers behind the calls for “openness”, what this means in practice, and the real world compatibility and tensions between open science and student, researcher, and institutional success.&lt;/p&gt;
+
+&lt;p&gt;Confirmed panelists include:&lt;/p&gt;
+
+&lt;p&gt;Dr. Gary Westbrook, Vollum Institute Senior Scientist and Director of the Neuroscience Graduate Program&lt;/p&gt;
+
+&lt;p&gt;Dr. Bita Moghaddam, Chair of the Department of Behavioral Neuroscience&lt;/p&gt;
+
+&lt;p&gt;Dr. Abhinav Nellore, Assistant Professor, Biomedical Engineering and the Department of Surgery&lt;/p&gt;
+
+&lt;p&gt;Dr. Alison Hill, Associate Professor, Center for Spoken Language Understanding&lt;/p&gt;
+
+&lt;p&gt;The panel will be followed by food, drinks, and two hands on workshops from 4:00 - 5:30:&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/ohsu-os-labhub-workshop.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In this workshop, Dr. Alison Hill and Robin Champieux demonstrated tools and methods for building transparency within a lab, and onboarding new graduate students and postdocs. We provided a &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;template GitHub repository&lt;/a&gt; and code of conduct designed to facilitate a healthy and productive learning and research environment. You are encouraged to use these tools to communicate expectations, document protocols, receive feedback, and facilitate the long-term value of students’ and trainees’ contributions.&lt;/p&gt;
+
+&lt;p&gt;Labhub is a &lt;em&gt;work in progress&lt;/em&gt;. We created &lt;a href=&#34;https://github.com/apreshill/labhub&#34; target=&#34;_blank&#34;&gt;this repository&lt;/a&gt; as an education and demonstration tool for faculty, postdocs, and students curious about how documentation, open science workflows, and tools like Github can contribute to a healthy and productive research environment. Your ideas and contributions are welcome!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Up &amp; Running with blogdown</title>
+      <link>/talk/blogdown-meetup/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/blogdown-meetup/</guid>
+      <description>&lt;p&gt;We will cover:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;blogdown&lt;/strong&gt; R package&lt;/li&gt;
+&lt;li&gt;Hugo themes&lt;/li&gt;
+&lt;li&gt;Adding content to personalize your site&lt;/li&gt;
+&lt;li&gt;Posting&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t want to blog? / just want to knit?&lt;/li&gt;
+&lt;li&gt;Customizing themes&lt;/li&gt;
+&lt;li&gt;Troubleshooting common problems&lt;/li&gt;
+&lt;li&gt;Deployment options and recommendations&lt;/li&gt;
+&lt;li&gt;Domain options available through RStudio/rbind&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are planning on attending this workshop, please click on the HTML link above for how to prepare before the workshop.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/blogdown-meetup.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Automated Measurement of Language Outcomes for Neurodevelopmental Disorders - NIDCD R01</title>
+      <link>/project/language-outcomes/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/language-outcomes/</guid>
+      <description>&lt;p&gt;Improving spoken language use (i.e., discourse skills) is a common treatment goal for children with neurodevelopmental disorders, particularly for those with difficulties in conversational reciprocity, perseverative speech, or idiosyncratic/stereotyped word use. These features are clinically meaningful, and in previous projects, we have successfully applied Natural Language Processing (NLP) methods to measure these discourse skills using natural language samples from children with Autism Spectrum Disorder (ASD). However, while NLP methods yield diagnostically relevant measures, it is not known if they can be translated into meaningful outcome measures. To take this next step, important questions must be addressed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How stable and responsive are NLP discourse measures over time?&lt;/li&gt;
+&lt;li&gt;How consistent are the measures across different measurement contexts and lengths?&lt;/li&gt;
+&lt;li&gt;What is their validity?&lt;/li&gt;
+&lt;li&gt;To what degree are measures impacted by general language or intellectual abilities?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lack of knowledge about these psychometric properties of NLP discourse measures is a problem because, without it, the likelihood that children’s use of spoken language can be targeted and impacted in large-scale clinical trials is remote.&lt;/p&gt;
+
+&lt;p&gt;The long-term goal of this project is to harness the benefits of NLP to impact functional spoken language outcomes for children with neurodevelopmental disorders. The parent project (R01DC012033: “Computational Characterization of Language Use in Autism Spectrum Disorder”) took the first steps towards this goal by developing NLP algorithms to measure discourse skills based on raw (i.e., not coded or annotated) transcripts. Our strong results indicate difficulties in conversational reciprocity as well as elevated repetitive language behaviors among children with ASD compared to children without ASD, and were not due to differences in age, IQ, or language abilities. Our objective in this project is to take the next step to evaluate the suitability of these NLP automated discourse measures (ADMs) as outcomes for individuals with a range of intellectual abilities and diagnoses. Our approach will focus on optimizing stability of such measures, and assessing responsiveness to change over time, consistency across sampling contexts and sample lengths, and validity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multi-modal Autism Phenotype Snapshot (MAPS): Automated measurement of outcomes for children with autism</title>
+      <link>/project/maps/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/maps/</guid>
+      <description>&lt;p&gt;Targeting core symptoms of Autism Spectrum Disorders (ASD) is a key treatment goal for parents of children with ASD. While many efficacious treatments for ASD have been developed, a major obstacle in evaluating these treatments among children with ASD has been the lack of adequate outcome measures (Anagnostou et al., 2014; Bolte &amp;amp; Diehl, 2013; Kanne et al., 2014). Most treatment studies have relied on informant-based measures (i.e., parent or clinician report) that either place a high burden on families, or require significant training and time to administer. Moreover, measures are often re-purposed from existing measures intended for screening or diagnosis, and do not provide continuous measures of symptoms that are responsive to change. Thus, there is a clear need to develop ASD outcome measures that are reliable, valid, and sensitive to change. In the absence of such outcome measures, our understanding of the efficacy of treatments for ASD will continue to be limited.&lt;/p&gt;
+
+&lt;p&gt;At the same time, automated methods for quantifying behavior have become more advanced, less intrusive, and more cost-effective, and could provide reliable and sensitive measures of behavioral change. However, these methods have yet to be translated into a viable outcome measure for use in treatment studies. For example, recent research has shown that autism symptoms can be objectively measured with automated methods such as eye-tracking (Rice, Moriuchi, Jones, &amp;amp; Klin, 2012), natural language processing (Gorman et al., 2016; Rouhizadeh et al., 2014; van Santen, Sproat, &amp;amp; Hill, 2013), and quantitative facial emotion analysis (Metallinou, Grossman, &amp;amp; Narayanan, 2013), and that such measures are interpretable and meaningful for the everyday lives of children and their families.&lt;/p&gt;
+
+&lt;p&gt;The goal of this project is to develop and validate a novel objective measurement tool, the Multi-modal Autism Phenotype Snapshot (MAPS), for use in clinical trials targeting core symptoms of autism. MAPS uses automated methods to measure autism-relevant behaviors across multiple modalities (gaze-tracking, natural language processing, facial expression analysis) while children watch and respond to audiovisual stimuli presented on a laptop. This project was funded by a Catalyst Award from the Oregon Clinical &amp;amp; Translational Research Institute.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantitative Analysis of Disfluency in Children with Autism Spectrum Disorder or Language Impairment</title>
+      <link>/publication/2017-mazes-asd-sli/</link>
+      <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017-mazes-asd-sli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Your Graph Workshop</title>
+      <link>/talk/code-your-graph/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/code-your-graph/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/code-your-graph.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Computational Characterization of Language Use in Females and Males with Autism Spectrum Disorder</title>
+      <link>/project/sex-diffs-language/</link>
+      <pubDate>Wed, 11 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sex-diffs-language/</guid>
+      <description>&lt;p&gt;The female clinical presentation of Autism Spectrum Disorder (ASD) is not well understood, and is a contributing factor to underidentification and delays in the diagnosis of ASDs among females, particularly for those who are verbal and without cognitive impairments. Sex differences in clinical presentation may make it more difficult to recognize ASD symptoms in females, yet evidence for differences between females and males in the two core symptom domains—social communication/interaction and repetitive behaviors and restricted interests—has been inconsistent. Although some studies have found stronger social communication/interaction skills in affected females than in males, researchers and clinicians have cautioned that these strengths may be superficial and allow females to “mask” their ASD symptoms, further contributing to underidentification among females. Similarly, restricted and repetitive behaviors may be less common among females with ASD, or they may simply look different from clinical expectations based on male presentations, again allowing females to “fly under the radar.” Thus, there is a critical need to further understanding of sex differences in the fundamental patterns of behavioral and social functioning relevant to the clinical presentation of ASD. In the absence of such knowledge, females with ASD will continue to be underidentified; affected females will be identified at older ages and thus will fail to benefit from access to early intervention services.&lt;/p&gt;
+
+&lt;p&gt;The long-term goal of this project is to further understanding of the female clinical presentation of ASD, so that improved methods for identification, assessment, and treatment of females with communication difficulties such as ASD can be developed. Our objective is to identify features that characterize atypical language use—a core symptom of ASD—among females with ASD. In the parent R01, we have developed and validated new Natural Language Processing based methods that automatically measure features of atypical language use based on raw (i.e., not coded) transcripts of natural language samples. Our strong preliminary data indicate significant impairments in conversational reciprocity and repetitive speech behaviors among children with ASD. For this administrative supplement, we propose to increase sample size of females with ASD in order to increase statistical power to analyze sex differences among children with ASD in atypical language use. Our rationale for this project is that successful identification of observable and objective differences (and similarities) between females and males in atypical language use would allow clinicians to better recognize, assess, and potentially treat symptoms of ASD in females.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Epidemiology of autism spectrum disorders</title>
+      <link>/publication/2016-primer-on-asd/</link>
+      <pubDate>Fri, 19 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016-primer-on-asd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uh and Um in Children With Autism Spectrum Disorders or Language Impairment</title>
+      <link>/publication/2016-uh-and-um-asd-sli/</link>
+      <pubDate>Fri, 22 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016-uh-and-um-asd-sli/</guid>
+      <description></description>
     </item>
     
   </channel>
