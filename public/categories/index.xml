@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Martín Andrés Macías</title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on Martín Andrés Macías</description>
+    <title>Categories on Martín Macías</title>
+    <link>/martin.rbind.io/categories/</link>
+    <description>Recent content in Categories on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
-    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
-    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/martin.rbind.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blogdown</title>
-      <link>/categories/blogdown/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <title>Example</title>
+      <link>/martin.rbind.io/categories/example/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/blogdown/</guid>
+      <guid>/martin.rbind.io/categories/example/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Presentations</title>
-      <link>/categories/presentations/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      <title>Hugo</title>
+      <link>/martin.rbind.io/categories/hugo/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/categories/presentations/</guid>
+      <guid>/martin.rbind.io/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <link>/martin.rbind.io/categories/r/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/categories/r/</guid>
+      <guid>/martin.rbind.io/categories/r/</guid>
       <description></description>
     </item>
     

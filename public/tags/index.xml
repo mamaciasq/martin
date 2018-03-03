@@ -1,104 +1,94 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Martín Andrés Macías</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Martín Andrés Macías</description>
+    <title>Tags on Martín Macías</title>
+    <link>/martin.rbind.io/tags/</link>
+    <description>Recent content in Tags on Martín Macías</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
-    <copyright>&amp;copy; 2018 Martín Andrés Macías</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Feb 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/martin.rbind.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>/tags/academic/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/academic/</guid>
-      <description>Here is a list of all the content that has been tagged as academic.</description>
-    </item>
-    
-    <item>
-      <title>Autism</title>
-      <link>/tags/autism/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/autism/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Blogdown</title>
-      <link>/tags/blogdown/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <link>/martin.rbind.io/tags/blogdown/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>/martin.rbind.io/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Eye Tracking</title>
-      <link>/tags/eye-tracking/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      <title>Markdown</title>
+      <link>/martin.rbind.io/tags/markdown/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/eye-tracking/</guid>
+      <guid>/martin.rbind.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Git</title>
-      <link>/tags/git/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <title>MathJax</title>
+      <link>/martin.rbind.io/tags/mathjax/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/git/</guid>
+      <guid>/martin.rbind.io/tags/mathjax/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Natural Language Processing</title>
-      <link>/tags/natural-language-processing/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      <title>Pandoc</title>
+      <link>/martin.rbind.io/tags/pandoc/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/natural-language-processing/</guid>
+      <guid>/martin.rbind.io/tags/pandoc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Outcomes</title>
-      <link>/tags/outcomes/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      <title>Plot</title>
+      <link>/martin.rbind.io/tags/plot/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/tags/outcomes/</guid>
+      <guid>/martin.rbind.io/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Presentations</title>
-      <link>/tags/presentations/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <title>R Markdown</title>
+      <link>/martin.rbind.io/tags/r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/tags/presentations/</guid>
+      <guid>/martin.rbind.io/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Ladies</title>
-      <link>/tags/r-ladies/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      <title>RStudio</title>
+      <link>/martin.rbind.io/tags/rstudio/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-ladies/</guid>
+      <guid>/martin.rbind.io/tags/rstudio/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Xaringan</title>
-      <link>/tags/xaringan/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      <title>Regression</title>
+      <link>/martin.rbind.io/tags/regression/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/tags/xaringan/</guid>
+      <guid>/martin.rbind.io/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/martin.rbind.io/tags/tutorial/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/martin.rbind.io/tags/tutorial/</guid>
       <description></description>
     </item>
     
