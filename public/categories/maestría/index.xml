@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maestría on M</title>
+    <link>/categories/maestr%C3%ADa/</link>
+    <description>Recent content in Maestría on M</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/maestr%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Presentación Trabajo de maestría</title>
+      <link>/post/2018/03/03/presentaci%C3%B3n-trabajo-de-maestr%C3%ADa/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/03/03/presentaci%C3%B3n-trabajo-de-maestr%C3%ADa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

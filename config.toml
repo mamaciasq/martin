@@ -22,7 +22,7 @@ footnotereturnlinkcontents = "↩"
     weight = 2
 [[menu.main]]
     name = "Categories"
-    url = "/categories/"
+    url = "/static/slides/2018-03-03-presentación-trabajo-de-maestría.html"
     weight = 3
 [[menu.main]]
     name = "Tags"
