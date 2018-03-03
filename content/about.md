@@ -1,9 +1,12 @@
 ---
-title: About Hugo Ivy
-author: Yihui Xie
-date: '2017-08-06'
+title: Sobre mí
+author: Martín Macías
+date: 2018-03-03
 ---
 
-This Hugo theme was ported from [Ivy](https://github.com/dmulholland/ivy), a minimalist website generator built in Python. I don't have time to document this theme. You have to read the source code to understand what it can do. All I can say for now is that I love it. It is clean, minimal, and responsive.
+Soy el papá de Isaac. Estudié Estadística en la Universidad Nacional de Colombia. Estoy haciendo la maestría en Estadística en mi misma _alma mater_.
 
-I hope you will enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-ivy). Happy hacking!
+Me gusta la visualización de información, el modelamiento de datos y el análisis estadístico. Me encanta el trabajo de la gente de [RStudio](https://www.rstudio.com), en especial de [Hadley Wickham](http://hadley.nz/) y de [Yihui Xie](http://yihui.name/), así que para honrar mi gusto, juego con [tidyverse](https://www.tidyverse.org), [bookdown](https://www.bookdown.org) y con algunos [htmlwidgets](https://www.htmlwidgets.org).
+
+Estoy aprendiendo a manejar [blogdown](https://bookdown.org/yihui/blogdown/) y de ahí nació la idea de hacer este blog que no tiene pretensión distinta a la de documentar el aprendizaje.
+

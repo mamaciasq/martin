@@ -1,6 +1,6 @@
 baseurl = "martin.rbind.io/"
 languageCode = "en-us"
-title = "Martín Macías"
+title = "M"
 theme = "hugo-ivy"
 googleAnalytics = ""
 disqusShortname = ""
@@ -33,7 +33,7 @@ footnotereturnlinkcontents = "↩"
     url = "/index.xml"
 
 [params]
-    description = "Estadística - R - Pensamientos"
+    description = "R · Estadística · Miscelánea"
     footer = "&copy; [Martín Macías](https://yihui.name) 2018 | [Github](https://github.com/mamaciasq) | [Twitter](https://twitter.com/MartinMacias)"
 
   highlightjsVersion = "9.12.0"
