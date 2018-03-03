@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Hugo Ivy</title>
+    <title>Martín Macías on M</title>
     <link>/</link>
-    <description>Recent content in Home on Hugo Ivy</description>
+    <description>Recent content in Martín Macías on M</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About Hugo Ivy</title>
+      <title>Sobre mí</title>
       <link>/about/</link>
-      <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>This Hugo theme was ported from Ivy, a minimalist website generator built in Python. I don&amp;rsquo;t have time to document this theme. You have to read the source code to understand what it can do. All I can say for now is that I love it. It is clean, minimal, and responsive.
-I hope you will enjoy this theme. The source code is on Github. Happy hacking!</description>
+      <description>Soy el papá de Isaac. Estudié Estadística en la Universidad Nacional de Colombia. Estoy haciendo la maestría en Estadística en mi misma alma mater.
+Me gusta la visualización de información, el modelamiento de datos y el análisis estadístico. Me encanta el trabajo de la gente de RStudio, en especial de Hadley Wickham y de Yihui Xie, así que para honrar mi gusto, juego con tidyverse, bookdown y con algunos htmlwidgets.</description>
     </item>
     
     <item>
