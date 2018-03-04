@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Análisis espacio-temporal de la migración de estudiantes admitidos a la UN</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Martín Macías" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet/leaflet.js"></script>
+    <link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+    <link href="libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
+    <script src="libs/leaflet-label/leaflet.label.js"></script>
+    <script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+    <script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+    <script src="libs/leaflet-binding/leaflet.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Análisis espacio-temporal de la migración de estudiantes admitidos a la UN
+## Trabajo de maestría
+### Martín Macías
+### 2018/03/05
+
+---
+
+
+
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0a/Logotipo_de_la_Universidad_Nacional_de_Colombia.svg)
+
+???
+
+Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logotipo_de_la_Universidad_Nacional_de_Colombia.svg)
+
+---
+class: inverse, center, middle
+
+# Motivación
+
+---
+
+# Dirección Nacional de Planeación y Estadística
+
+### **Fortalecimiento de la actividad estadística institucional**
+
+_*Objetivo principal:*_
+
++ Fortalecer la capacidad de gestión de la información estadística estratégica y la construcción de indicadores en la Universidad
+
+_*Objetivos específicos:*_
+
++ Establecer lineamientos conceptuales para la medición en la Universidad
+
++ Proponer indicadores estratégicos de desempeño institucional
+
++ Construir el primer Plan Estadístico Estratégico de la Universidad Nacional de Colombia
+
++ Construir una guía metodológica que promueva y facilite la construcción de indicadores de gestión por procesos
+
+---
+class: center, middle
+La antigua [Oficina Nacional de Planeación](http://www.onp.unal.edu.co)
+---
+class: inverse, center, middle 
+
+# Lo que estamos haciendo
+---
+
+<div id="htmlwidget-bb1035e05b94ec0556cf" style="width:100%;height:576px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bb1035e05b94ec0556cf">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+
+---
+background-image: url(http://memecrunch.com/image/4fb6f2011861336f99007223.jpg?w=400)
+background-position: 50% 50%
+class: center, bottom, inverse
+
+# El problema
+
+---
+# Ideas
+- Análisis espacio-temporal
+- Lattices
+[This link](/Users/martin/Github/martin/static/slides/html/J1_G2_I2_CARRERA_F12.html)
+---
+
+class: center, middle
+
+# ¡Gracias!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+  </body>
+</html>
