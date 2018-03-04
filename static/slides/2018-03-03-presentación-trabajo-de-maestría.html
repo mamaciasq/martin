@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Presentation Ninja</title>
+    <title>Análisis espacio-temporal de la migración de estudiantes admitidos a la UN</title>
     <meta charset="utf-8">
-    <meta name="author" content="Yihui Xie" />
+    <meta name="author" content="Martín Macías" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet/leaflet.js"></script>
+    <link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+    <link href="libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
+    <script src="libs/leaflet-label/leaflet.label.js"></script>
+    <script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+    <script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+    <script src="libs/leaflet-binding/leaflet.js"></script>
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Presentation Ninja
-## ⚔<br/>with xaringan (in blogdown)
-### Yihui Xie
-### 2017/07/28
+# Análisis espacio-temporal de la migración de estudiantes admitidos a la UN
+## Trabajo de maestría
+### Martín Macías
+### 2018/03/05
 
 ---
 
 
 
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0a/Logotipo_de_la_Universidad_Nacional_de_Colombia.svg)
 
 ???
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
-
----
-class: center, middle
-
-# xaringan
-
-### /ʃæ.'riŋ.ɡæn/
+Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logotipo_de_la_Universidad_Nacional_de_Colombia.svg)
 
 ---
 class: inverse, center, middle
 
-# Get Started
+# Motivación
 
 ---
 
-# Hello World
+# Dirección Nacional de Planeación y Estadística
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+### **Fortalecimiento de la actividad estadística institucional**
 
+_*Objetivo principal:*_
 
-```r
-devtools::install_github("yihui/xaringan")
-```
++ Fortalecer la capacidad de gestión de la información estadística estratégica y la construcción de indicadores en la Universidad
 
---
+_*Objetivos específicos:*_
 
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
++ Establecer lineamientos conceptuales para la medición en la Universidad
 
-- Create a new R Markdown document from the menu `File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation`;&lt;sup&gt;1&lt;/sup&gt;
++ Proponer indicadores estratégicos de desempeño institucional
 
---
++ Construir el primer Plan Estadístico Estratégico de la Universidad Nacional de Colombia
 
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)&lt;sup&gt;2&lt;/sup&gt; "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
++ Construir una guía metodológica que promueva y facilite la construcción de indicadores de gestión por procesos
 
 ---
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
+class: center, middle
+La antigua [Oficina Nacional de Planeación](http://www.onp.unal.edu.co)
+---
+class: inverse, center, middle 
+
+# Lo que estamos haciendo
+---
+
+<div id="htmlwidget-8a8d292f0e9958afb671" style="width:100%;height:576px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8a8d292f0e9958afb671">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+
+---
+background-image: url(http://memecrunch.com/image/4fb6f2011861336f99007223.jpg?w=400)
 background-position: 50% 50%
 class: center, bottom, inverse
 
-# You only live once!
+# El problema
 
+---
+# Ideas
+- Análisis espacio-temporal
+- Lattices
+[This link](/Users/martin/Github/martin/static/slides/html/J1_G2_I2_CARRERA_F12.html)
 ---
 
 class: center, middle

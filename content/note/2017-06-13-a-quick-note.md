@@ -7,8 +7,6 @@ categories:
 slug: a-quick-note
 ---
 
-[/slides/2018-03-03-presentación-trabajo-de-maestría.html](/slides/2018-03-03-presentación-trabajo-de-maestría.html)
-
 To me, the two most impressive websites based on **blogdown** are:
 
 1. [Rob J Hyndman](https://robjhyndman.com)'s personal website.
