@@ -72,7 +72,7 @@ class: center, bottom, inverse
 # Ideas
 - Análisis espacio-temporal
 - Lattices
-[This link](/Users/martin/Github/martin/static/slides/html/J1_G2_I2_CARRERA_F12.html)
+[This link](/slides/html/J1_G2_I2_CARRERA_F12.html)
 ---
 
 class: center, middle

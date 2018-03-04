@@ -17,27 +17,8 @@
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Soy el papá de Isaac. Estudié Estadística en la Universidad Nacional de Colombia. Estoy haciendo la maestría en Estadística en mi misma alma mater.
+      <description>Soy el papá de Isaac. Estudié Estadística en la Universidad Nacional de Colombia. Estoy haciendo la maestría en Estadística también en mi alma mater.
 Me gusta la visualización de información, el modelamiento de datos y el análisis estadístico. Me encanta el trabajo de la gente de RStudio, en especial de Hadley Wickham y de Yihui Xie, así que para honrar mi gusto, juego con tidyverse, bookdown y con algunos htmlwidgets.</description>
-    </item>
-    
-    <item>
-      <title>Another Note on A blogdown Tutorial</title>
-      <link>/note/2017/06/14/another-note/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/note/2017/06/14/another-note/</guid>
-      <description>I just discovered an awesome tutorial on blogdown written by Alison. I have to admit this is the best blogdown tutorial I have seen so far.</description>
-    </item>
-    
-    <item>
-      <title>A Quick Note on Two Beautiful Websites</title>
-      <link>/note/2017/06/13/a-quick-note/</link>
-      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/note/2017/06/13/a-quick-note/</guid>
-      <description>To me, the two most impressive websites based on blogdown are:
- Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>
     </item>
     
   </channel>
