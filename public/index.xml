@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Martín Macías on M</title>
-    <link>/martin.rbind.io/</link>
+    <link>/</link>
     <description>Recent content in Martín Macías on M</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/martin.rbind.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sobre mí</title>
-      <link>/martin.rbind.io/about/</link>
+      <link>/about/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/about/</guid>
+      <guid>/about/</guid>
       <description>Soy el papá de Isaac. Estudié Estadística en la Universidad Nacional de Colombia. Estoy haciendo la maestría en Estadística en mi misma alma mater.
 Me gusta la visualización de información, el modelamiento de datos y el análisis estadístico. Me encanta el trabajo de la gente de RStudio, en especial de Hadley Wickham y de Yihui Xie, así que para honrar mi gusto, juego con tidyverse, bookdown y con algunos htmlwidgets.</description>
     </item>
     
     <item>
       <title>Another Note on A blogdown Tutorial</title>
-      <link>/martin.rbind.io/note/2017/06/14/another-note/</link>
+      <link>/note/2017/06/14/another-note/</link>
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/note/2017/06/14/another-note/</guid>
+      <guid>/note/2017/06/14/another-note/</guid>
       <description>I just discovered an awesome tutorial on blogdown written by Alison. I have to admit this is the best blogdown tutorial I have seen so far.</description>
     </item>
     
     <item>
       <title>A Quick Note on Two Beautiful Websites</title>
-      <link>/martin.rbind.io/note/2017/06/13/a-quick-note/</link>
+      <link>/note/2017/06/13/a-quick-note/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/note/2017/06/13/a-quick-note/</guid>
+      <guid>/note/2017/06/13/a-quick-note/</guid>
       <description>/slides/2018-03-03-presentación-trabajo-de-maestría.html
 To me, the two most impressive websites based on blogdown are:
  Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>

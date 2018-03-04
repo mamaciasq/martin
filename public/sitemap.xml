@@ -3,49 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/martin.rbind.io/</loc>
+    <loc>/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/note/2017/06/14/another-note/</loc>
+    <loc>/note/2017/06/14/another-note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/note/2017/06/13/a-quick-note/</loc>
+    <loc>/note/2017/06/13/a-quick-note/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/categories/example/</loc>
+    <loc>/categories/example/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/note/</loc>
+    <loc>/note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/martin.rbind.io/tags/tutorial/</loc>
+    <loc>/tags/tutorial/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -1,4 +1,4 @@
-baseurl = "martin.rbind.io/"
+baseurl = "https://martin.rbind.io/"
 languageCode = "en-us"
 title = "M"
 theme = "hugo-ivy"

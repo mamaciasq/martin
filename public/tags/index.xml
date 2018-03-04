@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on M</title>
-    <link>/martin.rbind.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on M</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/martin.rbind.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tutorial</title>
-      <link>/martin.rbind.io/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/martin.rbind.io/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
