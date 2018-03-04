@@ -3,7 +3,6 @@ title: "Análisis espacio-temporal de la migración de estudiantes admitidos a l
 subtitle: "Trabajo de maestría"
 author: "Martín Macías"
 date: "2018/03/05"
-img: logosimboloun.jpg
 output:
   xaringan::moon_reader:
     lib_dir: libs
