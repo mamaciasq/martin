@@ -56,10 +56,15 @@ class: inverse, center, middle
 # Lo que estamos haciendo
 ---
 
-```{r out.width='100%', fig.height=6, eval=require('leaflet'),echo=FALSE}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
+```{r message=FALSE, warning=FALSE, include=FALSE}
+source("aspirantes-graphs.R", encoding = 'UTF-8')
 ```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+EVOLUCION_SERIE
+```
+
+---
 
 ---
 background-image: url(http://memecrunch.com/image/4fb6f2011861336f99007223.jpg?w=400)
