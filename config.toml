@@ -22,7 +22,7 @@ footnotereturnlinkcontents = "↩"
     weight = 2
 [[menu.main]]
     name = "Categories"
-    url = "/static/slides/2018-03-03-presentación-trabajo-de-maestría.html"
+    url = "/categories/"
     weight = 3
 [[menu.main]]
     name = "Tags"
@@ -34,7 +34,7 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "R · Estadística · Miscelánea"
-    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+    footer = "&copy; [Martín Macías](https://martin.rbind.io) 2018 | [Github](https://github.com/mamaciasq) | [Twitter](https://twitter.com/MartinMacias)"
 
   highlightjsVersion = "9.12.0"
   highlightjsCDN = "//cdn.bootcss.com"
