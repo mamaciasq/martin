@@ -78,7 +78,7 @@ class: center, bottom, inverse
 
 class: center, middle
 
-# Thanks!
+# ¡Gracias!
 
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 
