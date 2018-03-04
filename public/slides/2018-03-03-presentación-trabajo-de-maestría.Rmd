@@ -74,6 +74,10 @@ ESTRATO_TORTA
 ESTRATO_TABLA
 ```
 ---
+class: inverse, center, middle 
+# Bookdown
+[Documentos](https://estadisticaun.github.io/BoletinOrinoquia/)
+---
 background-image: url(http://memecrunch.com/image/4fb6f2011861336f99007223.jpg?w=400)
 background-position: 50% 50%
 class: center, bottom, inverse
