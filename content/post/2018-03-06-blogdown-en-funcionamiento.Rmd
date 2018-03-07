@@ -1,0 +1,9 @@
+---
+title: Blogdown en funcionamiento
+author: Martín Macías
+date: '2018-03-06'
+slug: blogdown-en-funcionamiento
+categories: []
+tags: []
+---
+
