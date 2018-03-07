@@ -6,17 +6,21 @@
     <description>Recent content in Posts on M</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Presentation Ninja</title>
-      <link>/post/1/01/01/presentation-ninja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>En funcionamiento con blogdown</title>
+      <link>/post/2018/03/01/up-and-running-with-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/1/01/01/presentation-ninja/</guid>
-      <description>Presentation Ninja   class: center, middle, inverse, title-slide # Presentation Ninja ## ⚔with xaringan (in blogdown) ### Yihui Xie ### 2017/07/28 --- background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg) ??? Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg) --- class: center, middle # xaringan ### /ʃæ.&#39;riŋ.ɡæn/ --- class: inverse, center, middle # Get Started --- # Hello World Install the **xaringan** package from [Github](https://github.com/yihui/xaringan): ```r devtools::install_github(&#34;yihui/xaringan&#34;) ``` -- You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.</description>
+      <guid>/post/2018/03/01/up-and-running-with-blogdown/</guid>
+      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 En GitHub 4 En el terminal 5 En RStudio   1 Lea sobre blogdown Antes de comenzar, le recomiendo leer lo siguiente:
+ blogdown: Creating Websites with R Markdown de Yihui Xie y Amber Thomas
+ Making a Website Using blogdown, Hugo, and GitHub pages también de Amber Thomas
+ Getting Started with blogdown de M. Edward (Ed) Borasky</description>
     </item>
     
   </channel>

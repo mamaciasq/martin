@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>En funcionamiento con blogdown - M</title>
+    <meta property="og:title" content="En funcionamiento con blogdown - M">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">M</a></h1>
+
+<p class="tagline">R · Estadística · Miscelánea</p>
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about/">Acerca de mí</a></li>
+        
+        <li><a href="/categories/">Categorías</a></li>
+        
+        <li><a href="/tags/">Tags</a></li>
+        
+        <li><a href="/index.xml">Suscripción</a></li>
+        
+        
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>En funcionamiento con blogdown</h1>
+
+<h3>Martín Andrés Macías
+  /  2018-03-01</h3>
+<hr>
+
+
+      </header>
+
+
+
+<div id="TOC">
+<ul>
+<li><a href="#lea-sobre-blogdown"><span class="toc-section-number">1</span> Lea sobre blogdown</a></li>
+<li><a href="#advertencias-descargos-de-responsabilidad-etc."><span class="toc-section-number">2</span> Advertencias, descargos de responsabilidad, etc.</a></li>
+<li><a href="#en-github"><span class="toc-section-number">3</span> En GitHub</a></li>
+<li><a href="#en-el-terminal"><span class="toc-section-number">4</span> En el terminal</a></li>
+<li><a href="#en-rstudio"><span class="toc-section-number">5</span> En RStudio</a></li>
+</ul>
+</div>
+
+<div id="lea-sobre-blogdown" class="section level1">
+<h1><span class="header-section-number">1</span> Lea sobre blogdown</h1>
+<p>Antes de comenzar, le recomiendo leer lo siguiente:</p>
+<ul>
+<li><p><a href="https://bookdown.org/yihui/blogdown/"><code>blogdown</code>: Creating Websites with R Markdown</a> de Yihui Xie y Amber Thomas</p></li>
+<li><p><a href="https://proquestionasker.github.io/blog/Making_Site/">Making a Website Using <code>blogdown</code>, Hugo, and GitHub pages</a> también de Amber Thomas</p></li>
+<li><p><a href="https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/">Getting Started with <code>blogdown</code></a> de M. Edward (Ed) Borasky</p></li>
+</ul>
+<p>También existe este artículo de Eric Nantz, el creador de <a href="http://r-podcast.org">R-Podcast</a>, en la <a href="https://github.com/rbind/support">sección de issues de Github <code>rbind/support</code></a> que puede ser de ayuda:</p>
+<ul>
+<li><a href="https://github.com/rbind/support/issues/12" class="uri">https://github.com/rbind/support/issues/12</a></li>
+</ul>
+</div>
+<div id="advertencias-descargos-de-responsabilidad-etc." class="section level1">
+<h1><span class="header-section-number">2</span> Advertencias, descargos de responsabilidad, etc.</h1>
+<p>Incluso con todos los grandiosos recursos que enumeré arriba, ponerme en marcha me llevó algunos intentos, así que este post transmite lo que terminó funcionando para mí. Sin embargo, la distancia andada puede variar, dependiendo del sistema operativo y su enfoque. El mío: soy usuario de macOS, uso R, RStudio y Git (a través de Github)(<a href="https://github.com" class="uri">https://github.com</a>), y la terminal regularmente, por lo que me estoy familizarizando con todo esto. Si no es así para usted, aquí hay unos lugares para comenzar:</p>
+<ul>
+<li>Git: <a href="http://happygitwithr.com">Happy Git with R</a> de Jenny Bryan et al.</li>
+<li>RStudio: <a href="https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1">DataCamp’s Working with the RStudio IDE (free)</a> de Garrett Grolemund</li>
+<li>Terminal: <a href="https://github.com/veltman/clmystery">The Command Line Murder Mystery</a> de Noah Veltman, y <a href="http://seankross.com/the-unix-workbench/">The UNIX Workbench</a> de Sean Kross</li>
+</ul>
+<p>También tengo <a href="https://developer.apple.com/xcode/">Xcode</a> y <a href="https://brew.sh">Homebrew</a> installed- <a href="https://bookdown.org/yihui/blogdown/installation.html">probablemente necesitará esto para descargar Hugo</a>. Si no tiene ninguno pero está en un mac, este enlace puede ayudar:</p>
+<ul>
+<li><a href="https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">¿Cómo instalar Xcode, Homebrew, Git, RVM, Ruby &amp; Rails en Mac OS X</a></li>
+</ul>
+<p>+Para más información sobre cosas de interés que se usan, podría consultar:</p>
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/deployment.html">“Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify.”</a>.</li>
+<li><a href="https://bookdown.org/yihui/blogdown/netlify.html">“Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito <code>*.rbind.io</code> ofrecido por RStudio, Inc.”</a>.</li>
+</ul>
+</div>
+<div id="en-github" class="section level1">
+<h1><span class="header-section-number">3</span> En GitHub</h1>
+<ol style="list-style-type: decimal">
+<li>Vaya en línea a su cuenta de <a href="https://github.com">GitHub</a>, y cree un nuevo repositorio (Dele check a inicializarlo con un <code>README</code> pero no agregue <code>.gitignore</code>- de esto se encargará más adelante). Para nombrar su repositorio, considere su futuro plan de publicación:</li>
+</ol>
+<ul>
+<li>Si va a utilizar <a href="https://www.netlify.com">Netlify</a> para alojar la página, ¡puede nombrar el repositorio como quiera!</li>
+</ul>
+<p>{{% alert note %}}
+Puede ver algunos de los nombres de los repositorios usados por miembros de la organización <code>rbind</code> <a href="https://github.com/rbind/repositories">aquí</a>.
+{{% /alert %}}</p>
+<ul>
+<li>Si quiere alojar su sitio como una <a href="https://pages.github.com">GitHub Page</a>, debería nombrar su repositorio como <code>yourgithubusername.github.io</code> (así que el mío hubiera sido <code>martin.github.io</code>). Si va por esta ruta, le sugiero que siga las <a href="https://proquestionasker.github.io/blog/Making_Site/">instrucciones de Amber</a> en vez de este!</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde <strong>Clone or download</strong>.</p></li>
+<li><p>En la sección <strong>Clone with HTTPs</strong>, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección</p></li>
+</ol>
+</div>
+<div id="en-el-terminal" class="section level1">
+<h1><span class="header-section-number">4</span> En el terminal</h1>
+<p>Ahora <a href="https://help.github.com/articles/cloning-a-repository/">clone su repositorio remoto</a> y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)</p>
+<ol style="list-style-type: decimal">
+<li><p>Use <code>cd</code> para navegar dentro del directorio donde usted quiere que su repositorio esté</p></li>
+<li><p>Una vez esté ahí, digite: <code>git clone [paste]</code>. Entones mi comando sería así:</p></li>
+</ol>
+<pre><code>git clone https://github.com/mamaciasq/martin.git</code></pre>
+<p>Y esto es lo que imprimió en mi ventana de terminal:</p>
+<pre><code>Cloning into &#39;martin&#39;...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Cierre el terminal, ya terminó ahí.</li>
+</ol>
+</div>
+<div id="en-rstudio" class="section level1">
+<h1><span class="header-section-number">5</span> En RStudio</h1>
+<ol style="list-style-type: decimal">
+<li>Instale <code>blogdown</code> desde su consola de RStudio. Si usted ya ha instalado <code>devtools</code> como yo lo hice, solo necesita la segunda línea de las que se listan a continuación:</li>
+</ol>
+<pre><code>if (!requireNamespace(&quot;devtools&quot;)) install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Instale Hugo usando la función de ayuda el paquete <code>blogdown</code>:</li>
+</ol>
+<pre><code>blogdown::install_hugo()
+# o
+library(blogdown)
+install_hugo()</code></pre>
+<p>{{% alert note %}}
+Aquí es donde mis instrucciones divergen de las de Ed: afirma que <code>blogdown</code> no creará un sitio web en su carpeta raíz porque el archivo <code>README.md</code> ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.
+{{% /alert %}}</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Use los botones del menú de arriba en RStudio para seleccionar <code>File -&gt; New Project -&gt; Existing Directory</code>, luego vaya al directorio en su computadora donde esté su repositorio de GitHub y haga click en el botón <strong>Create Project</strong>.</p></li>
+<li><p>Ahora debería estar “dentro” de su proyecto en RStudio. Si está usando git para control de versiones, edite su archivo <code>*gitignore</code>. Este archivo debería estar visible en su panel visor de archivos en RStudio.</p></li>
+</ol>
+<pre><code>.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+blogdown
+.DS_Store # si es un usuario de windows, use Thumbs.db
+public/ # si está usando Netlify</code></pre>
+</div>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev"></span>
+  <span class="nav-next"></span>
+</nav>
+
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">&copy; <a href="https://martin.rbind.io">Martín Macías</a> 2018 | <a href="https://github.com/mamaciasq">Github</a> | <a href="https://twitter.com/MartinMacias">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -6,20 +6,21 @@
     <description>Recent content in Blogdown on M</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/post/2016/02/14/a-plain-markdown-post/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <title>En funcionamiento con blogdown</title>
+      <link>/post/2018/03/01/up-and-running-with-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2016/02/14/a-plain-markdown-post/</guid>
-      <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.
-1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.</description>
+      <guid>/post/2018/03/01/up-and-running-with-blogdown/</guid>
+      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 En GitHub 4 En el terminal 5 En RStudio   1 Lea sobre blogdown Antes de comenzar, le recomiendo leer lo siguiente:
+ blogdown: Creating Websites with R Markdown de Yihui Xie y Amber Thomas
+ Making a Website Using blogdown, Hugo, and GitHub pages también de Amber Thomas
+ Getting Started with blogdown de M. Edward (Ed) Borasky</description>
     </item>
     
   </channel>

@@ -1,9 +1,145 @@
 ---
-title: Blogdown en funcionamiento
-author: Martín Macías
-date: '2018-03-06'
-slug: blogdown-en-funcionamiento
-categories: []
-tags: []
+title: En funcionamiento con blogdown
+author: Martín Andrés Macías
+date: '2018-03-01'
+slug: up-and-running-with-blogdown
+categories:
+  - R
+tags:
+  - blogdown
+summary: Una guía para comenzar a usar blogdown, GitHub y Netlify
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+    toc_depth: 1
 ---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(eval = FALSE, collapse = TRUE, comment = NA, tidy = FALSE)
+```
+
+# Lea sobre blogdown
+
+Antes de comenzar, le recomiendo leer lo siguiente:
+
+* [`blogdown`: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) de Yihui Xie y Amber Thomas
+
+* [Making a Website Using `blogdown`, Hugo, and GitHub pages](https://proquestionasker.github.io/blog/Making_Site/) también de Amber Thomas
+
+* [Getting Started with `blogdown`](https://www.znmeb.mobi/2017/05/12/getting-started-with-blogdown/) de M. Edward (Ed) Borasky
+
+También existe este artículo de Eric Nantz, el creador de [R-Podcast](http://r-podcast.org), en la [sección de issues de Github `rbind/support`](https://github.com/rbind/support) que puede ser de ayuda:
+  
+* [https://github.com/rbind/support/issues/12](https://github.com/rbind/support/issues/12)
+
+# Advertencias, descargos de responsabilidad, etc.
+
+Incluso con todos los grandiosos recursos que enumeré arriba, ponerme en marcha me llevó algunos intentos, así que este post transmite lo que terminó funcionando para mí. Sin embargo, la distancia andada puede variar, dependiendo del sistema operativo y su enfoque. El mío: soy usuario de macOS, uso R, RStudio y Git (a través de Github)(https://github.com), y la terminal regularmente, por lo que me estoy familizarizando con todo esto. Si no es así para usted, aquí hay unos lugares para comenzar:
+
+* Git: [Happy Git with R](http://happygitwithr.com) de Jenny Bryan et al.
+* RStudio: [DataCamp's Working with the RStudio IDE (free)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1) de Garrett Grolemund
+* Terminal: [The Command Line Murder Mystery](https://github.com/veltman/clmystery) de Noah Veltman, y [The UNIX Workbench](http://seankross.com/the-unix-workbench/) de Sean Kross
+
+También tengo [Xcode](https://developer.apple.com/xcode/) y [Homebrew](https://brew.sh) installed- [probablemente necesitará esto para descargar Hugo](https://bookdown.org/yihui/blogdown/installation.html). Si no tiene ninguno pero está en un mac, este enlace puede ayudar:
+
+* [¿Cómo instalar Xcode, Homebrew, Git, RVM, Ruby & Rails en Mac OS X](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
+
++Para más información sobre cosas de interés que se usan, podría consultar:
+
+* ["Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify."](https://bookdown.org/yihui/blogdown/deployment.html). 
+* ["Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito `*.rbind.io` ofrecido por RStudio, Inc."](https://bookdown.org/yihui/blogdown/netlify.html). 
+
+# En GitHub
+
+---
+# ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-1.png)
+---
+
+1. Vaya en línea a su cuenta de [GitHub](https://github.com), y cree un nuevo repositorio (Dele check a inicializarlo con un `README` pero no agregue `.gitignore`- de esto se encargará más adelante). Para nombrar su repositorio, considere su futuro plan de publicación:
+
+* Si va a utilizar [Netlify](https://www.netlify.com) para alojar la página, ¡puede nombrar el repositorio como quiera! 
+
+{{% alert note %}}
+Puede ver algunos de los nombres de los repositorios usados por miembros de la organización `rbind` [aquí](https://github.com/rbind/repositories). 
+{{% /alert %}}
+
+* Si quiere alojar su sitio como una [GitHub Page](https://pages.github.com), debería nombrar su repositorio como `yourgithubusername.github.io` (así que el mío hubiera sido `martin.github.io`). Si va por esta ruta, le sugiero que siga las [instrucciones de Amber](https://proquestionasker.github.io/blog/Making_Site/) en vez de este!
+
+---
+# ![Screenshot de arriba: Crear un nuevo repositorio en GitHub](/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png)
+---
+
+2. Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde **Clone or download**.
+
+3. En la sección **Clone with HTTPs**, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección
+
+# En el terminal
+
+---
+# ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-2.png)
+---
+
+Ahora [clone su repositorio remoto](https://help.github.com/articles/cloning-a-repository/) y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)
+
+1. Use `cd` para navegar dentro del directorio donde usted quiere que su repositorio esté
+
+2. Una vez esté ahí, digite: `git clone [paste]`. Entones mi comando sería así:
+
+```
+git clone https://github.com/mamaciasq/martin.git
+```
+
+Y esto es lo que imprimió en mi ventana de terminal:
+
+```
+Cloning into 'martin'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+```
+
+3. Cierre el terminal, ya terminó ahí.
+
+# En RStudio 
+
+---
+# ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-3.png)
+---
+
+1. Instale `blogdown` desde su consola de RStudio. Si usted ya ha instalado `devtools` como yo lo hice, solo necesita la segunda línea de las que se listan a continuación:
+
+```
+if (!requireNamespace("devtools")) install.packages("devtools")
+devtools::install_github("rstudio/blogdown")
+```
+
+2. Instale Hugo usando la función de ayuda el paquete `blogdown`:
+
+```
+blogdown::install_hugo()
+# o
+library(blogdown)
+install_hugo()
+```
+
+{{% alert note %}}
+Aquí es donde mis instrucciones divergen de las de Ed: afirma que `blogdown` no creará un sitio web en su carpeta raíz porque el archivo `README.md` ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.
+{{% /alert %}}
+
+3. Use los botones del menú de arriba en RStudio para seleccionar `File -> New Project -> Existing Directory`, luego vaya al directorio en su computadora donde esté su repositorio de GitHub y haga click en el botón **Create Project**.
+
+4. Ahora debería estar "dentro" de su proyecto en RStudio. Si está usando git para control de versiones, edite su archivo `*gitignore`. Este archivo debería estar visible en su panel visor de archivos en RStudio. 
+
+```
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+blogdown
+.DS_Store # si es un usuario de windows, use Thumbs.db
+public/ # si está usando Netlify
+```
 

@@ -6,20 +6,21 @@
     <description>Recent content in R on M</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>En funcionamiento con blogdown</title>
+      <link>/post/2018/03/01/up-and-running-with-blogdown/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/07/23/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/post/2018/03/01/up-and-running-with-blogdown/</guid>
+      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 En GitHub 4 En el terminal 5 En RStudio   1 Lea sobre blogdown Antes de comenzar, le recomiendo leer lo siguiente:
+ blogdown: Creating Websites with R Markdown de Yihui Xie y Amber Thomas
+ Making a Website Using blogdown, Hugo, and GitHub pages también de Amber Thomas
+ Getting Started with blogdown de M. Edward (Ed) Borasky</description>
     </item>
     
   </channel>
