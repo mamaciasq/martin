@@ -112,7 +112,7 @@
 <ul>
 <li><a href="https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">¿Cómo instalar Xcode, Homebrew, Git, RVM, Ruby &amp; Rails en Mac OS X</a></li>
 </ul>
-<p>+Para más información sobre cosas de interés que se usan, podría consultar:</p>
+<p>Para más información sobre cosas de interés que se usan, podría consultar:</p>
 <ul>
 <li><a href="https://bookdown.org/yihui/blogdown/deployment.html">“Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify.”</a>.</li>
 <li><a href="https://bookdown.org/yihui/blogdown/netlify.html">“Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito <code>*.rbind.io</code> ofrecido por RStudio, Inc.”</a>.</li>
@@ -195,7 +195,8 @@ public/ # si está usando Netlify</code></pre>
 <li><p>Si está feliz con el tema ofrecido por defecto, que es el lithium theme, puede usar:</p></li>
 <li><p>Si desea un tema distinto al predeterminado, puede especificar el tema al mismo tiempo que llama a la función <code>new_site</code>:</p></li>
 </ol>
-<pre><code># por ejemplo, cree un sitio nuevo con el tema academic-theme blogdown::new_site(theme = &quot;gcushen/hugo-academic&quot;, theme_example = TRUE)</code></pre>
+<pre><code># por ejemplo, cree un sitio nuevo con el tema academic-theme
+blogdown::new_site(theme = &quot;gcushen/hugo-academic&quot;, theme_example = TRUE)</code></pre>
 <ol start="3" style="list-style-type: decimal">
 <li>Si, por el contrario, desea agregar el tema más tarde (como hice, porque no vi el ejemplo anterior hasta que fue demasiado tarde), puede hacer esto:</li>
 </ol>
@@ -217,7 +218,7 @@ install_theme(&quot;gcushen/hugo-academic&quot;, theme_example = TRUE, update_co
 <h2><span class="header-section-number">6.3</span> Edite sus configuraciones</h2>
 <p>Lecturas relevantes:</p>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/configuration.html">capítulo del libro<code>blogdown</code> sobre configuración</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/configuration.html">Capítulo del libro <code>blogdown</code> sobre configuración</a></li>
 <li><a href="https://proquestionasker.github.io/blog/Making_Site/#site-configuration">Detalles adicionales de Amber</a></li>
 <li>También puede ver <a href="https://github.com/apreshill/apreshill/blob/master/config.toml">mi archivo de configuración <code>config.toml</code></a></li>
 </ul>
@@ -232,7 +233,7 @@ Asegúrese de que el <code>baseurl =</code> que puso, termine con un slash <code
 <div id="addins-flujo-de-trabajo" class="section level2">
 <h2><span class="header-section-number">6.4</span> Addins &amp; flujo de trabajo</h2>
 <ul>
-<li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html">Capítulo del libro<code>blogdown</code> sobre RStudio IDE</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html">Capítulo del libro <code>blogdown</code> sobre RStudio IDE</a></li>
 </ul>
 <p>Addins: utilícelos- no necesitará el paquete <code>blogdown</code> cargada en la consola si utiliza los Addins. Mi flujo de trabajo en RStudio en este momento (una vez más, solo lo visualizo localmente porque aún no lo hemos publicado) funciona mejor así:</p>
 <ol style="list-style-type: decimal">
@@ -295,7 +296,7 @@ Recuerde usar el addin <strong>Serve Site</strong> para que pueda ver sus cambio
 <p>{{% alert warning %}}
 <em>No</em> le haga knit a sus post<code>.Rmd</code>- en lugar de eso, use <code>blogdown::serve_site</code>. Si le hace click al botón knit, haga <strong>Serve Site</strong> de nuevo para reescribir el archivo <code>.html</code>.
 {{% /alert %}}</p>
-<p>Por último, su <a href="https://bookdown.org/yihui/blogdown/output-format.html#output-format">encabezado de YAMLdebe lucir similar a esto</a>; note que algunos mas no todas las prestaciones de <code>rmarkdown::html_document</code> <a href="https://bookdown.org/yihui/blogdown/output-format.html#fn15">son soportadas en <code>blogdown</code></a>:</p>
+<p>Por último, su <a href="https://bookdown.org/yihui/blogdown/output-format.html#output-format">encabezado de YAML debe lucir similar a esto</a>; note que algunos mas no todas las prestaciones de <code>rmarkdown::html_document</code> <a href="https://bookdown.org/yihui/blogdown/output-format.html#fn15">son soportadas en <code>blogdown</code></a>:</p>
 <pre><code>---
 title: &quot;My Awesome Post&quot;
 author: &quot;John Doe&quot;

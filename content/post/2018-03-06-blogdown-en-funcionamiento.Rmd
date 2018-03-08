@@ -45,7 +45,7 @@ También tengo [Xcode](https://developer.apple.com/xcode/) y [Homebrew](https://
 
 * [¿Cómo instalar Xcode, Homebrew, Git, RVM, Ruby & Rails en Mac OS X](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
 
-+Para más información sobre cosas de interés que se usan, podría consultar:
+Para más información sobre cosas de interés que se usan, podría consultar:
 
 * ["Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify."](https://bookdown.org/yihui/blogdown/deployment.html). 
 * ["Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito `*.rbind.io` ofrecido por RStudio, Inc."](https://bookdown.org/yihui/blogdown/netlify.html). 
@@ -159,7 +159,8 @@ Hay acerca de 90 [temas de Hugo](https://themes.gohugo.io). Así que volví al l
 2. Si desea un tema distinto al predeterminado, puede especificar el tema al mismo tiempo que llama a la función `new_site`:
 
 ```
-# por ejemplo, cree un sitio nuevo con el tema academic-theme blogdown::new_site(theme = "gcushen/hugo-academic", theme_example = TRUE)
+# por ejemplo, cree un sitio nuevo con el tema academic-theme
+blogdown::new_site(theme = "gcushen/hugo-academic", theme_example = TRUE)
 ```
 
 3. Si, por el contrario, desea agregar el tema más tarde (como hice, porque no vi el ejemplo anterior hasta que fue demasiado tarde), puede hacer esto:
@@ -186,7 +187,7 @@ En su proyecto en RStudio, vaya a la barra de menús superior de RStudio y selec
 
 Lecturas relevantes:
 
-* [capítulo del libro`blogdown` sobre configuración](https://bookdown.org/yihui/blogdown/configuration.html)
+* [Capítulo del libro `blogdown` sobre configuración](https://bookdown.org/yihui/blogdown/configuration.html)
 * [Detalles adicionales de Amber](https://proquestionasker.github.io/blog/Making_Site/#site-configuration)
 * También puede ver [mi archivo de configuración `config.toml`](https://github.com/apreshill/apreshill/blob/master/config.toml)
 
@@ -205,7 +206,7 @@ Continúe y edita todos los demás elementos en el archivo `config.toml` ahora c
 
 ## Addins & flujo de trabajo
 
-* [Capítulo del libro`blogdown` sobre RStudio IDE](https://bookdown.org/yihui/blogdown/rstudio-ide.html)
+* [Capítulo del libro `blogdown` sobre RStudio IDE](https://bookdown.org/yihui/blogdown/rstudio-ide.html)
 
 Addins: utilícelos- no necesitará el paquete `blogdown` cargada en la consola si utiliza los Addins. Mi flujo de trabajo en RStudio en este momento (una vez más, solo lo visualizo localmente porque aún no lo hemos publicado) funciona mejor así:
 
@@ -286,7 +287,7 @@ Después de editar su post `.Rmd`, además de guardar los cambios en su archivo 
 *No* le haga knit a sus post`.Rmd`- en lugar de eso, use `blogdown::serve_site`. Si le hace click al botón knit, haga **Serve Site** de nuevo para reescribir el archivo `.html`.
 {{% /alert %}}
 
-Por último, su [encabezado de YAMLdebe lucir similar a esto](https://bookdown.org/yihui/blogdown/output-format.html#output-format); note que algunos mas no todas las prestaciones de `rmarkdown::html_document` [son soportadas en `blogdown`](https://bookdown.org/yihui/blogdown/output-format.html#fn15):
+Por último, su [encabezado de YAML debe lucir similar a esto](https://bookdown.org/yihui/blogdown/output-format.html#output-format); note que algunos mas no todas las prestaciones de `rmarkdown::html_document` [son soportadas en `blogdown`](https://bookdown.org/yihui/blogdown/output-format.html#fn15):
 
 
 ```
