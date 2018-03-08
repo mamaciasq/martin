@@ -17,10 +17,9 @@
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/03/01/up-and-running-with-blogdown/</guid>
-      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 En GitHub 4 En el terminal 5 En RStudio   1 Lea sobre blogdown Antes de comenzar, le recomiendo leer lo siguiente:
+      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 En GitHub 4 En el terminal 5 En RStudio 6 Construya su sitio en RStudio 7 Publicación en Netlify 8 Yendo más lejos   1 Lea sobre blogdown Antes de comenzar, le recomiendo leer lo siguiente:
  blogdown: Creating Websites with R Markdown de Yihui Xie y Amber Thomas
- Making a Website Using blogdown, Hugo, and GitHub pages también de Amber Thomas
- Getting Started with blogdown de M. Edward (Ed) Borasky</description>
+ Making a Website Using blogdown, Hugo, and GitHub pages también de Amber Thomas</description>
     </item>
     
   </channel>
