@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Gateando en la web con blogdown - M</title>
-    <meta property="og:title" content="Gateando en la web con blogdown - M">
+    <title>Gateando en la web con blogdown - Martín</title>
+    <meta property="og:title" content="Gateando en la web con blogdown - Martín">
     
 
     
@@ -31,7 +31,7 @@
   
   <body class="post">
     <header class="masthead">
-      <h1><a href="/">M</a></h1>
+      <h1><a href="/">Martín</a></h1>
 
 <p class="tagline">R · Estadística · Miscelánea</p>
 
@@ -78,12 +78,13 @@
 <ul>
 <li><a href="#lea-sobre-blogdown"><span class="toc-section-number">1</span> Lea sobre blogdown</a></li>
 <li><a href="#advertencias-descargos-de-responsabilidad-etc."><span class="toc-section-number">2</span> Advertencias, descargos de responsabilidad, etc.</a></li>
-<li><a href="#en-github"><span class="toc-section-number">3</span> En GitHub</a></li>
-<li><a href="#en-el-terminal"><span class="toc-section-number">4</span> En el terminal</a></li>
-<li><a href="#en-rstudio"><span class="toc-section-number">5</span> En RStudio</a></li>
-<li><a href="#construya-su-sitio-en-rstudio"><span class="toc-section-number">6</span> Construya su sitio en RStudio</a></li>
-<li><a href="#publicacion-en-netlify"><span class="toc-section-number">7</span> Publicación en Netlify</a></li>
-<li><a href="#yendo-mas-lejos"><span class="toc-section-number">8</span> Yendo más lejos</a></li>
+<li><a href="#primera-forma"><span class="toc-section-number">3</span> PRIMERA FORMA</a></li>
+<li><a href="#en-github"><span class="toc-section-number">4</span> En GitHub</a></li>
+<li><a href="#en-el-terminal"><span class="toc-section-number">5</span> En el terminal</a></li>
+<li><a href="#en-rstudio"><span class="toc-section-number">6</span> En RStudio</a></li>
+<li><a href="#construya-su-sitio-en-rstudio"><span class="toc-section-number">7</span> Construya su sitio en RStudio</a></li>
+<li><a href="#publicacion-en-netlify"><span class="toc-section-number">8</span> Publicación en Netlify</a></li>
+<li><a href="#yendo-mas-lejos"><span class="toc-section-number">9</span> Yendo más lejos</a></li>
 </ul>
 </div>
 
@@ -117,11 +118,15 @@
 <li><a href="https://bookdown.org/yihui/blogdown/deployment.html">“Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify.”</a>.</li>
 <li><a href="https://bookdown.org/yihui/blogdown/netlify.html">“Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito <code>*.rbind.io</code> ofrecido por RStudio, Inc.”</a>.</li>
 </ul>
+<p>En este post presentaré dos formas de crear un web site desde blogdown.</p>
+</div>
+<div id="primera-forma" class="section level1">
+<h1><span class="header-section-number">3</span> PRIMERA FORMA</h1>
 </div>
 <div id="en-github" class="section level1">
-<h1><span class="header-section-number">3</span> En GitHub</h1>
+<h1><span class="header-section-number">4</span> En GitHub</h1>
 <ol style="list-style-type: decimal">
-<li>Vaya en línea a su cuenta de <a href="https://github.com">GitHub</a>, y cree un nuevo repositorio (Dele check a inicializarlo con un <code>README</code> pero no agregue <code>.gitignore</code>- de esto se encargará más adelante). Para nombrar su repositorio, considere su futuro plan de publicación:</li>
+<li>Vaya a su cuenta de <a href="https://github.com">GitHub</a>, y cree un nuevo repositorio (Dele check para NO inicializarlo con un <code>README</code>. Para bautizar su repositorio, considere su futuro plan de publicación:</li>
 </ol>
 <ul>
 <li>Si va a utilizar <a href="https://www.netlify.com">Netlify</a> para alojar la página, ¡puede nombrar el repositorio como quiera!</li>
@@ -130,7 +135,7 @@
 Puede ver algunos de los nombres de los repositorios usados por miembros de la organización <code>rbind</code> <a href="https://github.com/rbind/repositories">aquí</a>.
 {{% /alert %}}</p>
 <ul>
-<li>Si quiere alojar su sitio como una <a href="https://pages.github.com">GitHub Page</a>, debería nombrar su repositorio como <code>yourgithubusername.github.io</code> (así que el mío hubiera sido <code>martin.github.io</code>). Si va por esta ruta, le sugiero que siga las <a href="https://proquestionasker.github.io/blog/Making_Site/">instrucciones de Amber</a> en vez de este!</li>
+<li>Si quiere alojar su sitio como una <a href="https://pages.github.com">GitHub Page</a>, debería nombrar su repositorio como <code>sunombredeusuariodegithub.github.io</code> (así que el mío hubiera sido <code>martin.github.io</code>). Si va por esta ruta, le sugiero que siga las <a href="https://proquestionasker.github.io/blog/Making_Site/">instrucciones de Amber</a> en vez de este!</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde <strong>Clone or download</strong>.</p></li>
@@ -138,7 +143,7 @@ Puede ver algunos de los nombres de los repositorios usados por miembros de la o
 </ol>
 </div>
 <div id="en-el-terminal" class="section level1">
-<h1><span class="header-section-number">4</span> En el terminal</h1>
+<h1><span class="header-section-number">5</span> En el terminal</h1>
 <p>Ahora <a href="https://help.github.com/articles/cloning-a-repository/">clone su repositorio remoto</a> y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)</p>
 <ol style="list-style-type: decimal">
 <li><p>Use <code>cd</code> para navegar dentro del directorio donde usted quiere que su repositorio esté</p></li>
@@ -157,7 +162,7 @@ Checking connectivity... done.</code></pre>
 </ol>
 </div>
 <div id="en-rstudio" class="section level1">
-<h1><span class="header-section-number">5</span> En RStudio</h1>
+<h1><span class="header-section-number">6</span> En RStudio</h1>
 <ol style="list-style-type: decimal">
 <li>Instale <code>blogdown</code> desde su consola de RStudio. Si usted ya ha instalado <code>devtools</code> como yo lo hice, solo necesita la segunda línea de las que se listan a continuación:</li>
 </ol>
@@ -186,10 +191,10 @@ blogdown
 public/ # si está usando Netlify</code></pre>
 </div>
 <div id="construya-su-sitio-en-rstudio" class="section level1">
-<h1><span class="header-section-number">6</span> Construya su sitio en RStudio</h1>
+<h1><span class="header-section-number">7</span> Construya su sitio en RStudio</h1>
 <p>Ahora puede finalmente coonstruir su sitio usando la función <code>blogdown::new_site()</code>. Pero <strong>primero</strong> debería al menos pensar en los temas…</p>
 <div id="escogiendo-un-tema" class="section level2">
-<h2><span class="header-section-number">6.1</span> Escogiendo un tema</h2>
+<h2><span class="header-section-number">7.1</span> Escogiendo un tema</h2>
 <p>Hay acerca de 90 <a href="https://themes.gohugo.io">temas de Hugo</a>. Así que volví al libro <code>blogdown</code>. Afortunadamente, Yihui y Amber se ofrecieron <a href="https://bookdown.org/yihui/blogdown/other-themes.html">“a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto…”</a>. Fui a <a href="https://github.com/gcushen/hugo-academic">hugo-academic</a>! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:</p>
 <ol style="list-style-type: decimal">
 <li><p>Si está feliz con el tema ofrecido por defecto, que es el lithium theme, puede usar:</p></li>
@@ -211,11 +216,11 @@ install_theme(&quot;gcushen/hugo-academic&quot;, theme_example = TRUE, update_co
 <p>Recomiendo configurar <code>theme_example = TRUE</code>- algunos temas no proporcionarán un sitio de ejemplo, pero el tema académico sí y me pareció útil verlo. Siempre puede eliminar el contenido del ejemplo.</p>
 </div>
 <div id="actualizar-opciones-de-proyecto" class="section level2">
-<h2><span class="header-section-number">6.2</span> Actualizar opciones de proyecto</h2>
+<h2><span class="header-section-number">7.2</span> Actualizar opciones de proyecto</h2>
 <p>En su proyecto en RStudio, vaya a la barra de menús superior de RStudio y seleccione <code>Tools -&gt; Project Options</code> y actualice siguiendo las <a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html#fig:project-options">instrucciones de Yihui y Amber</a>.</p>
 </div>
 <div id="edite-sus-configuraciones" class="section level2">
-<h2><span class="header-section-number">6.3</span> Edite sus configuraciones</h2>
+<h2><span class="header-section-number">7.3</span> Edite sus configuraciones</h2>
 <p>Lecturas relevantes:</p>
 <ul>
 <li><a href="https://bookdown.org/yihui/blogdown/configuration.html">Capítulo del libro <code>blogdown</code> sobre configuración</a></li>
@@ -231,7 +236,7 @@ Asegúrese de que el <code>baseurl =</code> que puso, termine con un slash <code
 <p>Continúe y edita todos los demás elementos en el archivo <code>config.toml</code> ahora como quiera; ¡así es como personaliza su sitio!</p>
 </div>
 <div id="addins-flujo-de-trabajo" class="section level2">
-<h2><span class="header-section-number">6.4</span> Addins &amp; flujo de trabajo</h2>
+<h2><span class="header-section-number">7.4</span> Addins &amp; flujo de trabajo</h2>
 <ul>
 <li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html">Capítulo del libro <code>blogdown</code> sobre RStudio IDE</a></li>
 </ul>
@@ -251,7 +256,7 @@ Error: Error building site: Errors reading pages: Error: failed to parse page me
 <p>El flujo de trabajo anterior solo sirve para editar archivos o publicaciones existentes, pero no para <strong>crear publicaciones nuevas</strong>. Para eso, siga leyendo…</p>
 </div>
 <div id="publicacion" class="section level2">
-<h2><span class="header-section-number">6.5</span> Publicación</h2>
+<h2><span class="header-section-number">7.5</span> Publicación</h2>
 <p>Lecturas relevantes:</p>
 <ul>
 <li><a href="https://bookdown.org/yihui/blogdown/rstudio-ide.html">Capítulo del libro <code>blogdown</code> sobre RStudio IDE</a></li>
@@ -261,7 +266,7 @@ Error: Error building site: Errors reading pages: Error: failed to parse page me
 <p>Línea de fondo:</p>
 <p>Use el addin <strong>New Post</strong>. Pero necesita la consola para hacer esto, por lo que debe detener <code>blogdown :: serve_site</code> haciendo clic en el botón rojo <strong>Stop</strong> primero. El addin es una interfaz brillante que ejecuta este código en la consola: <code>blogdown ::: new_post_addin ()</code>. Entonces, su consola necesita estar desbloqueada para que se ejecute. También necesita estar “dentro” de su proyecto de RStudio o no funcionará.</p>
 <div id="borrador-de-posts" class="section level3">
-<h3><span class="header-section-number">6.5.1</span> Borrador de posts</h3>
+<h3><span class="header-section-number">7.5.1</span> Borrador de posts</h3>
 <p>Lecturas relevantes:</p>
 <ul>
 <li><a href="https://bookdown.org/yihui/blogdown/local-preview.html">Capítulo del libro <code>blogdown</code> sobre construcción de un sitio web para visualización local</a></li>
@@ -269,7 +274,7 @@ Error: Error building site: Errors reading pages: Error: failed to parse page me
 <p>Ya sea que haga un markdown o un R Markdown (ver más abajo), debe saber que al principio del YAML de su nuevo archivo, puede agregar <code>draft: TRUE</code> y podrá obtener una vista previa de su publicación usando <code>blogdown::serve_site()</code>, pero convenientemente su publicación no aparecerá en su sitio desplegado hasta que configure esta opción en falso. Como esto es una función integrada en Hugo, todas las publicaciones (borrador o no) terminarán en su repositorio de GitHub.</p>
 </div>
 <div id="nuevos-posts-en-markdown" class="section level3">
-<h3><span class="header-section-number">6.5.2</span> Nuevos posts en markdown</h3>
+<h3><span class="header-section-number">7.5.2</span> Nuevos posts en markdown</h3>
 <p>Escoja uno de los dos métodos:</p>
 <ol style="list-style-type: decimal">
 <li>Use el addin <strong>New Post</strong> y con el botón redondo escoja <strong>Format: Markdown</strong> (recomendado)</li>
@@ -285,7 +290,7 @@ Recuerde usar el addin <strong>Serve Site</strong> para que pueda ver sus cambio
 {{% /alert %}}</p>
 </div>
 <div id="nuevos-posts-rmarkdown" class="section level3">
-<h3><span class="header-section-number">6.5.3</span> Nuevos posts RMarkdown</h3>
+<h3><span class="header-section-number">7.5.3</span> Nuevos posts RMarkdown</h3>
 <p>Una vez más, puede escoger mediante dos formas distintas:</p>
 <ol style="list-style-type: decimal">
 <li>Use el addin <strong>New Post</strong> y con el botón redondo escoja <strong>Format: R Markdown</strong> (recomendado)</li>
@@ -313,7 +318,7 @@ Recuerde utilizar el complemento <strong>Serve Site</strong> de nuevo para que p
 {{% /alert %}}</p>
 </div>
 <div id="agregando-imagenes-a-un-post" class="section level3">
-<h3><span class="header-section-number">6.5.4</span> Agregando imágenes a un post</h3>
+<h3><span class="header-section-number">7.5.4</span> Agregando imágenes a un post</h3>
 <p>Si desea incluir una imagen que no sea una figura creada a partir de un chunk de R, el <a href="https://github.com/rstudio/blogdown/issues/45">método recomendado</a> es:</p>
 <ol style="list-style-type: decimal">
 <li>Agregar la imagen a su carpeta <code>/static/img/</code>, luego</li>
@@ -324,7 +329,7 @@ Recuerde utilizar el complemento <strong>Serve Site</strong> de nuevo para que p
 </div>
 </div>
 <div id="publicacion-en-netlify" class="section level1">
-<h1><span class="header-section-number">7</span> Publicación en Netlify</h1>
+<h1><span class="header-section-number">8</span> Publicación en Netlify</h1>
 <p>La publicación en Netlify a través de GitHub es sencilla. Yihui y Amber dan algunas <a href="https://bookdown.org/yihui/blogdown/deployment.html">instrucciones para principiantes</a>, pero Netlify es muy fácil, le recomiendo que omita arrastrar su carpeta <code>public</code> y en su lugar <a href="https://bookdown.org/yihui/blogdown/netlify.html#netlify">automatice el proceso a través de GitHub</a>.</p>
 <ol style="list-style-type: decimal">
 <li>Cuando esté listo para publicar, haga commit a sus cambios y súbalos a GitHub, luego vaya en línea a <a href="https://www.netlify.com">Netlify</a>.</li>
@@ -345,16 +350,16 @@ Cada vez que cambie el nombre de su subdominio, debe actualizar <code>baseurl</c
 <p>En este punto, debería estar en funcionamiento con <code>blogdown</code>, GitHub y Netlify, pero aquí hay algunas ideas si quiere ir más lejos…</p>
 </div>
 <div id="yendo-mas-lejos" class="section level1">
-<h1><span class="header-section-number">8</span> Yendo más lejos</h1>
+<h1><span class="header-section-number">9</span> Yendo más lejos</h1>
 <div id="css-personalizado" class="section level2">
-<h2><span class="header-section-number">8.1</span> CSS personalizado</h2>
+<h2><span class="header-section-number">9.1</span> CSS personalizado</h2>
 <p>Me gusta jugar con la configuración predeterminada del tema, como colores y fuentes. Cada tema de Hugo está estructurado de forma un poco diferente, pero si está interesado, puede consultar <a href="https://github.com/apreshill/apreshill/blob/master/static/css/blue.css">mi css personalizado</a> para ver cómo he personalizado el tema académico, que proporciona una forma de vincular a un archivo CSS personalizado en el archivo <code>config.toml</code>:</p>
 <pre><code># Enlaza CSS y JS personalizados
 #   (relative to /static/css and /static/js respectively)
 custom_css = [&quot;blue.css&quot;]</code></pre>
 </div>
 <div id="formspree" class="section level2">
-<h2><span class="header-section-number">8.2</span> Formspree</h2>
+<h2><span class="header-section-number">9.2</span> Formspree</h2>
 <p>Usé <a href="https://formspree.io">Formspree</a> para hacer un formulario de contacto, que es un servicio en línea (manejado en <a href="https://github.com/formspree/formspree">GitHub</a>) que le permite agregar un formulario HTML a su sitio estático. Sin registro, solo use el formulario y confirme su dirección de correo electrónico una vez. Agregué el siguiente código en <a href="https://github.com/apreshill/apreshill/blob/master/themes/hugo-academic/layouts/partials/widgets/contact.html">mi widget de contacto</a>:</p>
 <pre><code>&lt;form action=&quot;https://formspree.io/your@email.com&quot; method=&quot;POST&quot;&gt;
 &lt;label for=&quot;name&quot;&gt;Your name: &lt;/label&gt;
@@ -370,14 +375,14 @@ custom_css = [&quot;blue.css&quot;]</code></pre>
 &lt;/form&gt;</code></pre>
 </div>
 <div id="nombres-de-domimio.rbind.io" class="section level2">
-<h2><span class="header-section-number">8.3</span> Nombres de domimio<code>*.rbind.io</code></h2>
+<h2><span class="header-section-number">9.3</span> Nombres de domimio<code>*.rbind.io</code></h2>
 <p>Quizás quiera un <a href="https://bookdown.org/yihui/blogdown/domain-name.html">nombre de dominio diferente</a> que el proveído por Netlify. Yo opté por un subdominio gratuito <code>*.rbind.io</code> ofrecido por RStudio. Para hacer lo mismo, diríjase a la <a href="https://github.com/rbind/support/issues">página de GitHub de soporte rbind</a> y abra un nuevo issue. Todo lo que debe hacer es decirles cuál es su nombre de subdominio de Netlify (<code>*.netlify.com</code>), y qué nombre de subdominio quiere (<code>*.rbind.io</code>). El <a href="https://support.rbind.io">impresionante soporte del equipo de <code>rbind</code></a> le ayudará!</p>
 <p>{{% alert note %}}
 De nuevo, necesitará actualizar el <code>baseurl</code> en su archivo <code>config.toml</code> para que refleje su nuevo nombre de subdominio (el mío es baseurl = “<a href="https://martin.rbind.io/" class="uri">https://martin.rbind.io/</a>”).
 {{% /alert %}}</p>
 </div>
 <div id="diviertase" class="section level2">
-<h2><span class="header-section-number">8.4</span> ¡Diviértase!</h2>
+<h2><span class="header-section-number">9.4</span> ¡Diviértase!</h2>
 <p>Por último, no se olvide de pasarla bien. Feliz <code>blogdown</code>ing!</p>
 <iframe src="https://giphy.com/embed/13Y6LAZJqRspI4" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen>
 </iframe>

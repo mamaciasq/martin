@@ -1,6 +1,6 @@
 baseurl = "https://martin.rbind.io/"
 languageCode = "en-us"
-title = "M"
+title = "Martín"
 theme = "hugo-ivy"
 googleAnalytics = ""
 disqusShortname = ""

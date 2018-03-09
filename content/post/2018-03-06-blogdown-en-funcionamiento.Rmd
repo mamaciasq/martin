@@ -50,13 +50,17 @@ Para más información sobre cosas de interés que se usan, podría consultar:
 * ["Teniendo en cuenta el costo y la amabilidad de los principiantes, actualmente recomendamos Netlify."](https://bookdown.org/yihui/blogdown/deployment.html). 
 * ["Si no está familiarizado con nombres de dominios o no quiere aprender más al respecto, una opción para su consideración es un subdominio gratuito `*.rbind.io` ofrecido por RStudio, Inc."](https://bookdown.org/yihui/blogdown/netlify.html). 
 
+En este post presentaré dos formas de crear un web site desde blogdown. 
+
+# PRIMERA FORMA
+
 # En GitHub
 
 ---
 # ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-1.png)
 ---
 
-1. Vaya en línea a su cuenta de [GitHub](https://github.com), y cree un nuevo repositorio (Dele check a inicializarlo con un `README` pero no agregue `.gitignore`- de esto se encargará más adelante). Para nombrar su repositorio, considere su futuro plan de publicación:
+1. Vaya a su cuenta de [GitHub](https://github.com), y cree un nuevo repositorio (Dele check para NO inicializarlo con un `README`. Para bautizar su repositorio, considere su futuro plan de publicación:
 
 * Si va a utilizar [Netlify](https://www.netlify.com) para alojar la página, ¡puede nombrar el repositorio como quiera! 
 
@@ -64,7 +68,7 @@ Para más información sobre cosas de interés que se usan, podría consultar:
 Puede ver algunos de los nombres de los repositorios usados por miembros de la organización `rbind` [aquí](https://github.com/rbind/repositories). 
 {{% /alert %}}
 
-* Si quiere alojar su sitio como una [GitHub Page](https://pages.github.com), debería nombrar su repositorio como `yourgithubusername.github.io` (así que el mío hubiera sido `martin.github.io`). Si va por esta ruta, le sugiero que siga las [instrucciones de Amber](https://proquestionasker.github.io/blog/Making_Site/) en vez de este!
+* Si quiere alojar su sitio como una [GitHub Page](https://pages.github.com), debería nombrar su repositorio como `sunombredeusuariodegithub.github.io` (así que el mío hubiera sido `martin.github.io`). Si va por esta ruta, le sugiero que siga las [instrucciones de Amber](https://proquestionasker.github.io/blog/Making_Site/) en vez de este!
 
 ---
 # ![Screenshot de arriba: Crear un nuevo repositorio en GitHub](/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png)

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Martín Macías on M</title>
+    <title>Martín Macías on Martín</title>
     <link>/</link>
-    <description>Recent content in Martín Macías on M</description>
+    <description>Recent content in Martín Macías on Martín</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
@@ -27,7 +27,7 @@ Me gusta la visualización de información, el modelamiento de datos y el análi
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/03/01/up-and-running-with-blogdown/</guid>
-      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 En GitHub 4 En el terminal 5 En RStudio 6 Construya su sitio en RStudio 7 Publicación en Netlify 8 Yendo más lejos   Antes de cualquier cosa, este post está inspirado en Up and running with blogdown de Alison Presmanes Hill. Al principió lo traduje torpemente al español y luego decidí incluir cosas de mi experiencia.</description>
+      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 PRIMERA FORMA 4 En GitHub 5 En el terminal 6 En RStudio 7 Construya su sitio en RStudio 8 Publicación en Netlify 9 Yendo más lejos   Antes de cualquier cosa, este post está inspirado en Up and running with blogdown de Alison Presmanes Hill. Al principió lo traduje torpemente al español y luego decidí incluir cosas de mi experiencia.</description>
     </item>
     
   </channel>
