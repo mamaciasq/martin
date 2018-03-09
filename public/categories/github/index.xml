@@ -17,9 +17,10 @@
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/03/09/conectando-overleaf-con-github/</guid>
-      <description>Molestando en twitter, me encontré con esta página que, como menciona su nombre, habla sobre cómo interactuar entre R Notebook y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.
+      <description>Me encontré con esta página que habla sobre cómo interactuar entre R Notebooks y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.
 Aquí mencionó la forma en que me funcionó, inspirado en un post de Daniel Graziotin.
-Suponga que tiene un artículo en Overleaf en:</description>
+Suponga que tiene un artículo en Overleaf en:
+https://www.overleaf.com/2029559gkypzx Overleaf le proporciona un repositorio en git relacionado con su artículo en:</description>
     </item>
     
   </channel>

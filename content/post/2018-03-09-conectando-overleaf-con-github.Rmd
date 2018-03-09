@@ -10,7 +10,7 @@ tags:
   - github
 ---
 
-Molestando en twitter, me encontré con esta [página](https://medium.com/@arinbasu/a-tutorial-on-how-to-interface-an-r-notebook-with-overleaf-11f23c306cfd) que, como menciona su nombre, habla sobre cómo interactuar entre R Notebook y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.
+Me encontré con esta [página](https://medium.com/@arinbasu/a-tutorial-on-how-to-interface-an-r-notebook-with-overleaf-11f23c306cfd) que habla sobre cómo interactuar entre R Notebooks y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.
 
 Aquí mencionó la forma en que me funcionó, inspirado en un post de [Daniel Graziotin](https://ineed.coffee/3454/how-to-synchronize-an-overleaf-latex-paper-with-a-github-repository/).
 
@@ -181,6 +181,6 @@ To https://github.com/dgraziotin/paper.git
    af9546d..409e750  master -&gt; master
 ```
 
-Pueda que parezca bastante técnico lo anteriormente descrito. Sí, lo es. La idea es que ya se tenga familiaridad con Git, Github, LaTeX y con todo su entorno. 
+Pueda que parezca bastante técnico lo anteriormente descrito y sí, lo es. La idea es que ya se tenga familiaridad con Git, Github, $\LaTeX$ y con todo su entorno. 
 
-Hay otro asunto importante que hay que considerar y es el trabajo en grupo. Si está trabajando con un grupo de trabajo en el mismo documento en LaTeX, puede volverse bastante más complejo. Para eso, vale la pena visitar [un post útil sobre otros aspectos técnicos](http://blog.flatironlabs.com/post/80179930200/git-pull-rebase-vs-git-pull) y otro sobre cómo usar git con [equipos de trabajo](http://kentnguyen.com/development/visualized-git-practices-for-team/). POr favor, léalos.
+Hay otro asunto importante que hay que considerar y es el trabajo en grupo. Si está trabajando con un grupo de trabajo en el mismo documento en $\LaTeX$, puede volverse bastante más complejo. Para eso, vale la pena visitar [un post útil sobre otros aspectos técnicos](http://blog.flatironlabs.com/post/80179930200/git-pull-rebase-vs-git-pull) y otro sobre cómo usar git con [equipos de trabajo](http://kentnguyen.com/development/visualized-git-practices-for-team/). Por favor, léalos.
