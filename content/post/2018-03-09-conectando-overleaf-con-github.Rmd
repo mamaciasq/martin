@@ -1,0 +1,186 @@
+---
+title: Conectando Overleaf con Github
+author: Martín Macías
+date: '2018-03-09'
+slug: conectando-overleaf-con-github
+categories:
+  - Github
+tags:
+  - overleaf
+  - github
+---
+
+Molestando en twitter, me encontré con esta [página](https://medium.com/@arinbasu/a-tutorial-on-how-to-interface-an-r-notebook-with-overleaf-11f23c306cfd) que, como menciona su nombre, habla sobre cómo interactuar entre R Notebook y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.
+
+Aquí mencionó la forma en que me funcionó, inspirado en un post de [Daniel Graziotin](https://ineed.coffee/3454/how-to-synchronize-an-overleaf-latex-paper-with-a-github-repository/).
+
+Suponga que tiene un artículo en Overleaf en: 
+
+```
+https://www.overleaf.com/2029559gkypzx
+```
+
+Overleaf le proporciona un repositorio en git relacionado con su artículo en:
+
+```
+https://git.overleaf.com/2029559gkypzx
+```
+
+Cree un repositorio en Github (público o privado, trabajará igual para ambos). Supongamos que su repo en Github se llama `paper` y que la dirección del repo en Github es:
+
+```
+https://github.com/mamaciasq/paper.git
+```
+
+Primero, clone el repositorio de su paper en Overleaf
+
+```
+$ git clone https://git.overleaf.com/2029559gkypzx paper
+Cloning into 'paper'...
+remote: Counting objects: 13, done
+remote: Finding sources: 100% (13/13)
+remote: Getting sizes: 100% (8/8)
+remote: Compressing objects: 100% (103172/103172)
+remote: Total 13 (delta 1), reused 4 (delta 1)
+Unpacking objects: 100% (13/13), done.
+Checking connectivity... done.
+```
+
+Ahora el repositorio de Overleaf se convierte en el `origin`. Puede renombrarlo para recordar que este es efectivamente el de Overleaf, haciendo:
+
+```
+$ git remote rename origin overleaf
+```
+
+Cada vez que quiera sincronizar localmente los cambios hechos en Overleaf, haga `pull` desde el repo de Overleaf:
+
+```
+$ git pull overleaf master
+remote: Counting objects: 5, done
+remote: Finding sources: 100% (3/3)
+remote: Getting sizes: 100% (4/4)
+remote: Compressing objects: 100% (3018/3018)
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From https://git.overleaf.com/2029559gkypzx
+ * branch            master     -&gt; FETCH_HEAD
+   25386da..2e1ed55  master     -&gt; overleaf/master
+Updating 25386da..2e1ed55
+Fast-forward
+ main.tex | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+Cada vez que quiera sincronizar los cambios locales a Overleaf, haga un commit (línea 1) y súbalos al repositorio de Overleaf (línea 5)
+
+```
+$ git commit -a -m "Added ref to Smith et al. 2015"
+[master 09d880e] Added ref to Smith et al. 2015
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ 
+$ git push overleaf master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1)
+remote: Updating references: 100% (1/1)
+To https://git.overleaf.com/2029559gkypzx
+   2e1ed55..09d880e  master -&gt; master
+```
+
+Hasta aquí, todo bien. Los mismos comandos se habrían utilizado al emplear un repositorio en Github. ¿Qué tal tenerlos a ambos? Se puede agregar un repositorio Github (ojalá con el mismo nombre `paper`, para mejor recordación) con el siguiente comando:
+
+```
+$ git remote add github https://github.com/mamaciasq/paper.git
+```
+
+Bien. Ahora podemos hacer pull desde Overleaf y hacer push a Github. Es necesario hacer un primer push del código.
+
+```
+$ git push github
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 97.82 KiB | 0 bytes/s, done.
+Total 19 (delta 4), reused 0 (delta 0)
+To https://github.com/mamaciasq/paper.git
+ * [new branch]      master -&gt; master
+```
+
+A partir de ahora, un flujo podría ser
+
+```
+git pull overleaf master
+```
+
+y 
+
+```
+git push overleaf master
+```
+
+Por supuesto, puede hacer pull desde Overleaf, hacer algunos cambios, hacer commit y volver a hacer push a Overleaf, y luego a Github. O bien, podría hacer pull desde Github, hacer algunos cambios, hacer commit y volver a hacer push a Github y a Overleaf. Aún así, hay alguna redundancia de la que puede deshacerse. ¿Qué tal si hace push a ambos repositorios? Cree un hito llamado `both`:
+
+```
+$ git remote add both https://git.overleaf.com/2029559gkypzx
+$ git remote set-url --add --push both https://git.overleaf.com/2029559gkypzx
+$ git remote set-url --add --push both https://github.com/mamaciasq/paper.git
+```
+
+La primera línea crea una nueva URL del repo remoto denominado `both`. Lo que hace es apuntar al servidor de git de Overleaf (de nuevo). Sin embargo, el segundo comando agrega una nueva URL para hacer push a cambios al hito `both`, el cual apunta al servidor de Github. A partir de ahora, puede hacer `push` a ambos repositorios al mismo tiempo (línea 4). 
+
+```
+$ git commit -a -m "Added a test word in the first line of introduction"
+[master af9546d] Added a test word in the first line of introduction
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ 
+$git push both
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 941 bytes | 0 bytes/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+To https://github.com/mamaciasq/paper.git
+   67c8294..022a8f5  master -&gt; master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 941 bytes | 0 bytes/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4)
+remote: Updating references: 100% (1/1)
+To https://git.overleaf.com/2029559gkypzx
+   67c8294..022a8f5  master -&gt; master
+```
+
+El ejemplo anterior es un cambio local enviado a Overleaf y Github. Finalmente, para enviar un cambio desde Overleaf al local y Github, se requerirán los siguientes comandos:
+
+```
+$ git pull overleaf master
+remote: Counting objects: 1, done
+remote: Finding sources: 100% (1/1)
+remote: Total 1 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (1/1), done.
+From https://git.overleaf.com/2029559gkypzx
+ * branch            master     -&gt; FETCH_HEAD
+   6cc6b05..409e750  master     -&gt; overleaf/master
+Updating 6cc6b05..409e750
+Fast-forward
+ main.tex | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ 
+$ git push github
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 650 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+To https://github.com/dgraziotin/paper.git
+   af9546d..409e750  master -&gt; master
+```
+
+Pueda que parezca bastante técnico lo anteriormente descrito. Sí, lo es. La idea es que ya se tenga familiaridad con Git, Github, LaTeX y con todo su entorno. 
+
+Hay otro asunto importante que hay que considerar y es el trabajo en grupo. Si está trabajando con un grupo de trabajo en el mismo documento en LaTeX, puede volverse bastante más complejo. Para eso, vale la pena visitar [un post útil sobre otros aspectos técnicos](http://blog.flatironlabs.com/post/80179930200/git-pull-rebase-vs-git-pull) y otro sobre cómo usar git con [equipos de trabajo](http://kentnguyen.com/development/visualized-git-practices-for-team/). POr favor, léalos.

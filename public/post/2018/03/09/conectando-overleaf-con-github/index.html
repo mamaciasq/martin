@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Conectando Overleaf con Github - Martín</title>
+    <meta property="og:title" content="Conectando Overleaf con Github - Martín">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">Martín</a></h1>
+
+<p class="tagline">R · Estadística · Miscelánea</p>
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about/">Acerca de mí</a></li>
+        
+        <li><a href="/categories/">Categorías</a></li>
+        
+        <li><a href="/tags/">Tags</a></li>
+        
+        <li><a href="/index.xml">Suscripción</a></li>
+        
+        
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Conectando Overleaf con Github</h1>
+
+<h3>Martín Macías
+  /  2018-03-09</h3>
+<hr>
+
+
+      </header>
+
+
+
+<p>Molestando en twitter, me encontré con esta <a href="https://medium.com/@arinbasu/a-tutorial-on-how-to-interface-an-r-notebook-with-overleaf-11f23c306cfd">página</a> que, como menciona su nombre, habla sobre cómo interactuar entre R Notebook y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.</p>
+<p>Aquí mencionó la forma en que me funcionó, inspirado en un post de <a href="https://ineed.coffee/3454/how-to-synchronize-an-overleaf-latex-paper-with-a-github-repository/">Daniel Graziotin</a>.</p>
+<p>Suponga que tiene un artículo en Overleaf en:</p>
+<pre><code>https://www.overleaf.com/2029559gkypzx</code></pre>
+<p>Overleaf le proporciona un repositorio en git relacionado con su artículo en:</p>
+<pre><code>https://git.overleaf.com/2029559gkypzx</code></pre>
+<p>Cree un repositorio en Github (público o privado, trabajará igual para ambos). Supongamos que su repo en Github se llama <code>paper</code> y que la dirección del repo en Github es:</p>
+<pre><code>https://github.com/mamaciasq/paper.git</code></pre>
+<p>Primero, clone el repositorio de su paper en Overleaf</p>
+<pre><code>$ git clone https://git.overleaf.com/2029559gkypzx paper
+Cloning into &#39;paper&#39;...
+remote: Counting objects: 13, done
+remote: Finding sources: 100% (13/13)
+remote: Getting sizes: 100% (8/8)
+remote: Compressing objects: 100% (103172/103172)
+remote: Total 13 (delta 1), reused 4 (delta 1)
+Unpacking objects: 100% (13/13), done.
+Checking connectivity... done.</code></pre>
+<p>Ahora el repositorio de Overleaf se convierte en el <code>origin</code>. Puede renombrarlo para recordar que este es efectivamente el de Overleaf, haciendo:</p>
+<pre><code>$ git remote rename origin overleaf</code></pre>
+<p>Cada vez que quiera sincronizar localmente los cambios hechos en Overleaf, haga <code>pull</code> desde el repo de Overleaf:</p>
+<pre><code>$ git pull overleaf master
+remote: Counting objects: 5, done
+remote: Finding sources: 100% (3/3)
+remote: Getting sizes: 100% (4/4)
+remote: Compressing objects: 100% (3018/3018)
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From https://git.overleaf.com/2029559gkypzx
+ * branch            master     -&amp;gt; FETCH_HEAD
+   25386da..2e1ed55  master     -&amp;gt; overleaf/master
+Updating 25386da..2e1ed55
+Fast-forward
+ main.tex | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)</code></pre>
+<p>Cada vez que quiera sincronizar los cambios locales a Overleaf, haga un commit (línea 1) y súbalos al repositorio de Overleaf (línea 5)</p>
+<pre><code>$ git commit -a -m &quot;Added ref to Smith et al. 2015&quot;
+[master 09d880e] Added ref to Smith et al. 2015
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ 
+$ git push overleaf master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1)
+remote: Updating references: 100% (1/1)
+To https://git.overleaf.com/2029559gkypzx
+   2e1ed55..09d880e  master -&amp;gt; master</code></pre>
+<p>Hasta aquí, todo bien. Los mismos comandos se habrían utilizado al emplear un repositorio en Github. ¿Qué tal tenerlos a ambos? Se puede agregar un repositorio Github (ojalá con el mismo nombre <code>paper</code>, para mejor recordación) con el siguiente comando:</p>
+<pre><code>$ git remote add github https://github.com/mamaciasq/paper.git</code></pre>
+<p>Bien. Ahora podemos hacer pull desde Overleaf y hacer push a Github. Es necesario hacer un primer push del código.</p>
+<pre><code>$ git push github
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 97.82 KiB | 0 bytes/s, done.
+Total 19 (delta 4), reused 0 (delta 0)
+To https://github.com/mamaciasq/paper.git
+ * [new branch]      master -&amp;gt; master</code></pre>
+<p>A partir de ahora, un flujo podría ser</p>
+<pre><code>git pull overleaf master</code></pre>
+<p>y</p>
+<pre><code>git push overleaf master</code></pre>
+<p>Por supuesto, puede hacer pull desde Overleaf, hacer algunos cambios, hacer commit y volver a hacer push a Overleaf, y luego a Github. O bien, podría hacer pull desde Github, hacer algunos cambios, hacer commit y volver a hacer push a Github y a Overleaf. Aún así, hay alguna redundancia de la que puede deshacerse. ¿Qué tal si hace push a ambos repositorios? Cree un hito llamado <code>both</code>:</p>
+<pre><code>$ git remote add both https://git.overleaf.com/2029559gkypzx
+$ git remote set-url --add --push both https://git.overleaf.com/2029559gkypzx
+$ git remote set-url --add --push both https://github.com/mamaciasq/paper.git</code></pre>
+<p>La primera línea crea una nueva URL del repo remoto denominado <code>both</code>. Lo que hace es apuntar al servidor de git de Overleaf (de nuevo). Sin embargo, el segundo comando agrega una nueva URL para hacer push a cambios al hito <code>both</code>, el cual apunta al servidor de Github. A partir de ahora, puede hacer <code>push</code> a ambos repositorios al mismo tiempo (línea 4).</p>
+<pre><code>$ git commit -a -m &quot;Added a test word in the first line of introduction&quot;
+[master af9546d] Added a test word in the first line of introduction
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ 
+$git push both
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 941 bytes | 0 bytes/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+To https://github.com/mamaciasq/paper.git
+   67c8294..022a8f5  master -&amp;gt; master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 941 bytes | 0 bytes/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4)
+remote: Updating references: 100% (1/1)
+To https://git.overleaf.com/2029559gkypzx
+   67c8294..022a8f5  master -&amp;gt; master</code></pre>
+<p>El ejemplo anterior es un cambio local enviado a Overleaf y Github. Finalmente, para enviar un cambio desde Overleaf al local y Github, se requerirán los siguientes comandos:</p>
+<pre><code>$ git pull overleaf master
+remote: Counting objects: 1, done
+remote: Finding sources: 100% (1/1)
+remote: Total 1 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (1/1), done.
+From https://git.overleaf.com/2029559gkypzx
+ * branch            master     -&amp;gt; FETCH_HEAD
+   6cc6b05..409e750  master     -&amp;gt; overleaf/master
+Updating 6cc6b05..409e750
+Fast-forward
+ main.tex | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ 
+$ git push github
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 650 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+To https://github.com/dgraziotin/paper.git
+   af9546d..409e750  master -&amp;gt; master</code></pre>
+<p>Pueda que parezca bastante técnico lo anteriormente descrito. Sí, lo es. La idea es que ya se tenga familiaridad con Git, Github, LaTeX y con todo su entorno.</p>
+<p>Hay otro asunto importante que hay que considerar y es el trabajo en grupo. Si está trabajando con un grupo de trabajo en el mismo documento en LaTeX, puede volverse bastante más complejo. Para eso, vale la pena visitar <a href="http://blog.flatironlabs.com/post/80179930200/git-pull-rebase-vs-git-pull">un post útil sobre otros aspectos técnicos</a> y otro sobre cómo usar git con <a href="http://kentnguyen.com/development/visualized-git-practices-for-team/">equipos de trabajo</a>. POr favor, léalos.</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/post/2018/03/01/up-and-running-with-blogdown/">Gateando en la web con blogdown</a></span>
+  <span class="nav-next"></span>
+</nav>
+
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">&copy; <a href="https://martin.rbind.io">Martín Macías</a> 2018 | <a href="https://github.com/mamaciasq">Github</a> | <a href="https://twitter.com/MartinMacias">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

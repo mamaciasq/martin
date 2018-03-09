@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Martín</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Martín</description>
+    <title>Github on Martín</title>
+    <link>/categories/github/</link>
+    <description>Recent content in Github on Martín</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>Molestando en twitter, me encontré con esta página que, como menciona su nombre, habla sobre cómo interactuar entre R Notebook y Overleaf. Me pareció interesante y recordé que hace algún tiempo quise conectar Overleaf y Github para mis trabajos de la universidad pero que lo había olvidado.
 Aquí mencionó la forma en que me funcionó, inspirado en un post de Daniel Graziotin.
 Suponga que tiene un artículo en Overleaf en:</description>
-    </item>
-    
-    <item>
-      <title>Gateando en la web con blogdown</title>
-      <link>/post/2018/03/01/up-and-running-with-blogdown/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018/03/01/up-and-running-with-blogdown/</guid>
-      <description>1 Lea sobre blogdown 2 Advertencias, descargos de responsabilidad, etc. 3 PRIMERA FORMA 4 En GitHub 5 En el terminal 6 En RStudio 7 Construya su sitio en RStudio 8 Publicación en Netlify 9 Yendo más lejos   Antes de cualquier cosa, este post está inspirado en Up and running with blogdown de Alison Presmanes Hill. Al principió lo traduje torpemente al español y luego decidí incluir cosas de mi experiencia.</description>
     </item>
     
   </channel>
