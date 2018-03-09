@@ -60,7 +60,7 @@ En este post presentaré dos formas de crear un web site desde blogdown.
 # ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-1.png)
 ---
 
-1. Vaya a su cuenta de [GitHub](https://github.com), y cree un nuevo repositorio (Dele check para NO inicializarlo con un `README`. Para bautizar su repositorio, considere su futuro plan de publicación:
+1. Vaya a su cuenta de [GitHub](https://github.com), y cree un nuevo repositorio (Dele check para inicializarlo con un `README`. Para bautizar su repositorio, considere su futuro plan de publicación:
 
 * Si va a utilizar [Netlify](https://www.netlify.com) para alojar la página, ¡puede nombrar el repositorio como quiera! 
 
@@ -68,7 +68,7 @@ En este post presentaré dos formas de crear un web site desde blogdown.
 Puede ver algunos de los nombres de los repositorios usados por miembros de la organización `rbind` [aquí](https://github.com/rbind/repositories). 
 {{% /alert %}}
 
-* Si quiere alojar su sitio como una [GitHub Page](https://pages.github.com), debería nombrar su repositorio como `sunombredeusuariodegithub.github.io` (así que el mío hubiera sido `martin.github.io`). Si va por esta ruta, le sugiero que siga las [instrucciones de Amber](https://proquestionasker.github.io/blog/Making_Site/) en vez de este!
+* Si quiere alojar su sitio como una [GitHub Page](https://pages.github.com), debería nombrar su repositorio como `sunombredeusuariodegithub.github.io` (así que el mío hubiera sido `martin.github.io`). Si va por esta ruta, le sugiero que siga las [instrucciones de Amber](https://proquestionasker.github.io/blog/Making_Site/). Sin embargo, más adelante hablaremos de eso.
 
 ---
 # ![Screenshot de arriba: Crear un nuevo repositorio en GitHub](/img/posts/2017-06-12-up-and-running-with-blogdown/github-new-repo.png)
@@ -76,7 +76,7 @@ Puede ver algunos de los nombres de los repositorios usados por miembros de la o
 
 2. Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde **Clone or download**.
 
-3. En la sección **Clone with HTTPs**, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección
+3. En la sección **Clone with HTTPS**, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección.
 
 # En el terminal
 
@@ -84,11 +84,11 @@ Puede ver algunos de los nombres de los repositorios usados por miembros de la o
 # ![](/img/posts/2017-06-12-up-and-running-with-blogdown/blogdown-signpost-2.png)
 ---
 
-Ahora [clone su repositorio remoto](https://help.github.com/articles/cloning-a-repository/) y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)
+Ahora [clone su repositorio remoto](https://help.github.com/articles/cloning-a-repository/) y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador). Recuerde ubicarse en la carpeta de su elección para la clonación de su repositorio.
 
 1. Use `cd` para navegar dentro del directorio donde usted quiere que su repositorio esté
 
-2. Una vez esté ahí, digite: `git clone [paste]`. Entones mi comando sería así:
+2. Una vez esté ahí, digite: `git clone [paste]`. Entonces mi comando sería así:
 
 ```
 git clone https://github.com/mamaciasq/martin.git
@@ -105,7 +105,7 @@ Unpacking objects: 100% (3/3), done.
 Checking connectivity... done.
 ```
 
-3. Cierre el terminal, ya terminó ahí.
+3. Cierre el terminal, ya todo está listo.
 
 # En RStudio 
 
@@ -120,7 +120,7 @@ if (!requireNamespace("devtools")) install.packages("devtools")
 devtools::install_github("rstudio/blogdown")
 ```
 
-2. Instale Hugo usando la función de ayuda el paquete `blogdown`:
+2. Instale Hugo usando la función de ayuda del paquete `blogdown`:
 
 ```
 blogdown::install_hugo()
@@ -130,7 +130,7 @@ install_hugo()
 ```
 
 {{% alert note %}}
-Aquí es donde mis instrucciones divergen de las de Ed: afirma que `blogdown` no creará un sitio web en su carpeta raíz porque el archivo `README.md` ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.
+Aquí es donde mis instrucciones divergen de las de Ed: él afirma que `blogdown` no creará un sitio web en su carpeta raíz porque el archivo `README.md` ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.
 {{% /alert %}}
 
 3. Use los botones del menú de arriba en RStudio para seleccionar `File -> New Project -> Existing Directory`, luego vaya al directorio en su computadora donde esté su repositorio de GitHub y haga click en el botón **Create Project**.
@@ -156,7 +156,7 @@ Ahora puede finalmente coonstruir su sitio usando la función `blogdown::new_sit
 
 ## Escogiendo un tema
 
-Hay acerca de 90 [temas de Hugo](https://themes.gohugo.io). Así que volví al libro `blogdown`. Afortunadamente, Yihui y Amber se ofrecieron ["a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto..."](https://bookdown.org/yihui/blogdown/other-themes.html). Fui a [hugo-academic](https://github.com/gcushen/hugo-academic)! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:
+Hay cerca de 90 [temas de Hugo](https://themes.gohugo.io). Así que volví al libro `blogdown`. Afortunadamente, Yihui y Amber se ofrecieron ["a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto..."](https://bookdown.org/yihui/blogdown/other-themes.html). Fui a [hugo-academic](https://github.com/gcushen/hugo-academic)! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:
 
 1. Si está feliz con el tema ofrecido por defecto, que es el lithium theme, puede usar: 
 

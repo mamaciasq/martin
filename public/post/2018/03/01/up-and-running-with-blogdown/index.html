@@ -126,7 +126,7 @@
 <div id="en-github" class="section level1">
 <h1><span class="header-section-number">4</span> En GitHub</h1>
 <ol style="list-style-type: decimal">
-<li>Vaya a su cuenta de <a href="https://github.com">GitHub</a>, y cree un nuevo repositorio (Dele check para NO inicializarlo con un <code>README</code>. Para bautizar su repositorio, considere su futuro plan de publicación:</li>
+<li>Vaya a su cuenta de <a href="https://github.com">GitHub</a>, y cree un nuevo repositorio (Dele check para inicializarlo con un <code>README</code>. Para bautizar su repositorio, considere su futuro plan de publicación:</li>
 </ol>
 <ul>
 <li>Si va a utilizar <a href="https://www.netlify.com">Netlify</a> para alojar la página, ¡puede nombrar el repositorio como quiera!</li>
@@ -135,19 +135,19 @@
 Puede ver algunos de los nombres de los repositorios usados por miembros de la organización <code>rbind</code> <a href="https://github.com/rbind/repositories">aquí</a>.
 {{% /alert %}}</p>
 <ul>
-<li>Si quiere alojar su sitio como una <a href="https://pages.github.com">GitHub Page</a>, debería nombrar su repositorio como <code>sunombredeusuariodegithub.github.io</code> (así que el mío hubiera sido <code>martin.github.io</code>). Si va por esta ruta, le sugiero que siga las <a href="https://proquestionasker.github.io/blog/Making_Site/">instrucciones de Amber</a> en vez de este!</li>
+<li>Si quiere alojar su sitio como una <a href="https://pages.github.com">GitHub Page</a>, debería nombrar su repositorio como <code>sunombredeusuariodegithub.github.io</code> (así que el mío hubiera sido <code>martin.github.io</code>). Si va por esta ruta, le sugiero que siga las <a href="https://proquestionasker.github.io/blog/Making_Site/">instrucciones de Amber</a>. Sin embargo, más adelante hablaremos de eso.</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Vaya a la página principal de su nuevo repositorio y, debajo del nombre del repositorio, haga clic en el botón verde <strong>Clone or download</strong>.</p></li>
-<li><p>En la sección <strong>Clone with HTTPs</strong>, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección</p></li>
+<li><p>En la sección <strong>Clone with HTTPS</strong>, haga clic en el ícono del portapapeles para copiar el URL clonado de su nuevo repositorio. Pegue este texto en la terminal en la siguiente sección.</p></li>
 </ol>
 </div>
 <div id="en-el-terminal" class="section level1">
 <h1><span class="header-section-number">5</span> En el terminal</h1>
-<p>Ahora <a href="https://help.github.com/articles/cloning-a-repository/">clone su repositorio remoto</a> y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador con Windows)</p>
+<p>Ahora <a href="https://help.github.com/articles/cloning-a-repository/">clone su repositorio remoto</a> y cree una copia local en su computadora para que pueda sincronizar entre las dos ubicaciones (usando el terminal o su herramienta de línea de comandos alternativa para un computador). Recuerde ubicarse en la carpeta de su elección para la clonación de su repositorio.</p>
 <ol style="list-style-type: decimal">
 <li><p>Use <code>cd</code> para navegar dentro del directorio donde usted quiere que su repositorio esté</p></li>
-<li><p>Una vez esté ahí, digite: <code>git clone [paste]</code>. Entones mi comando sería así:</p></li>
+<li><p>Una vez esté ahí, digite: <code>git clone [paste]</code>. Entonces mi comando sería así:</p></li>
 </ol>
 <pre><code>git clone https://github.com/mamaciasq/martin.git</code></pre>
 <p>Y esto es lo que imprimió en mi ventana de terminal:</p>
@@ -158,7 +158,7 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 Checking connectivity... done.</code></pre>
 <ol start="3" style="list-style-type: decimal">
-<li>Cierre el terminal, ya terminó ahí.</li>
+<li>Cierre el terminal, ya todo está listo.</li>
 </ol>
 </div>
 <div id="en-rstudio" class="section level1">
@@ -169,14 +169,14 @@ Checking connectivity... done.</code></pre>
 <pre><code>if (!requireNamespace(&quot;devtools&quot;)) install.packages(&quot;devtools&quot;)
 devtools::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>Instale Hugo usando la función de ayuda el paquete <code>blogdown</code>:</li>
+<li>Instale Hugo usando la función de ayuda del paquete <code>blogdown</code>:</li>
 </ol>
 <pre><code>blogdown::install_hugo()
 # o
 library(blogdown)
 install_hugo()</code></pre>
 <p>{{% alert note %}}
-Aquí es donde mis instrucciones divergen de las de Ed: afirma que <code>blogdown</code> no creará un sitio web en su carpeta raíz porque el archivo <code>README.md</code> ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.
+Aquí es donde mis instrucciones divergen de las de Ed: él afirma que <code>blogdown</code> no creará un sitio web en su carpeta raíz porque el archivo <code>README.md</code> ya está allí. No encontré que ese fuera el caso, también lo probé con un sitio nuevo. Si una de las formas no funciona para usted, pruebe la otra.
 {{% /alert %}}</p>
 <ol start="3" style="list-style-type: decimal">
 <li><p>Use los botones del menú de arriba en RStudio para seleccionar <code>File -&gt; New Project -&gt; Existing Directory</code>, luego vaya al directorio en su computadora donde esté su repositorio de GitHub y haga click en el botón <strong>Create Project</strong>.</p></li>
@@ -195,7 +195,7 @@ public/ # si está usando Netlify</code></pre>
 <p>Ahora puede finalmente coonstruir su sitio usando la función <code>blogdown::new_site()</code>. Pero <strong>primero</strong> debería al menos pensar en los temas…</p>
 <div id="escogiendo-un-tema" class="section level2">
 <h2><span class="header-section-number">7.1</span> Escogiendo un tema</h2>
-<p>Hay acerca de 90 <a href="https://themes.gohugo.io">temas de Hugo</a>. Así que volví al libro <code>blogdown</code>. Afortunadamente, Yihui y Amber se ofrecieron <a href="https://bookdown.org/yihui/blogdown/other-themes.html">“a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto…”</a>. Fui a <a href="https://github.com/gcushen/hugo-academic">hugo-academic</a>! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:</p>
+<p>Hay cerca de 90 <a href="https://themes.gohugo.io">temas de Hugo</a>. Así que volví al libro <code>blogdown</code>. Afortunadamente, Yihui y Amber se ofrecieron <a href="https://bookdown.org/yihui/blogdown/other-themes.html">“a ahorrar algo de tiempo, enumerando algunos temas a continuación que coinciden con nuestro gusto…”</a>. Fui a <a href="https://github.com/gcushen/hugo-academic">hugo-academic</a>! Cualquiera que sea el tema que escoja, necesitará escoger alguno de los tres caminos para hacer su nuevo sitio:</p>
 <ol style="list-style-type: decimal">
 <li><p>Si está feliz con el tema ofrecido por defecto, que es el lithium theme, puede usar:</p></li>
 <li><p>Si desea un tema distinto al predeterminado, puede especificar el tema al mismo tiempo que llama a la función <code>new_site</code>:</p></li>
