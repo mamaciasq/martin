@@ -1,0 +1,71 @@
+---
+title: Introducción a la creación de paquetes en R
+author: Martín Macías
+date: '2018-03-22'
+slug: introducción-a-la-creación-de-paquetes-en-r
+categories: []
+tags: []
+---
+
+
+
+<p>Este post pretende hacer una somera introducción a la creación de paquetes en R. Básicamente me limitaré a referirme a un par de posts:</p>
+<div id="caracteristicas-de-un-buen-paquete-en-r" class="section level2">
+<h2>Características de un buen paquete en R</h2>
+<ol style="list-style-type: decimal">
+<li>Útil</li>
+<li>Robusto</li>
+<li>Bien documentado</li>
+</ol>
+</div>
+<div id="como-planearlo" class="section level2">
+<h2>¿Cómo planearlo?</h2>
+<div id="deberia-existir" class="section level3">
+<h3>¿Debería existir?</h3>
+<ul>
+<li>¿Este código le sirve a alguien más que a mi?</li>
+<li>¿La idea es nueva o puede haber un paquete que ya haga o mismo que usted piensa hacer?
+Si es así, ¿qué trae de nuevo su implementación, ej. implementación amigable de usuario? Ej. <code>keras</code> y <code>kerasR</code>.</li>
+<li>Si ya existe una librería similar, ¿debería trabajar solo o más bien ayudarle a mejorar al desarrollador original la librería ya creada? Ej. <code>rtweet</code> y <code>twitteR</code></li>
+</ul>
+</div>
+<div id="que-deberia-tener-su-paquete-exactamente" class="section level3">
+<h3>¿Qué debería tener su paquete exactamente?</h3>
+<ol style="list-style-type: decimal">
+<li><p>Hacerlo compatible con el flujo de trabajo de sus usuarios.</p></li>
+<li><p>No ser demasiado ambicioso. Por ejemplo, ¿desea tener un método gráfico específico para su salida, o puede confiar en que sus usuarios usen por ejemplo <code>ggplot2</code>, simplemente dándoles un ejemplo de cómo hacerlo en una viñeta? De hecho, es parte de la filosofía de Unix: “pequeñas piezas construidas una encima de la otra”. Esto le ahorrará tiempo y le permitirá concentrarse en lo importante.</p></li>
+</ol>
+<p>Una vez que haya decidido todo esto, tal vez esboze una lista de tareas pendientes. Si ya está familiarizado con Github, puede tener un issue por item, o incluso aprovechar la función de <a href="https://guides.github.com/features/issues/">hitos de Github</a>. No es necesario tener un plan maestro para toda la vida útil de su paquete, porque uno puede esperar que sus usuarios también influyan en las funciones futuras, y bueno, usted seguirá haciéndose más inteligente a medida que pase el tiempo y las ideas seguirán fluyendo.</p>
+<p>Si desea trabajar en su paquete como equipo, deje en claro los roles desde el principio, por ejemplo, ¿Quién será el capo y quiénes sus gregarios…</p>
+</div>
+<div id="como-llamar-a-su-paquete-en-r" class="section level3">
+<h3>¿Cómo llamar a su paquete en R?</h3>
+<p>Se aconsejan nombres en minúsculas recomendados por rOpenSci, porque de esta manera su usuario no necesita recordar dónde están las letras mayúsculas (sí, es una recomendación divertida de una organización llamada rOpenSci).</p>
+<p>Se recomienda verificar el nombre de su paquete a través del paquete <code>available</code> que le dirá si es válido, está disponible en los lugares de paquetes habituales y también si tiene algún significado no deseado.</p>
+</div>
+</div>
+<div id="como-construirlo" class="section level2">
+<h2>¿Cómo construirlo?</h2>
+<div id="libros" class="section level3">
+<h3>Libros</h3>
+<ol style="list-style-type: decimal">
+<li><a href="http://r-pkgs.had.co.nz">Libro de Hadley Wickham</a></li>
+<li><a href="https://bookdown.org/rdpeng/RProgDA/">Mastering Software Development in R</a></li>
+<li><a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.html">Escribiendo extensiones en R</a></li>
+<li><a href="https://ropensci.org">rOpenSci packaging guide</a></li>
+</ol>
+</div>
+<div id="blogs" class="section level3">
+<h3>Blogs</h3>
+<ol style="list-style-type: decimal">
+<li><a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/">Writing an R package from scratch</a></li>
+<li><a href="http://www.mjdenny.com/R_Package_Pictorial.html">Guía ilustrada para desarrollo de paquetes en R</a></li>
+</ol>
+</div>
+<div id="moocs" class="section level3">
+<h3>MOOCS</h3>
+<ol start="6" style="list-style-type: decimal">
+<li><a href="https://www.coursera.org/specializations/r">Mastering Software Development in R Specialization</a></li>
+</ol>
+</div>
+</div>

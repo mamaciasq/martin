@@ -1,0 +1,58 @@
+---
+title: Introducción a la creación de paquetes en R
+author: Martín Macías
+date: '2018-03-22'
+slug: introducción-a-la-creación-de-paquetes-en-r
+categories: []
+tags: []
+---
+
+Este post pretende hacer una somera introducción a la creación de paquetes en R. Básicamente me limitaré a referirme a un par de posts:
+
+## Características de un buen paquete en R
+
+1. Útil
+2. Robusto
+3. Bien documentado
+
+## ¿Cómo planearlo?
+
+### ¿Debería existir?
+
++ ¿Este código le sirve a alguien más que a mi?
++ ¿La idea es nueva o puede haber un paquete que ya haga o mismo que usted piensa hacer?
+Si es así, ¿qué trae de nuevo su implementación, ej. implementación amigable de usuario? Ej. `keras` y `kerasR`.
++ Si ya existe una librería similar, ¿debería trabajar solo o más bien ayudarle a mejorar al desarrollador original la librería ya creada? Ej. `rtweet` y `twitteR`
+
+### ¿Qué debería tener su paquete exactamente?
+
+1. Hacerlo compatible con el flujo de trabajo de sus usuarios. 
+
+2. No ser demasiado ambicioso. Por ejemplo, ¿desea tener un método gráfico específico para su salida, o puede confiar en que sus usuarios usen por ejemplo `ggplot2`, simplemente dándoles un ejemplo de cómo hacerlo en una viñeta? De hecho, es parte de la filosofía de Unix: "pequeñas piezas construidas una encima de la otra". Esto le ahorrará tiempo y le permitirá concentrarse en lo importante.
+
+Una vez que haya decidido todo esto, tal vez esboze una lista de tareas pendientes. Si ya está familiarizado con Github, puede tener un issue por item, o incluso aprovechar la función de [hitos de Github](https://guides.github.com/features/issues/). No es necesario tener un plan maestro para toda la vida útil de su paquete, porque uno puede esperar que sus usuarios también influyan en las funciones futuras, y bueno, usted seguirá haciéndose más inteligente a medida que pase el tiempo y las ideas seguirán fluyendo.
+
+Si desea trabajar en su paquete como equipo, deje en claro los roles desde el principio, por ejemplo, ¿Quién será el capo y quiénes sus gregarios... 
+
+### ¿Cómo llamar a su paquete en R?
+
+Se aconsejan nombres en minúsculas recomendados por rOpenSci, porque de esta manera su usuario no necesita recordar dónde están las letras mayúsculas (sí, es una recomendación divertida de una organización llamada rOpenSci). 
+
+Se recomienda verificar el nombre de su paquete a través del paquete `available` que le dirá si es válido, está disponible en los lugares de paquetes habituales y también si tiene algún significado no deseado.
+
+## ¿Cómo construirlo?
+
+### Libros
+1. [Libro de Hadley Wickham](http://r-pkgs.had.co.nz)
+2. [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/)
+3. [Escribiendo extensiones en R](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
+4. [rOpenSci packaging guide](https://ropensci.org)
+
+### Blogs
+1. [Writing an R package from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
+23. [Guía ilustrada para desarrollo de paquetes en R](http://www.mjdenny.com/R_Package_Pictorial.html)
+
+### MOOCS
+6. [Mastering Software Development in R Specialization](https://www.coursera.org/specializations/r)
+
+

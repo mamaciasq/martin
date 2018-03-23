@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Martín</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introducción a la creación de paquetes en R</title>
+      <link>/post/2018/03/22/introducci%C3%B3n-a-la-creaci%C3%B3n-de-paquetes-en-r/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/03/22/introducci%C3%B3n-a-la-creaci%C3%B3n-de-paquetes-en-r/</guid>
+      <description>Este post pretende hacer una somera introducción a la creación de paquetes en R. Básicamente me limitaré a referirme a un par de posts:
+Características de un buen paquete en R Útil Robusto Bien documentado   ¿Cómo planearlo? ¿Debería existir?  ¿Este código le sirve a alguien más que a mi? ¿La idea es nueva o puede haber un paquete que ya haga o mismo que usted piensa hacer? Si es así, ¿qué trae de nuevo su implementación, ej.</description>
+    </item>
     
     <item>
       <title>Conectando Overleaf con Github</title>
