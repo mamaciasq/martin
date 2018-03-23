@@ -103,7 +103,9 @@ Aquí se asume que su paquete tiene una [unidad de comprobación](http://r-pkgs.
 
   2. Como complemento a la última subsección, si su código está abierto, digamos en Github, puede hacer que R CMD check funcione en una plataforma externa cada vez que suba cambios. Esto se llama [**integración continua**](https://juliasilge.com/blog/beginners-guide-to-travis/) y lo ayudará a detectar problemas sin tener que recordar hacer las revisiones. Además, hacer que se ejecuten en una plataforma externa le permite elegir la versión en R para que pueda verificar que su paquete funcione con diferentes versiones R sin instalarlas todas.  
   
-### **Añádale un estilo a su código**: Dele un estilo a su código para futuros lectores, que será usted mismo en un futuro, colaboradores y usuarios curiosos. Si su código es bonito, será más fácil para ellos concentrarse en su contenido.  
+### **Añádale un estilo a su código** 
+
+Dele un estilo a su código para futuros lectores, que será usted mismo en un futuro, colaboradores y usuarios curiosos. Si su código es bonito, será más fácil para ellos concentrarse en su contenido.  
   
   + Use [lintr](https://github.com/jimhester/lintr) para análisis estático del código.
   + Use [styler](https://github.com/r-lib/styler) para poner su paquete más bonito.
@@ -167,3 +169,10 @@ Si las personas realmente comienzan a contribuir con el paquete, intente ser gen
 Si tiene curiosidad, puede hacerse una idea de la cantidad de descargas de su paquete a través del paquete de [`cranlogs`](https://cranlogs.r-pkg.org). Utilizándolo, puede comparar la popularidad de su paquete con paquetes similares y verificar si hubo un pico después de un que ha dado, por ejemplo.
 
 De forma similar, si su repositorio de paquetes está alojado en Github, usando el paquete [`gh`](https://github.com/r-lib/gh) puede hacer análisis similares, mirando el número de estrellas a lo largo del tiempo, por ejemplo.
+
+## Algunos ejemplos curiosos extraidos de [Giora Simchon](http://giorasimchoni.com/rstudio_conf_2018_talk.html#/38):
+
+1. [`kandinsky`](https://github.com/gsimchoni/kandinsky)
+2. [`mocap`](https://github.com/gsimchoni/mocap)
+3. [`CastleOfR`](https://rdrr.io/github/gsimchoni/CastleOfR/)
+4. [`ggwithimages`](https://github.com/gsimchoni/ggwithimages)
