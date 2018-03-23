@@ -69,7 +69,7 @@
 
 
 
-<p>Este post pretende hacer una somera introducción a la creación de paquetes en R. Básicamente me limitaré a referirme a un par de posts:</p>
+<p>Este post pretende hacer una somera introducción a la creación de paquetes en R, teniendo en cuenta algunos consejos útiles y resaltando unas herramientas fundamentales. Este post es una versión recortada del de <a href="http://www.masalmon.eu/2017/12/11/goodrpackages/">Maëlle Salmon</a>.</p>
 <div id="caracteristicas-de-un-buen-paquete-en-r" class="section level2">
 <h2>Características de un buen paquete en R</h2>
 <ol style="list-style-type: decimal">
@@ -127,6 +127,118 @@ Si es así, ¿qué trae de nuevo su implementación, ej. implementación amigabl
 <ol start="6" style="list-style-type: decimal">
 <li><a href="https://www.coursera.org/specializations/r">Mastering Software Development in R Specialization</a></li>
 </ol>
+</div>
+</div>
+<div id="donde-debe-estar-su-paquete" class="section level2">
+<h2>¿Dónde debe estar su paquete?</h2>
+<div id="haga-codigo-abierto" class="section level3">
+<h3>Haga código abierto</h3>
+<ul>
+<li><p>Mantenga la filosofía del mismo R que es de código abierto</p></li>
+<li><p>Eso facilita la depuración y juega en favor de la calidad de su paquete</p></li>
+<li><p>Se recomienda Github pero existen Gitlab, svn, etc.</p></li>
+<li><p>Si se la juega con Github:</p>
+<ol style="list-style-type: decimal">
+<li><p>Este <a href="http://r-pkgs.had.co.nz/git.html">capítulo</a> del libro de Wickham</p></li>
+<li><p>La página de <a href="http://happygitwithr.com/">Jenny</a></p></li>
+<li><p>Si las cosas se ponen <a href="http://ohshitgit.com">mal</a></p></li>
+</ol></li>
+</ul>
+</div>
+<div id="pongalo-en-plataformas-oficiales" class="section level3">
+<h3>Póngalo en plataformas oficiales</h3>
+<ul>
+<li><p>CRAN</p></li>
+<li><p>Bioconductor</p></li>
+</ul>
+<p>Tenga en cuenta la <a href="https://simplystatistics.org/2015/11/06/how-i-decide-when-to-trust-an-r-package/">confianza</a></p>
+<ul>
+<li>Use <code>devtools()</code></li>
+</ul>
+</div>
+<div id="enlacelo" class="section level3">
+<h3>Enlácelo</h3>
+<ul>
+<li><p>En la DESCRIPTION de su paquete, indique la URL del repositorio donde aloja su paquete al igual que el link de los issues y reporte de bugs</p></li>
+<li><p>Si su paquete está en Github:</p>
+<ol style="list-style-type: decimal">
+<li>Cree una <a href="https://help.github.com/articles/creating-releases/">versión</a> y agregue información sobre su actualización</li>
+<li>Los usuarios de su paquete pueden estar actualizados de las versiones de su paquete si usan <a href="https://about.sibbell.com">Sibbell</a></li>
+<li>Póngale las <a href="https://www.r-pkg.org/services#badges">insignias del CRAN</a> que funciona más o menos <a href="https://github.com/ropensci/ropenaq">así</a></li>
+</ol></li>
+</ul>
+</div>
+</div>
+<div id="como-revisar-su-paquete-automaticamente" class="section level2">
+<h2>¿Cómo revisar su paquete automáticamente?</h2>
+<p>Aquí se asume que su paquete tiene una <a href="http://r-pkgs.had.co.nz/tests.html">unidad de comprobación</a></p>
+<ul>
+<li><p><a href="http://www.masalmon.eu/2017/06/17/automatictools/">Herramientas atuomáticas para mejorar paquetes en R</a></p>
+<ol style="list-style-type: decimal">
+<li><p>RMD check: Use <a href="http://r-pkgs.had.co.nz/check.html"><code>devtools::check()</code></a></p></li>
+<li><p>Como complemento a la última subsección, si su código está abierto, digamos en Github, puede hacer que R CMD check funcione en una plataforma externa cada vez que suba cambios. Esto se llama <a href="https://juliasilge.com/blog/beginners-guide-to-travis/"><strong>integración continua</strong></a> y lo ayudará a detectar problemas sin tener que recordar hacer las revisiones. Además, hacer que se ejecuten en una plataforma externa le permite elegir la versión en R para que pueda verificar que su paquete funcione con diferentes versiones R sin instalarlas todas.</p></li>
+</ol></li>
+</ul>
+<div id="anadale-un-estilo-a-su-codigo-dele-un-estilo-a-su-codigo-para-futuros-lectores-que-sera-usted-mismo-en-un-futuro-colaboradores-y-usuarios-curiosos.-si-su-codigo-es-bonito-sera-mas-facil-para-ellos-concentrarse-en-su-contenido." class="section level3">
+<h3><strong>Añádale un estilo a su código</strong>: Dele un estilo a su código para futuros lectores, que será usted mismo en un futuro, colaboradores y usuarios curiosos. Si su código es bonito, será más fácil para ellos concentrarse en su contenido.</h3>
+<ul>
+<li>Use <a href="https://github.com/jimhester/lintr">lintr</a> para análisis estático del código.</li>
+<li>Use <a href="https://github.com/r-lib/styler">styler</a> para poner su paquete más bonito.</li>
+</ul>
+</div>
+<div id="reciba-consejos-automaticos-sobre-su-paquete" class="section level3">
+<h3><strong>Reciba consejos automáticos sobre su paquete</strong></h3>
+<p>Instale y ejecute <a href="https://github.com/mangothecat/goodpractice"><code>goodpractice</code></a> para asesoramiento que incluye funciones y sintaxis a evitar, la estructura del paquete, la complejidad del código, el formato del código, etc.</p>
+</div>
+<div id="elimine-errores-tipograficos" class="section level3">
+<h3>Elimine errores tipográficos</h3>
+<p>Utilice la función <code>devtools::spell_check()</code>. Los errores tipográficos en la documentación no son el fin del mundo, pero pueden molestar al usuario y no es difícil eliminarlos gracias a esta herramienta, así que hágalo cuando tenga oportunidad.</p>
+<p>Todas estas herramientas le proporcionan una lista de cosas para cambiar. Esto significa que crean una lista de cosas para hacer sin necesidad de pensar demasiado, así que si está un poco cansado pero quiere mejorar su paquete, esto será de mucha utilidad.</p>
+</div>
+</div>
+<div id="haga-el-paquete-pensando-en-sus-usuarios-y-reciba-comentarios" class="section level2">
+<h2>Haga el paquete pensando en sus usuarios y reciba comentarios</h2>
+<p>Estos dos aspectos están vinculados porque sus usuarios lo ayudarán a mejorar su paquete, pero para que eso suceda es necesario que conozcan su paquete y lo entiendan.</p>
+<div id="documentacion" class="section level3">
+<h3>Documentación</h3>
+<p>Documente sus parámetros, funciones, agregue ejemplos y también escriba <a href="http://r-pkgs.had.co.nz/vignettes.html">viñetas</a>. Al menos una viñeta mostrará a los usuarios cómo interactúan las diferentes funciones de su paquete.</p>
+<p>Una vez haya escrito todas las partes de la documentación, cree un sitio web para su paquete usando <a href="https://github.com/r-lib/pkgdown">pkgdown</a>. Este <a href="http://enpiar.com/2017/11/21/getting-down-with-pkgdown/">tutorial</a> es excelente.</p>
+</div>
+<div id="programacion-amigable" class="section level3">
+<h3><a href="https://blog.keras.io/user-experience-design-for-apis.html">Programación amigable</a></h3>
+<blockquote>
+<p>“A la larga, el buen diseño gana, porque hace que sus adeptos sean más productivos y más impactantes, por lo tanto, se extiende más rápido que el diseño hostil al usuario. Un buen diseño es contagioso”.</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><p><em>Tenga mensajes de error y advertencia que sean fáciles de entender</em>. Por ejemplo, si se comunica con una API, entonces traduzca los errores http.</p></li>
+<li><p><em>Verifique las entradas</em>. Por ejemplo, si un parámetro proporcionado a una función debe ser un número positivo, verifíquelo y, de no ser así, devuelva un mensaje de error amistoso.</p></li>
+<li><p><em>Elija un buen esquema de nombres</em> que permita a los usuarios recordar más fácilmente los nombres de las funciones. Puede elegir tener un prefijo para todas las funciones de tu paquete, lo cual es recomendado por <a href="http://joncalder.co.za/2017-12-04-naming-things-is-hard/">rOpenSci</a>.</p></li>
+</ol>
+</div>
+<div id="promocionelo" class="section level3">
+<h3>Promociónelo</h3>
+<p>Si es científico, puede escribir un documento sobre su paquete y publicarlo en un journal en su campo. Por cierto, cuando usa R y paquetes en un documento, no olvide citarlos (utilizando el resultado de <code>citation()</code>, por ejemplo) para reconocer su utilidad y ayudar a sus autores a sentir que su trabajo es valioso (además si son académicos que tienen su trabajo citado es bastante crucial para su avance profesional).</p>
+</div>
+<div id="reviselo" class="section level3">
+<h3>Revíselo</h3>
+<p>Como científico, está acostumbrado a tener revisión por pares. En general, si envía un documento sobre su paquete, su documento será revisado más que su paquete, ¡pero en realidad puede obtener los beneficios de la revisión por pares para su paquete. Esta es una manera fantástica de mejorar la calidad y la facilidad de uso de su paquete.</p>
+<ol style="list-style-type: decimal">
+<li><p>No necesita nada formal, tal vez puede preguntarle a alguien que conoce y que, por ejemplo, podría ser un usuario de su paquete. Puede pedirle que revisen el código o su documentación, o ambos, según sus habilidades.</p></li>
+<li><p><a href="https://journal.r-project.org">The R Journal</a> le pide a los revisores de los documentos que lean el paquete, al igual que <a href="https://www.jstatsoft.org/index">The Journal of Statistical Software</a>. Dicho esto, necesitará escribir un documento completo para acompañar su paquete, que tal vez sea algo que no quieres.</p></li>
+<li><p>El <a href="http://joss.theoj.org">Journal of Open Science Software, JOSS</a> les pide a los revisores que verifiquen algunos puntos en su paquete y que escriban un documento muy mínimo sobre su paquete. El proceso de revisión es mínimo pero, de todas formas, puede obtener comentarios útiles.</p></li>
+<li><p>En <a href="https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/">rOpenSci</a> revisan los paquetes que se ajustan a sus categorías. Su paquete será revisado por dos personas. Ellos tienen una asociación con el Journal of Open Source Software de modo que si su paquete se adapta a ambos lugares, la revisión en JOSS será muy fácil después de las revisiones de rOpenSci.</p></li>
+</ol>
+</div>
+<div id="haga-su-repo-un-lugar-agradable" class="section level3">
+<h3>Haga su repo un lugar agradable</h3>
+<p>Otra forma de mejorar la calidad de su paquete y hacerlo más fácil de usar es tranquilizar a las personas cuando tienen una pregunta, un informe de error o una sugerencia de mejora. Agregar un código de conducta (use <code>devtools::use_code_of_conduct</code> como punto de partida) .</p>
+<p>Puede agregar una insignia de estado para su repositorio, de modo que cualquier visitante pueda ver de un vistazo si su paquete aún se encuentra en una etapa de desarrollo inicial.</p>
+<p>Si las personas realmente comienzan a contribuir con el paquete, intente ser generoso con los agradecimientos. Una razón egoísta es que motivará a las personas a seguir contribuyendo a su paquete. Una razón menos egoísta es que hace que toda la comunidad R sea más acogedora para los nuevos contribuyentes.</p>
+</div>
+<div id="analisis-de-paquetes" class="section level3">
+<h3>Análisis de paquetes</h3>
+<p>Si tiene curiosidad, puede hacerse una idea de la cantidad de descargas de su paquete a través del paquete de <a href="https://cranlogs.r-pkg.org"><code>cranlogs</code></a>. Utilizándolo, puede comparar la popularidad de su paquete con paquetes similares y verificar si hubo un pico después de un que ha dado, por ejemplo.</p>
+<p>De forma similar, si su repositorio de paquetes está alojado en Github, usando el paquete <a href="https://github.com/r-lib/gh"><code>gh</code></a> puede hacer análisis similares, mirando el número de estrellas a lo largo del tiempo, por ejemplo.</p>
 </div>
 </div>
 
