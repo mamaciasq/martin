@@ -10,4 +10,4 @@ disable_highlight: true
 
 ## R · Estadística · Miscelánea
 
-[Presentación](/slides/2018-03-03-presentación-trabajo-de-maestría.html)
+<!-- [Presentación](/slides/2018-03-03-presentación-trabajo-de-maestría.html) --> 

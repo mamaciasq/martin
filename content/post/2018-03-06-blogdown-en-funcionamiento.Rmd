@@ -399,9 +399,3 @@ De nuevo, necesitará actualizar el `baseurl` en su archivo `config.toml` para q
 ---
 # ![](/img/posts/2017-06-12-up-and-running-with-blogdown/rbind.png)
 ---
-
-## ¡Diviértase!
-
-Por último, no se olvide de pasarla bien. Feliz `blogdown`ing!
-  
-<iframe src="https://giphy.com/embed/13Y6LAZJqRspI4" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-seinfeld-elaine-benes-13Y6LAZJqRspI4">via GIPHY</a></p>

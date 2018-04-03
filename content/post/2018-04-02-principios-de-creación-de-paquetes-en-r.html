@@ -10,8 +10,8 @@ draft: TRUE
 
 
 
-<p>La motivación de crear paquetes en R nace a partir de la necesidad de reunir en un solo lugar, funciones que sean útiles para una tarea específica. Dos ejemplos claros son los paquetes <a href="https://github.com/kbroman/broman"><code>broman</code></a> y <a href="github.com/harrelfe/Hmisc"><code>Hmisc</code></a> de Karl Broman y Frank Harrell, respectivamente. Estos dos paquetes contienen funciones que esos dos estadísticos han utilizado en el desarrollo de sus proyectos.</p>
-<p>Como lo dije en un anterior <a href="http://martin.rbind.io/post/2018/03/22/introducción-a-la-creación-de-paquetes-en-r/">post,</a> inicialmente voy a basarme en el blog <em>Not so standard deviations</em> <a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/">Writing an R package from scratch</a> de Hilary Parker.</p>
+<p>La motivación de crear paquetes en R nace a partir de la necesidad de reunir en un solo lugar, funciones que sean útiles para tareas específicas. Dos ejemplos claros son los paquetes <a href="https://github.com/kbroman/broman"><code>broman</code></a> y <a href="github.com/harrelfe/Hmisc"><code>Hmisc</code></a> de Karl Broman y Frank Harrell, respectivamente. Estos dos paquetes contienen funciones que esos dos estadísticos han utilizado en el desarrollo de sus proyectos.</p>
+<p>Como lo dije en un anterior <a href="http://martin.rbind.io/post/2018/03/22/introducción-a-la-creación-de-paquetes-en-r/">post,</a> inicialmente voy a basarme en el blog <em>Not so standard deviations</em> <a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/">Writing an R package from scratch</a> de Hilary Parker. Luego, usaré información del blog de Matthew James Denny <a href="http://www.mjdenny.com/R_Package_Pictorial.html">R Package Pictorial</a>.</p>
 <p>Existen dos caminos para crear un paquete en R. El primero es “a pedal”, es decir, utilizando las funciones de las librerías <code>devtools</code> y <code>roxygen2</code> y el segundo es con la ayuda de RStudio.</p>
 <div id="primer-camino" class="section level2">
 <h2>Primer camino</h2>
@@ -24,9 +24,8 @@ library(&quot;devtools&quot;)
 devtools::install_github(&quot;klutometis/roxygen&quot;)
 library(roxygen2)</code></pre>
 </div>
-</div>
-<div id="paso-1-crear-un-directorio-para-su-paquete" class="section level2">
-<h2>Paso 1: Crear un directorio para su paquete</h2>
+<div id="paso-1-crear-un-directorio-para-su-paquete" class="section level3">
+<h3>Paso 1: Crear un directorio para su paquete</h3>
 <p>Cree un directorio donde almacenará la información de su paquete. Ese directorio no debe estar dentro de un proyecto de RStudio.</p>
 <pre><code>setwd(&quot;ruta_del_directorio_donde_guarda_sus_funciones&quot;)
 create(&quot;paqueteR&quot;)</code></pre>
@@ -47,6 +46,7 @@ LazyData: true
 * Creating `martinR.Rproj` from template.
 * Adding `.Rproj.user`, `.Rhistory`, `.RData` to ./.gitignore</code></pre>
 <p>Si busca en su directorio principal, ahora tendrá una carpeta llamada paqueteR, y dentro de ella tendrá una carpeta llamada R, un archivo llamado DESCRIPTION, otro llamado NAMESPACE y un proyecto llamado paqueteR.Rproj. Puede editar el archivo DESCRIPTION para incluir toda su información de contacto, etc.</p>
+</div>
 <div id="paso-2-agregue-funciones" class="section level3">
 <h3>Paso 2: Agregue funciones</h3>
 <p>Si está leyendo esto, probablemente tenga funciones para las que quiso crear un paquete. Copie esas funciones en su carpeta R.</p>
@@ -102,5 +102,18 @@ Reloading installed paqueteR</code></pre>
 <div id="paso-6-haga-que-el-paquete-sea-un-repositorio-de-github" class="section level3">
 <h3>Paso 6: Haga que el paquete sea un repositorio de GitHub</h3>
 <p>El beneficio de poner el paquete en Github es que puede usar la función <code>install_github()</code> para instalar su nuevo paquete directamente desde la página de Github.</p>
+</div>
+</div>
+<div id="segundo-camino" class="section level2">
+<h2>Segundo camino</h2>
+<div id="paso-0-cree-un-repositorio-en-github" class="section level3">
+<h3>Paso 0: Cree un repositorio en Github</h3>
+<p>Conviene crear un repositorio en Github con el mismo nombre del paquete que se creará en RStudio. Cuando se cree, es mejor que no inicialice el repositorio con README.</p>
+</div>
+<div id="paso-1-creando-un-paquete-en-rstudio" class="section level3">
+<h3>Paso 1: Creando un paquete en RStudio</h3>
+<p>Para crear paquetes en RStudio, es conveniente revisar este <a href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio">tutorial.</a>.</p>
+<p>Seleccione <code>New Project...</code>, luego <code>New Directory</code>, después <code>R Package</code>. Una vez esté allí, necesitará escribir el nombre de su paquete y seleccionar un directorio para alojar su proyecto. Podría, también, manualmente escoger algunos archivos en R que contengan las funciones que desee incluir dentro de su paquete. Igualmente, debería resaltar el cuadro de diálogo para crear un repositorio de Git.</p>
+<p>Luego agregue las funciones que desee que tenga su paquete. Finalmente haga <strong>Commit</strong> a toda esta información, agregue un mensaje al Commit y haga <strong>Push</strong> para que el paquete quede alojado en su repositorio de Github.</p>
 </div>
 </div>
