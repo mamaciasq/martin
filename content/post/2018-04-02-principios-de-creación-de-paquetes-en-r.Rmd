@@ -1,0 +1,138 @@
+---
+title: Principios de creación de paquetes en R
+author: Martín Macías
+date: '2018-04-02'
+slug: principios-de-creación-de-paquetes-en-r
+categories: []
+tags: []
+draft: TRUE
+---
+
+La motivación de crear paquetes en R nace a partir de la necesidad de reunir en un solo lugar, funciones que sean útiles para una tarea específica. Dos ejemplos claros son los paquetes [`broman`](https://github.com/kbroman/broman) y [`Hmisc`](github.com/harrelfe/Hmisc) de Karl Broman y Frank Harrell, respectivamente. Estos dos paquetes contienen funciones que esos dos estadísticos han utilizado en el desarrollo de sus proyectos.
+
+Como lo dije en un anterior [post,](http://martin.rbind.io/post/2018/03/22/introducción-a-la-creación-de-paquetes-en-r/) inicialmente voy a basarme en el blog _Not so standard deviations_ [Writing an R package from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) de Hilary Parker.
+
+Existen dos caminos para crear un paquete en R. El primero es "a pedal", es decir, utilizando las funciones de las librerías `devtools` y `roxygen2` y el segundo es con la ayuda de RStudio.
+
+## Primer camino
+
+Para este camino, se supone que usted no maneja cómodamente RStudio y, por ende, no sabe crear proyectos, ni mucho menos paquetes.
+
+### Paso 0: Paquetes necesarios
+
+Los paquetes necesarios para crear un paquete en R son `devtools` y `roxygen2`. Aquí se recomienda que descargue la versión en desarrollo de `roxygen2`.
+
+```
+install.packages("devtools")
+library("devtools")
+devtools::install_github("klutometis/roxygen")
+library(roxygen2)
+```
+
+## Paso 1: Crear un directorio para su paquete
+
+Cree un directorio donde almacenará la información de su paquete. Ese directorio no debe estar dentro de un proyecto de RStudio. 
+
+```
+setwd("ruta_del_directorio_donde_guarda_sus_funciones")
+create("paqueteR")
+```
+
+cuya salida debería ser similar a:
+
+```
+Creating package 'paqueteR' in '/Users/martin/funciones'
+No DESCRIPTION found. Creating with values:
+
+
+Package: paqueteR
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.4.3)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+* Creating `martinR.Rproj` from template.
+* Adding `.Rproj.user`, `.Rhistory`, `.RData` to ./.gitignore
+```
+
+Si busca en su directorio principal, ahora tendrá una carpeta llamada paqueteR, y dentro de ella tendrá una carpeta llamada R, un archivo llamado DESCRIPTION, otro llamado NAMESPACE y un proyecto llamado paqueteR.Rproj. Puede editar el archivo DESCRIPTION para incluir toda su información de contacto, etc.
+
+### Paso 2: Agregue funciones
+
+Si está leyendo esto, probablemente tenga funciones para las que quiso crear un paquete. Copie esas funciones en su carpeta R. 
+
+### Paso 3: Agregue documentación 
+
+El paquete roxygen2 que hace que todo sea increíble, simple y sencillo. La forma en que funciona es que agrega comentarios especiales al comienzo de cada función, que luego se compilarán en el formato correcto para la [documentación del paquete](https://github.com/klutometis/roxygen#roxygen2). Los detalles se pueden encontrar en la documentación de roxygen2; solo proporcionaré un ejemplo para nuestra función.
+
+Los comentarios que debe agregar al principio de la función son, por ejemplo, los siguientes:
+
+```
+#' Una función que limpia una cadena de caracteres, removiendo puntuación y números y tokenizándola
+#' 
+#' @param str Una cadena de caracteres de entrada tal como "This is a cool function!" 
+#' @return Un vector que contiene todos los tokens válidos de la cadena de caracteres de entrada original
+#' @export
+```
+
+Quizás sea conveniente crear un nuevo archivo para cada función, pero si prefiere simplemente puede crear nuevas funciones secuencialmente en un archivo, solo asegúrese de agregar los comentarios de la documentación antes de cada función.
+
+### Paso 4: Procese su documentación
+
+Ahora necesita crear la documentación de sus anotaciones antes. Ya ha realizado el trabajo "difícil" en el Paso 3. El paso 4 es tan fácil al hacer esto:
+
+```
+setwd("./paqueteR")
+document()
+```
+
+cuya salida debería ser similar a esto:
+
+```
+Updating paqueteR documentation
+Loading paqueteR
+Updating roxygen version in /Users/martin/funciones/paqueteR/DESCRIPTION
+Writing NAMESPACE
+```
+
+Esto agrega automáticamente los archivos `.Rd` al directorio `man, y actualiza el archivo NAMESPACE en el directorio principal. Puede leer más sobre [esto](http://r-pkgs.had.co.nz/description.html), pero en términos de pasos a seguir, realmente no tiene que hacer nada más.
+
+### Paso 5: Instalación
+
+¡Ahora es tan simple como instalar el paquete! Debe ejecutar esto desde el directorio de trabajo principal que contiene la carpeta `paqueteR`.
+
+```
+setwd("..")
+install("paqueteR")
+```
+
+cuya salida sería más o menos así:
+
+```
+Installing paqueteR
+'/Library/Frameworks/R.framework/Resources/bin/R' --no-site-file  \
+  --no-environ --no-save --no-restore --quiet CMD INSTALL  \
+  '/Users/martin/funciones/paqueteR'  \
+  --library='/Library/Frameworks/R.framework/Versions/3.4/Resources/library'  \
+  --install-tests 
+
+* installing *source* package ‘paqueteR’ ...
+** R
+** preparing package for lazy loading
+** help
+No man pages found in package  ‘paqueteR’ 
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (paqueteR)
+Reloading installed paqueteR
+```
+
+Ahora tiene un paquete en R real, en vivo y funcionando. Por ejemplo, intente escribir ?Clean_String. Debería ver aparecer la página de ayuda estándar.
+
+### Paso 6: Haga que el paquete sea un repositorio de GitHub
+
+El beneficio de poner el paquete en Github es que puede usar la función `install_github()` para instalar su nuevo paquete directamente desde la página de Github.

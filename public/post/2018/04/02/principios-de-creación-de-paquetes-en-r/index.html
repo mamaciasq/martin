@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Principios de creación de paquetes en R - Martín</title>
+    <meta property="og:title" content="Principios de creación de paquetes en R - Martín">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">Martín</a></h1>
+
+<p class="tagline">R · Estadística · Miscelánea</p>
+
+      <nav class="menu">
+        <input id="menu-check" type="checkbox" />
+        <label id="menu-label" for="menu-check" class="unselectable">
+          <span class="icon close-icon">✕</span>
+          <span class="icon open-icon">☰</span>
+          <span class="text">Menu</span>
+        </label>
+        <ul>
+        
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about/">Acerca de mí</a></li>
+        
+        <li><a href="/categories/">Categorías</a></li>
+        
+        <li><a href="/tags/">Tags</a></li>
+        
+        <li><a href="/index.xml">Suscripción</a></li>
+        
+        
+        </ul>
+      </nav>
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Principios de creación de paquetes en R</h1>
+
+<h3>Martín Macías
+  /  2018-04-02</h3>
+<hr>
+
+
+      </header>
+
+
+
+<p>La motivación de crear paquetes en R nace a partir de la necesidad de reunir en un solo lugar, funciones que sean útiles para una tarea específica. Dos ejemplos claros son los paquetes <a href="https://github.com/kbroman/broman"><code>broman</code></a> y <a href="github.com/harrelfe/Hmisc"><code>Hmisc</code></a> de Karl Broman y Frank Harrell, respectivamente. Estos dos paquetes contienen funciones que esos dos estadísticos han utilizado en el desarrollo de sus proyectos.</p>
+<p>Como lo dije en un anterior <a href="http://martin.rbind.io/post/2018/03/22/introducción-a-la-creación-de-paquetes-en-r/">post,</a> inicialmente voy a basarme en el blog <em>Not so standard deviations</em> <a href="https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/">Writing an R package from scratch</a> de Hilary Parker.</p>
+<p>Existen dos caminos para crear un paquete en R. El primero es “a pedal”, es decir, utilizando las funciones de las librerías <code>devtools</code> y <code>roxygen2</code> y el segundo es con la ayuda de RStudio.</p>
+<div id="primer-camino" class="section level2">
+<h2>Primer camino</h2>
+<p>Para este camino, se supone que usted no maneja cómodamente RStudio y, por ende, no sabe crear proyectos, ni mucho menos paquetes.</p>
+<div id="paso-0-paquetes-necesarios" class="section level3">
+<h3>Paso 0: Paquetes necesarios</h3>
+<p>Los paquetes necesarios para crear un paquete en R son <code>devtools</code> y <code>roxygen2</code>. Aquí se recomienda que descargue la versión en desarrollo de <code>roxygen2</code>.</p>
+<pre><code>install.packages(&quot;devtools&quot;)
+library(&quot;devtools&quot;)
+devtools::install_github(&quot;klutometis/roxygen&quot;)
+library(roxygen2)</code></pre>
+</div>
+</div>
+<div id="paso-1-crear-un-directorio-para-su-paquete" class="section level2">
+<h2>Paso 1: Crear un directorio para su paquete</h2>
+<p>Cree un directorio donde almacenará la información de su paquete. Ese directorio no debe estar dentro de un proyecto de RStudio.</p>
+<pre><code>setwd(&quot;ruta_del_directorio_donde_guarda_sus_funciones&quot;)
+create(&quot;paqueteR&quot;)</code></pre>
+<p>cuya salida debería ser similar a:</p>
+<pre><code>Creating package &#39;paqueteR&#39; in &#39;/Users/martin/funciones&#39;
+No DESCRIPTION found. Creating with values:
+
+
+Package: paqueteR
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person(&quot;First&quot;, &quot;Last&quot;, email = &quot;first.last@example.com&quot;, role = c(&quot;aut&quot;, &quot;cre&quot;))
+Description: What the package does (one paragraph).
+Depends: R (&gt;= 3.4.3)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+* Creating `martinR.Rproj` from template.
+* Adding `.Rproj.user`, `.Rhistory`, `.RData` to ./.gitignore</code></pre>
+<p>Si busca en su directorio principal, ahora tendrá una carpeta llamada paqueteR, y dentro de ella tendrá una carpeta llamada R, un archivo llamado DESCRIPTION, otro llamado NAMESPACE y un proyecto llamado paqueteR.Rproj. Puede editar el archivo DESCRIPTION para incluir toda su información de contacto, etc.</p>
+<div id="paso-2-agregue-funciones" class="section level3">
+<h3>Paso 2: Agregue funciones</h3>
+<p>Si está leyendo esto, probablemente tenga funciones para las que quiso crear un paquete. Copie esas funciones en su carpeta R.</p>
+</div>
+<div id="paso-3-agregue-documentacion" class="section level3">
+<h3>Paso 3: Agregue documentación</h3>
+<p>El paquete roxygen2 que hace que todo sea increíble, simple y sencillo. La forma en que funciona es que agrega comentarios especiales al comienzo de cada función, que luego se compilarán en el formato correcto para la <a href="https://github.com/klutometis/roxygen#roxygen2">documentación del paquete</a>. Los detalles se pueden encontrar en la documentación de roxygen2; solo proporcionaré un ejemplo para nuestra función.</p>
+<p>Los comentarios que debe agregar al principio de la función son, por ejemplo, los siguientes:</p>
+<pre><code>#&#39; Una función que limpia una cadena de caracteres, removiendo puntuación y números y tokenizándola
+#&#39; 
+#&#39; @param str Una cadena de caracteres de entrada tal como &quot;This is a cool function!&quot; 
+#&#39; @return Un vector que contiene todos los tokens válidos de la cadena de caracteres de entrada original
+#&#39; @export</code></pre>
+<p>Quizás sea conveniente crear un nuevo archivo para cada función, pero si prefiere simplemente puede crear nuevas funciones secuencialmente en un archivo, solo asegúrese de agregar los comentarios de la documentación antes de cada función.</p>
+</div>
+<div id="paso-4-procese-su-documentacion" class="section level3">
+<h3>Paso 4: Procese su documentación</h3>
+<p>Ahora necesita crear la documentación de sus anotaciones antes. Ya ha realizado el trabajo “difícil” en el Paso 3. El paso 4 es tan fácil al hacer esto:</p>
+<pre><code>setwd(&quot;./paqueteR&quot;)
+document()</code></pre>
+<p>cuya salida debería ser similar a esto:</p>
+<pre><code>Updating paqueteR documentation
+Loading paqueteR
+Updating roxygen version in /Users/martin/funciones/paqueteR/DESCRIPTION
+Writing NAMESPACE</code></pre>
+<p>Esto agrega automáticamente los archivos <code>.Rd</code> al directorio `man, y actualiza el archivo NAMESPACE en el directorio principal. Puede leer más sobre <a href="http://r-pkgs.had.co.nz/description.html">esto</a>, pero en términos de pasos a seguir, realmente no tiene que hacer nada más.</p>
+</div>
+<div id="paso-5-instalacion" class="section level3">
+<h3>Paso 5: Instalación</h3>
+<p>¡Ahora es tan simple como instalar el paquete! Debe ejecutar esto desde el directorio de trabajo principal que contiene la carpeta <code>paqueteR</code>.</p>
+<pre><code>setwd(&quot;..&quot;)
+install(&quot;paqueteR&quot;)</code></pre>
+<p>cuya salida sería más o menos así:</p>
+<pre><code>Installing paqueteR
+&#39;/Library/Frameworks/R.framework/Resources/bin/R&#39; --no-site-file  \
+  --no-environ --no-save --no-restore --quiet CMD INSTALL  \
+  &#39;/Users/martin/funciones/paqueteR&#39;  \
+  --library=&#39;/Library/Frameworks/R.framework/Versions/3.4/Resources/library&#39;  \
+  --install-tests 
+
+* installing *source* package ‘paqueteR’ ...
+** R
+** preparing package for lazy loading
+** help
+No man pages found in package  ‘paqueteR’ 
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (paqueteR)
+Reloading installed paqueteR</code></pre>
+<p>Ahora tiene un paquete en R real, en vivo y funcionando. Por ejemplo, intente escribir ?Clean_String. Debería ver aparecer la página de ayuda estándar.</p>
+</div>
+<div id="paso-6-haga-que-el-paquete-sea-un-repositorio-de-github" class="section level3">
+<h3>Paso 6: Haga que el paquete sea un repositorio de GitHub</h3>
+<p>El beneficio de poner el paquete en Github es que puede usar la función <code>install_github()</code> para instalar su nuevo paquete directamente desde la página de Github.</p>
+</div>
+</div>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/post/2018/03/22/introducci%C3%B3n-a-la-creaci%C3%B3n-de-paquetes-en-r/">Introducción a la creación de paquetes en R</a></span>
+  <span class="nav-next"></span>
+</nav>
+
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">&copy; <a href="https://martin.rbind.io">Martín Macías</a> 2018 | <a href="https://github.com/mamaciasq">Github</a> | <a href="https://twitter.com/MartinMacias">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

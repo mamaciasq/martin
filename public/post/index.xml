@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Martín</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Principios de creación de paquetes en R</title>
+      <link>/post/2018/04/02/principios-de-creaci%C3%B3n-de-paquetes-en-r/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/04/02/principios-de-creaci%C3%B3n-de-paquetes-en-r/</guid>
+      <description>La motivación de crear paquetes en R nace a partir de la necesidad de reunir en un solo lugar, funciones que sean útiles para una tarea específica. Dos ejemplos claros son los paquetes broman y Hmisc de Karl Broman y Frank Harrell, respectivamente. Estos dos paquetes contienen funciones que esos dos estadísticos han utilizado en el desarrollo de sus proyectos.
+Como lo dije en un anterior post, inicialmente voy a basarme en el blog Not so standard deviations Writing an R package from scratch de Hilary Parker.</description>
+    </item>
     
     <item>
       <title>Introducción a la creación de paquetes en R</title>
