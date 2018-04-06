@@ -5,7 +5,7 @@ date: '2018-04-02'
 slug: principios-de-creación-de-paquetes-en-r
 categories: []
 tags: []
-draft: TRUE
+draft: FALSE
 ---
 
 
@@ -53,7 +53,7 @@ LazyData: true
 </div>
 <div id="paso-3-agregue-documentacion" class="section level3">
 <h3>Paso 3: Agregue documentación</h3>
-<p>El paquete roxygen2 que hace que todo sea increíble, simple y sencillo. La forma en que funciona es que agrega comentarios especiales al comienzo de cada función, que luego se compilarán en el formato correcto para la <a href="https://github.com/klutometis/roxygen#roxygen2">documentación del paquete</a>. Los detalles se pueden encontrar en la documentación de roxygen2; solo proporcionaré un ejemplo para nuestra función.</p>
+<p>El paquete roxygen2 hace que todo sea increíble, simple y sencillo. La forma en que funciona es que agrega comentarios especiales al comienzo de cada función, que luego se compilarán en el formato correcto para la <a href="https://github.com/klutometis/roxygen#roxygen2">documentación del paquete</a>. Los detalles se pueden encontrar en la documentación de roxygen2; solo proporcionaré un ejemplo para nuestra función.</p>
 <p>Los comentarios que debe agregar al principio de la función son, por ejemplo, los siguientes:</p>
 <pre><code>#&#39; Una función que limpia una cadena de caracteres, removiendo puntuación y números y tokenizándola
 #&#39; 
@@ -116,4 +116,51 @@ Reloading installed paqueteR</code></pre>
 <p>Seleccione <code>New Project...</code>, luego <code>New Directory</code>, después <code>R Package</code>. Una vez esté allí, necesitará escribir el nombre de su paquete y seleccionar un directorio para alojar su proyecto. Podría, también, manualmente escoger algunos archivos en R que contengan las funciones que desee incluir dentro de su paquete. Igualmente, debería resaltar el cuadro de diálogo para crear un repositorio de Git.</p>
 <p>Luego agregue las funciones que desee que tenga su paquete. Finalmente haga <strong>Commit</strong> a toda esta información, agregue un mensaje al Commit y haga <strong>Push</strong> para que el paquete quede alojado en su repositorio de Github.</p>
 </div>
+<div id="paso-2-documente-su-paquete" class="section level3">
+<h3>Paso 2: Documente su paquete</h3>
+<p>Ahora puee editar la información del archivo <code>DESCRIPTION</code> y diligenciar los campos con texto informativo sobre su paquete. Piense en algo similar a esto:</p>
+<pre><code>Package: cleanStringR
+Type: Package
+Title: Un paquete de ejemplo que hace tal cosa
+Version: 0.0.1
+Date: 2018-04-06
+Author: Daniel Rodríguez &lt;peluche_rosadito@gmail.com&gt;
+Maintainer: Martín Macías &lt;martinandresmacias@gmail.com&gt;
+Description: Provee funciones para limpiar cadenas
+License: GPL2
+LazyData: TRUE</code></pre>
+<p>Luego, querrá asegurarse de documentar adecuadamente todas las funciones que desee que sean visibles para los usuarios del paquete (se describe en detalle a continuación). Luego podrá usar la función <code>devtools::document()</code> para generar automáticamente archivos de ayuda para cada una de estas funciones y la función <code>devtools::use_package()</code> para crear una dependencia en <code>DESCRIPTION</code> entre su paquete y otro del cual se tenga referencia.</p>
+<pre><code>devtools::use_package(&quot;stringr&quot;)
+devtools::document()</code></pre>
+<p>Fíjese en el archivo <code>DESCRIPTION</code> y verá que se añadió la línea <code>RoxygenNote: 6.0.1</code> que confirma la documentación de su paquete.</p>
+</div>
+<div id="paso-3-construya-e-instale-el-paquete" class="section level3">
+<h3>Paso 3: Construya e instale el paquete</h3>
+<p>Ahora puede avanzar y hacer clic en la pestaña <strong>Build</strong> en RStudio y luego en el botón <strong>Install and Restart</strong> en esta pestaña y R creará su paquete y lo cargará en su sistema.</p>
+<p>Note que se han agregado más archivos al directorio del paquete (los archivos de ayuda para sus funciones).</p>
+<p>Ahora debería poder acceder a su paquete en su equipo local utilizando el comando estándar <code>library(mypackage)</code>. El siguiente paso es subir su paquete actualizado a Github. Si todo salió bien, otras personas podrán descargar e instalar su paquete instalando primero <code>devtools</code> y luego ejecutando el siguiente comando:</p>
+<pre><code>devtools::install_github(&quot;suUsernameEnGithub/NombredelPaquete&quot;)</code></pre>
+</div>
+</div>
+<div id="dependiencias" class="section level2">
+<h2>Dependiencias</h2>
+<p>Si las funciones que queremos utilizar requieren acceso a otros paquetes, podemos asegurarnos de que se agreguen como dependencias (que se descargarán automáticamente con el paquete) ejecutando la siguiente línea de código para cada paquete que deseemos requerir (con el nombre del paquete apropiado insertado):</p>
+<pre><code>devtools::use_package(&quot;stringr&quot;)</code></pre>
+<p>Tenga en cuenta que la mejor manera de acceder a la funcionalidad que proporcionan estos paquetes es hacer referencia explícita a sus subfunciones cuando las necesitemos en lugar de cargar todo el paquete como se muestra en el siguiente ejemplo:</p>
+<pre><code>stringr::str_replace_all(temp,&quot;[^a-zA-Z\s]&quot;, &quot; &quot;)</code></pre>
+<p>Esto puede parecer tedioso al principio, pero terminará reduciendo conflictos y haciendo su vida más fácil a largo plazo. Es posible que también desee asegurarse de que sus usuarios tengan instalada una versión más nueva de R. Puede hacer esto agregando la siguiente línea a su archivo <code>DESCRIPTION</code></p>
+<pre><code>Depends: R (&gt;= 3.0.1)</code></pre>
+<p>Aquí hay un ejemplo de las importaciones y dependencias en el archivo DESCRIPTION para uno de los paquetes en los que uno puede estar trabajando:</p>
+<pre><code>Imports:
+        Rcpp,
+        RcppArmadillo,
+        BH,
+        ggplot2,
+        methods,
+LinkingTo:
+        BH,
+        Rcpp,
+        RcppArmadillo
+Depends:
+        R (&gt;= 3.0.1)</code></pre>
 </div>
