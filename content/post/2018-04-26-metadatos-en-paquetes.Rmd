@@ -5,7 +5,7 @@ date: '2018-04-26'
 slug: metadatos-en-paquetes
 categories: []
 tags: []
-draft: TRUE
+draft: FALSE
 ---
 
 ## Metadatos en paquetes
@@ -124,3 +124,194 @@ Casi siempre debería especificar una versión mínima en lugar de una versión 
 El control de versiones es más importante cuando lanza su paquete. Por lo general, las personas no tienen exactamente las mismas versiones de paquetes instalados que usted. Si alguien tiene un paquete anterior que no tiene una función que su paquete necesita, recibirá un mensaje de error inútil. Sin embargo, si proporciona el número de versión, recibirán un mensaje de error que les dice exactamente cuál es el problema: un paquete desactualizado.
 
 En general, siempre es mejor especificar la versión y ser conservador sobre qué versión requerir. A menos que sepa lo contrario, siempre solicite una versión mayor o igual que la versión que esté utilizando actualmente.
+
+#### Otras dependencias
+
+Hay otros tres campos que le permiten expresar dependencias más especializadas:
+
+  * `Depends`: antes del despliegue de espacios de nombres en R 2.14.0,` Depends` era la única forma de "depender" de otro paquete. Ahora, a pesar del nombre, usted casi siempre debería usar `Imports`, no `Depends`. Aprenderá por qué, y cuando todavía seguir usando `Depends`, en [namespaces](http://r-pkgs.had.co.nz/namespace.html#namespace).
+    
+  También puede usar `Depends` para requerir una versión específica de R, p. Ej. `Depends: R (>= 3.0.1)`. Al igual que con los paquetes, es una buena idea ir a lo seguro y requerir una versión mayor o igual que la versión que está usando actualmente. `devtools::create()` hará esto por usted.
+    
+  En R 3.1.1 y anteriores también necesitará usar `Depends: methods` si usa S4. Este error se soluciona en R 3.2.0, por lo que los métodos pueden volver a `Imports` a donde pertenecen.
+    
+  * `LinkingTo`: los paquetes enumerados aquí dependen del código C o C ++ en otro paquete. Aprenderá más sobre `LinkingTo` en [Compiled code](http://r-pkgs.had.co.nz/src.html#src).
+    
+  * `Enhances`: los paquetes enumerados aquí son "mejorados" por su paquete. Típicamente, esto significa que usted proporciona métodos para las clases definidas en otro paquete (una especie de idea contraria a 'Suggests'). Pero es difícil definir lo que eso significa, así que no recomiendo usar `Enhances`.
+    
+También puede enumerar las cosas que su paquete necesita fuera de R en el campo `SystemRequirements`. Pero esto es solo un campo de texto plano y no se verifica automáticamente. Piense en ello como una referencia rápida; también deberá incluir requisitos detallados del sistema (y cómo instalarlos) en su archivo README.
+
+### Título y descripción: ¿Qué hace su paquete?
+
+Los campos de título y descripción describen lo que hace el paquete. Se diferencian solo en longitud:
+
+* `Title` es una descripción de una línea del paquete, y a menudo se muestra en listado de paquetes. Debe ser texto sin formato (sin marcado), en mayúscula como un título, y NO terminar en un punto. Que sea breve: las listas a menudo truncar el título a 65 caracteres.
+
+* `Description` es más detallado que el título. Puede usar oraciones múltiples pero está limitado a un párrafo. Si su descripción abarca múltiples líneas (¡y debería!), cada línea no debe tener más de 80 caracteres de ancho. Sangra las líneas siguientes con 4 espacios.
+
+El `Title` y `Description` para ggplot2 son:
+
+```yaml
+Title: An implementation of the Grammar of Graphics
+Description: An implementation of the grammar of graphics in R. It combines the advantages of both base and lattice graphics: conditioning and shared axes are handled automatically, and you can still build up a plot step by step from multiple data sources. It also implements a sophisticated multidimensional conditioning system and a consistent interface to map data to aesthetic attributes. See the ggplot2 website for more information, documentation and examples.
+```
+
+Un buen título y descripción son importantes, especialmente si planea lanzar su paquete a CRAN porque aparecen en la página de descarga de CRAN de la siguiente manera:
+
+![](/img/posts/cran-package.png)
+
+Debido a que `Description` solo le da una pequeña cantidad de espacio para describir lo que hace su paquete, también recomiendo incluir un archivo `README.md` que entra en mucha más profundidad y muestra algunos ejemplos. Aprenderá sobre eso en [README.md](http://r-pkgs.had.co.nz/release.html#readme).
+
+### Autor: ¿Quién es usted?
+
+Para identificar el autor del paquete y con quién contactar si algo sale mal, use el campo `Authors@R`. Este campo es inusual porque contiene código R ejecutable en lugar de texto sin formato. Aquí hay un ejemplo:
+
+```yaml
+Authors@R: person("Hadley", "Wickham", email = "hadley@rstudio.com",
+  role = c("aut", "cre"))
+```
+
+```{r}
+person("Hadley", "Wickham", email = "hadley@rstudio.com", 
+  role = c("aut", "cre"))
+```
+
+Este comando dice que tanto el autor (aut) como el mantenedor (cre) es Hadley Wickham, y que su dirección de correo electrónico es `hadley@rstudio.com`. La función `person()` tiene cuatro argumentos principales:
+
+* El nombre, especificado por los primeros dos argumentos, `given` y `family` (estos normalmente se suministran por posición, no por nombre). En las culturas inglesas, `given` (primer nombre) viene antes de `family` (apellido). En muchas culturas, esta convención no se sostiene.
+  
+* La dirección de `email`.
+
+* Un código de tres letras que especifica el `role`. Hay cuatro roles importantes:
+
+    * `cre`: el creador o mantenedor, la persona a la que debe molestar si tiene problemas
+      
+    * `aut`: autores, aquellos que han hecho contribuciones significativas al
+      paquete.
+    
+    * `ctb`: colaboradores, aquellos que han hecho contribuciones más pequeñas, como parches.
+    
+    * `cph`: titular de los derechos de autor. Esto se usa si el copyright está en manos de alguien que no sea el autor, generalmente una empresa (es decir, el empleador del autor).
+    
+    (La [lista completa de roles](http://www.loc.gov/marc/relators/relaterm.html) es extremadamente completo. Si su paquete tiene un leñador ("wdc"), letrista ("lyr") o diseñador de vestuario ("cst"), descanse cómodamente pues puede describir correctamente su papel en la creación de su paquete.)
+
+Si necesita agregar más aclaraciones, también puede usar el argumento `comment` y proporcionar la información deseada en texto sin formato.
+
+Puede enumerar varios autores con `c()`:
+
+```yaml
+Authors@R: c(
+    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "cre"),
+    person("Winston", "Chang", email = "winston@rstudio.com", role = "aut"))
+```
+
+Alternativamente, puede hacer esto concretamente usando `as.person()`:
+
+```yaml
+Authors@R: as.person(c(
+    "Hadley Wickham <hadley@rstudio.com> [aut, cre]", 
+    "Winston Chang <winston@rstudio.com> [aut]"
+  ))
+```
+
+(Esto solo funciona bien para nombres con solo un nombre y apellido).
+
+Cada paquete debe tener al menos un autor (aut) y un mantenedor (cre) (pueden ser la misma persona). El creador debe tener una dirección de correo electrónico. Estos campos se utilizan para generar la cita básica para el paquete (por ejemplo, `citation("pkgname")`). Solo las personas nombradas como autores se incluirán en la cita autogenerada. Hay algunos detalles adicionales si incluye el código que otras personas han escrito. Como esto normalmente ocurre cuando está empaquetando una librería en C, se discute en [código compilado](http://r-pkgs.had.co.nz/src.html#src).
+
+Además de su dirección de correo electrónico, también es una buena idea enumerar otros recursos disponibles para obtener ayuda. Puede enumerar las URL en `URL`. Múltiples URL se separan con una coma. `BugReports` es la URL donde se deben enviar los informes de errores. Por ejemplo, knitr tiene:
+
+```yaml
+URL: http://yihui.name/knitr/
+BugReports: https://github.com/yihui/knitr/issues
+```
+
+También puede usar campos separados `Maintainer` y` Author`. Prefiero no usar estos campos porque `Authors@R` ofrece metadatos más ricos.
+
+#### En el CRAN
+
+Lo más importante que debe tener en cuenta es que su dirección de correo electrónico (es decir, la dirección de `cre`) es la dirección que utilizará CRAN para contactarlo con respecto a su paquete. Por lo tanto, asegúrese de utilizar una dirección de correo electrónico que probablemente esté disponible por un tiempo. Además, debido a que esta dirección se utilizará para envíos automatizados, las políticas de CRAN requieren que sea para una sola persona (no una lista de correo) y que no requiera ninguna confirmación ni use ningún filtro.
+
+### License: ¿Quién puede usar su paquete?
+
+El campo `License` puede ser una abreviatura estándar para una licencia de fuente abierta, como `GPL-2` o `BSD`, o un puntero a un archivo que contiene más información, `file LICENSE`. La licencia solo es importante si planea liberar su paquete. Si no lo hace, puedes ignorar esta sección. Si quiere dejar en claro que su paquete no es de código abierto, use `License: file LICENSE` y luego cree un archivo llamado `LICENSE`, que contenga, por ejemplo:
+
+
+    Proprietary 
+
+    Do not distribute outside of Widgets Incorporated.
+
+* [MIT](https://tldrlegal.com/license/mit-license) (v. similar: a BSD 2 y 3 cláusulas de licencias). Este es una licencia simple y permisiva. Permite a las personas usar y distribuir libremente su código sujeto a una sola restricción: la licencia siempre debe ser distribuida con el código
+  
+  La licencia de MIT es una "plantilla", por lo que si la usa, necesita `License: MIT + file LICENSE`, y un archivo `LICENSE` que se ve así:
+    
+    ```yaml
+    YEAR: <Año o años en los que se han realizado cambios>
+    COPYRIGHT HOLDER: <Nombre del titular de los derechos de autor>
+    ```
+
+* [GPL-2](https://tldrlegal.com/license/gnu-general-public-license-v2) o
+  [GPL-3](https://tldrlegal.com/license/gnu-general-public-license-v3- (gpl-3)). Estas son licencias de "copia izquierda". Esto significa que cualquiera que distribuya su código en un paquete debe licenciar todo el paquete de una manera compatible con GPL. Además, cualquiera que distribuya versiones modificadas de su código (trabajos derivados) también debe hacer que el código fuente esté disponible. GPL-3 es un poco más estricto que GPL-2, cerrando algunas lagunas más antiguas.
+
+* [CC0](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal).
+  Renuncia a todos sus derechos sobre el código y los datos para que pueda ser libremente utilizado por cualquier persona para cualquier propósito. Esto a veces se llama ponerlo en el dominio público, un término que no está bien definido ni tiene sentido en todos los países.
+  
+  Esta licencia es la más adecuada para paquetes de datos. Los datos, al menos en los EE. UU. no son susceptible de derechos de autor, por lo que realmente no está renunciando a nada. Esta licencia solo aclara este punto.
+  
+Si desea obtener más información sobre otras licencias comunes, Github's [choosealicense.com](http://choosealicense.com/licenses/) es un buen lugar para comenzar. Otro buen recurso es <https://tldrlegal.com/>, que explica las partes más importantes de cada licencia. Si usa una licencia distinta a las tres que sugiero, asegúrese de consultar la sección "Escribir extensiones en R" en [licencias](https://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file).
+
+Si su paquete incluye un código que no escribió, debe asegurarse de que cumpla con su licencia. Como esto ocurre con mayor frecuencia cuando se incluye el código fuente C, se analiza con más detalle en [código compilado](http://r-pkgs.had.co.nz/src.html#src).
+
+#### En el CRAN
+
+Si desea liberar su paquete a CRAN, debe elegir una licencia estándar. De lo contrario, es difícil para CRAN determinar si es legal distribuir su paquete o no. Puede encontrar una lista completa de licencias que CRAN considera válidas en <https://svn.r-project.org/R/trunk/share/licenses/license.db>.
+
+```{r, results='asis', echo = FALSE, eval = FALSE}
+licenses <- read.dcf(file.path(R.home("share"), "licenses", "license.db"))
+licenses <- as.data.frame(licenses, stringsAsFactors = FALSE)
+licenses <- licenses[order(licenses$Name, licenses$Version), ]
+licenses[is.na(licenses)] <- ""
+has_abbrev <- subset(licenses, Abbrev != "")
+knitr::kable(has_abbrev[c("Name", "Version", "Abbrev")], row.names = FALSE)
+```
+
+### Versión
+
+Formalmente, una versión de paquete R es una secuencia de al menos dos enteros separados por `.` o `-`. Por ejemplo, `1.0` y `0.9.1-10` son versiones válidas, pero `1` o `1.0-devel` no lo son. Puede analizar un número de versión con `numeric_version`.
+
+```{r}
+numeric_version("1.9") == numeric_version("1.9.0")
+numeric_version("1.9.0") < numeric_version("1.10.0")
+```
+
+Por ejemplo, un paquete puede tener una versión 1.9. R considera que este número de versión es igual a 1.9.0, menos que la versión 1.9.2, y todos estas son menores que la versión 1.10 (que es la versión "uno punto diez", no "uno punto uno cero"). R usa números de versión para determinar si se satisfacen las dependencias del paquete. Un paquete podría, por ejemplo, importar el paquete `devtools (> = 1.9.2)`, en cuyo caso la versión 1.9 o 1.9.0 no funcionaría.
+
+El número de versión de su paquete aumenta con las versiones posteriores de un paquete, pero es más que un contador incremental: la forma en que el número cambia con cada versión puede transmitir información sobre qué tipo de cambios hay en el paquete.
+
+No recomiendo aprovechar al máximo la flexibilidad de R. En cambio, siempre use `.` para separar los números de versión.
+
+* Un número de versión publicado consta de tres números, `<principal>.<menor>.<parche>`. Para la versión número 1.9.2, 1 es el número principal, 9 es el número menor, y 2 es el número de parche. Nunca use versiones como `1.0`, en cambio siempre deletree los tres componentes, `1.0.0`
+
+* Un paquete en desarrollo tiene un cuarto componente: la versión de desarrollo. Esto debería comenzar en 9000. Por ejemplo, la primera versión del paquete debería ser `0.0.0.9000`. Hay dos razones para esta recomendación: primero, hace que sea más fácil ver si un paquete se lanza o está en desarrollo, y el uso del cuarto lugar significa que no está limitado a lo que la próxima versión será. `0.0.1`, `0.1.0` y `1.0.0` son todos mayores que
+  `0.0.0.9000`.
+  
+  Incremente la versión de desarrollo, e.g. de `9000` a `9001` si agregó una característica importante que otro paquete de desarrollo de la que dependa.
+    
+  Si está utilizando svn, en lugar de usar el `9000` arbitrario, puede incrustar el identificador de revisión secuencial.
+
+Este consejo aquí está inspirado en parte por la [Versión semántica](http://semver.org) y por [X.Org](http://www.x.org/releases/X11R7.7/doc/xorg-docs/Versions.html) esquemas de control de versiones. Léelos si desea conocer más sobre los estándares de control de versiones utilizados por muchos proyectos de código abierto.
+
+Volveremos a los números de versión en el contexto de la liberación de su paquete, [seleccionando un número de versión](http://r-pkgs.had.co.nz/release.html#release-version). Por ahora, solo recuerda que la primera versión de su paquete debería ser `0.0.0.9000`.
+
+### Otros componentes
+
+Varios otros campos se describen en otra parte del libro:
+
+* `Collate` controla el orden en que se obtienen los archivos en R. Solo esto
+   importa si su código tiene efectos secundarios; más comúnmente porque está
+   usando S4. Esto se describe con más detalle en [documentar S4](http://r-pkgs.had.co.nz/man.html#man-s4).
+
+* `LazyData` hace que sea más fácil acceder a los datos en su paquete. Porque es tan importante, está incluido en la descripción mínima creada por devtools. Esto se describe con más detalle en [datos externos](http://r-pkgs.had.co.nz/data.html#data).
+
+En realidad, hay muchos otros campos raros, si es que los usa alguna vez. Se puede encontrar una lista completa en la sección "The DESCRIPTION file" del [Manual de extensiones R](https://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file). También puede crear sus propios campos para agregar metadatos adicionales. Las únicas restricciones son que no debe usar nombres existentes y que, si planea enviar a CRAN, los nombres que use deben ser palabras en inglés válidas (por lo que no se generará una NOTE de revisión ortográfica).
+
+[R-exts]: http://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file
