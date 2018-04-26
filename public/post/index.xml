@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Martín</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Metadatos en Paquetes</title>
+      <link>/post/2018/04/26/metadatos-en-paquetes/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/04/26/metadatos-en-paquetes/</guid>
+      <description>Metadatos en paquetes El trabajo del archivo DESCRIPTION es almacenar metadatos importantes sobre su paquete. Cuando comience a escribir paquetes, generalmente usará estos metadatos para registrar qué paquetes son necesarios para ejecutar su paquete. Sin embargo, a medida que pase el tiempo y comience a compartir su paquete con otros, el archivo de metadatos se vuelve cada vez más importante porque especifica quién puede usarlo (la licencia) y con quién contactarse (¡usted!</description>
+    </item>
     
     <item>
       <title>Principios de creación de paquetes en R</title>
