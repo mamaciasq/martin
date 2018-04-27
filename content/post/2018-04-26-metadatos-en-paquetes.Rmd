@@ -12,7 +12,7 @@ draft: FALSE
 
 El trabajo del archivo DESCRIPTION es almacenar metadatos importantes sobre su paquete. Cuando comience a escribir paquetes, generalmente usará estos metadatos para registrar qué paquetes son necesarios para ejecutar su paquete. Sin embargo, a medida que pase el tiempo y comience a compartir su paquete con otros, el archivo de metadatos se vuelve cada vez más importante porque especifica quién puede usarlo (la licencia) y con quién contactarse (¡usted!) si hay algún problema.
 
-Cada paquete debe tener un DESCRIPTION. De hecho, es la característica definitivaa de un paquete (RStudio y devtools consideran cualquier directorio que contiene DESCRIPTION como un paquete). Para comenzar, `devtools::create("mypackage")` agrega automáticamente un escueto archivo de descripción. Esto le permitirá comenzar a escribir el paquete sin tener que preocuparse por los metadatos hasta que lo necesite. La descripción mínima variará un poco dependiendo de su configuración, pero debería verse más o menos así:
+Cada paquete debe tener un DESCRIPTION. De hecho, es la característica definitiva de un paquete (RStudio y devtools consideran cualquier directorio que contiene DESCRIPTION como un paquete). Para comenzar, `devtools::create("mypackage")` agrega automáticamente un escueto archivo de descripción. Esto le permitirá comenzar a escribir el paquete sin tener que preocuparse por los metadatos hasta que lo necesite. La descripción mínima variará un poco dependiendo de su configuración, pero debería verse más o menos así:
 
 ```yaml
 Package: mypackage
@@ -28,12 +28,12 @@ LazyData: true
 
 (Si está escribiendo muchos paquetes, puede establecer opciones globales mediante `devtools.desc.author`, `devtools.desc.license`, `devtools.desc.suggests`, y `devtools.desc`. Consulte `package?devtools` para más detalles.)
 
-`DESCRIPTION` usa un formato de archivo simple llamado DCF, el formato de control de Debian. Puede ver la mayoría de la estructura en el ejemplo simple a continuación. Cada línea consiste en un nombre __field__ y un valor, separados por dos puntos. Cuando los valores abarcan varias líneas, deben sangrarse:
+`DESCRIPTION` usa un formato de archivo simple llamado DCF, el formato de control de Debian. Puede ver más de la estructura en el ejemplo simple más abajo. Cada línea consiste en un nombre __field__ y un valor, separados por dos puntos. Cuando los valores abarcan varias líneas, deben sangrarse:
 
 ```yaml
-Description: The description of a package is usually long,
-    spanning multiple lines. The second and subsequent lines
-    should be indented, usually with four spaces.
+Description: La descripción de un paquete suele ser larga,
+    abarcando varias líneas. La segunda línea y subsecuentes
+    deberían estar sangradas, usualmente con cuatro espacios.
 ```
 
 Este capítulo le mostrará cómo usar los campos `DESCRIPTION` más importantes.
@@ -63,13 +63,13 @@ Tanto `Imports` como `Suggests` toman una lista de nombres de paquetes separados
 
 *   `Imports`: los paquetes enumerados aquí _deben_ estar presentes para que su paquete trabaje. De hecho, cada vez que su paquete sea instalado, esos paquetes, si no están presentes, serán instalados en su computadora  (`devtools::load_all()` también verifica que los paquetes estén instalados).
     
-    Agregar una dependencia de paquete aquí asegura que se instalará. Sin embargo, no significa que se adjuntará junto con su paquete (es decir, `library(x)`). La mejor práctica es referirse explícitamente a funciones que usan la sintaxis `package::function()`. Esto hace que sea muy fácil identificar qué funciones viven fuera de su paquete. Esto es especialmente útil cuando lea su código en el futuro. [Va](http://r-pkgs.had.co.nz/namespace.html#imports)
+    Agregar una dependencia de paquete aquí asegura que se instalará. Sin embargo, no significa que se adjuntará junto con su paquete (es decir, `library(x)`). La mejor práctica es referirse explícitamente a funciones que usan la sintaxis `package::function()`. Esto hace que sea muy fácil identificar qué funciones viven fuera de su paquete. Esto es especialmente útil cuando lea su código en el futuro. 
     
-    Si usa muchas funciones de otros paquetes, esto es bastante diciente. También hay una penalización de rendimiento menor asociada con `::` (del orden de 5μs, entonces solo importará si llama a la función millones de veces). Aprenderá formas alternativas de llamar a funciones en otros paquetes en [namespace imports] (http://r-pkgs.had.co.nz/namespace.html#imports).
+    Si usa muchas funciones de otros paquetes, esto es bastante diciente. También hay una penalización de rendimiento menor asociada con `::` (del orden de 5μs, entonces solo importará si llama a la función millones de veces). Aprenderá formas alternativas de llamar a funciones en otros paquetes en [namespace imports](http://r-pkgs.had.co.nz/namespace.html#imports).
 
 *   `Suggests`: su paquete puede usar estos paquetes, pero no los requiere. Puede usar paquetes sugeridos para conjuntos de datos de ejemplo, para ejecutar pruebas, crear viñetas, o tal vez solo hay una función que necesite el paquete.
   
-    Los paquetes enumerados en `Suggets` no se instalan automáticamente junto con su equipaje. Esto significa que debe verificar si el paquete está disponible antes de usarlo (use `requireNamespace(x, quietly = TRUE)`). Existen dos escenarios básicos:
+    Los paquetes enumerados en `Suggets` no se instalan automáticamente junto con su paquete. Esto significa que debe verificar si el paquete está disponible antes de usarlo (use `requireNamespace(x, quietly = TRUE)`). Existen dos escenarios básicos:
     
     
     ```{r}
@@ -93,7 +93,7 @@ Tanto `Imports` como `Suggests` toman una lista de nombres de paquetes separados
     
 Al desarrollar paquetes localmente, nunca necesitará usar `Suggests`. Cuando libere su paquete, usar `Suggests` es una cortesía para sus usuarios. Les permite descargar paquetes que rara vez se necesitan y les permite comenzar con su paquete lo más rápido posible.
 
-La forma más fácil de agregar `Imports` y` Suggests` a su paquete es usar `devtools::use_package()`. Esto los coloca automáticamente en el lugar correcto en su `DESCRIPTION`, y le recuerda cómo usarlos.
+La forma más fácil de agregar `Imports` y `Suggests` a su paquete es usar `devtools::use_package()`. Esto los coloca automáticamente en el lugar correcto en su `DESCRIPTION`, y le recuerda cómo usarlos.
 
 
 ```{r, eval = FALSE}
@@ -121,7 +121,7 @@ Suggests:
 
 Casi siempre debería especificar una versión mínima en lugar de una versión exacta (`MASS (==7.3.0)`). Como R no puede tener múltiples versiones del mismo paquete cargadas al mismo tiempo, la especificación de una dependencia exacta aumenta drásticamente las posibilidades de versiones en conflicto.
 
-El control de versiones es más importante cuando lanza su paquete. Por lo general, las personas no tienen exactamente las mismas versiones de paquetes instalados que usted. Si alguien tiene un paquete anterior que no tiene una función que su paquete necesita, recibirá un mensaje de error inútil. Sin embargo, si proporciona el número de versión, recibirán un mensaje de error que les dice exactamente cuál es el problema: un paquete desactualizado.
+El control de las versiones es más importante cuando lanza su paquete. Por lo general, las personas no tienen exactamente las mismas versiones de paquetes instalados que usted. Si alguien tiene un paquete anterior que no tiene una función que su paquete necesita, recibirá un mensaje de error inútil. Sin embargo, si proporciona el número de versión, recibirán un mensaje de error que les dice exactamente cuál es el problema: un paquete desactualizado.
 
 En general, siempre es mejor especificar la versión y ser conservador sobre qué versión requerir. A menos que sepa lo contrario, siempre solicite una versión mayor o igual que la versión que esté utilizando actualmente.
 
@@ -129,11 +129,11 @@ En general, siempre es mejor especificar la versión y ser conservador sobre qu�
 
 Hay otros tres campos que le permiten expresar dependencias más especializadas:
 
-  * `Depends`: antes del despliegue de espacios de nombres en R 2.14.0,` Depends` era la única forma de "depender" de otro paquete. Ahora, a pesar del nombre, usted casi siempre debería usar `Imports`, no `Depends`. Aprenderá por qué, y cuando todavía seguir usando `Depends`, en [namespaces](http://r-pkgs.had.co.nz/namespace.html#namespace).
+  * `Depends`: antes del despliegue de espacios de nombres en R 2.14.0, `Depends` era la única forma de "depender" de otro paquete. Ahora, a pesar del nombre, usted casi siempre debería usar `Imports`, no `Depends`. Aprenderá por qué, y cuándo todavía seguir usando `Depends`, en [namespaces](http://r-pkgs.had.co.nz/namespace.html#namespace).
     
-  También puede usar `Depends` para requerir una versión específica de R, p. Ej. `Depends: R (>= 3.0.1)`. Al igual que con los paquetes, es una buena idea ir a lo seguro y requerir una versión mayor o igual que la versión que está usando actualmente. `devtools::create()` hará esto por usted.
+    También puede usar `Depends` para requerir una versión específica de R, por ej. `Depends: R (>= 3.0.1)`. Al igual que con los paquetes, es una buena idea ir sobre seguro y requerir una versión mayor o igual que la versión que está usando actualmente. `devtools::create()` hará esto por usted.
     
-  En R 3.1.1 y anteriores también necesitará usar `Depends: methods` si usa S4. Este error se soluciona en R 3.2.0, por lo que los métodos pueden volver a `Imports` a donde pertenecen.
+    En R 3.1.1 y anteriores también necesitará usar `Depends: methods` si usa S4. Este error se soluciona en R 3.2.0, por lo que los métodos pueden volver `Imports` a donde pertenecen.
     
   * `LinkingTo`: los paquetes enumerados aquí dependen del código C o C ++ en otro paquete. Aprenderá más sobre `LinkingTo` en [Compiled code](http://r-pkgs.had.co.nz/src.html#src).
     
@@ -145,7 +145,7 @@ También puede enumerar las cosas que su paquete necesita fuera de R en el campo
 
 Los campos de título y descripción describen lo que hace el paquete. Se diferencian solo en longitud:
 
-* `Title` es una descripción de una línea del paquete, y a menudo se muestra en listado de paquetes. Debe ser texto sin formato (sin marcado), en mayúscula como un título, y NO terminar en un punto. Que sea breve: las listas a menudo truncar el título a 65 caracteres.
+* `Title` es una descripción de una línea del paquete, y a menudo se muestra en listado de paquetes. Debe ser texto sin formato (sin marcado), en mayúscula como un título, y NO terminar en un punto. Que sea breve: las listas a menudo truncan el título a 65 caracteres.
 
 * `Description` es más detallado que el título. Puede usar oraciones múltiples pero está limitado a un párrafo. Si su descripción abarca múltiples líneas (¡y debería!), cada línea no debe tener más de 80 caracteres de ancho. Sangra las líneas siguientes con 4 espacios.
 
@@ -153,10 +153,17 @@ El `Title` y `Description` para ggplot2 son:
 
 ```yaml
 Title: An implementation of the Grammar of Graphics
-Description: An implementation of the grammar of graphics in R. It combines the advantages of both base and lattice graphics: conditioning and shared axes are handled automatically, and you can still build up a plot step by step from multiple data sources. It also implements a sophisticated multidimensional conditioning system and a consistent interface to map data to aesthetic attributes. See the ggplot2 website for more information, documentation and examples.
+
+Description: An implementation of the grammar of graphics in R. It combines 
+    the advantages of both base and lattice graphics: conditioning and shared 
+    axes are handled automatically, and you can still build up a plot step by 
+    step from multiple data sources. It also implements a sophisticated 
+    multidimensional conditioning system and a consistent interface to map 
+    data to aesthetic attributes. See the ggplot2 website for more 
+    information, documentation and examples.
 ```
 
-Un buen título y descripción son importantes, especialmente si planea lanzar su paquete a CRAN porque aparecen en la página de descarga de CRAN de la siguiente manera:
+Un buen título y descripción son importantes, especialmente si planea lanzar su paquete al CRAN porque aparecen en la página de descarga del CRAN de la siguiente manera:
 
 ![](/img/posts/cran-package.png)
 
@@ -164,7 +171,7 @@ Debido a que `Description` solo le da una pequeña cantidad de espacio para desc
 
 ### Autor: ¿Quién es usted?
 
-Para identificar el autor del paquete y con quién contactar si algo sale mal, use el campo `Authors@R`. Este campo es inusual porque contiene código R ejecutable en lugar de texto sin formato. Aquí hay un ejemplo:
+Para identificar el autor del paquete y con quién contactar si algo sale mal, use el campo `Authors@R`. Este campo es inusual porque contiene código en R ejecutable en lugar de texto sin formato. Aquí hay un ejemplo:
 
 ```yaml
 Authors@R: person("Hadley", "Wickham", email = "hadley@rstudio.com",
@@ -184,7 +191,7 @@ Este comando dice que tanto el autor (aut) como el mantenedor (cre) es Hadley Wi
 
 * Un código de tres letras que especifica el `role`. Hay cuatro roles importantes:
 
-    * `cre`: el creador o mantenedor, la persona a la que debe molestar si tiene problemas
+    * `cre`: el creador o mantenedor, la persona a la que debe molestar si tiene problemas.
       
     * `aut`: autores, aquellos que han hecho contribuciones significativas al
       paquete.
@@ -193,7 +200,7 @@ Este comando dice que tanto el autor (aut) como el mantenedor (cre) es Hadley Wi
     
     * `cph`: titular de los derechos de autor. Esto se usa si el copyright está en manos de alguien que no sea el autor, generalmente una empresa (es decir, el empleador del autor).
     
-    (La [lista completa de roles](http://www.loc.gov/marc/relators/relaterm.html) es extremadamente completo. Si su paquete tiene un leñador ("wdc"), letrista ("lyr") o diseñador de vestuario ("cst"), descanse cómodamente pues puede describir correctamente su papel en la creación de su paquete.)
+    (La [lista completa de roles](http://www.loc.gov/marc/relators/relaterm.html) es extremadamente completa. Si su paquete tiene un leñador ("wdc"), letrista ("lyr") o diseñador de vestuario ("cst"), descanse cómodamente pues puede describir correctamente su papel en la creación de su paquete.)
 
 Si necesita agregar más aclaraciones, también puede usar el argumento `comment` y proporcionar la información deseada en texto sin formato.
 
@@ -225,7 +232,7 @@ URL: http://yihui.name/knitr/
 BugReports: https://github.com/yihui/knitr/issues
 ```
 
-También puede usar campos separados `Maintainer` y` Author`. Prefiero no usar estos campos porque `Authors@R` ofrece metadatos más ricos.
+También puede usar campos separados `Maintainer` y `Author`. Prefiero no usar estos campos porque `Authors@R` ofrece metadatos más ricos.
 
 #### En el CRAN
 
@@ -233,14 +240,14 @@ Lo más importante que debe tener en cuenta es que su dirección de correo elect
 
 ### License: ¿Quién puede usar su paquete?
 
-El campo `License` puede ser una abreviatura estándar para una licencia de fuente abierta, como `GPL-2` o `BSD`, o un puntero a un archivo que contiene más información, `file LICENSE`. La licencia solo es importante si planea liberar su paquete. Si no lo hace, puedes ignorar esta sección. Si quiere dejar en claro que su paquete no es de código abierto, use `License: file LICENSE` y luego cree un archivo llamado `LICENSE`, que contenga, por ejemplo:
+El campo `License` puede ser una abreviatura estándar para una licencia de fuente abierta, como `GPL-2` o `BSD`, o un puntero a un archivo que contiene más información, `file LICENSE`. La licencia solo es importante si planea liberar su paquete. Si no lo hace, puede ignorar esta sección. Si quiere dejar en claro que su paquete no es de código abierto, use `License: file LICENSE` y luego cree un archivo llamado `LICENSE`, que contenga, por ejemplo:
 
 
     Proprietary 
 
     Do not distribute outside of Widgets Incorporated.
 
-* [MIT](https://tldrlegal.com/license/mit-license) (v. similar: a BSD 2 y 3 cláusulas de licencias). Este es una licencia simple y permisiva. Permite a las personas usar y distribuir libremente su código sujeto a una sola restricción: la licencia siempre debe ser distribuida con el código
+* [MIT](https://tldrlegal.com/license/mit-license) (muy similar a las  licencias BSD 2 y 3). Esta es una licencia simple y permisiva. Permite a las personas usar y distribuir libremente su código sujeto a una sola restricción: la licencia siempre debe ser distribuida con el código.
   
   La licencia de MIT es una "plantilla", por lo que si la usa, necesita `License: MIT + file LICENSE`, y un archivo `LICENSE` que se ve así:
     
@@ -255,15 +262,15 @@ El campo `License` puede ser una abreviatura estándar para una licencia de fuen
 * [CC0](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal).
   Renuncia a todos sus derechos sobre el código y los datos para que pueda ser libremente utilizado por cualquier persona para cualquier propósito. Esto a veces se llama ponerlo en el dominio público, un término que no está bien definido ni tiene sentido en todos los países.
   
-  Esta licencia es la más adecuada para paquetes de datos. Los datos, al menos en los EE. UU. no son susceptible de derechos de autor, por lo que realmente no está renunciando a nada. Esta licencia solo aclara este punto.
+  Esta licencia es la más adecuada para paquetes de datos. Los datos, al menos en los Estados Unidos no son susceptibles a derechos de autor, por lo que realmente no está renunciando a nada. Esta licencia solo aclara este punto.
   
-Si desea obtener más información sobre otras licencias comunes, Github's [choosealicense.com](http://choosealicense.com/licenses/) es un buen lugar para comenzar. Otro buen recurso es <https://tldrlegal.com/>, que explica las partes más importantes de cada licencia. Si usa una licencia distinta a las tres que sugiero, asegúrese de consultar la sección "Escribir extensiones en R" en [licencias](https://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file).
+Si desea obtener más información sobre otras licencias comunes: Github [choosealicense.com](http://choosealicense.com/licenses/) es un buen lugar para comenzar. Otro buen recurso es <https://tldrlegal.com/>, que explica las partes más importantes de cada licencia. Si usa una licencia distinta a las tres que sugiero, asegúrese de consultar la sección "Escribir extensiones en R" en [licencias](https://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file).
 
 Si su paquete incluye un código que no escribió, debe asegurarse de que cumpla con su licencia. Como esto ocurre con mayor frecuencia cuando se incluye el código fuente C, se analiza con más detalle en [código compilado](http://r-pkgs.had.co.nz/src.html#src).
 
 #### En el CRAN
 
-Si desea liberar su paquete a CRAN, debe elegir una licencia estándar. De lo contrario, es difícil para CRAN determinar si es legal distribuir su paquete o no. Puede encontrar una lista completa de licencias que CRAN considera válidas en <https://svn.r-project.org/R/trunk/share/licenses/license.db>.
+Si desea liberar su paquete en el CRAN, debe elegir una licencia estándar. De lo contrario, es difícil para CRAN determinar si es legal distribuir su paquete o no. Puede encontrar una lista completa de licencias que CRAN considera válidas en <https://svn.r-project.org/R/trunk/share/licenses/license.db>.
 
 ```{r, results='asis', echo = FALSE, eval = FALSE}
 licenses <- read.dcf(file.path(R.home("share"), "licenses", "license.db"))
@@ -276,14 +283,14 @@ knitr::kable(has_abbrev[c("Name", "Version", "Abbrev")], row.names = FALSE)
 
 ### Versión
 
-Formalmente, una versión de paquete R es una secuencia de al menos dos enteros separados por `.` o `-`. Por ejemplo, `1.0` y `0.9.1-10` son versiones válidas, pero `1` o `1.0-devel` no lo son. Puede analizar un número de versión con `numeric_version`.
+Formalmente, una versión de un paquete en R es una secuencia de al menos dos enteros separados por `.` o `-`. Por ejemplo, `1.0` y `0.9.1-10` son versiones válidas, pero `1` o `1.0-devel` no lo son. Puede analizar un número de versión con `numeric_version`.
 
 ```{r}
 numeric_version("1.9") == numeric_version("1.9.0")
 numeric_version("1.9.0") < numeric_version("1.10.0")
 ```
 
-Por ejemplo, un paquete puede tener una versión 1.9. R considera que este número de versión es igual a 1.9.0, menos que la versión 1.9.2, y todos estas son menores que la versión 1.10 (que es la versión "uno punto diez", no "uno punto uno cero"). R usa números de versión para determinar si se satisfacen las dependencias del paquete. Un paquete podría, por ejemplo, importar el paquete `devtools (> = 1.9.2)`, en cuyo caso la versión 1.9 o 1.9.0 no funcionaría.
+Por ejemplo, un paquete puede tener una versión 1.9. R considera que este número de versión es igual a 1.9.0, menor que la versión 1.9.2, y estas dos son, a su vez, menores que la versión 1.10 (que es la versión "uno punto diez", no "uno punto uno cero"). R usa números de versión para determinar si se satisfacen las dependencias del paquete. Un paquete podría, por ejemplo, importar el paquete `devtools (>= 1.9.2)`, en cuyo caso la versión 1.9 o 1.9.0 no funcionaría.
 
 El número de versión de su paquete aumenta con las versiones posteriores de un paquete, pero es más que un contador incremental: la forma en que el número cambia con cada versión puede transmitir información sobre qué tipo de cambios hay en el paquete.
 
@@ -291,20 +298,20 @@ No recomiendo aprovechar al máximo la flexibilidad de R. En cambio, siempre use
 
 * Un número de versión publicado consta de tres números, `<principal>.<menor>.<parche>`. Para la versión número 1.9.2, 1 es el número principal, 9 es el número menor, y 2 es el número de parche. Nunca use versiones como `1.0`, en cambio siempre deletree los tres componentes, `1.0.0`
 
-* Un paquete en desarrollo tiene un cuarto componente: la versión de desarrollo. Esto debería comenzar en 9000. Por ejemplo, la primera versión del paquete debería ser `0.0.0.9000`. Hay dos razones para esta recomendación: primero, hace que sea más fácil ver si un paquete se lanza o está en desarrollo, y el uso del cuarto lugar significa que no está limitado a lo que la próxima versión será. `0.0.1`, `0.1.0` y `1.0.0` son todos mayores que
+* Un paquete en desarrollo tiene un cuarto componente: la versión de desarrollo. Esto debería comenzar en 9000. Por ejemplo, la primera versión del paquete debería ser `0.0.0.9000`. Hay dos razones para esta recomendación: primero, hace que sea más fácil ver si un paquete se lanzó o está en desarrollo, y el uso del cuarto lugar significa que no está limitado a lo que la próxima versión será. `0.0.1`, `0.1.0` y `1.0.0` son todos mayores que
   `0.0.0.9000`.
   
   Incremente la versión de desarrollo, e.g. de `9000` a `9001` si agregó una característica importante que otro paquete de desarrollo de la que dependa.
     
   Si está utilizando svn, en lugar de usar el `9000` arbitrario, puede incrustar el identificador de revisión secuencial.
 
-Este consejo aquí está inspirado en parte por la [Versión semántica](http://semver.org) y por [X.Org](http://www.x.org/releases/X11R7.7/doc/xorg-docs/Versions.html) esquemas de control de versiones. Léelos si desea conocer más sobre los estándares de control de versiones utilizados por muchos proyectos de código abierto.
+Este consejo aquí está inspirado en parte por la [Versión semántica](http://semver.org) y por [X.Org](http://www.x.org/releases/X11R7.7/doc/xorg-docs/Versions.html) esquemas de control de versiones. Léalos si desea conocer más sobre los estándares de control de versiones utilizados por muchos proyectos de código abierto.
 
-Volveremos a los números de versión en el contexto de la liberación de su paquete, [seleccionando un número de versión](http://r-pkgs.had.co.nz/release.html#release-version). Por ahora, solo recuerda que la primera versión de su paquete debería ser `0.0.0.9000`.
+Volveremos a los números de versión en el contexto de la liberación de su paquete, [seleccionando un número de versión](http://r-pkgs.had.co.nz/release.html#release-version). Por ahora, solo recuerde que la primera versión de su paquete debería ser `0.0.0.9000`.
 
 ### Otros componentes
 
-Varios otros campos se describen en otra parte del libro:
+Algunos otros campos se describen en otra parte del libro de [Wickham](http://r-pkgs.had.co.nz):
 
 * `Collate` controla el orden en que se obtienen los archivos en R. Solo esto
    importa si su código tiene efectos secundarios; más comúnmente porque está
@@ -312,6 +319,6 @@ Varios otros campos se describen en otra parte del libro:
 
 * `LazyData` hace que sea más fácil acceder a los datos en su paquete. Porque es tan importante, está incluido en la descripción mínima creada por devtools. Esto se describe con más detalle en [datos externos](http://r-pkgs.had.co.nz/data.html#data).
 
-En realidad, hay muchos otros campos raros, si es que los usa alguna vez. Se puede encontrar una lista completa en la sección "The DESCRIPTION file" del [Manual de extensiones R](https://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file). También puede crear sus propios campos para agregar metadatos adicionales. Las únicas restricciones son que no debe usar nombres existentes y que, si planea enviar a CRAN, los nombres que use deben ser palabras en inglés válidas (por lo que no se generará una NOTE de revisión ortográfica).
+En realidad, hay muchos otros campos raros, si es que los usa alguna vez. Se puede encontrar una lista completa en la sección "The DESCRIPTION file" del [Manual de extensiones de R](https://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file). También puede crear sus propios campos para agregar metadatos adicionales. Las únicas restricciones son que no debe usar nombres existentes y que, si planea enviarlo al CRAN, los nombres que use deben ser palabras en inglés válidas (por lo que no se generará una NOTE de revisión ortográfica).
 
 [R-exts]: http://cran.r-project.org/doc/manuals/R-exts.html#The-DESCRIPTION-file

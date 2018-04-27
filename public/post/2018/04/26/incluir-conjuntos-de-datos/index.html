@@ -82,12 +82,12 @@ paquete separado solo con los datos. Ejemplos de paquetes de datos incluyen los 
 <a href="https://github.com/hadley/usdanutrients">usdanutrients</a>.</p>
 <p>Para incluir datasets con su paquete, cree un subdirectorio <code>data</code>
 y coloque sus datasets allí, en formato <code>.RData</code> (o use la extensión
-<code>.rda</code>). Use la función <code>save</code> para crear dichos archivos, de la siguiente manera:</p>
+<code>.rda</code>). Primero que todo, importe sus conjuntos de datos para que estén en el entorno que está trabajando, luego sse la función <code>save</code> para crear los archivos <code>.RData</code>, de la siguiente manera:</p>
 <pre><code>save(mydata, file=&quot;data/mydata.RData&quot;)</code></pre>
 <p>A continuación, cree un archivo <code>.R</code> con <a href="https://github.com/klutometis/roxygen">Roxygen2</a> comentarios que lo harán
 producir la documentación para el conjunto de datos, y colocar el archivo en el
 subdirectorio <code>R</code> con todos sus otros archivos <code>.R</code>. Aquí hay un ejemplo,
-para el conjunto de datos <code>grav</code> en el paqute de Karl Broman <a href="http://kbroman.org/qtlcharts">R/qtlcharts</a>; vea
+para el conjunto de datos <code>grav</code> en el paquete de Karl Broman <a href="http://kbroman.org/qtlcharts">R/qtlcharts</a>; vea
 <a href="http://github.com/kbroman/qtlcharts/blob/master/R/grav-data.R"><code>grav-data.R</code></a></p>
 <pre><code>#&#39; Arabidopsis QTL data on gravitropism
 #&#39;
@@ -125,7 +125,7 @@ a todos les gusta <code>@examples</code>.</p>
 <p>¡Eso es! Coloque conjuntos de datos <code>.RData</code> en <code>data/</code> y agregue documentación Roxygen2 en un archivo <code>.R</code> en <code>R/</code>.</p>
 <p>Bueno, una cosa más: es posible que también desee incluir la siguiente
 línea en el archivo <code>DESCRIPTION</code> para su paquete:</p>
-<pre><code>LazyData: cierto</code></pre>
+<pre><code>LazyData: true</code></pre>
 <p>Si hace esto, los conjuntos de datos en su paquete serán inmediatamente
 disponible cuando el paquete está cargado; no habrá necesidad de usar
 <code>data()</code>. Los datos no se <em>cargan </em> en realidad en R hasta que los use

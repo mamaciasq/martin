@@ -174,15 +174,22 @@ Reloading installed paqueteR</code></pre>
 <h3>Paso 0: Cree un repositorio en Github</h3>
 <p>Conviene crear un repositorio en Github con el mismo nombre del paquete que se creará en RStudio. Cuando se cree, es mejor que no inicialice el repositorio con README.</p>
 </div>
-<div id="paso-1-creando-un-paquete-en-rstudio" class="section level3">
-<h3>Paso 1: Creando un paquete en RStudio</h3>
+<div id="paso-1-cree-un-paquete-en-rstudio" class="section level3">
+<h3>Paso 1: Cree un paquete en RStudio</h3>
 <p>Para crear paquetes en RStudio, es conveniente revisar este <a href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio">tutorial.</a>.</p>
-<p>Seleccione <code>New Project...</code>, luego <code>New Directory</code>, después <code>R Package</code>. Una vez esté allí, necesitará escribir el nombre de su paquete y seleccionar un directorio para alojar su proyecto. Podría, también, manualmente escoger algunos archivos en R que contengan las funciones que desee incluir dentro de su paquete. Igualmente, debería resaltar el cuadro de diálogo para crear un repositorio de Git.</p>
-<p>Luego agregue las funciones que desee que tenga su paquete. Finalmente haga <strong>Commit</strong> a toda esta información, agregue un mensaje al Commit y haga <strong>Push</strong> para que el paquete quede alojado en su repositorio de Github.</p>
+<p>Seleccione <code>New Project...</code>, luego <code>New Directory</code>, después <code>R Package</code>. Una vez esté allí, necesitará escribir el nombre de su paquete y seleccionar un directorio para alojar su proyecto. Póngale el mismo nombre del repositorio de Github que acabó de crear, ¡No se complique! Podría, también, manualmente escoger algunos archivos en R que contengan las funciones que desee incluir dentro de su paquete. Resalte el cuadro de diálogo para crear un repositorio de Git.</p>
+<p>Podría agregar las funciones que desee que tenga su paquete o simplemente hacer <strong>Commit</strong> a toda esta información, agregar un mensaje al Commit y hacer <strong>Push</strong> para que el paquete quede alojado en su repositorio de Github y, más bien, después le hace las modificaciones e inserciones a su paquete.</p>
 </div>
-<div id="paso-2-documente-su-paquete" class="section level3">
-<h3>Paso 2: Documente su paquete</h3>
-<p>Ahora puee editar la información del archivo <code>DESCRIPTION</code> y diligenciar los campos con texto informativo sobre su paquete. Piense en algo similar a esto:</p>
+<div id="paso-2-conecte-su-paquete-con-github" class="section level3">
+<h3>Paso 2: Conecte su paquete con GitHub</h3>
+<p>Si bien usted ya le hace control de versiones a su paquete, esto sólo es localmente. La idea es que aproveche las ventajas que brinda Github, así que el siguiente paso es conectar su paquete con Github.</p>
+<p>Haga click en los dos cuadritos morados y un rombo blanco en el panel de Git. Verá que se activa un cuadro de diálogo llamado “New branch”, haga click en la casilla “Add Remote”, digite en “Remote Name” <code>origin</code> y en “Remote URL”, pegue la dirección del repositorio de Github. Haga click en “Add” (puede que se demore un poco en estar disponible).</p>
+<p>Ahora está de vuelta en el cuadro de diálogo “New Branch”, en el campo “Branch” digite <code>master</code> y luego haga click en “Create”. Le aparecerá un cuadro de diálogo, escoja “Overwrite”.</p>
+</div>
+<div id="paso-3-documente-su-paquete" class="section level3">
+<h3>Paso 3: Documente su paquete</h3>
+<p>Si no incluyó archivos con sus funciones en formato <code>.R</code>, este es el momento de agregarlos manualmente a la carpeta <code>R</code>.</p>
+<p>Ahora puede editar la información del archivo <code>DESCRIPTION</code> y diligenciar los campos con texto informativo sobre su paquete. Piense en algo similar a esto:</p>
 <pre><code>Package: cleanStringR
 Type: Package
 Title: Un paquete de ejemplo que hace tal cosa
@@ -198,8 +205,19 @@ LazyData: TRUE</code></pre>
 devtools::document()</code></pre>
 <p>Fíjese en el archivo <code>DESCRIPTION</code> y verá que se añadió la línea <code>RoxygenNote: 6.0.1</code> que confirma la documentación de su paquete.</p>
 </div>
-<div id="paso-3-construya-e-instale-el-paquete" class="section level3">
-<h3>Paso 3: Construya e instale el paquete</h3>
+<div id="paso-4-documente-sus-funciones" class="section level3">
+<h3>Paso 4: Documente sus funciones</h3>
+<p>Por lo pronto copie, pegue y edite inmediatamente encima de su función en el archivo en R donde la tenga. En la sección <a href="http://r-pkgs.had.co.nz/man.html">Object Document</a> del libro de Wickham está detalladamente explicado.</p>
+<pre><code>#&#39; Una función que limpia una cadena de caracteres, removiendo puntuación y números y tokenizándola
+#&#39; 
+#&#39; @param str Una cadena de caracteres de entrada tal como &quot;This is a cool function!&quot; 
+#&#39; @return Un vector que contiene todos los tokens válidos de la cadena de caracteres de entrada original
+#&#39; @export</code></pre>
+<p>Una vez haya terminado de editar su función, digite en la consola de R, el comando que a continuación se da y que permite documentar apropiadamente la función:</p>
+<pre><code>devtools::document()</code></pre>
+</div>
+<div id="paso-5-construya-e-instale-el-paquete" class="section level3">
+<h3>Paso 5: Construya e instale el paquete</h3>
 <p>Ahora puede avanzar y hacer clic en la pestaña <strong>Build</strong> en RStudio y luego en el botón <strong>Install and Restart</strong> en esta pestaña y R creará su paquete y lo cargará en su sistema.</p>
 <p>Note que se han agregado más archivos al directorio del paquete (los archivos de ayuda para sus funciones).</p>
 <p>Ahora debería poder acceder a su paquete en su equipo local utilizando el comando estándar <code>library(mypackage)</code>. El siguiente paso es subir su paquete actualizado a Github. Si todo salió bien, otras personas podrán descargar e instalar su paquete instalando primero <code>devtools</code> y luego ejecutando el siguiente comando:</p>
@@ -227,6 +245,40 @@ LinkingTo:
         RcppArmadillo
 Depends:
         R (&gt;= 3.0.1)</code></pre>
+</div>
+<div id="documentacion" class="section level2">
+<h2>Documentación</h2>
+<p>Podemos utilizar el impresionante paquete <code>roxygen2</code> para hacer toda la documentación de la función si nos atenemos al siguiente formato de comentario para las definiciones de funciones en nuestros archivos fuente R:</p>
+<pre><code>#&#39; Una función que sirve para limpiar cademas de entrada, removiendo la puntuación y los números.
+#&#39; 
+#&#39; @param str Una simple cadena tal como &quot;¡Esta es una función chévere!&quot; 
+#&#39; @return Un vector que contiene todos los tokens válidos en cadena de entrada original
+#&#39; @export
+Clean_String &lt;- function(str){
+    ...
+</code></pre>
+<p>La primera línea debe incluir una breve descripción general de lo que hace la función. Luego, para cada parámetro, podemos incluir en la función que queremos incluir una declaración <code>@param</code>, seguida de un espacio, seguido del nombre del parámetro exactamente como aparece en nuestra función, seguido de un espacio, seguido de una descripción de lo que ese parámetro puede ser. Es posible que también deseemos incluir una declaración <code>@return</code> que le indique al usuario qué devuelve la función. Puntualmente, si queremos que el usuario pueda acceder a la función en R, incluiremos un <code>@export</code> en la línea directamente antes de que comience la definición de la función. Una vez que hemos documentado cada función a la que deseamos que el usuario tenga acceso de esta manera (las funciones internas no necesitan ser documentadas), podemos ejecutar el siguiente comando para generar automáticamente archivos de ayuda para nuestras funciones:</p>
+<pre><code>devtools::document()
+</code></pre>
+<p>Siguiendo la sugerencia del libro de R Packages de Hadley Wickham, también querrá incluir un archivo en R (posiblemente con el mismo nombre que su paquete; prefiero llamar al mío Package_Documentation.R - Realmente no importa cómo lo llame) en la carpeta R en su directorio de paquetes. En este archivo puede documentar todo el paquete en sí y no solo las funciones individuales. También puede incluir otras declaraciones útiles que se encargarán automáticamente de la configuración para usar el código C++ (por ejemplo), lo que significa que no tiene que acordarse de hacer estas cosas a mano. Aquí hay un ejemplo muy básico de cómo podría verse esto:</p>
+<pre><code>#&#39; MyPackage: ¡Un paquete para estimar algo chévere!
+#&#39;
+#&#39; @section MyPackage functions:
+#&#39; Dar un resumen de sus funciones aquí
+#&#39;
+#&#39; @docType package
+#&#39; @name MyPackage
+NULL
+#&gt; NULL
+
+#&#39; @import methods
+NULL
+
+#&#39; @useDynLib GERGM
+#&#39; @importFrom Rcpp sourceCpp
+NULL
+</code></pre>
+<p>En realidad, debería consultar el <a href="http://r-pkgs.had.co.nz/man.html">capítulo del libro de Hadley Wickham</a> para saber cómo hacerlo, ya que es mucho más minucioso, pero este código al menos puede ayudarte a empezar. Tenga en cuenta que las últimas tres líneas son necesarias si desea incluir código C++ en su paquete, y la declaración de los métodos <code>@import</code> es necesaria si desea crear su propia clase de objeto para su paquete.</p>
 </div>
 <div id="datos-de-ejemplo" class="section level2">
 <h2>Datos de ejemplo</h2>
