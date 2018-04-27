@@ -228,6 +228,12 @@ LinkingTo:
 Depends:
         R (&gt;= 3.0.1)</code></pre>
 </div>
+<div id="datos-de-ejemplo" class="section level2">
+<h2>Datos de ejemplo</h2>
+<p>A menudo será útil agregar datos de ejemplo a su paquete, ya que esto permitirá a los usuarios asegurarse de que entienden el formato que desean sus funciones y cuál debería ser su resultado. Afortunadamente, esto es bastante fácil, ya que el paquete devtools proporciona una función para agregar datos a su paquete y garantizar que esté en el formato correcto. Lo primero que debe hacer es cargar todos los objetos de datos que desea incluir con el paquete en su sesión R. Cada objeto debe tener el nombre que desea que tenga cuando el usuario lo vea, y cada objeto se almacenará como un archivo <code>.rda</code> con el mismo nombre en el directorio <code>./data</code>. A continuación, puede agregar los datos mediante el siguiente comando:</p>
+<pre><code>devtools::use_data(mis_datos_1,mis_datos_2, mis_datos_3)</code></pre>
+<p>Puede incluir tantos objetos como desee, pero probablemente sea una buena idea no incluir grandes conjuntos de datos, ya que esto hará que la instalación de su paquete sea realmente lenta. Una vez que haya ejecutado las líneas de código anteriores, puede ir al directorio y verificar que todo esté en el lugar correcto.</p>
+</div>
 
 
   <footer>
