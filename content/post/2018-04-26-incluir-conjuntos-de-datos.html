@@ -1,0 +1,70 @@
+---
+title: 'Incluir conjuntos de datos en paquetes de R'
+author: Martín Macías
+date: '2018-04-26'
+slug: incluir-conjuntos-de-datos
+categories: []
+tags: []
+draft: FALSE
+---
+
+
+
+<p>Puede ser útil incluir conjuntos de datos de ejemplo en su paquete de R, para usar en ejemplos o viñetas o para ilustrar un formato de datos.</p>
+<p>Si sus conjuntos de datos de ejemplo son enormes, es posible que desee hacer un
+paquete separado solo con los datos. Ejemplos de paquetes de datos incluyen los paquetes de <a href="http://had.co.nz/">Hadley Wickham</a>,
+<a href="https://github.com/hadley/babynames">babynames</a>,
+<a href="https://github.com/hadley/nycflights13">nycflights13</a>, y
+<a href="https://github.com/hadley/usdanutrients">usdanutrients</a>.</p>
+<p>Para incluir datasets con su paquete, cree un subdirectorio <code>data</code>
+y coloque sus datasets allí, en formato <code>.RData</code> (o use la extensión
+<code>.rda</code>). Use la función <code>save</code> para crear dichos archivos, de la siguiente manera:</p>
+<pre><code>save(mydata, file=&quot;data/mydata.RData&quot;)</code></pre>
+<p>A continuación, cree un archivo <code>.R</code> con <a href="https://github.com/klutometis/roxygen">Roxygen2</a> comentarios que lo harán
+producir la documentación para el conjunto de datos, y colocar el archivo en el
+subdirectorio <code>R</code> con todos sus otros archivos <code>.R</code>. Aquí hay un ejemplo,
+para el conjunto de datos <code>grav</code> en el paqute de Karl Broman <a href="http://kbroman.org/qtlcharts">R/qtlcharts</a>; vea
+<a href="http://github.com/kbroman/qtlcharts/blob/master/R/grav-data.R"><code>grav-data.R</code></a></p>
+<pre><code>#&#39; Arabidopsis QTL data on gravitropism
+#&#39;
+#&#39; Data from a QTL experiment on gravitropism in
+#&#39; Arabidopsis, with data on 162 recombinant inbred lines (Ler x
+#&#39; Cvi). The outcome is the root tip angle (in degrees) at two-minute
+#&#39; increments over eight hours.
+#&#39;
+#&#39; @docType data
+#&#39;
+#&#39; @usage data(grav)
+#&#39;
+#&#39; @format An object of class \code{&quot;cross&quot;}; see \code{\link[qtl]{read.cross}}.
+#&#39;
+#&#39; @keywords datasets
+#&#39;
+#&#39; @references Moore et al. (2013) Genetics 195:1077-1086
+#&#39; (\href{http://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+#&#39;
+#&#39; @source \href{http://qtlarchive.org/db/q?pg=projdetails&amp;proj=moore_2013b}{QTL Archive}
+#&#39;
+#&#39; @examples
+#&#39; data(grav)
+#&#39; times &lt;- attr(grav, &quot;time&quot;)
+#&#39; phe &lt;- grav$pheno
+#&#39; \donttest{iplotCurves(phe, times)}
+&quot;grav&quot;</code></pre>
+<p>Esto es muy parecido a documentar una función, pero tenemos que incluir
+<code>@docType data</code> y <code>@usage data (grav)</code>, y donde la definición de la función
+iría normalmente, simplemente incluimos una línea con el
+nombre del conjunto de datos como una cadena de caracteres.</p>
+<p>Deseará describir el <code>@format</code> de los datos, y es bueno
+incluir el <code>@source</code> (donde lo obtuvo) y <code>@references</code>. Y
+a todos les gusta <code>@examples</code>.</p>
+<p>¡Eso es! Coloque conjuntos de datos <code>.RData</code> en <code>data/</code> y agregue documentación Roxygen2 en un archivo <code>.R</code> en <code>R/</code>.</p>
+<p>Bueno, una cosa más: es posible que también desee incluir la siguiente
+línea en el archivo <code>DESCRIPTION</code> para su paquete:</p>
+<pre><code>LazyData: cierto</code></pre>
+<p>Si hace esto, los conjuntos de datos en su paquete serán inmediatamente
+disponible cuando el paquete está cargado; no habrá necesidad de usar
+<code>data()</code>. Los datos no se <em>cargan </em> en realidad en R hasta que los use
+(eso es lo que significa “lazy load”).</p>
+<p>De acuerdo, una cosa más: también puede incluir el código en R (en un archivo <code>.R</code>) en el directorio <code>data</code>, y también datos tabulares como archivos <code>.txt</code> o <code>.csv</code>. (Ver <a href="http://cran.r-project.org/doc/manuals/r-release/R-exts.html#Data-in-aackages">Datos en paquetes</a> en el <a href="http://cran.r-project.org/doc/manuals/r-release/R-exts.html">Manual de extensiones de Writing R</a>.)
+Una ventaja de esto es que los datos se pueden ver en <a href="http://github.com">GitHub</a>, si <a href="github.html">pone su paquete allí</a>. Y puede usar tal <code>.txt</code> o archivos <code>.csv</code> para demostrar formatos de archivo y cómo cargar datos en R.</p>

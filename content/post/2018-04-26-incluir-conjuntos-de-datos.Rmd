@@ -1,0 +1,80 @@
+---
+title: 'Incluir conjuntos de datos en paquetes de R'
+author: Martín Macías
+date: '2018-04-26'
+slug: incluir-conjuntos-de-datos
+categories: []
+tags: []
+draft: FALSE
+---
+
+Puede ser útil incluir conjuntos de datos de ejemplo en su paquete de R, para usar en ejemplos o viñetas o para ilustrar un formato de datos.
+
+Si sus conjuntos de datos de ejemplo son enormes, es posible que desee hacer un
+paquete separado solo con los datos. Ejemplos de paquetes de datos incluyen los paquetes de [Hadley Wickham](http://had.co.nz/),
+[babynames](https://github.com/hadley/babynames),
+[nycflights13](https://github.com/hadley/nycflights13), y
+[usdanutrients](https://github.com/hadley/usdanutrients).
+
+Para incluir datasets con su paquete, cree un subdirectorio `data`
+y coloque sus datasets allí, en formato `.RData` (o use la extensión
+`.rda`). Use la función `save` para crear dichos archivos, de la siguiente manera:
+
+    save(mydata, file="data/mydata.RData")
+    
+A continuación, cree un archivo `.R` con [Roxygen2](https://github.com/klutometis/roxygen) comentarios que lo harán
+producir la documentación para el conjunto de datos, y colocar el archivo en el
+subdirectorio `R` con todos sus otros archivos `.R`. Aquí hay un ejemplo,
+para el conjunto de datos `grav` en el paqute de Karl Broman [R/qtlcharts](http://kbroman.org/qtlcharts); vea
+[`grav-data.R`](http://github.com/kbroman/qtlcharts/blob/master/R/grav-data.R)
+
+    #' Arabidopsis QTL data on gravitropism
+    #'
+    #' Data from a QTL experiment on gravitropism in
+    #' Arabidopsis, with data on 162 recombinant inbred lines (Ler x
+    #' Cvi). The outcome is the root tip angle (in degrees) at two-minute
+    #' increments over eight hours.
+    #'
+    #' @docType data
+    #'
+    #' @usage data(grav)
+    #'
+    #' @format An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+    #'
+    #' @keywords datasets
+    #'
+    #' @references Moore et al. (2013) Genetics 195:1077-1086
+    #' (\href{http://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+    #'
+    #' @source \href{http://qtlarchive.org/db/q?pg=projdetails&proj=moore_2013b}{QTL Archive}
+    #'
+    #' @examples
+    #' data(grav)
+    #' times <- attr(grav, "time")
+    #' phe <- grav$pheno
+    #' \donttest{iplotCurves(phe, times)}
+    "grav"
+    
+Esto es muy parecido a documentar una función, pero tenemos que incluir
+`@docType data` y `@usage data (grav)`, y donde la definición de la función
+iría normalmente, simplemente incluimos una línea con el
+nombre del conjunto de datos como una cadena de caracteres.
+
+Deseará describir el `@format` de los datos, y es bueno
+incluir el `@source` (donde lo obtuvo) y `@references`. Y
+a todos les gusta `@examples`.
+
+¡Eso es! Coloque conjuntos de datos `.RData` en `data/` y agregue documentación Roxygen2 en un archivo `.R` en `R/`.
+
+Bueno, una cosa más: es posible que también desee incluir la siguiente
+línea en el archivo `DESCRIPTION` para su paquete:
+
+    LazyData: cierto
+
+Si hace esto, los conjuntos de datos en su paquete serán inmediatamente
+disponible cuando el paquete está cargado; no habrá necesidad de usar
+`data()`. Los datos no se _cargan _ en realidad en R hasta que los use
+(eso es lo que significa &ldquo;lazy load&rdquo;).
+
+De acuerdo, una cosa más: también puede incluir el código en R (en un archivo `.R`) en el directorio `data`, y también datos tabulares como archivos `.txt` o `.csv`. (Ver [Datos en paquetes](http://cran.r-project.org/doc/manuals/r-release/R-exts.html#Data-in-aackages) en el [Manual de extensiones de Writing R](http://cran.r-project.org/doc/manuals/r-release/R-exts.html).)
+Una ventaja de esto es que los datos se pueden ver en [GitHub](http://github.com), si [pone su paquete allí](github.html). Y puede usar tal `.txt` o archivos `.csv` para demostrar formatos de archivo y cómo cargar datos en R.

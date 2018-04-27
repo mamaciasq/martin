@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Incluir conjuntos de datos en paquetes de R</title>
+      <link>/post/2018/04/26/incluir-conjuntos-de-datos/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/04/26/incluir-conjuntos-de-datos/</guid>
+      <description>Puede ser útil incluir conjuntos de datos de ejemplo en su paquete de R, para usar en ejemplos o viñetas o para ilustrar un formato de datos.
+Si sus conjuntos de datos de ejemplo son enormes, es posible que desee hacer un paquete separado solo con los datos. Ejemplos de paquetes de datos incluyen los paquetes de Hadley Wickham, babynames, nycflights13, y usdanutrients.
+Para incluir datasets con su paquete, cree un subdirectorio data y coloque sus datasets allí, en formato .</description>
+    </item>
+    
+    <item>
       <title>Metadatos en Paquetes</title>
       <link>/post/2018/04/26/metadatos-en-paquetes/</link>
       <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
